@@ -45,17 +45,23 @@ def resolve_store(stores_file: Any, chain: str, spec: dict[str, Any]) -> tuple[A
     name_contains = normalize_text(spec.get("name_contains"))
 
     candidates = list(stores)
-    if city:
+    if name_contains:
+        named = [
+            store
+            for store in stores
+            if name_contains in normalize_text(store.name)
+            or name_contains in normalize_text(store.address)
+        ]
+        if named:
+            candidates = named
+
+    if city and not name_contains:
         candidates = [
             store
             for store in candidates
             if city in normalize_text(store.city)
             or city in normalize_text(store.address)
-        ]
-
-    if name_contains:
-        candidates = [
-            store for store in candidates if name_contains in normalize_text(store.name)
+            or city in normalize_text(store.name)
         ]
 
     if not candidates:
