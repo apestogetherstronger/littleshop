@@ -25,9 +25,9 @@ chains:
 
   - slug: carrefour
     enabled: true
-    store_id: "4130"
+    store_id:
     city:
-    name_contains:
+    name_contains: "נווה אמירים"
 
   - slug: victory
     enabled: true
