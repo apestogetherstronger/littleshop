@@ -71,12 +71,12 @@ recipes:
         quantity: 8
         unit: units
         search_terms: ["ביצים"]
-        exclude_terms: ["אטריות", "פסטה"]
+        exclude_terms: ["אטריות", "נודלס", "פסטה"]
       - name: tomatoes
         quantity: 1200
         unit: g
         search_terms: ["עגבניות", "עגבניה"]
-        exclude_terms: ["רוטב", "מרוסקות", "רכז", "קטשופ"]
+        exclude_terms: ["רוטב", "מרוסקות", "רכז", "קטשופ", "ציפס", "חטיף"]
       - name: tomato sauce
         quantity: 500
         unit: g
@@ -99,7 +99,7 @@ recipes:
         quantity: 600
         unit: g
         search_terms: ["פלפל", "גמבה"]
-        exclude_terms: ["ממרח", "רוטב"]
+        exclude_terms: ["ממרח", "רוטב", "פסטרמה"]
       - name: broccoli
         quantity: 400
         unit: g
@@ -118,10 +118,12 @@ recipes:
         quantity: 800
         unit: g
         search_terms: ["קישוא", "זוקיני"]
+        exclude_terms: ["סלט", "ממרח"]
       - name: eggs
         quantity: 10
         unit: units
         search_terms: ["ביצים"]
+        exclude_terms: ["אטריות", "נודלס", "פסטה"]
       - name: feta
         quantity: 250
         unit: g
@@ -171,6 +173,7 @@ recipes:
         quantity: 500
         unit: g
         search_terms: ["קישוא", "זוקיני"]
+        exclude_terms: ["סלט", "ממרח"]
       - name: sweet potato
         quantity: 600
         unit: g
@@ -189,6 +192,7 @@ recipes:
         quantity: 10
         unit: units
         search_terms: ["טורטיה", "טורטיות"]
+        exclude_terms: ["חטיף", "נאצ'וס"]
       - name: beans
         quantity: 500
         unit: g
@@ -201,7 +205,7 @@ recipes:
         quantity: 300
         unit: g
         search_terms: ["תירס"]
-        exclude_terms: ["חטיף", "סטיקס", "קריספי"]
+        exclude_terms: ["חטיף", "סטיקס", "קריספי", "נאצ'וס"]
 
   - id: potato_broccoli_bake
     name: "Potato & broccoli cheese bake"
@@ -212,6 +216,7 @@ recipes:
         quantity: 1200
         unit: g
         search_terms: ["תפוח אדמה", "תפוחי אדמה"]
+        exclude_terms: ["סלט", "ממרח"]
       - name: broccoli
         quantity: 600
         unit: g
