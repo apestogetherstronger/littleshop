@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
@@ -32,23 +33,33 @@ def main() -> int:
 
     default_city = settings.get("location", {}).get("city")
 
+    chain_specs: list[dict[str, Any]] = []
     for chain_spec in settings.get("chains", []):
         if not chain_spec.get("enabled", True):
             continue
-
         spec = dict(chain_spec)
         if not spec.get("city"):
             spec["city"] = default_city
+        chain_specs.append(spec)
 
-        slug = spec["slug"]
-        try:
-            result = fetch_chain(slug, spec)
-        except Exception as exc:
-            errors.append(f"{slug}: {type(exc).__name__}: {exc}")
-            continue
+    if chain_specs:
+        with ThreadPoolExecutor(max_workers=min(4, len(chain_specs))) as pool:
+            future_to_slug = {
+                pool.submit(fetch_chain, spec["slug"], spec): spec["slug"]
+                for spec in chain_specs
+            }
+            for future in as_completed(future_to_slug):
+                slug = future_to_slug[future]
+                try:
+                    result = future.result()
+                except Exception as exc:
+                    errors.append(f"{slug}: {type(exc).__name__}: {exc}")
+                    continue
+                chain_runs.append(result)
+                all_deals.extend(result["deals"])
 
-        chain_runs.append(result)
-        all_deals.extend(result["deals"])
+    chain_runs.sort(key=lambda run: run["chain"])
+    errors.sort()
 
     plan_cfg = settings.get("plan", {})
     plan = build_plan(
