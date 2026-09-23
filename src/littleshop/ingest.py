@@ -83,6 +83,23 @@ def _is_active(start: datetime | None, end: datetime | None, now: datetime) -> b
     return True
 
 
+def _is_general_public_promo(promo: Any) -> bool:
+    """Keep public shelf promotions; skip targeted coupons/compensation offers."""
+    description = normalize_text(getattr(promo, "description", None))
+    if any(word in description for word in ("קופון", "פיצוי", "מצטרפים")):
+        return False
+
+    raw_club = str(getattr(promo, "club_id", "") or "").strip()
+    if not raw_club:
+        return True
+    if raw_club == "0" or raw_club.startswith("0 - כלל הלקוחות"):
+        return True
+
+    # Some feeds encode multiple club flags as "0=...|0=...".
+    pieces = [piece.strip() for piece in raw_club.split("|") if piece.strip()]
+    return bool(pieces) and all(re.match(r"^0(?:=|$)", piece) for piece in pieces)
+
+
 def _load_file(adapter: Any, file_type: FileType, store_id: str | None = None) -> Any:
     ref = adapter.latest(file_type, store_id=store_id)
     return ilp.parse(adapter.download(ref))
@@ -105,6 +122,8 @@ def fetch_chain(chain: str, spec: dict[str, Any]) -> dict[str, Any]:
 
         for promo in promos.promotions:
             if not _is_active(promo.start_time, promo.end_time, now):
+                continue
+            if not _is_general_public_promo(promo):
                 continue
 
             for promo_item in promo.items:
