@@ -35,10 +35,9 @@ def matches_ingredient(ingredient: dict[str, Any], deal: dict[str, Any]) -> bool
     # Prefer the actual SKU name. Promotion descriptions often mention several
     # unrelated products ("cauliflower/broccoli/spinach") and produce false hits.
     product_name = normalize_text(deal.get("name"))
-    promo_text = normalize_text(deal.get("promotion_description"))
-    haystack = product_name or promo_text
-    if not haystack:
+    if not product_name:
         return False
+    haystack = product_name
 
     for term in ingredient.get("exclude_terms", []):
         needle = normalize_text(str(term))
