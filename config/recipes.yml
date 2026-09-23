@@ -8,6 +8,7 @@ recipes:
         quantity: 500
         unit: g
         search_terms: ["פסטה", "ספגטי", "פנה"]
+        exclude_terms: ["רוטב"]
       - name: broccoli
         quantity: 600
         unit: g
@@ -55,7 +56,7 @@ recipes:
       - name: chickpeas
         quantity: 500
         unit: g
-        search_terms: ["חומוס", "גרגירי חומוס"]
+        search_terms: ["גרגירי חומוס", "חומוס מבושל", "חומוס שימורים"]
       - name: tahini
         quantity: 200
         unit: g
@@ -70,10 +71,12 @@ recipes:
         quantity: 8
         unit: units
         search_terms: ["ביצים"]
+        exclude_terms: ["אטריות", "פסטה"]
       - name: tomatoes
         quantity: 1200
         unit: g
         search_terms: ["עגבניות", "עגבניה"]
+        exclude_terms: ["רוטב", "מרוסקות", "רכז", "קטשופ"]
       - name: tomato sauce
         quantity: 500
         unit: g
@@ -96,6 +99,7 @@ recipes:
         quantity: 600
         unit: g
         search_terms: ["פלפל", "גמבה"]
+        exclude_terms: ["ממרח", "רוטב"]
       - name: broccoli
         quantity: 400
         unit: g
@@ -136,6 +140,7 @@ recipes:
         quantity: 500
         unit: g
         search_terms: ["לזניה"]
+        exclude_terms: ["רוטב"]
       - name: spinach
         quantity: 700
         unit: g
@@ -173,7 +178,7 @@ recipes:
       - name: chickpeas
         quantity: 400
         unit: g
-        search_terms: ["חומוס", "גרגירי חומוס"]
+        search_terms: ["גרגירי חומוס", "חומוס מבושל", "חומוס שימורים"]
 
   - id: bean_quesadillas
     name: "Bean & cheese quesadillas"
@@ -187,15 +192,16 @@ recipes:
       - name: beans
         quantity: 500
         unit: g
-        search_terms: ["שעועית"]
+        search_terms: ["שעועית שחורה", "שעועית אדומה", "שעועית לבנה"]
       - name: yellow cheese
         quantity: 300
         unit: g
-        search_terms: ["גבינה צהובה", "צ'דר", "גאודה", "עמק"]
+        search_terms: ["גבינה צהובה", "גבינת צ'דר", "גאודה", "גבינת עמק"]
       - name: corn
         quantity: 300
         unit: g
         search_terms: ["תירס"]
+        exclude_terms: ["חטיף", "סטיקס", "קריספי"]
 
   - id: potato_broccoli_bake
     name: "Potato & broccoli cheese bake"
