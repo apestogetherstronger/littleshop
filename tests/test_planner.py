@@ -80,3 +80,11 @@ def test_product_name_wins_over_broad_promotion_description():
     deal = fake_deal("תפרחות ברוקולי")
     deal["promotion_description"] = "כרובית/ברוקולי/תרד 800 גרם"
     assert not matches_ingredient(ingredient, deal)
+
+
+def test_promotion_text_without_sku_name_is_not_enough():
+    ingredient = {"name": "feta", "search_terms": ["פטה", "בולגרית"]}
+    deal = fake_deal("")
+    deal["name"] = None
+    deal["promotion_description"] = "מעטפת בצק פילו במילוי פטה"
+    assert not matches_ingredient(ingredient, deal)
