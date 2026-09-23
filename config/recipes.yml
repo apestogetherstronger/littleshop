@@ -17,6 +17,7 @@ recipes:
         quantity: 250
         unit: g
         search_terms: ["ריקוטה"]
+        exclude_terms: ["רוטב"]
       - name: parmesan
         quantity: 80
         unit: g
@@ -71,12 +72,12 @@ recipes:
         quantity: 8
         unit: units
         search_terms: ["ביצים"]
-        exclude_terms: ["אטריות", "נודלס", "פסטה"]
+        exclude_terms: ["אטריות", "נודלס", "פסטה", "פתיתי", "אבקת"]
       - name: tomatoes
         quantity: 1200
         unit: g
         search_terms: ["עגבניות", "עגבניה"]
-        exclude_terms: ["רוטב", "מרוסקות", "רכז", "קטשופ", "ציפס", "חטיף"]
+        exclude_terms: ["רוטב", "מרוסקות", "רכז", "קטשופ", "ציפס", "חטיף", "חתוכות", "שימורים"]
       - name: tomato sauce
         quantity: 500
         unit: g
@@ -99,7 +100,7 @@ recipes:
         quantity: 600
         unit: g
         search_terms: ["פלפל", "גמבה"]
-        exclude_terms: ["ממרח", "רוטב", "פסטרמה"]
+        exclude_terms: ["ממרח", "רוטב", "פסטרמה", "קלויים", "סלט"]
       - name: broccoli
         quantity: 400
         unit: g
@@ -123,7 +124,7 @@ recipes:
         quantity: 10
         unit: units
         search_terms: ["ביצים"]
-        exclude_terms: ["אטריות", "נודלס", "פסטה"]
+        exclude_terms: ["אטריות", "נודלס", "פסטה", "פתיתי", "אבקת"]
       - name: feta
         quantity: 250
         unit: g
@@ -131,7 +132,7 @@ recipes:
       - name: yellow cheese
         quantity: 150
         unit: g
-        search_terms: ["גבינה צהובה", "גאודה", "עמק"]
+        search_terms: ["גבינה צהובה", "גבינת צ'דר", "גאודה", "גבינת עמק"]
 
   - id: spinach_ricotta_lasagna
     name: "Spinach & ricotta lasagna"
@@ -151,6 +152,7 @@ recipes:
         quantity: 500
         unit: g
         search_terms: ["ריקוטה"]
+        exclude_terms: ["רוטב"]
       - name: mozzarella
         quantity: 300
         unit: g
@@ -205,7 +207,7 @@ recipes:
         quantity: 300
         unit: g
         search_terms: ["תירס"]
-        exclude_terms: ["חטיף", "סטיקס", "קריספי", "נאצ'וס"]
+        exclude_terms: ["חטיף", "סטיקס", "קריספי", "נאצ'וס", "דגני", "קורנפלקס"]
 
   - id: potato_broccoli_bake
     name: "Potato & broccoli cheese bake"
@@ -228,4 +230,4 @@ recipes:
       - name: yellow cheese
         quantity: 250
         unit: g
-        search_terms: ["גבינה צהובה", "גאודה", "עמק"]
+        search_terms: ["גבינה צהובה", "גבינת צ'דר", "גאודה", "גבינת עמק"]
