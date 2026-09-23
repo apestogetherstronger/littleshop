@@ -2,6 +2,11 @@ name: Weekly meal plan
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/latest.md"
+      - "output/**"
   schedule:
     # GitHub cron is UTC. This is Thursday 19:00 during Israel summer time
     # and 18:00 during winter time.
