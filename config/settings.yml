@@ -1,0 +1,41 @@
+plan:
+  days: 7
+  max_recipe_repeats: 1
+
+diet:
+  required_recipe_tags:
+    - vegetarian
+  excluded_recipe_tags: []
+
+location:
+  city: "הרצליה"
+
+chains:
+  - slug: shufersal
+    enabled: true
+    store_id:
+    city: "הרצליה"
+    name_contains:
+
+  - slug: rami-levy
+    enabled: true
+    store_id:
+    city: "הרצליה"
+    name_contains:
+
+  - slug: carrefour
+    enabled: true
+    store_id:
+    city: "הרצליה"
+    name_contains:
+
+  - slug: victory
+    enabled: true
+    store_id:
+    city: "הרצליה"
+    name_contains:
+
+output:
+  report_path: docs/latest.md
+  plan_json_path: output/plan.json
+  deals_json_path: output/deals.json
