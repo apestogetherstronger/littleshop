@@ -164,6 +164,7 @@ def build_plan(
                     "unit": ingredient.get("unit", ""),
                     "quantity": 0.0,
                     "search_terms": ingredient.get("search_terms", []),
+                    "exclude_terms": ingredient.get("exclude_terms", []),
                 }
             shopping[key]["quantity"] += float(ingredient.get("quantity", 0))
 
