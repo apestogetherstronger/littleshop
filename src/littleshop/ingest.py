@@ -86,7 +86,7 @@ def _is_active(start: datetime | None, end: datetime | None, now: datetime) -> b
 def _is_general_public_promo(promo: Any) -> bool:
     """Keep public shelf promotions; skip targeted coupons/compensation offers."""
     description = normalize_text(getattr(promo, "description", None))
-    if any(word in description for word in ("קופון", "פיצוי", "מצטרפים")):
+    if any(word in description for word in ("קופון", "פיצוי", "מצטרפים", "אשראי")):
         return False
 
     raw_club = str(getattr(promo, "club_id", "") or "").strip()
