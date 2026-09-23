@@ -1,6 +1,6 @@
 # LittleShop weekly plan
 
-Generated: 2026-09-23T17:23
+Generated: 2026-09-23T17:24
 
 This v1 ranks meals by matching their ingredients to active supermarket promotions. It does **not** yet use historical prices or calculate a fully optimized basket total.
 
@@ -10,10 +10,10 @@ This v1 ranks meals by matching their ingredients to active supermarket promotio
 
 ### Feed warnings
 
-- shufersal: RuntimeError: shufersal: no branch matched city='הרצליה' name_contains=None; set store_id explicitly
-- rami-levy: RuntimeError: rami-levy: no branch matched city='הרצליה' name_contains=None; set store_id explicitly
 - carrefour: RuntimeError: carrefour: no branch matched city='הרצליה' name_contains=None; set store_id explicitly
-- victory: PortalError: GET https://laibcatalog.co.il/webapi/api/getfiles failed after 3 attempts: timed out
+- rami-levy: RuntimeError: rami-levy: no branch matched city='הרצליה' name_contains=None; set store_id explicitly
+- shufersal: PortalError: GET https://prices.shufersal.co.il/FileObject/UpdateCategory failed after 1 attempts: The read operation timed out
+- victory: PortalError: GET https://laibcatalog.co.il/webapi/api/getfiles failed after 1 attempts: timed out
 
 ## Meal plan
 
