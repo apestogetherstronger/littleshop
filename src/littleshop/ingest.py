@@ -6,6 +6,8 @@ import re
 from typing import Any
 
 import israeli_prices as ilp
+from israeli_prices.core.http import HttpClient
+from israeli_prices.models import FileType
 
 
 def _num(value: Any) -> float | None:
@@ -27,8 +29,7 @@ def normalize_text(value: str | None) -> str:
     return " ".join(value.split())
 
 
-def resolve_store(chain: str, spec: dict[str, Any]) -> tuple[Any, str]:
-    stores_file = ilp.get_stores(chain)
+def resolve_store(stores_file: Any, chain: str, spec: dict[str, Any]) -> tuple[Any, str]:
     stores = stores_file.stores
     if not stores:
         raise RuntimeError(f"{chain}: no stores returned")
@@ -76,72 +77,85 @@ def _is_active(start: datetime | None, end: datetime | None, now: datetime) -> b
     return True
 
 
+def _load_file(adapter: Any, file_type: FileType, store_id: str | None = None) -> Any:
+    ref = adapter.latest(file_type, store_id=store_id)
+    return ilp.parse(adapter.download(ref))
+
+
 def fetch_chain(chain: str, spec: dict[str, Any]) -> dict[str, Any]:
-    store, selection_reason = resolve_store(chain, spec)
-    prices = ilp.get_prices(chain, store_id=str(store.store_id))
-    promos = ilp.get_promos(chain, store_id=str(store.store_id))
+    # GitHub-hosted runners are outside Israel. A retailer portal that blocks or
+    # stalls foreign traffic must not hold the whole weekly job hostage.
+    client = HttpClient(timeout=12.0, retries=1)
+    try:
+        adapter = ilp.get_adapter(chain, client=client)
+        stores_file = _load_file(adapter, FileType.STORES)
+        store, selection_reason = resolve_store(stores_file, chain, spec)
+        prices = _load_file(adapter, FileType.PRICE_FULL, str(store.store_id))
+        promos = _load_file(adapter, FileType.PROMO_FULL, str(store.store_id))
 
-    by_code = {item.item_code: item for item in prices.items}
-    now = datetime.now()
-    deals: list[dict[str, Any]] = []
+        by_code = {item.item_code: item for item in prices.items}
+        now = datetime.now()
+        deals: list[dict[str, Any]] = []
 
-    for promo in promos.promotions:
-        if not _is_active(promo.start_time, promo.end_time, now):
-            continue
+        for promo in promos.promotions:
+            if not _is_active(promo.start_time, promo.end_time, now):
+                continue
 
-        for promo_item in promo.items:
-            price_item = by_code.get(promo_item.item_code)
-            regular_price = _num(price_item.price) if price_item else None
-            discounted_price = _num(
-                promo_item.discounted_price
-                if promo_item.discounted_price is not None
-                else promo.discounted_price
-            )
-            discount_rate = _num(
-                promo_item.discount_rate
-                if promo_item.discount_rate is not None
-                else promo.discount_rate
-            )
-            min_qty = _num(
-                promo_item.min_qty
-                if promo_item.min_qty is not None
-                else promo.min_qty
-            )
+            for promo_item in promo.items:
+                price_item = by_code.get(promo_item.item_code)
+                regular_price = _num(price_item.price) if price_item else None
+                discounted_price = _num(
+                    promo_item.discounted_price
+                    if promo_item.discounted_price is not None
+                    else promo.discounted_price
+                )
+                discount_rate = _num(
+                    promo_item.discount_rate
+                    if promo_item.discount_rate is not None
+                    else promo.discount_rate
+                )
+                min_qty = _num(
+                    promo_item.min_qty
+                    if promo_item.min_qty is not None
+                    else promo.min_qty
+                )
 
-            deals.append(
-                {
-                    "chain": chain,
-                    "store_id": str(store.store_id),
-                    "store_name": store.name,
-                    "store_city": store.city,
-                    "store_address": store.address,
-                    "item_code": promo_item.item_code,
-                    "gtin": price_item.gtin if price_item else promo_item.gtin,
-                    "name": price_item.name if price_item else None,
-                    "manufacturer": price_item.manufacturer if price_item else None,
-                    "regular_price": regular_price,
-                    "unit_price": _num(price_item.unit_price) if price_item else None,
-                    "promotion_id": promo.promotion_id,
-                    "promotion_description": promo.description,
-                    "discount_rate": discount_rate,
-                    "discounted_price": discounted_price,
-                    "min_qty": min_qty,
-                    "club_id": promo.club_id,
-                    "start_time": promo.start_time.isoformat() if promo.start_time else None,
-                    "end_time": promo.end_time.isoformat() if promo.end_time else None,
-                }
-            )
+                deals.append(
+                    {
+                        "chain": chain,
+                        "store_id": str(store.store_id),
+                        "store_name": store.name,
+                        "store_city": store.city,
+                        "store_address": store.address,
+                        "item_code": promo_item.item_code,
+                        "gtin": price_item.gtin if price_item else promo_item.gtin,
+                        "name": price_item.name if price_item else None,
+                        "manufacturer": price_item.manufacturer if price_item else None,
+                        "regular_price": regular_price,
+                        "unit_price": _num(price_item.unit_price) if price_item else None,
+                        "promotion_id": promo.promotion_id,
+                        "promotion_description": promo.description,
+                        "discount_rate": discount_rate,
+                        "discounted_price": discounted_price,
+                        "min_qty": min_qty,
+                        "club_id": promo.club_id,
+                        "start_time": promo.start_time.isoformat() if promo.start_time else None,
+                        "end_time": promo.end_time.isoformat() if promo.end_time else None,
+                    }
+                )
 
-    return {
-        "chain": chain,
-        "store": {
-            "store_id": str(store.store_id),
-            "name": store.name,
-            "city": store.city,
-            "address": store.address,
-            "selection_reason": selection_reason,
-        },
-        "price_item_count": len(prices.items),
-        "promotion_count": len(promos.promotions),
-        "deals": deals,
-    }
+        return {
+            "chain": chain,
+            "store": {
+                "store_id": str(store.store_id),
+                "name": store.name,
+                "city": store.city,
+                "address": store.address,
+                "selection_reason": selection_reason,
+            },
+            "price_item_count": len(prices.items),
+            "promotion_count": len(promos.promotions),
+            "deals": deals,
+        }
+    finally:
+        client.close()
