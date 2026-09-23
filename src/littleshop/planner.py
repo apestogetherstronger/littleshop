@@ -32,19 +32,19 @@ def deal_strength(deal: dict[str, Any]) -> float:
 
 
 def matches_ingredient(ingredient: dict[str, Any], deal: dict[str, Any]) -> bool:
-    haystack = normalize_text(
-        " ".join(
-            part
-            for part in [
-                deal.get("name"),
-                deal.get("manufacturer"),
-                deal.get("promotion_description"),
-            ]
-            if part
-        )
-    )
+    # Prefer the actual SKU name. Promotion descriptions often mention several
+    # unrelated products ("cauliflower/broccoli/spinach") and produce false hits.
+    product_name = normalize_text(deal.get("name"))
+    promo_text = normalize_text(deal.get("promotion_description"))
+    haystack = product_name or promo_text
     if not haystack:
         return False
+
+    for term in ingredient.get("exclude_terms", []):
+        needle = normalize_text(str(term))
+        if needle and needle in haystack:
+            return False
+
     for term in ingredient.get("search_terms", []):
         needle = normalize_text(str(term))
         if needle and needle in haystack:
