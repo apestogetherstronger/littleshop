@@ -1,0 +1,61 @@
+name: Weekly meal plan
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub cron is UTC. This is Thursday 19:00 during Israel summer time
+    # and 18:00 during winter time.
+    - cron: "0 16 * * 4"
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        env:
+          PYTHONPATH: src
+        run: pytest -q
+
+      - name: Generate weekly plan
+        env:
+          PYTHONPATH: src
+        run: python -m littleshop.main
+
+      - name: Upload generated data
+        uses: actions/upload-artifact@v4
+        with:
+          name: littleshop-weekly-plan
+          path: |
+            docs/latest.md
+            output/plan.json
+            output/deals.json
+          retention-days: 30
+
+      - name: Commit latest generated plan
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/latest.md output/plan.json output/deals.json
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit"
+          else
+            git commit -m "Update weekly meal plan"
+            git push
+          fi
