@@ -20,13 +20,13 @@ chains:
   - slug: rami-levy
     enabled: true
     store_id:
-    city: "הרצליה"
-    name_contains:
+    city:
+    name_contains: "סוקולוב"
 
   - slug: carrefour
     enabled: true
-    store_id:
-    city: "הרצליה"
+    store_id: "4130"
+    city:
     name_contains:
 
   - slug: victory
