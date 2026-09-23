@@ -64,3 +64,19 @@ def test_recipe_with_matching_deal_ranks_first():
 
     assert plan["meals"][0]["id"] == "a"
     assert plan["shopping_list"][0]["name"] == "broccoli"
+
+
+def test_exclusion_blocks_egg_noodles():
+    ingredient = {
+        "name": "eggs",
+        "search_terms": ["ביצים"],
+        "exclude_terms": ["אטריות", "נודלס"],
+    }
+    assert not matches_ingredient(ingredient, fake_deal("נודלס ביצים 500 גרם"))
+
+
+def test_product_name_wins_over_broad_promotion_description():
+    ingredient = {"name": "cauliflower", "search_terms": ["כרובית"]}
+    deal = fake_deal("תפרחות ברוקולי")
+    deal["promotion_description"] = "כרובית/ברוקולי/תרד 800 גרם"
+    assert not matches_ingredient(ingredient, deal)
