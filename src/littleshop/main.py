@@ -73,6 +73,7 @@ def main() -> int:
         "configured_chains": [spec["slug"] for spec in chain_specs],
         "loaded_chains": [run["chain"] for run in chain_runs],
         "active_promotion_rows": len(all_deals),
+        "source_files": {run["chain"]: run.get("source_files", {}) for run in chain_runs},
         "errors": errors,
         "plan_published": False,
     }
@@ -109,7 +110,7 @@ def main() -> int:
         plan_json_path,
         {
             "stores": [
-                run["store"] | {"chain": run["chain"]}
+                run["store"] | {"chain": run["chain"], "source_files": run.get("source_files", {})}
                 for run in chain_runs
             ],
             "errors": errors,

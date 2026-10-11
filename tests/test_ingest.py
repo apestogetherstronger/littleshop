@@ -75,3 +75,21 @@ def test_empty_price_snapshot_is_rejected_and_client_closed(monkeypatch):
     with pytest.raises(RuntimeError, match='empty price snapshot'):
         ingest.fetch_chain('test', {'city': 'הרצליה'})
     assert closed == [True]
+
+
+@pytest.mark.parametrize('chain, timeout, retries', [
+    ('shufersal', 45.0, 2), ('carrefour', 12.0, 1), ('rami-levy', 12.0, 1),
+])
+def test_retailer_request_budgets_stay_bounded(monkeypatch, chain, timeout, retries):
+    budgets = []
+    closed = []
+    monkeypatch.setattr(ingest, 'HttpClient', lambda **kwargs:
+                        budgets.append(kwargs) or SimpleNamespace(close=lambda: closed.append(True)))
+    monkeypatch.setattr(ingest, 'get_adapter', lambda *args: object())
+    def unavailable(*args):
+        raise RuntimeError('unavailable')
+    monkeypatch.setattr(ingest, '_load_file', unavailable)
+    with pytest.raises(RuntimeError, match='unavailable'):
+        ingest.fetch_chain(chain, {})
+    assert budgets == [{'timeout': timeout, 'retries': retries}]
+    assert closed == [True]

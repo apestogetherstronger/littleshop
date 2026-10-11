@@ -10,6 +10,7 @@ import israeli_prices as ilp
 from israeli_prices.core.http import HttpClient
 from israeli_prices.models import FileType
 from israeli_prices.chains.base import same_store
+from .adapters import get_adapter
 
 
 ISRAEL_TZ = ZoneInfo("Asia/Jerusalem")
@@ -117,21 +118,32 @@ def _load_file(adapter: Any, file_type: FileType, store_id: str | None = None) -
     ref = adapter.latest(file_type, store_id=store_id)
     parsed = ilp.parse(adapter.download(ref))
     if store_id is not None and not same_store(getattr(parsed, "store_id", None), store_id):
-        raise RuntimeError(
-            f"{file_type.value}: expected store {store_id}, "
-            f"received {getattr(parsed, 'store_id', None)!r}"
-        )
+        accepts_alias = getattr(adapter, "accepts_store_alias", None)
+        if not accepts_alias or not accepts_alias(file_type, store_id, getattr(parsed, "store_id", None)):
+            raise RuntimeError(
+                f"{file_type.value}: expected store {store_id}, "
+                f"received {getattr(parsed, 'store_id', None)!r}"
+            )
+    source = getattr(adapter, "selected_files", {}).get(file_type.value)
+    if source is not None and store_id is not None:
+        source["store_id"] = store_id
+        source["xml_store_id"] = parsed.store_id
     return parsed
 
 
 def fetch_chain(chain: str, spec: dict[str, Any]) -> dict[str, Any]:
     # GitHub-hosted runners are outside Israel. A retailer portal that blocks or
     # stalls foreign traffic must not hold the whole weekly job hostage.
-    client = HttpClient(timeout=12.0, retries=1)
+    # Shufersal's listing was observed taking ~29 seconds even when healthy.
+    # Give it bounded retries and a longer read budget; keep other chains fast.
+    client = HttpClient(timeout=45.0 if chain == "shufersal" else 12.0,
+                        retries=2 if chain == "shufersal" else 1)
     try:
-        adapter = ilp.get_adapter(chain, client=client)
+        adapter = get_adapter(chain, client)
         stores_file = _load_file(adapter, FileType.STORES)
         store, selection_reason = resolve_store(stores_file, chain, spec)
+        if hasattr(adapter, "configure_store"):
+            adapter.configure_store(store)
         prices = _load_file(adapter, FileType.PRICE_FULL, str(store.store_id))
         if not prices.items:
             raise RuntimeError(f"{chain}: empty price snapshot for store {store.store_id}")
@@ -201,6 +213,7 @@ def fetch_chain(chain: str, spec: dict[str, Any]) -> dict[str, Any]:
             },
             "price_item_count": len(prices.items),
             "promotion_count": len(promos.promotions),
+            "source_files": getattr(adapter, "selected_files", {}),
             "deals": deals,
         }
     finally:

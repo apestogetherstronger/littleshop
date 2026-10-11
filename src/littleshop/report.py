@@ -56,6 +56,16 @@ def render_report(
                 + (f" — {location}" if location else "")
                 + f" — {store['selection_reason']}"
             )
+            for kind, source in run.get("source_files", {}).items():
+                lines.append(
+                    f"  - {kind} snapshot: {source['published_at'] or 'unknown date'} "
+                    "(retailer time, Asia/Jerusalem)"
+                )
+                if source.get("xml_store_id") and source["xml_store_id"].lstrip("0") != str(store["store_id"]).lstrip("0"):
+                    lines.append(
+                        f"  - {kind} uses legacy XML store ID {source['xml_store_id']}; "
+                        f"catalog and filename store ID: {store['store_id']}."
+                    )
     else:
         lines.append("- No supermarket feed could be loaded.")
 
