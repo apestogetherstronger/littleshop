@@ -1,3 +1,8 @@
+from pathlib import Path
+
+import pytest
+
+from littleshop.config import load_yaml
 from littleshop.planner import build_plan, deal_strength, matches_ingredient
 
 
@@ -88,3 +93,44 @@ def test_promotion_text_without_sku_name_is_not_enough():
     deal["name"] = None
     deal["promotion_description"] = "מעטפת בצק פילו במילוי פטה"
     assert not matches_ingredient(ingredient, deal)
+
+
+# Real product names observed in the Sokolov feed. Exercise every occurrence of
+# the ingredient in the catalog so recipe scoring and shopping lists agree.
+@pytest.mark.parametrize('ingredient_name, product, expected', [
+    ('eggs', 'איטריות ביצים מזרח ו', False),
+    ('eggs', 'ביצים גדולות 12 יחידות', True),
+    ('tomatoes', 'רסק עגבניות טבעי 100', False),
+    ('tomatoes', 'עגבניות שרי', True),
+    ('rice', 'פריכיות אורז חום מלא', False),
+    ('rice', 'פרכיות אורז מצופות', False),
+    ('rice', 'אורז בסמטי 1 קג', True),
+    ('sweet potato', 'פיטנס קרקר דק בטטה 1', False),
+    ('sweet potato', 'בטטה טריה', True),
+    ('parmesan', 'ציפס גלי שום פרמזן 4', False),
+    ('parmesan', 'גבינת פרמזן מגורדת', True),
+    ('bell pepper', 'ביסלי טעם פלפל אסם 5', False),
+    ('bell pepper', 'פלפל שחור טחון', False),
+    ('bell pepper', 'פלפל אדום', True),
+    ('spinach', 'אטריות תרד מזרח ומער', False),
+    ('spinach', 'תרד קפוא', True),
+    ('corn', 'מקלות תירס ממותקים 6', False),
+    ('corn', 'גרגרי תירס מתוק', True),
+    ('sweet potato', 'אטריות עם בטטה סגולה', False),
+    ('tomatoes', 'מיץ עגבניות עם מלח 1', False),
+    ('tomatoes', 'מחית עגבניות בלה איט', False),
+    ('tomatoes', 'מרק עשיר עגבניות פסט', False),
+    ('potatoes', 'טרה תפוח אדמה מתוק ו', False),
+    ('potatoes', 'תפוחי אדמה אדומים', True),
+    ('cream', 'מסקרפונה שמנת מתוקה', False),
+    ('cream', 'שמנת מתוקה 38 אחוז', True),
+    ('couscous', 'מנה חמה קוסקוס עם יר', False),
+    ('couscous', 'קוסקוס בינוני 500 גרם', True),
+])
+def test_catalog_matches_ingredients_not_flavoured_products(ingredient_name, product, expected):
+    catalog = load_yaml(Path(__file__).resolve().parents[1] / 'config/recipes.yml')
+    ingredients = [ingredient for recipe in catalog['recipes'] for ingredient in recipe['ingredients']
+                   if ingredient['name'] == ingredient_name]
+    assert ingredients
+    for ingredient in ingredients:
+        assert matches_ingredient(ingredient, fake_deal(product)) is expected

@@ -4,10 +4,15 @@ from datetime import datetime
 from decimal import Decimal
 import re
 from typing import Any
+from zoneinfo import ZoneInfo
 
 import israeli_prices as ilp
 from israeli_prices.core.http import HttpClient
 from israeli_prices.models import FileType
+from israeli_prices.chains.base import same_store
+
+
+ISRAEL_TZ = ZoneInfo("Asia/Jerusalem")
 
 
 def _num(value: Any) -> float | None:
@@ -37,7 +42,7 @@ def resolve_store(stores_file: Any, chain: str, spec: dict[str, Any]) -> tuple[A
     requested_id = str(spec.get("store_id") or "").strip()
     if requested_id:
         for store in stores:
-            if str(store.store_id) == requested_id:
+            if same_store(str(store.store_id), requested_id):
                 return store, "explicit store_id"
         raise RuntimeError(f"{chain}: store_id {requested_id!r} not found")
 
@@ -46,14 +51,12 @@ def resolve_store(stores_file: Any, chain: str, spec: dict[str, Any]) -> tuple[A
 
     candidates = list(stores)
     if name_contains:
-        named = [
+        candidates = [
             store
             for store in stores
             if name_contains in normalize_text(store.name)
             or name_contains in normalize_text(store.address)
         ]
-        if named:
-            candidates = named
 
     if city and not name_contains:
         candidates = [
@@ -76,6 +79,14 @@ def resolve_store(stores_file: Any, chain: str, spec: dict[str, Any]) -> tuple[A
 
 
 def _is_active(start: datetime | None, end: datetime | None, now: datetime) -> bool:
+    # Retailer XML timestamps without offsets are Israeli wall time, even when
+    # the planner runs on a UTC GitHub runner. Preserve explicit offsets.
+    def localize(value: datetime) -> datetime:
+        return value if value.tzinfo is not None else value.replace(tzinfo=ISRAEL_TZ)
+
+    now = localize(now)
+    start = localize(start) if start else None
+    end = localize(end) if end else None
     if start and now < start:
         return False
     if end and now > end:
@@ -85,6 +96,8 @@ def _is_active(start: datetime | None, end: datetime | None, now: datetime) -> b
 
 def _is_general_public_promo(promo: Any) -> bool:
     """Keep public shelf promotions; skip targeted coupons/compensation offers."""
+    if getattr(promo, "is_coupon", False):
+        return False
     description = normalize_text(getattr(promo, "description", None))
     if any(word in description for word in ("קופון", "פיצוי", "מצטרפים", "אשראי")):
         return False
@@ -102,7 +115,13 @@ def _is_general_public_promo(promo: Any) -> bool:
 
 def _load_file(adapter: Any, file_type: FileType, store_id: str | None = None) -> Any:
     ref = adapter.latest(file_type, store_id=store_id)
-    return ilp.parse(adapter.download(ref))
+    parsed = ilp.parse(adapter.download(ref))
+    if store_id is not None and not same_store(getattr(parsed, "store_id", None), store_id):
+        raise RuntimeError(
+            f"{file_type.value}: expected store {store_id}, "
+            f"received {getattr(parsed, 'store_id', None)!r}"
+        )
+    return parsed
 
 
 def fetch_chain(chain: str, spec: dict[str, Any]) -> dict[str, Any]:
@@ -114,10 +133,12 @@ def fetch_chain(chain: str, spec: dict[str, Any]) -> dict[str, Any]:
         stores_file = _load_file(adapter, FileType.STORES)
         store, selection_reason = resolve_store(stores_file, chain, spec)
         prices = _load_file(adapter, FileType.PRICE_FULL, str(store.store_id))
+        if not prices.items:
+            raise RuntimeError(f"{chain}: empty price snapshot for store {store.store_id}")
         promos = _load_file(adapter, FileType.PROMO_FULL, str(store.store_id))
 
         by_code = {item.item_code: item for item in prices.items}
-        now = datetime.now()
+        now = datetime.now(ISRAEL_TZ)
         deals: list[dict[str, Any]] = []
 
         for promo in promos.promotions:

@@ -2,6 +2,7 @@ name: Weekly meal plan
 
 on:
   workflow_dispatch:
+  pull_request:
   push:
     branches: [main]
     paths-ignore:
@@ -13,16 +14,35 @@ on:
     - cron: "0 16 * * 4"
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: littleshop-weekly-plan
+  group: littleshop-weekly-plan-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run unit tests
+        env:
+          PYTHONPATH: src
+        run: python -m pytest -q
+
   plan:
+    needs: test
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    permissions:
+      contents: write
 
     steps:
       - name: Check out repository
@@ -37,15 +57,42 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run unit tests
-        env:
-          PYTHONPATH: src
-        run: pytest -q
-
       - name: Generate weekly plan
         env:
           PYTHONPATH: src
         run: python -m littleshop.main
+
+      - name: Summarize feed health
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          path = Path("output/run-status.json")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as summary:
+              summary.write("## LittleShop feed health\n\n")
+              if path.exists():
+                  status = json.loads(path.read_text())
+                  summary.write(f"Status: **{status['status']}**\n\n")
+                  summary.write(f"Loaded chains: {', '.join(status['loaded_chains']) or 'none'}\n\n")
+                  summary.write(f"Active promotion rows: {status['active_promotion_rows']}\n\n")
+                  summary.write(f"Plan generated: {status['plan_published']}\n\n")
+                  for error in status['errors']:
+                      summary.write(f"- {error}\n")
+              else:
+                  summary.write("Planner did not produce feed diagnostics. See job logs.\n")
+          PY
+
+      - name: Upload feed diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: littleshop-feed-health
+          path: output/run-status.json
+          if-no-files-found: warn
+          retention-days: 30
 
       - name: Upload generated data
         uses: actions/upload-artifact@v4
@@ -58,7 +105,7 @@ jobs:
           retention-days: 30
 
       - name: Commit latest generated plan
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        if: success() && github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

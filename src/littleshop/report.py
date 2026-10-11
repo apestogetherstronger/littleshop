@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from datetime import datetime
 from typing import Any
+from zoneinfo import ZoneInfo
 
 
 def _money(value: Any) -> str:
@@ -24,7 +25,15 @@ def render_report(
     lines: list[str] = []
     lines.append("# LittleShop weekly plan")
     lines.append("")
-    lines.append(f"Generated: {datetime.now().isoformat(timespec='minutes')}")
+    lines.append(f"Generated: {datetime.now(ZoneInfo('Asia/Jerusalem')).isoformat(timespec='minutes')}")
+    lines.append("")
+    lines.append(
+        f"Feed coverage: **{len(chain_runs)} loaded, {len(errors)} failed**."
+    )
+    if errors:
+        lines.append("This plan uses only the stores loaded successfully.")
+    if chain_runs and not any(run["deals"] for run in chain_runs):
+        lines.append("Feeds loaded, but no active public promotions were found; meals are unranked by deals.")
     lines.append("")
     lines.append(
         "This v1 ranks meals by matching their ingredients to active supermarket "

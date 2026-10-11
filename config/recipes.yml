@@ -22,6 +22,7 @@ recipes:
         quantity: 80
         unit: g
         search_terms: ["פרמזן", "פרמיג"]
+        exclude_terms: ["ציפס", "חטיף", "ביסלי", "קרקר", "רוטב"]
 
   - id: lentil_sweet_potato_curry
     name: "Lentil & sweet-potato curry"
@@ -36,6 +37,7 @@ recipes:
         quantity: 800
         unit: g
         search_terms: ["בטטה"]
+        exclude_terms: ["קרקר", "ציפס", "חטיף", "ביסלי", "אטריות", "איטריות", "נודלס", "פסטה", "רביולי"]
       - name: coconut milk
         quantity: 400
         unit: ml
@@ -44,6 +46,7 @@ recipes:
         quantity: 400
         unit: g
         search_terms: ["אורז"]
+        exclude_terms: ["פריכיות", "פרכיות", "אטריות", "איטריות", "נודלס", "פצפוצי", "חטיף", "דפי", "משקה"]
 
   - id: cauliflower_chickpea_tray
     name: "Roasted cauliflower & chickpea tray"
@@ -72,12 +75,12 @@ recipes:
         quantity: 8
         unit: units
         search_terms: ["ביצים"]
-        exclude_terms: ["אטריות", "נודלס", "פסטה", "פתיתי", "אבקת"]
+        exclude_terms: ["אטריות", "נודלס", "פסטה", "פתיתי", "אבקת", "איטריות"]
       - name: tomatoes
         quantity: 1200
         unit: g
         search_terms: ["עגבניות", "עגבניה"]
-        exclude_terms: ["רוטב", "מרוסקות", "רכז", "קטשופ", "ציפס", "חטיף", "חתוכות", "שימורים"]
+        exclude_terms: ["רוטב", "מרוסקות", "רכז", "קטשופ", "ציפס", "חטיף", "חתוכות", "שימורים", "רסק", "מיץ", "משקה", "מיובשות", "מחית", "מרק", "ממרח"]
       - name: tomato sauce
         quantity: 500
         unit: g
@@ -100,7 +103,7 @@ recipes:
         quantity: 600
         unit: g
         search_terms: ["פלפל", "גמבה"]
-        exclude_terms: ["ממרח", "רוטב", "פסטרמה", "קלויים", "סלט"]
+        exclude_terms: ["ממרח", "רוטב", "פסטרמה", "קלויים", "סלט", "ביסלי", "חטיף", "ציפס", "קרקר", "טעם", "שחור", "לבן", "טחון", "גרוס", "תבלין", "חריף"]
       - name: broccoli
         quantity: 400
         unit: g
@@ -109,6 +112,7 @@ recipes:
         quantity: 400
         unit: g
         search_terms: ["אורז"]
+        exclude_terms: ["פריכיות", "פרכיות", "אטריות", "איטריות", "נודלס", "פצפוצי", "חטיף", "דפי", "משקה"]
 
   - id: zucchini_feta_frittata
     name: "Zucchini & feta frittata"
@@ -124,7 +128,7 @@ recipes:
         quantity: 10
         unit: units
         search_terms: ["ביצים"]
-        exclude_terms: ["אטריות", "נודלס", "פסטה", "פתיתי", "אבקת"]
+        exclude_terms: ["אטריות", "נודלס", "פסטה", "פתיתי", "אבקת", "איטריות"]
       - name: feta
         quantity: 250
         unit: g
@@ -148,6 +152,7 @@ recipes:
         quantity: 700
         unit: g
         search_terms: ["תרד"]
+        exclude_terms: ["אטריות", "איטריות", "פסטה", "רביולי", "בורקס", "מאפה"]
       - name: ricotta
         quantity: 500
         unit: g
@@ -171,6 +176,7 @@ recipes:
         quantity: 500
         unit: g
         search_terms: ["קוסקוס"]
+        exclude_terms: ["מנה חמה"]
       - name: zucchini
         quantity: 500
         unit: g
@@ -180,6 +186,7 @@ recipes:
         quantity: 600
         unit: g
         search_terms: ["בטטה"]
+        exclude_terms: ["קרקר", "ציפס", "חטיף", "ביסלי", "אטריות", "איטריות", "נודלס", "פסטה", "רביולי"]
       - name: chickpeas
         quantity: 400
         unit: g
@@ -207,7 +214,7 @@ recipes:
         quantity: 300
         unit: g
         search_terms: ["תירס"]
-        exclude_terms: ["חטיף", "סטיקס", "קריספי", "נאצ'וס", "דגני", "קורנפלקס"]
+        exclude_terms: ["חטיף", "סטיקס", "קריספי", "נאצ'וס", "דגני", "קורנפלקס", "מקלות", "קמח", "עמילן", "פופקורן"]
 
   - id: potato_broccoli_bake
     name: "Potato & broccoli cheese bake"
@@ -218,7 +225,7 @@ recipes:
         quantity: 1200
         unit: g
         search_terms: ["תפוח אדמה", "תפוחי אדמה"]
-        exclude_terms: ["סלט", "ממרח"]
+        exclude_terms: ["סלט", "ממרח", "מתוק", "ציפס", "חטיף", "פריכיות", "פרכיות"]
       - name: broccoli
         quantity: 600
         unit: g
@@ -227,6 +234,7 @@ recipes:
         quantity: 250
         unit: ml
         search_terms: ["שמנת לבישול", "שמנת מתוקה"]
+        exclude_terms: ["מסקרפונה", "גלידה", "עוגה"]
       - name: yellow cheese
         quantity: 250
         unit: g

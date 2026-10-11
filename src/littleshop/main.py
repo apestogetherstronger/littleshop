@@ -2,11 +2,12 @@ from __future__ import annotations
 
 import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
 from .config import load_yaml
-from .ingest import fetch_chain
+from .ingest import ISRAEL_TZ, fetch_chain
 from .planner import build_plan
 from .report import render_report
 
@@ -60,6 +61,29 @@ def main() -> int:
 
     chain_runs.sort(key=lambda run: run["chain"])
     errors.sort()
+    # Fetch completion order must not decide between equally scored products.
+    all_deals.sort(key=lambda deal: (
+        str(deal.get("chain", "")), str(deal.get("store_id", "")),
+        str(deal.get("item_code", "")), str(deal.get("promotion_id", "")),
+    ))
+
+    status = {
+        "generated_at": datetime.now(ISRAEL_TZ).isoformat(timespec="seconds"),
+        "status": "failed" if not chain_runs else "partial" if errors else "ok",
+        "configured_chains": [spec["slug"] for spec in chain_specs],
+        "loaded_chains": [run["chain"] for run in chain_runs],
+        "active_promotion_rows": len(all_deals),
+        "errors": errors,
+        "plan_published": False,
+    }
+    status_path = ROOT / "output/run-status.json"
+    _write_json(status_path, status)
+    for error in errors:
+        print(f"Feed warning: {error}")
+
+    if not chain_runs:
+        print("No supermarket feed loaded; existing plan and deals were left unchanged.")
+        return 1
 
     plan_cfg = settings.get("plan", {})
     plan = build_plan(
@@ -93,6 +117,8 @@ def main() -> int:
         },
     )
     _write_json(deals_json_path, all_deals)
+    status["plan_published"] = True
+    _write_json(status_path, status)
 
     print(f"Generated {report_path.relative_to(ROOT)}")
     print(f"Loaded {len(all_deals)} active promotion-product rows")
