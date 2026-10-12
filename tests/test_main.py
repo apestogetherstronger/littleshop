@@ -69,8 +69,8 @@ def test_partial_failure_still_generates_plan_and_diagnostics(project, monkeypat
     assert status['plan_published']
     assert status['loaded_chains'] == ['good']
     report = (project / 'docs/latest.md').read_text()
-    assert '1 loaded, 1 failed' in report
-    assert 'no active public promotions' in report
+    assert '1 רשתות נטענו, 1 נכשלו' in report
+    assert 'לא נמצאו מבצעים ציבוריים פעילים' in report
     assert 'missing full snapshot' in report
     assert len(json.loads((project / 'output/plan.json').read_text())['plan']['meals']) == 1
 

@@ -1,18 +1,18 @@
 from __future__ import annotations
-
 from datetime import datetime
 from html import escape
-import re
-from typing import Any
 from zoneinfo import ZoneInfo
-
+import re
+from . import hebrew as he
 from .shopping import SHOP_URLS, product_link
 
 
-def _money(value: Any) -> str:
-    if not isinstance(value, (int, float)):
-        return "—"
-    return f"₪{value:.2f}"
+def _money(value):
+    return f"₪{value:.2f}" if isinstance(value,(int,float)) else "—"
+
+
+def _qty(value):
+    return str(int(value)) if isinstance(value,float) and value.is_integer() else str(value)
 
 
 def _promo_price(deal):
@@ -28,281 +28,158 @@ def _promo_price(deal):
     return None
 
 
+
 def _promo_label(deal):
-    price = _promo_price(deal)
+    price=_promo_price(deal)
     if price is not None:
-        return f"Promo price: **{_money(price)}** (simple offer)"
-    advertised = deal.get('discounted_price')
-    minimum = deal.get('min_qty')
-    if isinstance(advertised, (int, float)) and advertised > 0 and isinstance(minimum, (int, float)) and minimum > 1:
-        terms = deal.get('promotion_description') or ''
-        bundle = re.search(r"(?<![\d.])(\d+)\s*ב\s*(\d+(?:\.\d+)?)(?![\d.])", terms)
-        if bundle and int(bundle[1]) == minimum and abs(float(bundle[2]) - advertised) < 0.005:
-            return (f"Multi-buy: **{minimum:g} for {_money(advertised)} total** "
-                    f"({_money(advertised / minimum)} each when buying {minimum:g}; conditions apply)")
-        return (f"Reported offer amount: **{_money(advertised)}** · minimum quantity: {minimum:g} "
-                "— not a verified per-item price; check bundle terms")
-    if isinstance(advertised, (int, float)) and advertised > 0:
-        return f"Advertised promo price: **{_money(advertised)}** — conditional; eligibility not verified"
-    return "Promo price: **conditional / multi-buy** — no reliable single-item price"
+        return f"מחיר במבצע ליחידה: **{_money(price)}**"
+    amount,minimum=deal.get('discounted_price'),deal.get('min_qty')
+    if isinstance(amount,(int,float)) and amount>0:
+        if isinstance(minimum,(int,float)) and minimum>1:
+            match=re.search(r'(?<![\d.])(\d+)\s*ב\s*(\d+(?:\.\d+)?)(?![\d.])',deal.get('promotion_description') or '')
+            if match and int(match[1])==minimum and abs(float(match[2])-amount)<0.005:
+                return f"מבצע כמות: **{minimum:g} יחידות ב־{_money(amount)} בסך הכול** ({_money(amount/minimum)} ליחידה בקניית {minimum:g}; בכפוף לתנאים)"
+            return f"סכום המבצע שדווח: **{_money(amount)}** · מינימום {minimum:g} יחידות — לא מחיר מאומת ליחידה"
+        return f"מחיר מבצע שפורסם: **{_money(amount)}** — מותנה; הזכאות לא אומתה"
+    return 'מבצע מותנה או מבצע כמות — אין מחיר מאומת ליחידה'
 
 
-def _qty(value: Any) -> str:
-    if isinstance(value, float) and value.is_integer():
-        return str(int(value))
-    return str(value)
-
-
-def render_report(
-    plan: dict[str, Any],
-    chain_runs: list[dict[str, Any]],
-    errors: list[str],
-) -> str:
-    lines: list[str] = []
-    lines.append("# LittleShop weekly plan")
-    lines.append("")
-    lines.append(f"Generated: {datetime.now(ZoneInfo('Asia/Jerusalem')).isoformat(timespec='minutes')}")
-    lines.append("")
-    lines.append(
-        f"Feed coverage: **{len(chain_runs)} loaded, {len(errors)} failed**."
-    )
-    if errors:
-        lines.append("This plan uses only the stores loaded successfully.")
-    if chain_runs and not any(run["deals"] for run in chain_runs):
-        lines.append("Feeds loaded, but no active public promotions were found; meals are unranked by deals.")
-    lines.append("")
-    lines.append(
-        "Meals prioritize priceable ingredient coverage, then average promotion matches minus one point per 15 minutes over an hour. Shopping options are "
-        "compared by estimated product cost plus delivery once per shop. "
-        "Local branch prices may differ from online checkout prices."
-    )
-    lines.append("")
-
+def render_report(plan,chain_runs,errors):
+    lines=['<div dir="rtl">','','# ליטלשופ — תפריט שבועי ורשימת קניות','',
+           f"הדוח נוצר: {datetime.now(ZoneInfo('Asia/Jerusalem')).strftime('%d.%m.%Y %H:%M')} (שעון ישראל)",'',
+           f"כיסוי נתונים: **{len(chain_runs)} רשתות נטענו, {len(errors)} נכשלו**.",'']
+    if errors:lines+=['התוכנית מבוססת רק על הרשתות שנטענו בהצלחה.','']
+    if chain_runs and not any(r['deals'] for r in chain_runs):
+        lines+=['לא נמצאו מבצעים ציבוריים פעילים; בחירת המנות אינה מבוססת על מבצעים.','']
+    lines+=['הדירוג מעדיף מנות שאפשר לתמחר. לאחר מכן נבחנים המבצעים, עם הפחתת נקודה לכל 15 דקות מעבר לשעה. עלות המשלוח נספרת פעם אחת לכל חנות. מחירי הסניפים עשויים להיות שונים ממחירי האתר.','']
     if plan.get('feed_generated_at'):
-        lines += [f"Feed data fetched: {plan['feed_generated_at']} (report may be regenerated from this snapshot).", ""]
-    lines.append("## Stores used")
-    lines.append("")
-    if chain_runs:
-        for run in chain_runs:
-            store = run["store"]
-            location = ", ".join(
-                part for part in [store.get("city"), store.get("address")] if part
-            )
-            lines.append(
-                f"- **{run['chain']}** — {store.get('name') or 'unnamed branch'} "
-                f"(store {store['store_id']})"
-                + (f" — {location}" if location else "")
-                + f" — {store['selection_reason']}"
-            )
-            for kind, source in run.get("source_files", {}).items():
-                lines.append(
-                    f"  - {kind} snapshot: {source['published_at'] or 'unknown date'} "
-                    "(retailer time, Asia/Jerusalem)"
-                )
-                if source.get("xml_store_id") and source["xml_store_id"].lstrip("0") != str(store["store_id"]).lstrip("0"):
-                    lines.append(
-                        f"  - {kind} uses legacy XML store ID {source['xml_store_id']}; "
-                        f"catalog and filename store ID: {store['store_id']}."
-                    )
-    else:
-        lines.append("- No supermarket feed could be loaded.")
-
+        lines += [f"מועד משיכת נתוני המחירים: {plan['feed_generated_at']}. ייתכן שהדוח חושב מחדש מאותם נתונים.",'']
+    lines+=['## חנויות ומקורות המחירים','']
+    kinds={'Stores':'רשימת סניפים','PriceFull':'מחירון מלא','PromoFull':'קובץ מבצעים מלא'}
+    for run in chain_runs:
+        st=run['store'];address=', '.join(v for v in [st.get('city'),st.get('address')] if v)
+        lines += [f"- **{he.shop(run['chain'])}** — {st.get('name') or 'סניף ללא שם'} (סניף {st['store_id']})  ",f"  {address}"]
+        for kind,source in run.get('source_files',{}).items():
+            lines += [f"  - {kinds.get(kind,kind)}: {source.get('published_at') or 'מועד לא ידוע'} (שעון ישראל)"]
+            if source.get('xml_store_id') and source['xml_store_id'].lstrip('0')!=str(st['store_id']).lstrip('0'):
+                lines += [f"  - מזהה סניף היסטורי בקובץ: {source['xml_store_id']}; מזהה בקטלוג: {st['store_id']}."]
+    if not chain_runs:lines+=['לא נטענו נתוני רשתות.']
     if errors:
-        lines.append("")
-        lines.append("### Feed warnings")
-        lines.append("")
-        for error in errors:
-            lines.append(f"- {error}")
-
-    lines.append("")
-    lines.append("## Meal plan")
-    lines.append("")
-    for index, meal in enumerate(plan["meals"], start=1):
-        matched = meal.get("matched_deals", [])
-        lines.append(f'<a id="recipe-day-{index}"></a>')
-        lines.append(
-            f"### Day {index}: {meal['name']} "
-            f"({meal.get('prep_minutes', '?')} min)"
-        )
-        lines.append("")
-        if meal.get('servings'):
-            lines.append(f"Serves: {meal['servings']} · {', '.join(meal.get('tags', []))}")
-            lines.append("")
+        lines+=['','### תקלות בטעינת הנתונים','']
+        lines += [f'- <span dir="ltr">{escape(e)}</span>' for e in errors]
+    lines += ['','## התפריט השבועי','']
+    for day,meal in enumerate(plan['meals'],1):
+        lines += [f'<a id="recipe-day-{day}"></a>',f"### יום {day}: {he.recipe(meal['name'])} ({meal.get('prep_minutes','?')} דקות)",'']
+        tags=meal.get('tags',[])
+        lines += [('טבעוני' if 'vegan' in tags else 'צמחוני' if 'vegetarian' in tags else '')+
+                  (f" · מספר מנות במתכון: {_qty(meal['servings'])}" if meal.get('servings') else ''),'']
         if meal.get('source'):
-            source = meal['source']
-            lines.append(f"Recipe: {escape(source['attribution'])} · {escape(source['license'])} · "
-                         f"[Source]({source['url']}) · [Full recipe record](../data/recipes/{meal['id']}.json)")
-            lines.append("")
+            source=meal['source']
+            lines += [f"מקור: {escape(source['attribution'])} · רישיון: {escape(source['license'])}  ",
+                      f"[למקור]({source['url']}) · [המתכון המלא והוראות ההכנה במקור באנגלית](../data/recipes/{meal['id']}.json)",'']
+        if meal.get('instructions_he'):
+            lines+=['אופן ההכנה:','']+[f'{n}. {escape(step)}' for n,step in enumerate(meal['instructions_he'],1)]+['']
         if meal.get('pantry'):
-            lines.append("Pantry check (excluded from basket estimates): " + "; ".join(
-                escape(str(i.get('quantity') or 'to taste') + ' ' + str(i.get('unit') or '') + ' ' + i['name'])
-                for i in meal['pantry']))
-            lines.append("")
-        if meal.get('instructions'):
-            lines += ["Method:", ""]
-            lines += [f"{n}. {escape(step)}" for n, step in enumerate(meal['instructions'], 1)]
-            lines.append("")
-        lines.append(f"Promotion-match score: **{meal['deal_score']}**")
-        if meal.get("time_penalty"):
-            lines.append(f"Time penalty: −{meal['time_penalty']:.2f} · ranking score: {meal['ranking_score']:.2f}")
-        lines.append("")
-        lines.append("Ingredients: " + "; ".join(
-            f"{i['name']} {_qty(i.get('quantity', 0))} {i.get('unit', '')}"
-            for i in meal.get("ingredients", [])
-        ))
-        lines.append("")
-        if matched:
-            lines += ["Promotion offers found (not the selected shopping order):", "",
-                      "These offers may be at different shops. The shopping list below shows the exact price used in the estimate.", ""]
-            for match in matched:
-                deal = match["deal"]
-                product = deal.get("name") or deal.get("item_code") or "unknown product"
-                desc = deal.get("promotion_description") or "promotion"
-                lines += [
-                    f"- **{match['ingredient']}**  ",
-                    f"  {escape(str(product))}  ",
-                    f"  Shop: {deal['chain']}  ",
-                    f"  Regular listed price: **{_money(deal.get('regular_price'))}**  ",
-                    f"  {_promo_label(deal)}  ",
-                    "  Promotion terms:  ",
-                    f"  {escape(str(desc))}",
-                    "",
-                ]
-        else:
-            lines.append("No currently published promotion matched this recipe.")
-        lines.append("")
-
-    lines.extend(render_shopping(plan))
-    lines.append("")
-    lines.append("## Highest-ranked recipe candidates")
-    lines.append("")
-    lines.append("| Recipe | Ranking score | Time penalty | Promo-matched ingredients | Prep |")
-    lines.append("|---|---:|---:|---:|---:|")
-    for recipe in plan["ranked_recipes"]:
-        lines.append(
-            f"| {recipe['name']} | {recipe.get('ranking_score', recipe['deal_score'])} | {recipe.get('time_penalty', 0)} | "
-            f"{len(recipe.get('matched_deals', []))} | "
-            f"{recipe.get('prep_minutes', '?')} min |"
-        )
-
-    lines.append("")
-    lines.append("## v1 interpretation notes")
-    lines.append("")
-    lines.append(
-        "- Cost estimates round up to full packs when pack sizes are known. Ambiguous "
-        "multi-buy, group and conditional offers use shelf prices instead. Unpriced "
-        "ingredients are excluded from totals, not counted as free."
-    )
-    lines.append(
-        "- Product matching is deterministic substring matching using aliases in "
-        "config/ingredients.yml; adjust aliases when a supermarket uses unexpected wording."
-    )
-    lines.append(
-        "- Dietary filtering is recipe-tag based. Product-level allergen and kosher "
-        "certification checking is not implemented in v1."
-    )
-    lines.append("")
-    return "\n".join(lines)
+            lines+=['בדיקה במזווה — לא נכלל במחיר הסל: '+ '; '.join(he.ingredient(i['name']) for i in meal['pantry']), '']
+        lines += [f"ציון מבצעים: **{meal['deal_score']}**" ]
+        if meal.get('time_penalty'):
+            lines += [f"הפחתה עקב זמן הכנה: {meal['time_penalty']:.2f} · ציון לאחר ההפחתה: {meal['ranking_score']:.2f}"]
+        lines+=['','מצרכים:','']
+        lines += [f"- {he.ingredient(i['name'])}: {_qty(i.get('quantity',0))} {he.unit(i.get('unit',''))}" for i in meal.get('ingredients',[])]
+        lines+=['']
+        if meal.get('matched_deals'):
+            lines+=['**מבצעים שנמצאו — אלה אינם בהכרח המוצרים בהזמנה המומלצת.**','',
+                    'ברשימת הקניות בהמשך מוצגים המוצרים והמחירים שנבחרו בפועל לחישוב.','']
+            for match in meal['matched_deals']:
+                d=match['deal']
+                lines += [f"- **{he.ingredient(match['ingredient'])}**  ",
+                          f"  {escape(str(d.get('name') or d.get('item_code') or 'מוצר ללא שם'))}  ",
+                          f"  חנות: {he.shop(d['chain'])}  ",f"  מחיר רגיל שפורסם: **{_money(d.get('regular_price'))}**  ",
+                          f"  {_promo_label(d)}  ",'  תנאי המבצע:  ',f"  {escape(d.get('promotion_description') or 'לא צוינו')}",'']
+        else:lines+=['לא נמצא מבצע מתאים למצרכי המנה.','']
+    lines+=render_shopping(plan)
+    lines+=['','## דירוג המנות','', '| מנה | ציון דירוג | הפחתת זמן | מצרכים במבצע | זמן הכנה |','|---|---:|---:|---:|---:|']
+    for r in plan['ranked_recipes']:
+        lines += [f"| {he.recipe(r['name'])} | {r.get('ranking_score',r['deal_score'])} | {r.get('time_penalty',0)} | {len(r.get('matched_deals',[]))} | {r.get('prep_minutes','?')} דקות |"]
+    lines+=['','## איך לקרוא את האומדן','',
+            '- החישוב מעגל כלפי מעלה לאריזות שלמות. מבצעי כמות ומבצעים שתנאיהם אינם חד־משמעיים אינם מופחתים ממחיר הסל.',
+            '- מצרכים ללא מחיר אינם נחשבים חינם. פריטי מזווה אינם כלולים באומדן. יש לבדוק משקל מסונן בשימורים.',
+            '- התאמת המוצרים מבוססת על שמות וכללים; יש לאמת את המוצר, הכמות והמחיר באתר החנות.',
+            '- הסימון צמחוני או טבעוני מתייחס למתכון. אין בדיקה אוטומטית של כשרות, אלרגנים או הרכב כל מוצר.','','</div>']
+    return '\n'.join(lines)
 
 
 def render_shopping(plan):
-    lines = ['## Shopping by shop', '', '🍽️ links return to the recipe/day; 🛒 opens the product, search, or shop website.', '']
-    strategy = plan.get('shopping_strategy')
+    lines=['## רשימת קניות לפי חנות','','🍽️ מעבר למתכון · 🛒 מעבר למוצר, לחיפוש או לאתר החנות','']
+    strategy=plan.get('shopping_strategy')
     if strategy:
-        rec = strategy.get('recommendation')
+        rec=strategy.get('recommendation')
         if rec:
-            lines += ['### Suggested order', '',
-                      f"**{' + '.join(rec['shops'])}: {_money(rec['partial_total_cents'] / 100)} including configured delivery** "
-                      f"for **{len(rec['assignments'])} of {strategy['total_items']} ingredient lines**.", '',
-                      f"Products {_money(rec['items_cents'] / 100)} + delivery {_money(sum(rec['delivery_cents'].values()) / 100)}. "
-                      'This is the subtotal for the listed items, not a full meal-plan or checkout total.', '']
+            lines+=['### ההזמנה המומלצת','',
+                    f"**{' + '.join(he.shop(s) for s in rec['shops'])}: {_money(rec['partial_total_cents']/100)} כולל המשלוח שהוגדר**",'',
+                    f"תומחרו **{len(rec['assignments'])} מתוך {strategy['total_items']} שורות מצרכים**.  ",
+                    f"מוצרים: {_money(rec['items_cents']/100)} · משלוח: {_money(sum(rec['delivery_cents'].values())/100)}",'',
+                    'זהו אומדן לפריטים המפורטים, ולא מחיר סופי מאומת בקופה.','']
             if strategy.get('remaining_items'):
-                lines += ['Still needed separately: ' + ', '.join(strategy['remaining_items']) + '.', '']
-        lines += ['### Delivery-aware comparison', '',
-                  f"Comparable scope: **{strategy['priceable_items']} of {strategy['total_items']} ingredient lines**. "
-                  'Every comparable total covers the same lines. Other ingredients still need a price check.', '',
-                  'Delivery-adjusted deal score = estimated savings versus the cheapest comparable single-shop option. '
-                  'Higher is better. Delivery is charged once per used shop.', '',
-                  '| Option | Products | Delivery | Total estimate | Deal score / savings | Status |',
-                  '|---|---:|---:|---:|---:|---|']
-        for option in strategy['alternatives']:
-            status = []
-            if option['missing_items']:
-                status.append(f"missing {len(option['missing_items'])} priced lines; not comparable")
-            if option['unknown_delivery']:
-                status.append('delivery fee unknown')
-            if option['minimum_shortfalls_cents']:
-                status.append('below minimum: ' + ', '.join(
-                    f"{shop} needs {_money(amount / 100)} more groceries"
-                    for shop, amount in option['minimum_shortfalls_cents'].items()))
-            if option is strategy['best']:
-                status.insert(0, 'best evaluated estimate' if option['eligible'] else 'lowest estimate; minimum not met')
-            total = option['total_cents']
-            fee = sum(option['delivery_cents'].values()) if not option['unknown_delivery'] else None
-            lines.append(f"| {' + '.join(option['shops'])} | {_money(option['items_cents'] / 100)} | "
-                         f"{_money(fee / 100 if fee is not None else None)} | "
-                         f"{_money(total / 100 if total is not None else None)} | "
-                         f"{_money(option['delivery_adjusted_deal_score_ils'])} | {'; '.join(status) or 'estimate'} |")
-        lines += ['', 'Estimates compare single shops and cheapest-item splits for shop combinations. '
-                  'They are not guaranteed checkout totals or a complete multi-buy optimizer.', '']
-        if not strategy['best']:
-            lines += ['A complete comparable basket is unavailable. Any suggested order above covers only its explicitly listed lines.', '']
-        for shop, policy in strategy['policies'].items():
-            if shop not in {s for option in strategy['alternatives'] for s in option['shops']}:
-                continue
-            fee = _money(policy.get('fee_ils'))
-            source = policy.get('source_url') or SHOP_URLS.get(shop)
-            label = ('unknown fee—confirm at checkout' if policy.get('fee_ils') is None else
-                     'published fee' if policy.get('fee_status') == 'published' else 'assumed fee—confirm at checkout')
-            minimum = policy.get('minimum_order_ils')
-            lines.append(f"- **{shop}**: {fee} per delivery ({label}); "
-                         + (f"minimum {_money(minimum)}" if minimum is not None else 'minimum order unverified')
-                         + (f". [Delivery details]({source})" if source else '.'))
-        lines += ['', 'Account benefits, free-delivery promotions, service fees and available delivery slots must be checked on the retailer website.', '']
-    else:
-        lines += ['Delivery comparison unavailable: full product/pack data or delivery settings are missing. '
-                  'These groups show promotion matches only.', '']
-    groups = plan.get('shopping_by_shop', {})
-    for shop, items in groups.items():
-        if shop == 'unassigned':
-            lines += ['### Needs a price / shop check', '', 'Not included in the delivered-cost estimate.', '']
-        else:
-            url = SHOP_URLS.get(shop)
-            lines += [f"### {shop}" + (f" — [🛒 Open shop]({url})" if url else ''), '']
-            best = strategy.get('recommendation') if strategy else None
-            if best and shop in best['subtotals_cents']:
-                lines += [f"Products: {_money(best['subtotals_cents'][shop] / 100)} · "
-                          f"Delivery: {_money(best['delivery_cents'][shop] / 100)}", '']
+                lines += ['נדרש להשלים בנפרד: '+', '.join(he.ingredient(n) for n in strategy['remaining_items'])+'.','']
+        lines+=['### השוואת עלויות כולל משלוח','',
+                f"כיסוי מחירים: **{strategy['priceable_items']} מתוך {strategy['total_items']} שורות מצרכים**. סכומים בני השוואה מכסים אותם מצרכים.",'',
+                'ציון החיסכון הוא ההפרש לעומת האפשרות הזולה בחנות אחת עם אותו כיסוי. ערך חיובי מציין חיסכון.','',
+                '| אפשרות | מוצרים | משלוח | סך הכול | חיסכון | מצב |','|---|---:|---:|---:|---:|---|']
+        for o in strategy['alternatives']:
+            status=[]
+            if o['missing_items']:status += [f"חסר מחיר ל־{len(o['missing_items'])} שורות; לא ניתן להשוות"]
+            if o['unknown_delivery']:status+=['דמי המשלוח אינם ידועים']
+            if o['minimum_shortfalls_cents']:
+                status+=['מתחת למינימום: '+', '.join(f"{he.shop(s)} — חסרים {_money(v/100)}" for s,v in o['minimum_shortfalls_cents'].items())]
+            if o==strategy['best']:status.insert(0,'האומדן הזול ביותר שנבדק' if o['eligible'] else 'המינימום להזמנה לא הושג')
+            fee=None if o['unknown_delivery'] else sum(o['delivery_cents'].values())/100
+            lines += [f"| {' + '.join(he.shop(s) for s in o['shops'])} | {_money(o['items_cents']/100)} | {_money(fee)} | {_money(o['total_cents']/100 if o['total_cents'] is not None else None)} | {_money(o['delivery_adjusted_deal_score_ils'])} | {'; '.join(status) or 'אומדן'} |"]
+        lines+=['','ההשוואה כוללת קנייה בחנות אחת ופיצול בין חנויות. היא אינה מחשבת את כל שילובי מבצעי הכמות.','']
+        if not strategy['best']:lines+=['אין השוואה מלאה של כל הסל. ההמלצה לעיל, אם קיימת, מתייחסת רק לפריטים המפורטים.','']
+        for s,p in strategy['policies'].items():
+            if s not in {s for o in strategy['alternatives'] for s in o['shops']}:continue
+            label='לא ידוע — יש לבדוק בקופה' if p.get('fee_ils') is None else 'תעריף שפורסם' if p.get('fee_status')=='published' else 'הנחה לצורך החישוב — יש לאמת בקופה'
+            minimum=f"מינימום הזמנה: {_money(p['minimum_order_ils'])}" if p.get('minimum_order_ils') is not None else 'מינימום ההזמנה לא אומת'
+            url=p.get('source_url') or SHOP_URLS.get(s)
+            lines += [f"- **{he.shop(s)}**: משלוח {_money(p.get('fee_ils'))} ({label}); {minimum}."+(f" [פרטי משלוח]({url})" if url else '')]
+        lines+=['','יש לבדוק באתר הטבות אישיות, זמינות מוצרים, מועדי משלוח והמחיר הסופי.','']
+    else:lines+=['לא ניתן להשוות משלוחים ללא נתוני מוצרים ואריזות או הגדרות משלוח.','']
+    for s,items in plan.get('shopping_by_shop',{}).items():
+        lines += [('### מצרכים שדורשים בדיקת מחיר או חנות' if s=='unassigned' else f"### {he.shop(s)}"),'']
+        if s=='unassigned':lines+=['אינם כלולים באומדן.','']
+        elif SHOP_URLS.get(s):lines += [f"[🛒 פתיחת אתר החנות]({SHOP_URLS[s]})",'']
+        rec=strategy.get('recommendation') if strategy else None
+        if rec and s in rec['subtotals_cents']:
+            lines += [f"מוצרים: {_money(rec['subtotals_cents'][s]/100)} · משלוח: {_money(rec['delivery_cents'][s]/100)}",'']
         for item in items:
-            text = f"- [ ] **{item['name']}** — {_qty(item['quantity'])} {item['unit']}"
-            quote = item.get('quote')
-            deal = item.get('suggested_deal')
-            if quote:
-                product = quote['product']
-                price = _promo_price(quote.get('promotion') or {})
-                basis = 'retailer weight unit' if product.get('is_weighted') else 'pack'
-                text += f"  \n  {escape(product['name'])}  \n  Buy: {quote['purchase']}"
-                text += f"  \n  Regular price per {basis}: **{_money(product.get('regular_price'))}**"
-                if price is None:
-                    text += "  \n  Promo applied: **none — regular price used**"
+            lines += [f"- [ ] **{he.ingredient(item['name'])}** — {_qty(item['quantity'])} {he.unit(item['unit'])}  "]
+            q=item.get('quote');d=item.get('suggested_deal');url=None
+            if q:
+                p=q['product'];promo=_promo_price(q.get('promotion') or {})
+                if q['packages'] is None:
+                    purchase=f"{_qty(item['quantity'])} {he.unit(item['unit'])} לפי משקל"
                 else:
-                    text += f"  \n  Promo price per {basis} used: **{_money(price)}**"
-                text += f"  \n  **Estimated line total: {_money(quote['cost_cents'] / 100)}** (for the full quantity above)"
-                if quote.get('metadata_note'):
-                    text += '; ' + quote['metadata_note']
-                url = quote['url']
-            elif deal:
-                text += f"  \n  {escape(str(deal.get('name') or deal.get('item_code')))}  \n  {escape(deal.get('promotion_description') or 'promotion')}"
-                url = product_link(deal)
-            else:
-                url = None
-            if item.get('check_reason'):
-                text += ' — ' + item['check_reason']
-            if url:
-                text += f' [🛒]({url} "Open retailer product, search or shop")'
-            for recipe in item.get('recipes', []):
-                title = f"Day {recipe['day']}: {recipe['name']}".replace('"', "'")
-                text += f' [🍽️{recipe["day"]}](#{recipe["anchor"]} "{title}")'
-            lines.append(text)
-        lines.append('')
+                    purchase=q['purchase'].replace('pack(s)','אריזות').replace('units','יחידות')
+                basis='ליחידת המשקל במחירון' if p.get('is_weighted') else 'לאריזה'
+                lines += [f"  {escape(p['name'])}  ",f"  כמות לקנייה: {purchase}  ",f"  מחיר רגיל {basis}: **{_money(p.get('regular_price'))}**  "]
+                lines += [f"  מחיר מבצע {basis} ששימש בחישוב: **{_money(promo)}**  " if promo is not None else '  מבצע שהוחל: **ללא — החישוב לפי המחיר הרגיל**  ']
+                lines += [f"  **סך השורה: {_money(q['cost_cents']/100)}** לכל הכמות המפורטת  "]
+                if q.get('metadata_note'):lines += ['  יחידת האריזה נלקחה מהכיתוב המפורש בשם המוצר, עקב סתירה בנתוני הקטלוג.  ']
+                url=q['url']
+            elif d:
+                lines += [f"  {escape(str(d.get('name') or d.get('item_code')))}  "]
+                url=product_link(d)
+            reason=item.get('check_reason')
+            if reason:
+                msg=('לא נמצא מוצר מתאים בקטלוגים שנטענו' if reason.startswith('No matching') else
+                     'פריט שתומחר בנפרד; יש לבדוק משלוח ומינימום הזמנה' if item.get('order_status')=='conditional' else
+                     'נמצא מוצר, אך הכמות או יחידות האריזה אינן מאפשרות תמחור אמין')
+                lines += [f'  {msg}  ']
+            links=[]
+            if url:links+=[f'[🛒 למוצר או לחנות]({url})']
+            for r in item.get('recipes',[]):
+                title=f"יום {r['day']}: {he.recipe(r['name'])}".replace('"',"'")
+                links += [f'[🍽️{r["day"]}](#{r["anchor"]} "{title}")']
+            lines+=['  '+' · '.join(links),'']
     return lines

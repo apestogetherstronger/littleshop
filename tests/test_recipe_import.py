@@ -111,6 +111,6 @@ def test_report_retains_source_instructions_and_servings(dictionary):
     r=resolve_recipe(imported(dictionary),dictionary)
     plan=build_plan([r],[],days=1,diet={'required_recipe_tags':['vegan']})
     report=render_report(plan,[],[])
-    assert 'Serves: 4' in report and 'Cook rice.' in report
-    assert '[Source](https://example.com/rice)' in report
+    assert 'מספר מנות במתכון: 4' in report and 'הוראות ההכנה במקור באנגלית' in report
+    assert '[למקור](https://example.com/rice)' in report
     assert 'CC0' in report

@@ -113,3 +113,7 @@ Those are natural follow-up iterations once the basic feed → deal → recipe l
 `PYTHONPATH=src python scripts/replan.py` reruns selection and basket comparison using the last published files in `output/`, without downloading retailer feeds. Reports show the feed-fetch timestamp separately from generation time.
 
 Ingredient matching supports anchored `match_patterns` as well as aliases/exclusions. Conflicting package sizes/reference prices are rejected. An incompatible catalog unit is repaired only when one explicit size in the product name agrees numerically with the catalog quantity; the report marks this correction. Explicit pack counts can price count-based ingredients. Standard tablespoon/teaspoon volumes are used only for dictionary-designated liquids; other count-to-weight and spoon-to-mass conversions remain unresolved. Canned-product net weights and actual drained yields still need label verification at checkout.
+
+## Report language
+
+Generated reports use Hebrew labels, dish/ingredient names and a right-to-left wrapper. Translation is a static display layer (`src/littleshop/hebrew.py`); recipe IDs, matching, prices and source records are unchanged. Imported English instructions remain linked in their attributed source records unless a recipe has `instructions_he`. Product names and promotion terms retain the retailer's original wording.

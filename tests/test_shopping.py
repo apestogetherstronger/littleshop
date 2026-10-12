@@ -133,8 +133,8 @@ def test_grouped_shopping_keeps_all_recipe_links_and_delivery_report():
     for day in [1, 2]:
         assert f'<a id="recipe-day-{day}"></a>' in report
         assert f'](#recipe-day-{day} ' in report
-    assert 'Shopping by shop' in report
-    assert 'Delivery-aware comparison' in report
+    assert 'רשימת קניות לפי חנות' in report
+    assert 'השוואת עלויות כולל משלוח' in report
     assert '₪15.00' in report
 
 
