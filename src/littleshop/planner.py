@@ -136,11 +136,14 @@ def build_plan(
     ranked: list[dict[str, Any]] = []
     for recipe in allowed:
         score, matched = score_recipe(recipe, deals)
+        time_penalty = round(max(0, (recipe.get("prep_minutes") or 60) - 60) / 15, 2)
         ranked.append(
             {
                 **recipe,
                 "price_coverage": coverage(recipe),
                 "deal_score": score,
+                "time_penalty": time_penalty,
+                "ranking_score": round(score - time_penalty, 2),
                 "matched_deals": matched,
             }
         )
@@ -148,7 +151,7 @@ def build_plan(
     ranked.sort(
         key=lambda recipe: (
             -recipe["price_coverage"],
-            -recipe["deal_score"],
+            -recipe["ranking_score"],
             recipe.get("prep_minutes", 9999),
             recipe["name"],
         )
@@ -176,7 +179,7 @@ def build_plan(
         def choice_key(recipe: dict[str, Any]) -> tuple[float, int, str]:
             ingredients = {i["name"] for i in recipe.get("ingredients", [])}
             overlap = len(previous_ingredients & ingredients)
-            adjusted = recipe["deal_score"] - (0.75 * overlap)
+            adjusted = recipe["ranking_score"] - (0.75 * overlap)
             return (-recipe["price_coverage"], -adjusted, recipe.get("prep_minutes", 9999), recipe["name"])
 
         chosen = min(available, key=choice_key)

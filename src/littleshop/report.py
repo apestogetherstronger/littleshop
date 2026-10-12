@@ -39,7 +39,7 @@ def render_report(
         lines.append("Feeds loaded, but no active public promotions were found; meals are unranked by deals.")
     lines.append("")
     lines.append(
-        "Meals prioritize priceable ingredient coverage, then average promotion matches. Shopping options are "
+        "Meals prioritize priceable ingredient coverage, then average promotion matches minus one point per 15 minutes over an hour. Shopping options are "
         "compared by estimated product cost plus delivery once per shop. "
         "Local branch prices may differ from online checkout prices."
     )
@@ -110,6 +110,8 @@ def render_report(
             lines += [f"{n}. {escape(step)}" for n, step in enumerate(meal['instructions'], 1)]
             lines.append("")
         lines.append(f"Promotion-match score: **{meal['deal_score']}**")
+        if meal.get("time_penalty"):
+            lines.append(f"Time penalty: −{meal['time_penalty']:.2f} · ranking score: {meal['ranking_score']:.2f}")
         lines.append("")
         lines.append("Ingredients: " + "; ".join(
             f"{i['name']} {_qty(i.get('quantity', 0))} {i.get('unit', '')}"
@@ -135,11 +137,11 @@ def render_report(
     lines.append("")
     lines.append("## Highest-ranked recipe candidates")
     lines.append("")
-    lines.append("| Recipe | Deal score | Promo-matched ingredients | Prep |")
-    lines.append("|---|---:|---:|---:|")
+    lines.append("| Recipe | Ranking score | Time penalty | Promo-matched ingredients | Prep |")
+    lines.append("|---|---:|---:|---:|---:|")
     for recipe in plan["ranked_recipes"]:
         lines.append(
-            f"| {recipe['name']} | {recipe['deal_score']} | "
+            f"| {recipe['name']} | {recipe.get('ranking_score', recipe['deal_score'])} | {recipe.get('time_penalty', 0)} | "
             f"{len(recipe.get('matched_deals', []))} | "
             f"{recipe.get('prep_minutes', '?')} min |"
         )

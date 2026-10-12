@@ -162,3 +162,14 @@ def test_reviewed_feed_false_positives(name,bad,good):
     ingredient=next(i for i in bank.values() if i['name']==name)
     assert not matches_ingredient(ingredient,fake_deal(bad))
     assert matches_ingredient(ingredient,fake_deal(good))
+
+
+def test_time_penalty_starts_strictly_after_one_hour_and_keeps_long_recipes_eligible():
+    recipes=[{'id':str(m),'name':str(m),'prep_minutes':m,'ingredients':[], 'tags':[]} for m in [120,61,60,30]]
+    plan=build_plan(recipes,[],days=4,diet={})
+    ranked=plan['ranked_recipes']
+    assert [r['prep_minutes'] for r in ranked]==[30,60,61,120]
+    penalties={r['prep_minutes']:r['time_penalty'] for r in ranked}
+    assert penalties[30]==penalties[60]==0
+    assert penalties[61]>0 and penalties[120]==4
+    assert len(plan['meals'])==4
