@@ -39,3 +39,30 @@ output:
   report_path: docs/latest.md
   plan_json_path: output/plan.json
   deals_json_path: output/deals.json
+
+# Fixed per-order delivery fees; edit for your account/slot/subscription.
+# Unknown minimums are null (not treated as a confirmed absence of a minimum).
+# Local branch prices may differ from the retailer's online fulfillment prices.
+delivery:
+  shops:
+    rami-levy:
+      fee_ils: 35.90
+      fee_status: published
+      minimum_order_ils:
+      source_url: https://www.rami-levy.co.il/he/orders-and-deliveries
+      checked_on: '2026-10-12'
+    shufersal:
+      fee_ils: 35.90
+      fee_status: assumption-confirm-at-checkout
+      minimum_order_ils:
+      source_url: https://www.shufersal.co.il/online/
+    carrefour:
+      fee_ils: 35.90
+      fee_status: assumption-confirm-at-checkout
+      minimum_order_ils: 200
+      source_url: https://www.carrefour.co.il/terms-and-conditions
+    victory:
+      fee_ils:
+      fee_status: unknown
+      minimum_order_ils:
+      source_url: https://victory.co.il/

@@ -13,11 +13,12 @@ recipes:
         quantity: 600
         unit: g
         search_terms: ["ברוקולי"]
+        exclude_terms: ["חטיפ", "קציצ", "שניצל", "לביבות", "מאפה", "פשטידה"]
       - name: ricotta
         quantity: 250
         unit: g
         search_terms: ["ריקוטה"]
-        exclude_terms: ["רוטב"]
+        exclude_terms: ["רוטב", "רביולי", "פסטה", "בורקס", "מאפה"]
       - name: parmesan
         quantity: 80
         unit: g
@@ -37,7 +38,7 @@ recipes:
         quantity: 800
         unit: g
         search_terms: ["בטטה"]
-        exclude_terms: ["קרקר", "ציפס", "חטיף", "ביסלי", "אטריות", "איטריות", "נודלס", "פסטה", "רביולי"]
+        exclude_terms: ["קרקר", "ציפס", "חטיף", "ביסלי", "אטריות", "איטריות", "נודלס", "פסטה", "רביולי", "קסביה"]
       - name: coconut milk
         quantity: 400
         unit: ml
@@ -57,6 +58,7 @@ recipes:
         quantity: 1
         unit: head
         search_terms: ["כרובית"]
+        exclude_terms: ["חטיפ", "קציצ", "שניצל", "לביבות", "מאפה", "פשטידה"]
       - name: chickpeas
         quantity: 500
         unit: g
@@ -89,6 +91,7 @@ recipes:
         quantity: 200
         unit: g
         search_terms: ["פטה", "בולגרית"]
+        require_any_terms: ["גבינ", "בולגרית"]
 
   - id: tofu_stir_fry
     name: "Tofu vegetable stir-fry"
@@ -108,6 +111,7 @@ recipes:
         quantity: 400
         unit: g
         search_terms: ["ברוקולי"]
+        exclude_terms: ["חטיפ", "קציצ", "שניצל", "לביבות", "מאפה", "פשטידה"]
       - name: rice
         quantity: 400
         unit: g
@@ -133,6 +137,7 @@ recipes:
         quantity: 250
         unit: g
         search_terms: ["פטה", "בולגרית"]
+        require_any_terms: ["גבינ", "בולגרית"]
       - name: yellow cheese
         quantity: 150
         unit: g
@@ -157,7 +162,7 @@ recipes:
         quantity: 500
         unit: g
         search_terms: ["ריקוטה"]
-        exclude_terms: ["רוטב"]
+        exclude_terms: ["רוטב", "רביולי", "פסטה", "בורקס", "מאפה"]
       - name: mozzarella
         quantity: 300
         unit: g
@@ -186,7 +191,7 @@ recipes:
         quantity: 600
         unit: g
         search_terms: ["בטטה"]
-        exclude_terms: ["קרקר", "ציפס", "חטיף", "ביסלי", "אטריות", "איטריות", "נודלס", "פסטה", "רביולי"]
+        exclude_terms: ["קרקר", "ציפס", "חטיף", "ביסלי", "אטריות", "איטריות", "נודלס", "פסטה", "רביולי", "קסביה"]
       - name: chickpeas
         quantity: 400
         unit: g
@@ -230,6 +235,7 @@ recipes:
         quantity: 600
         unit: g
         search_terms: ["ברוקולי"]
+        exclude_terms: ["חטיפ", "קציצ", "שניצל", "לביבות", "מאפה", "פשטידה"]
       - name: cream
         quantity: 250
         unit: ml

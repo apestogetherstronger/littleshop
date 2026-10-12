@@ -196,6 +196,19 @@ def fetch_chain(chain: str, spec: dict[str, Any]) -> dict[str, Any]:
                         "discount_rate": discount_rate,
                         "discounted_price": discounted_price,
                         "min_qty": min_qty,
+                        "simple_unit_promotion": (
+                            min_qty == 1
+                            and not promo.min_purchase_amount
+                            and not promo_item.min_purchase_amount
+                            and not promo_item.max_qty
+                            and not promo_item.is_gift_item
+                            and promo_item.group_id is None
+                            and promo.min_items_offered in (None, 0, 1)
+                            and not promo.additional_restrictions
+                            and not promo.remarks
+                            and not any(term in normalize_text(promo.description)
+                                        for term in ("מעל", "בקניה", "בקנייה", "מותנה"))
+                        ),
                         "club_id": promo.club_id,
                         "start_time": promo.start_time.isoformat() if promo.start_time else None,
                         "end_time": promo.end_time.isoformat() if promo.end_time else None,
@@ -214,6 +227,18 @@ def fetch_chain(chain: str, spec: dict[str, Any]) -> dict[str, Any]:
             "price_item_count": len(prices.items),
             "promotion_count": len(promos.promotions),
             "source_files": getattr(adapter, "selected_files", {}),
+            "products": [
+                {
+                    "chain": chain, "store_id": str(store.store_id),
+                    "item_code": item.item_code, "gtin": item.gtin,
+                    "name": item.name, "regular_price": _num(item.price),
+                    "pack_quantity": _num(item.quantity), "pack_unit": item.unit_qty,
+                    "is_weighted": item.is_weighted,
+                    "unit_of_measure": item.unit_of_measure,
+                    "unit_price": _num(item.unit_price),
+                }
+                for item in prices.items if item.name and item.price and item.price > 0
+            ],
             "deals": deals,
         }
     finally:

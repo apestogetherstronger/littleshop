@@ -87,12 +87,16 @@ def main() -> int:
         return 1
 
     plan_cfg = settings.get("plan", {})
+    all_products = [product for run in chain_runs for product in run.get("products", [])]
+    _write_json(ROOT / "output/products.json", all_products)
     plan = build_plan(
         recipes,
         all_deals,
         days=int(plan_cfg.get("days", 7)),
         diet=settings.get("diet", {}),
         max_recipe_repeats=int(plan_cfg.get("max_recipe_repeats", 1)),
+        products=all_products,
+        delivery=settings.get("delivery", {}),
     )
 
     output_cfg = settings.get("output", {})

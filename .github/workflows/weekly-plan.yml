@@ -102,6 +102,7 @@ jobs:
             docs/latest.md
             output/plan.json
             output/deals.json
+            output/products.json
           retention-days: 30
 
       - name: Commit latest generated plan

@@ -39,6 +39,10 @@ def matches_ingredient(ingredient: dict[str, Any], deal: dict[str, Any]) -> bool
         return False
     haystack = product_name
 
+    required = ingredient.get("require_any_terms", [])
+    if required and not any(normalize_text(str(term)) in haystack for term in required):
+        return False
+
     for term in ingredient.get("exclude_terms", []):
         needle = normalize_text(str(term))
         if needle and needle in haystack:
@@ -100,6 +104,8 @@ def build_plan(
     days: int,
     diet: dict[str, Any],
     max_recipe_repeats: int = 1,
+    products: list[dict[str, Any]] | None = None,
+    delivery: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     allowed = [recipe for recipe in recipes if recipe_is_allowed(recipe, diet)]
     if not allowed:
@@ -154,7 +160,7 @@ def build_plan(
         repeats[chosen["id"]] += 1
 
     shopping: dict[tuple[str, str], dict[str, Any]] = {}
-    for meal in selected:
+    for day, meal in enumerate(selected, start=1):
         for ingredient in meal.get("ingredients", []):
             key = (ingredient["name"], ingredient.get("unit", ""))
             if key not in shopping:
@@ -164,8 +170,11 @@ def build_plan(
                     "quantity": 0.0,
                     "search_terms": ingredient.get("search_terms", []),
                     "exclude_terms": ingredient.get("exclude_terms", []),
+                    "require_any_terms": ingredient.get("require_any_terms", []),
+                    "recipes": [],
                 }
             shopping[key]["quantity"] += float(ingredient.get("quantity", 0))
+            shopping[key]["recipes"].append({"day": day, "name": meal["name"], "anchor": f"recipe-day-{day}"})
 
     shopping_list: list[dict[str, Any]] = []
     for item in shopping.values():
@@ -176,14 +185,26 @@ def build_plan(
                 "quantity": item["quantity"],
                 "unit": item["unit"],
                 "suggested_deal": suggestion,
+                "search_terms": item["search_terms"],
+                "exclude_terms": item["exclude_terms"],
+                "require_any_terms": item["require_any_terms"],
+                "recipes": item["recipes"],
+                "shop": suggestion["chain"] if suggestion else None,
             }
         )
 
     shopping_list.sort(key=lambda item: item["name"])
+    from .shopping import compare_baskets
+    strategy = compare_baskets(shopping_list, products or [], deals, delivery or {})
+    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for item in shopping_list:
+        grouped[item.get("shop") or "unassigned"].append(item)
 
     return {
         "days": days,
         "meals": selected,
         "shopping_list": shopping_list,
         "ranked_recipes": ranked,
+        "shopping_by_shop": dict(sorted(grouped.items())),
+        "shopping_strategy": strategy,
     }

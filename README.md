@@ -26,6 +26,20 @@ PYTHONPATH=src python -m littleshop.main
 
 Configuration lives in `config/settings.yml`. Recipes and ingredient aliases live in `config/recipes.yml`.
 
+## Shopping lists and delivery
+
+The report groups the selected shopping items by shop. Each item has a 🍽️ link for every recipe/day using it, including repeated recipes, and a 🛒 retailer link. Carrefour uses barcode product links, Rami Levy uses product/search links, and unsupported product links fall back to the shop homepage. These links do not create a cart or select a delivery branch.
+
+The planner now retains full price catalogs for its cost comparison, including non-promoted products. It converts compatible mass/volume/count units and rounds up to full packs; weighted products require an explicit reference-unit price. Unknown pack sizes and incompatible units stay unpriced. Only explicitly simple single-unit promotions reduce the estimate; ambiguous multi-buy, group and conditional offers use shelf prices.
+
+`output/products.json` is included in the workflow artifact for reproducible cost checks. Ingredient aliases support `require_any_terms` as well as exclusions, so ambiguous words such as Hebrew "פטה" require a cheese context instead of matching pâté products.
+
+Shopping assignments compare single shops and cheapest-item splits across all subsets of up to eight shops, adding delivery once per used shop. Every comparable option must price the same ingredient lines. Missing lines are listed separately and are never treated as zero-cost. The **delivery-adjusted deal score** is savings in shekels versus the cheapest comparable single-shop option; negative values mean worse than that option. If no comparable single-shop option exists, the savings score is unavailable. Recipe selection itself still uses the separate promotion-match score.
+
+Edit `delivery.shops` in `config/settings.yml` for each retailer's `fee_ils` and `minimum_order_ils`. A fee of zero explicitly models free delivery; a null fee is unknown and prevents a delivered-total comparison. Null minimums mean unverified, not confirmed zero. The default Rami Levy fee is sourced from its delivery page; Shufersal and Carrefour fees are labelled assumptions. No subscription benefit, free-shipping threshold, slot fee or extra service fee is assumed. Known minimum-order shortfalls are shown; qualifying evaluated options are preferred. If none qualify, the lowest arithmetic estimate is explicitly marked as below minimum. The engine does not solve every possible reassignment to meet minimums.
+
+These are **local-branch shopping estimates, not online checkout quotes**. Online fulfillment prices, availability and delivery terms may differ. Reports show snapshot dates and cost coverage. Always confirm the final cart on the retailer website.
+
 ## GitHub Actions
 
 Use **Actions → Weekly meal plan → Run workflow** for an immediate run.
