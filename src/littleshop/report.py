@@ -124,11 +124,13 @@ def render_report(
                 deal = match["deal"]
                 product = deal.get("name") or deal.get("item_code") or "unknown product"
                 desc = deal.get("promotion_description") or "promotion"
-                lines.append(
-                    f"- **{match['ingredient']}** → {product} at "
-                    f"{deal['chain']} ({_money(deal.get('regular_price'))} regular); "
-                    f"{desc}"
-                )
+                lines += [
+                    f"- **{match['ingredient']}**  ",
+                    f"  {escape(str(product))}  ",
+                    f"  {deal['chain']} · {_money(deal.get('regular_price'))} regular  ",
+                    f"  {escape(str(desc))}",
+                    "",
+                ]
         else:
             lines.append("No currently published promotion matched this recipe.")
         lines.append("")
@@ -239,12 +241,12 @@ def render_shopping(plan):
             quote = item.get('quote')
             deal = item.get('suggested_deal')
             if quote:
-                text += f" — {quote['product']['name']}; {quote['purchase']}; {_money(quote['cost_cents'] / 100)} ({quote['pricing_basis']})"
+                text += f"  \n  {escape(quote['product']['name'])}  \n  {quote['purchase']}  \n  {_money(quote['cost_cents'] / 100)} ({quote['pricing_basis']})"
                 if quote.get('metadata_note'):
                     text += '; ' + quote['metadata_note']
                 url = quote['url']
             elif deal:
-                text += f" — possible match: {deal.get('name') or deal.get('item_code')} ({deal.get('promotion_description') or 'promotion'})"
+                text += f"  \n  {escape(str(deal.get('name') or deal.get('item_code')))}  \n  {escape(deal.get('promotion_description') or 'promotion')}"
                 url = product_link(deal)
             else:
                 url = None
