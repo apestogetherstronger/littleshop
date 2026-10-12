@@ -14,6 +14,29 @@ def _money(value: Any) -> str:
     return f"₪{value:.2f}"
 
 
+def _promo_price(deal):
+    """Only a validated simple offer can supply an unconditional unit price."""
+    regular = deal.get('regular_price')
+    if not deal.get('simple_unit_promotion') or not isinstance(regular, (int, float)):
+        return None
+    discounted, rate = deal.get('discounted_price'), deal.get('discount_rate')
+    if isinstance(discounted, (int, float)) and 0 < discounted < regular:
+        return discounted
+    if isinstance(rate, (int, float)) and 0 < rate < 100:
+        return regular * (1 - rate / 100)
+    return None
+
+
+def _promo_label(deal):
+    price = _promo_price(deal)
+    if price is not None:
+        return f"Promo price: **{_money(price)}** (simple offer)"
+    advertised = deal.get('discounted_price')
+    if isinstance(advertised, (int, float)) and advertised > 0:
+        return f"Advertised promo price: **{_money(advertised)}** — conditional; eligibility not verified"
+    return "Promo price: **conditional / multi-buy** — no reliable single-item price"
+
+
 def _qty(value: Any) -> str:
     if isinstance(value, float) and value.is_integer():
         return str(int(value))
@@ -119,7 +142,8 @@ def render_report(
         ))
         lines.append("")
         if matched:
-            lines.append("Matched promotions (before delivery comparison):")
+            lines += ["Promotion offers found (not the selected shopping order):", "",
+                      "These offers may be at different shops. The shopping list below shows the exact price used in the estimate.", ""]
             for match in matched:
                 deal = match["deal"]
                 product = deal.get("name") or deal.get("item_code") or "unknown product"
@@ -127,7 +151,10 @@ def render_report(
                 lines += [
                     f"- **{match['ingredient']}**  ",
                     f"  {escape(str(product))}  ",
-                    f"  {deal['chain']} · {_money(deal.get('regular_price'))} regular  ",
+                    f"  Shop: {deal['chain']}  ",
+                    f"  Regular listed price: **{_money(deal.get('regular_price'))}**  ",
+                    f"  {_promo_label(deal)}  ",
+                    "  Promotion terms:  ",
                     f"  {escape(str(desc))}",
                     "",
                 ]
@@ -241,7 +268,16 @@ def render_shopping(plan):
             quote = item.get('quote')
             deal = item.get('suggested_deal')
             if quote:
-                text += f"  \n  {escape(quote['product']['name'])}  \n  {quote['purchase']}  \n  {_money(quote['cost_cents'] / 100)} ({quote['pricing_basis']})"
+                product = quote['product']
+                price = _promo_price(quote.get('promotion') or {})
+                basis = 'retailer weight unit' if product.get('is_weighted') else 'pack'
+                text += f"  \n  {escape(product['name'])}  \n  Buy: {quote['purchase']}"
+                text += f"  \n  Regular price per {basis}: **{_money(product.get('regular_price'))}**"
+                if price is None:
+                    text += "  \n  Promo applied: **none — regular price used**"
+                else:
+                    text += f"  \n  Promo price per {basis} used: **{_money(price)}**"
+                text += f"  \n  **Estimated line total: {_money(quote['cost_cents'] / 100)}** (for the full quantity above)"
                 if quote.get('metadata_note'):
                     text += '; ' + quote['metadata_note']
                 url = quote['url']

@@ -1,6 +1,6 @@
 # LittleShop weekly plan
 
-Generated: 2026-10-12T19:05+03:00
+Generated: 2026-10-12T19:08+03:00
 
 Feed coverage: **4 loaded, 0 failed**.
 
@@ -31,25 +31,40 @@ Promotion-match score: **5.05**
 
 Ingredients: tortillas 10 units; cooked beans 500 g; yellow cheese 300 g; corn 300 g
 
-Matched promotions (before delivery comparison):
+Promotion offers found (not the selected shopping order):
+
+These offers may be at different shops. The shopping list below shows the exact price used in the estimate.
+
 - **tortillas**  
   האופה - טורטיה שמינייה  
-  victory · ₪9.90 regular  
+  Shop: victory  
+  Regular listed price: **₪9.90**  
+  Promo price: **conditional / multi-buy** — no reliable single-item price  
+  Promotion terms:  
   1+1טורטייה 320 גר` האופה  20 סמ
 
 - **cooked beans**  
   שימורי שעועית לבנה  
-  victory · ₪9.50 regular  
+  Shop: victory  
+  Regular listed price: **₪9.50**  
+  Advertised promo price: **₪6.90** — conditional; eligibility not verified  
+  Promotion terms:  
   6.90 שימורי ירקות האופה
 
 - **yellow cheese**  
   גבינה קשה למחצה גאודה 28.5%  
-  victory · ₪19.90 regular  
+  Shop: victory  
+  Regular listed price: **₪19.90**  
+  Promo price: **conditional / multi-buy** — no reliable single-item price  
+  Promotion terms:  
   1+1גבינה קשה למחצה/פרוסות גבינה קשה PRESIDENT
 
 - **corn**  
   תירס קיד מתוק יכין 4  
-  carrefour · ₪9.10 regular  
+  Shop: carrefour  
+  Regular listed price: **₪9.10**  
+  Advertised promo price: **₪11.90** — conditional; eligibility not verified  
+  Promotion terms:  
   גרעיני תירס מתוק יכין 400 גרם
 
 
@@ -60,25 +75,40 @@ Promotion-match score: **5.05**
 
 Ingredients: tofu 600 g; broccoli 600 g; coconut milk 400 ml; rice 400 g
 
-Matched promotions (before delivery comparison):
+Promotion offers found (not the selected shopping order):
+
+These offers may be at different shops. The shopping list below shows the exact price used in the estimate.
+
 - **tofu**  
   טופו במרקם קשה  
-  victory · ₪12.90 regular  
+  Shop: victory  
+  Regular listed price: **₪12.90**  
+  Advertised promo price: **₪8.90** — conditional; eligibility not verified  
+  Promotion terms:  
   8.90 טופו סאן אפ במרקם קשה 300 גר`             קבוע
 
 - **broccoli**  
   ברוקולי ארוז  
-  carrefour · ₪12.90 regular  
+  Shop: carrefour  
+  Regular listed price: **₪12.90**  
+  Advertised promo price: **₪14.00** — conditional; eligibility not verified  
+  Promotion terms:  
   (ברוקולי ארוז (תקומה
 
 - **coconut milk**  
   קרם קוקוס 400 מל טעמי אסיה  
-  victory · ₪13.90 regular  
+  Shop: victory  
+  Regular listed price: **₪13.90**  
+  Advertised promo price: **₪7.90** — conditional; eligibility not verified  
+  Promotion terms:  
   7.90קרם קוקוס 400 מל טעמי אסיה
 
 - **rice**  
   אורז פרסי  
-  victory · ₪11.90 regular  
+  Shop: victory  
+  Regular listed price: **₪11.90**  
+  Advertised promo price: **₪6.90** — conditional; eligibility not verified  
+  Promotion terms:  
   6.90אורז פרסי 1 קג&#x27; האופה
 
 
@@ -89,25 +119,40 @@ Promotion-match score: **4.91**
 
 Ingredients: sweet potato 1000 g; cooked beans 600 g; tahini 150 g; tomatoes 500 g
 
-Matched promotions (before delivery comparison):
+Promotion offers found (not the selected shopping order):
+
+These offers may be at different shops. The shopping list below shows the exact price used in the estimate.
+
 - **sweet potato**  
   בטטה מובחרת  
-  shufersal · ₪10.90 regular  
+  Shop: shufersal  
+  Regular listed price: **₪10.90**  
+  Advertised promo price: **₪5.90** — conditional; eligibility not verified  
+  Promotion terms:  
   קטיף 5.90 בטטות
 
 - **cooked beans**  
   שימורי שעועית לבנה  
-  victory · ₪9.50 regular  
+  Shop: victory  
+  Regular listed price: **₪9.50**  
+  Advertised promo price: **₪6.90** — conditional; eligibility not verified  
+  Promotion terms:  
   6.90 שימורי ירקות האופה
 
 - **tahini**  
   טחינה 500 גרם יד מרד  
-  carrefour · ₪17.90 regular  
+  Shop: carrefour  
+  Regular listed price: **₪17.90**  
+  Advertised promo price: **₪8.95** — conditional; eligibility not verified  
+  Promotion terms:  
   חומץ/חרדל/רטבים/שמן זית/תרסיס שמן/טחינה
 
 - **tomatoes**  
   עגבניות שלמ2*400ג LIVATO  
-  shufersal · ₪14.90 regular  
+  Shop: shufersal  
+  Regular listed price: **₪14.90**  
+  Advertised promo price: **₪10.00** — conditional; eligibility not verified  
+  Promotion terms:  
   10 עגבניות חתוכות דק/שלמות 400*2ג
 
 
@@ -118,20 +163,32 @@ Promotion-match score: **4.85**
 
 Ingredients: pasta 500 g; green peas 500 g; tomato sauce 600 g
 
-Matched promotions (before delivery comparison):
+Promotion offers found (not the selected shopping order):
+
+These offers may be at different shops. The shopping list below shows the exact price used in the estimate.
+
 - **pasta**  
   פסטה טליאטלה  
-  victory · ₪29.90 regular  
+  Shop: victory  
+  Regular listed price: **₪29.90**  
+  Advertised promo price: **₪14.90** — conditional; eligibility not verified  
+  Promotion terms:  
   14.90פסטה פנה טריקולור/פלייה פיאנו/טרסינה/קסטלנה 500 גר&#x27;
 
 - **green peas**  
   אפונה עדינה מוקפאת  
-  victory · ₪10.90 regular  
+  Shop: victory  
+  Regular listed price: **₪10.90**  
+  Advertised promo price: **₪15.90** — conditional; eligibility not verified  
+  Promotion terms:  
   2ב15.90 שדה בשקית- שעועית ירוקה שלמה/חתוכה/חומוס/אפונה עדינה
 
 - **tomato sauce**  
   ברילה רוטב עגבניות לפיצה 400 ג  
-  victory · ₪17.90 regular  
+  Shop: victory  
+  Regular listed price: **₪17.90**  
+  Promo price: **conditional / multi-buy** — no reliable single-item price  
+  Promotion terms:  
   1+1ברילה רטבים 400 גר&#x27;
 
 
@@ -142,25 +199,40 @@ Promotion-match score: **5.01**
 
 Ingredients: lentils 400 g; sweet potato 800 g; coconut milk 400 ml; rice 400 g
 
-Matched promotions (before delivery comparison):
+Promotion offers found (not the selected shopping order):
+
+These offers may be at different shops. The shopping list below shows the exact price used in the estimate.
+
 - **lentils**  
   עדשים ירוקות 500 גרם  
-  rami-levy · ₪9.90 regular  
+  Shop: rami-levy  
+  Regular listed price: **₪9.90**  
+  Advertised promo price: **₪14.00** — conditional; eligibility not verified  
+  Promotion terms:  
   עדשים 500 גרם סוגת 2ב14
 
 - **sweet potato**  
   בטטה מובחרת  
-  shufersal · ₪10.90 regular  
+  Shop: shufersal  
+  Regular listed price: **₪10.90**  
+  Advertised promo price: **₪5.90** — conditional; eligibility not verified  
+  Promotion terms:  
   קטיף 5.90 בטטות
 
 - **coconut milk**  
   קרם קוקוס 400 מל טעמי אסיה  
-  victory · ₪13.90 regular  
+  Shop: victory  
+  Regular listed price: **₪13.90**  
+  Advertised promo price: **₪7.90** — conditional; eligibility not verified  
+  Promotion terms:  
   7.90קרם קוקוס 400 מל טעמי אסיה
 
 - **rice**  
   אורז פרסי  
-  victory · ₪11.90 regular  
+  Shop: victory  
+  Regular listed price: **₪11.90**  
+  Advertised promo price: **₪6.90** — conditional; eligibility not verified  
+  Promotion terms:  
   6.90אורז פרסי 1 קג&#x27; האופה
 
 
@@ -171,25 +243,40 @@ Promotion-match score: **3.97**
 
 Ingredients: potatoes 1200 g; broccoli 600 g; cream 250 ml; yellow cheese 250 g
 
-Matched promotions (before delivery comparison):
+Promotion offers found (not the selected shopping order):
+
+These offers may be at different shops. The shopping list below shows the exact price used in the estimate.
+
 - **potatoes**  
   תפוח אדמה אדום ארוז  
-  shufersal · ₪8.90 regular  
+  Shop: shufersal  
+  Regular listed price: **₪8.90**  
+  Advertised promo price: **₪8.46** — conditional; eligibility not verified  
+  Promotion terms:  
   תו זהב 5% הנחה מותג שופרסל
 
 - **broccoli**  
   ברוקולי ארוז  
-  carrefour · ₪12.90 regular  
+  Shop: carrefour  
+  Regular listed price: **₪12.90**  
+  Advertised promo price: **₪14.00** — conditional; eligibility not verified  
+  Promotion terms:  
   (ברוקולי ארוז (תקומה
 
 - **cream**  
   תחליף שמנת לבישול על בסיס אורז אורגני 20  
-  victory · ₪7.90 regular  
+  Shop: victory  
+  Regular listed price: **₪7.90**  
+  Advertised promo price: **₪11.00** — conditional; eligibility not verified  
+  Promotion terms:  
   2ב11 תחליף שמנת לבישול על בסיס אורז אורגני
 
 - **yellow cheese**  
   גבינה קשה למחצה גאודה 28.5%  
-  victory · ₪19.90 regular  
+  Shop: victory  
+  Regular listed price: **₪19.90**  
+  Promo price: **conditional / multi-buy** — no reliable single-item price  
+  Promotion terms:  
   1+1גבינה קשה למחצה/פרוסות גבינה קשה PRESIDENT
 
 
@@ -200,25 +287,40 @@ Promotion-match score: **3.84**
 
 Ingredients: pasta 500 g; lentils 250 g; tomato sauce 700 g; carrots 250 g; onion 200 g
 
-Matched promotions (before delivery comparison):
+Promotion offers found (not the selected shopping order):
+
+These offers may be at different shops. The shopping list below shows the exact price used in the estimate.
+
 - **pasta**  
   פסטה טליאטלה  
-  victory · ₪29.90 regular  
+  Shop: victory  
+  Regular listed price: **₪29.90**  
+  Advertised promo price: **₪14.90** — conditional; eligibility not verified  
+  Promotion terms:  
   14.90פסטה פנה טריקולור/פלייה פיאנו/טרסינה/קסטלנה 500 גר&#x27;
 
 - **lentils**  
   עדשים ירוקות 500 גרם  
-  rami-levy · ₪9.90 regular  
+  Shop: rami-levy  
+  Regular listed price: **₪9.90**  
+  Advertised promo price: **₪14.00** — conditional; eligibility not verified  
+  Promotion terms:  
   עדשים 500 גרם סוגת 2ב14
 
 - **tomato sauce**  
   ברילה רוטב עגבניות לפיצה 400 ג  
-  victory · ₪17.90 regular  
+  Shop: victory  
+  Regular listed price: **₪17.90**  
+  Promo price: **conditional / multi-buy** — no reliable single-item price  
+  Promotion terms:  
   1+1ברילה רטבים 400 גר&#x27;
 
 - **carrots**  
   גזר גמדי רמילוי 800  
-  rami-levy · ₪12.90 regular  
+  Shop: rami-levy  
+  Regular listed price: **₪12.90**  
+  Advertised promo price: **₪20.00** — conditional; eligibility not verified  
+  Promotion terms:  
   אפונה גינה/גזר גמדי 800גרם רמי לוי 2ב20
 
 
@@ -240,7 +342,7 @@ Delivery-adjusted deal score = estimated savings versus the cheapest comparable 
 
 | Option | Products | Delivery | Total estimate | Deal score / savings | Status |
 |---|---:|---:|---:|---:|---|
-| rami-levy | ₪281.66 | ₪35.90 | ₪317.56 | ₪0.00 | best evaluated estimate |
+| rami-levy | ₪281.66 | ₪35.90 | ₪317.56 | ₪0.00 | estimate |
 | rami-levy + shufersal | ₪262.76 | ₪71.80 | ₪334.56 | ₪-17.00 | estimate |
 | carrefour + rami-levy | ₪252.16 | ₪71.80 | ₪323.96 | — | below minimum: carrefour needs ₪140.30 more groceries |
 | carrefour + rami-levy + shufersal | ₪250.16 | ₪107.70 | ₪357.86 | — | below minimum: carrefour needs ₪140.30 more groceries |
@@ -269,80 +371,118 @@ Products: ₪281.66 · Delivery: ₪35.90
 
 - [ ] **broccoli** — 1200 g  
   ברוקולי 800גר רמי לו  
-  2 pack(s) × 800 גרם  
-  ₪32.00 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%91%D7%A8%D7%95%D7%A7%D7%95%D7%9C%D7%99+800%D7%92%D7%A8+%D7%A8%D7%9E%D7%99+%D7%9C%D7%95&item=7290018564172 "Open retailer product, search or shop") [🍽️2](#recipe-day-2 "Day 2: Tofu & broccoli coconut curry") [🍽️6](#recipe-day-6 "Day 6: Potato & broccoli cheese bake")
+  Buy: 2 pack(s) × 800 גרם  
+  Regular price per pack: **₪16.00**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪32.00** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%91%D7%A8%D7%95%D7%A7%D7%95%D7%9C%D7%99+800%D7%92%D7%A8+%D7%A8%D7%9E%D7%99+%D7%9C%D7%95&item=7290018564172 "Open retailer product, search or shop") [🍽️2](#recipe-day-2 "Day 2: Tofu & broccoli coconut curry") [🍽️6](#recipe-day-6 "Day 6: Potato & broccoli cheese bake")
 - [ ] **carrots** — 250 g  
   גזר ארוז  
-  250 g by weight  
-  ₪1.23 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%92%D7%96%D7%A8+%D7%90%D7%A8%D7%95%D7%96 "Open retailer product, search or shop") [🍽️7](#recipe-day-7 "Day 7: Lentil bolognese pasta")
+  Buy: 250 g by weight  
+  Regular price per retailer weight unit: **₪4.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪1.23** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%92%D7%96%D7%A8+%D7%90%D7%A8%D7%95%D7%96 "Open retailer product, search or shop") [🍽️7](#recipe-day-7 "Day 7: Lentil bolognese pasta")
 - [ ] **coconut milk** — 800 ml  
   שימורי קרם קוקוס 400  
-  2 pack(s) × 400 מיליליטר  
-  ₪19.80 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A9%D7%99%D7%9E%D7%95%D7%A8%D7%99+%D7%A7%D7%A8%D7%9D+%D7%A7%D7%95%D7%A7%D7%95%D7%A1+400&item=7290015603546 "Open retailer product, search or shop") [🍽️2](#recipe-day-2 "Day 2: Tofu & broccoli coconut curry") [🍽️5](#recipe-day-5 "Day 5: Lentil & sweet-potato curry")
+  Buy: 2 pack(s) × 400 מיליליטר  
+  Regular price per pack: **₪9.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪19.80** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A9%D7%99%D7%9E%D7%95%D7%A8%D7%99+%D7%A7%D7%A8%D7%9D+%D7%A7%D7%95%D7%A7%D7%95%D7%A1+400&item=7290015603546 "Open retailer product, search or shop") [🍽️2](#recipe-day-2 "Day 2: Tofu & broccoli coconut curry") [🍽️5](#recipe-day-5 "Day 5: Lentil & sweet-potato curry")
 - [ ] **cooked beans** — 1100 g  
   שעועית לבנה ברוטב עג  
-  4 pack(s) × 336 גרם  
-  ₪43.60 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A9%D7%A2%D7%95%D7%A2%D7%99%D7%AA+%D7%9C%D7%91%D7%A0%D7%94+%D7%91%D7%A8%D7%95%D7%98%D7%91+%D7%A2%D7%92&item=7290000208213 "Open retailer product, search or shop") [🍽️1](#recipe-day-1 "Day 1: Bean & cheese quesadillas") [🍽️3](#recipe-day-3 "Day 3: Sweet-potato & bean tahini bowls")
+  Buy: 4 pack(s) × 336 גרם  
+  Regular price per pack: **₪10.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪43.60** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A9%D7%A2%D7%95%D7%A2%D7%99%D7%AA+%D7%9C%D7%91%D7%A0%D7%94+%D7%91%D7%A8%D7%95%D7%98%D7%91+%D7%A2%D7%92&item=7290000208213 "Open retailer product, search or shop") [🍽️1](#recipe-day-1 "Day 1: Bean & cheese quesadillas") [🍽️3](#recipe-day-3 "Day 3: Sweet-potato & bean tahini bowls")
 - [ ] **corn** — 300 g  
   גרעיני תירס מתוק תוצ  
-  1 pack(s) × 1 קילוגרם  
-  ₪8.90 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%92%D7%A8%D7%A2%D7%99%D7%A0%D7%99+%D7%AA%D7%99%D7%A8%D7%A1+%D7%9E%D7%AA%D7%95%D7%A7+%D7%AA%D7%95%D7%A6&item=7290019894513 "Open retailer product, search or shop") [🍽️1](#recipe-day-1 "Day 1: Bean & cheese quesadillas")
+  Buy: 1 pack(s) × 1 קילוגרם  
+  Regular price per pack: **₪8.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪8.90** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%92%D7%A8%D7%A2%D7%99%D7%A0%D7%99+%D7%AA%D7%99%D7%A8%D7%A1+%D7%9E%D7%AA%D7%95%D7%A7+%D7%AA%D7%95%D7%A6&item=7290019894513 "Open retailer product, search or shop") [🍽️1](#recipe-day-1 "Day 1: Bean & cheese quesadillas")
 - [ ] **cream** — 250 ml  
   שמנת מתוקה להקצפה 32  
-  1 pack(s) × 250 מיליליטר  
-  ₪8.50 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A9%D7%9E%D7%A0%D7%AA+%D7%9E%D7%AA%D7%95%D7%A7%D7%94+%D7%9C%D7%94%D7%A7%D7%A6%D7%A4%D7%94+32&item=7290105368904 "Open retailer product, search or shop") [🍽️6](#recipe-day-6 "Day 6: Potato & broccoli cheese bake")
+  Buy: 1 pack(s) × 250 מיליליטר  
+  Regular price per pack: **₪8.50**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪8.50** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A9%D7%9E%D7%A0%D7%AA+%D7%9E%D7%AA%D7%95%D7%A7%D7%94+%D7%9C%D7%94%D7%A7%D7%A6%D7%A4%D7%94+32&item=7290105368904 "Open retailer product, search or shop") [🍽️6](#recipe-day-6 "Day 6: Potato & broccoli cheese bake")
 - [ ] **green peas** — 500 g  
   אפונה ירוקה עדינה קפ  
-  1 pack(s) × 600 גרם  
-  ₪9.90 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%90%D7%A4%D7%95%D7%A0%D7%94+%D7%99%D7%A8%D7%95%D7%A7%D7%94+%D7%A2%D7%93%D7%99%D7%A0%D7%94+%D7%A7%D7%A4&item=7290003359257 "Open retailer product, search or shop") [🍽️4](#recipe-day-4 "Day 4: Pea & tomato pasta")
+  Buy: 1 pack(s) × 600 גרם  
+  Regular price per pack: **₪9.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪9.90** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%90%D7%A4%D7%95%D7%A0%D7%94+%D7%99%D7%A8%D7%95%D7%A7%D7%94+%D7%A2%D7%93%D7%99%D7%A0%D7%94+%D7%A7%D7%A4&item=7290003359257 "Open retailer product, search or shop") [🍽️4](#recipe-day-4 "Day 4: Pea & tomato pasta")
 - [ ] **lentils** — 650 g  
   עדשים אדומות 500ג רמ  
-  2 pack(s) × 500 גרם  
-  ₪15.40 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A2%D7%93%D7%A9%D7%99%D7%9D+%D7%90%D7%93%D7%95%D7%9E%D7%95%D7%AA+500%D7%92+%D7%A8%D7%9E&item=7290016865820 "Open retailer product, search or shop") [🍽️5](#recipe-day-5 "Day 5: Lentil & sweet-potato curry") [🍽️7](#recipe-day-7 "Day 7: Lentil bolognese pasta")
+  Buy: 2 pack(s) × 500 גרם  
+  Regular price per pack: **₪7.70**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪15.40** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A2%D7%93%D7%A9%D7%99%D7%9D+%D7%90%D7%93%D7%95%D7%9E%D7%95%D7%AA+500%D7%92+%D7%A8%D7%9E&item=7290016865820 "Open retailer product, search or shop") [🍽️5](#recipe-day-5 "Day 5: Lentil & sweet-potato curry") [🍽️7](#recipe-day-7 "Day 7: Lentil bolognese pasta")
 - [ ] **onion** — 200 g  
   בצל אדום  
-  200 g by weight  
-  ₪1.18 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%91%D7%A6%D7%9C+%D7%90%D7%93%D7%95%D7%9D "Open retailer product, search or shop") [🍽️7](#recipe-day-7 "Day 7: Lentil bolognese pasta")
+  Buy: 200 g by weight  
+  Regular price per retailer weight unit: **₪5.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪1.18** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%91%D7%A6%D7%9C+%D7%90%D7%93%D7%95%D7%9D "Open retailer product, search or shop") [🍽️7](#recipe-day-7 "Day 7: Lentil bolognese pasta")
 - [ ] **pasta** — 1000 g  
   פסטה קרניים פסטה רג&#x27;  
-  1 pack(s) × 1 קילוגרם  
-  ₪6.90 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A4%D7%A1%D7%98%D7%94+%D7%A7%D7%A8%D7%A0%D7%99%D7%99%D7%9D+%D7%A4%D7%A1%D7%98%D7%94+%D7%A8%D7%92%27&item=8008857300580 "Open retailer product, search or shop") [🍽️4](#recipe-day-4 "Day 4: Pea & tomato pasta") [🍽️7](#recipe-day-7 "Day 7: Lentil bolognese pasta")
+  Buy: 1 pack(s) × 1 קילוגרם  
+  Regular price per pack: **₪6.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪6.90** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A4%D7%A1%D7%98%D7%94+%D7%A7%D7%A8%D7%A0%D7%99%D7%99%D7%9D+%D7%A4%D7%A1%D7%98%D7%94+%D7%A8%D7%92%27&item=8008857300580 "Open retailer product, search or shop") [🍽️4](#recipe-day-4 "Day 4: Pea & tomato pasta") [🍽️7](#recipe-day-7 "Day 7: Lentil bolognese pasta")
 - [ ] **potatoes** — 1200 g  
   תפוח אדמה לבן ארוז  
-  1200 g by weight  
-  ₪5.88 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%AA%D7%A4%D7%95%D7%97+%D7%90%D7%93%D7%9E%D7%94+%D7%9C%D7%91%D7%9F+%D7%90%D7%A8%D7%95%D7%96 "Open retailer product, search or shop") [🍽️6](#recipe-day-6 "Day 6: Potato & broccoli cheese bake")
+  Buy: 1200 g by weight  
+  Regular price per retailer weight unit: **₪4.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪5.88** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%AA%D7%A4%D7%95%D7%97+%D7%90%D7%93%D7%9E%D7%94+%D7%9C%D7%91%D7%9F+%D7%90%D7%A8%D7%95%D7%96 "Open retailer product, search or shop") [🍽️6](#recipe-day-6 "Day 6: Potato & broccoli cheese bake")
 - [ ] **rice** — 800 g  
   אורז תאילנדי 1 ק&quot;ג ס  
-  1 pack(s) × 1 ק ג  
-  ₪7.90 (shelf price); Pack unit taken from explicit product name; catalog unit disagrees [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%90%D7%95%D7%A8%D7%96+%D7%AA%D7%90%D7%99%D7%9C%D7%A0%D7%93%D7%99+1+%D7%A7%22%D7%92+%D7%A1&item=7290000211169 "Open retailer product, search or shop") [🍽️2](#recipe-day-2 "Day 2: Tofu & broccoli coconut curry") [🍽️5](#recipe-day-5 "Day 5: Lentil & sweet-potato curry")
+  Buy: 1 pack(s) × 1 ק ג  
+  Regular price per pack: **₪7.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪7.90** (for the full quantity above); Pack unit taken from explicit product name; catalog unit disagrees [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%90%D7%95%D7%A8%D7%96+%D7%AA%D7%90%D7%99%D7%9C%D7%A0%D7%93%D7%99+1+%D7%A7%22%D7%92+%D7%A1&item=7290000211169 "Open retailer product, search or shop") [🍽️2](#recipe-day-2 "Day 2: Tofu & broccoli coconut curry") [🍽️5](#recipe-day-5 "Day 5: Lentil & sweet-potato curry")
 - [ ] **sweet potato** — 1800 g  
   בטטה  
-  1800 g by weight  
-  ₪16.02 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%91%D7%98%D7%98%D7%94&item=7290000000138 "Open retailer product, search or shop") [🍽️3](#recipe-day-3 "Day 3: Sweet-potato & bean tahini bowls") [🍽️5](#recipe-day-5 "Day 5: Lentil & sweet-potato curry")
+  Buy: 1800 g by weight  
+  Regular price per retailer weight unit: **₪8.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪16.02** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%91%D7%98%D7%98%D7%94&item=7290000000138 "Open retailer product, search or shop") [🍽️3](#recipe-day-3 "Day 3: Sweet-potato & bean tahini bowls") [🍽️5](#recipe-day-5 "Day 5: Lentil & sweet-potato curry")
 - [ ] **tahini** — 150 g  
   טחינה אמיתית 225 גר  
-  1 pack(s) × 225 גרם  
-  ₪9.90 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%98%D7%97%D7%99%D7%A0%D7%94+%D7%90%D7%9E%D7%99%D7%AA%D7%99%D7%AA+225+%D7%92%D7%A8&item=7290122780338 "Open retailer product, search or shop") [🍽️3](#recipe-day-3 "Day 3: Sweet-potato & bean tahini bowls")
+  Buy: 1 pack(s) × 225 גרם  
+  Regular price per pack: **₪9.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪9.90** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%98%D7%97%D7%99%D7%A0%D7%94+%D7%90%D7%9E%D7%99%D7%AA%D7%99%D7%AA+225+%D7%92%D7%A8&item=7290122780338 "Open retailer product, search or shop") [🍽️3](#recipe-day-3 "Day 3: Sweet-potato & bean tahini bowls")
 - [ ] **tofu** — 600 g  
   טופו ויילר 300 גר  
-  2 pack(s) × 300 גרם  
-  ₪25.80 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%98%D7%95%D7%A4%D7%95+%D7%95%D7%99%D7%99%D7%9C%D7%A8+300+%D7%92%D7%A8&item=7290003726615 "Open retailer product, search or shop") [🍽️2](#recipe-day-2 "Day 2: Tofu & broccoli coconut curry")
+  Buy: 2 pack(s) × 300 גרם  
+  Regular price per pack: **₪12.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪25.80** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%98%D7%95%D7%A4%D7%95+%D7%95%D7%99%D7%99%D7%9C%D7%A8+300+%D7%92%D7%A8&item=7290003726615 "Open retailer product, search or shop") [🍽️2](#recipe-day-2 "Day 2: Tofu & broccoli coconut curry")
 - [ ] **tomato sauce** — 1300 g  
   עגבניות מרוסקות בתרכ  
-  2 pack(s) × 800 גרם  
-  ₪17.80 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A2%D7%92%D7%91%D7%A0%D7%99%D7%95%D7%AA+%D7%9E%D7%A8%D7%95%D7%A1%D7%A7%D7%95%D7%AA+%D7%91%D7%AA%D7%A8%D7%9B&item=7290020498021 "Open retailer product, search or shop") [🍽️4](#recipe-day-4 "Day 4: Pea & tomato pasta") [🍽️7](#recipe-day-7 "Day 7: Lentil bolognese pasta")
+  Buy: 2 pack(s) × 800 גרם  
+  Regular price per pack: **₪8.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪17.80** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A2%D7%92%D7%91%D7%A0%D7%99%D7%95%D7%AA+%D7%9E%D7%A8%D7%95%D7%A1%D7%A7%D7%95%D7%AA+%D7%91%D7%AA%D7%A8%D7%9B&item=7290020498021 "Open retailer product, search or shop") [🍽️4](#recipe-day-4 "Day 4: Pea & tomato pasta") [🍽️7](#recipe-day-7 "Day 7: Lentil bolognese pasta")
 - [ ] **tomatoes** — 500 g  
   עגבניה  
-  500 g by weight  
-  ₪4.45 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A2%D7%92%D7%91%D7%A0%D7%99%D7%94 "Open retailer product, search or shop") [🍽️3](#recipe-day-3 "Day 3: Sweet-potato & bean tahini bowls")
+  Buy: 500 g by weight  
+  Regular price per retailer weight unit: **₪8.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪4.45** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%A2%D7%92%D7%91%D7%A0%D7%99%D7%94 "Open retailer product, search or shop") [🍽️3](#recipe-day-3 "Day 3: Sweet-potato & bean tahini bowls")
 - [ ] **tortillas** — 10 units  
   טורטיה 12 יח קמח מלא  
-  1 pack(s) × 12 units  
-  ₪13.80 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%98%D7%95%D7%A8%D7%98%D7%99%D7%94+12+%D7%99%D7%97+%D7%A7%D7%9E%D7%97+%D7%9E%D7%9C%D7%90&item=7290006765000 "Open retailer product, search or shop") [🍽️1](#recipe-day-1 "Day 1: Bean & cheese quesadillas")
+  Buy: 1 pack(s) × 12 units  
+  Regular price per pack: **₪13.80**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪13.80** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%98%D7%95%D7%A8%D7%98%D7%99%D7%94+12+%D7%99%D7%97+%D7%A7%D7%9E%D7%97+%D7%9E%D7%9C%D7%90&item=7290006765000 "Open retailer product, search or shop") [🍽️1](#recipe-day-1 "Day 1: Bean & cheese quesadillas")
 - [ ] **yellow cheese** — 550 g  
   גבינה צהובה 27% טום  
-  3 pack(s) × 200 גרם  
-  ₪32.70 (shelf price) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%92%D7%91%D7%99%D7%A0%D7%94+%D7%A6%D7%94%D7%95%D7%91%D7%94+27%25+%D7%98%D7%95%D7%9D&item=7290123640167 "Open retailer product, search or shop") [🍽️1](#recipe-day-1 "Day 1: Bean & cheese quesadillas") [🍽️6](#recipe-day-6 "Day 6: Potato & broccoli cheese bake")
+  Buy: 3 pack(s) × 200 גרם  
+  Regular price per pack: **₪10.90**  
+  Promo applied: **none — regular price used**  
+  **Estimated line total: ₪32.70** (for the full quantity above) [🛒](https://www.rami-levy.co.il/he/online/search?q=%D7%92%D7%91%D7%99%D7%A0%D7%94+%D7%A6%D7%94%D7%95%D7%91%D7%94+27%25+%D7%98%D7%95%D7%9D&item=7290123640167 "Open retailer product, search or shop") [🍽️1](#recipe-day-1 "Day 1: Bean & cheese quesadillas") [🍽️6](#recipe-day-6 "Day 6: Potato & broccoli cheese bake")
 
 
 ## Highest-ranked recipe candidates
