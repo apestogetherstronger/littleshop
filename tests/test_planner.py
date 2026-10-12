@@ -141,3 +141,24 @@ def test_catalog_matches_ingredients_not_flavoured_products(ingredient_name, pro
     assert ingredients
     for ingredient in ingredients:
         assert matches_ingredient(ingredient, fake_deal(product)) is expected
+
+
+@pytest.mark.parametrize('name,bad,good',[
+    ('cucumber','סבון מוצק מלפפון','מלפפון'),
+    ('eggs','ממרח מיונז ללא ביצים','ביצים 12 יחידות'),
+    ('butter','פופקו חמאה ודבש','חמאה 200 גרם'),
+    ('almonds','עוגיות קמח שקדים','שקדים טבעיים'),
+    ('aubergine','טחינה באלדי עם חציל','חציל'),
+    ('mint','סודה תפוח נענע','נענע'),
+    ('basil','ברילה רוטב בזיליקום','בזיליקום'),
+    ('potatoes','ניוקי תפוח אדמה','תפוחי אדמה'),
+    ('short grain rice','דפי אורז עגולים','אורז עגול'),
+    ('garlic','אבקת שום','שום'),
+    ('corn','תירס (מנציס פיצוחים)','גרגרי תירס מתוק'),
+])
+def test_reviewed_feed_false_positives(name,bad,good):
+    from littleshop.config import load_yaml
+    bank=load_yaml(Path(__file__).resolve().parents[1]/'config/ingredients.yml')['ingredients']
+    ingredient=next(i for i in bank.values() if i['name']==name)
+    assert not matches_ingredient(ingredient,fake_deal(bad))
+    assert matches_ingredient(ingredient,fake_deal(good))

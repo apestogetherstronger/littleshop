@@ -39,12 +39,14 @@ def render_report(
         lines.append("Feeds loaded, but no active public promotions were found; meals are unranked by deals.")
     lines.append("")
     lines.append(
-        "Meals are ranked by ingredient promotion matches. Shopping options are "
+        "Meals prioritize priceable ingredient coverage, then average promotion matches. Shopping options are "
         "compared by estimated product cost plus delivery once per shop. "
         "Local branch prices may differ from online checkout prices."
     )
     lines.append("")
 
+    if plan.get('feed_generated_at'):
+        lines += [f"Feed data fetched: {plan['feed_generated_at']} (report may be regenerated from this snapshot).", ""]
     lines.append("## Stores used")
     lines.append("")
     if chain_runs:
@@ -152,7 +154,7 @@ def render_report(
     )
     lines.append(
         "- Product matching is deterministic substring matching using aliases in "
-        "config/recipes.yml; adjust aliases when a supermarket uses unexpected wording."
+        "config/ingredients.yml; adjust aliases when a supermarket uses unexpected wording."
     )
     lines.append(
         "- Dietary filtering is recipe-tag based. Product-level allergen and kosher "
@@ -166,6 +168,15 @@ def render_shopping(plan):
     lines = ['## Shopping by shop', '', '🍽️ links return to the recipe/day; 🛒 opens the product, search, or shop website.', '']
     strategy = plan.get('shopping_strategy')
     if strategy:
+        rec = strategy.get('recommendation')
+        if rec:
+            lines += ['### Suggested order', '',
+                      f"**{' + '.join(rec['shops'])}: {_money(rec['partial_total_cents'] / 100)} including configured delivery** "
+                      f"for **{len(rec['assignments'])} of {strategy['total_items']} ingredient lines**.", '',
+                      f"Products {_money(rec['items_cents'] / 100)} + delivery {_money(sum(rec['delivery_cents'].values()) / 100)}. "
+                      'This is the subtotal for the listed items, not a full meal-plan or checkout total.', '']
+            if strategy.get('remaining_items'):
+                lines += ['Still needed separately: ' + ', '.join(strategy['remaining_items']) + '.', '']
         lines += ['### Delivery-aware comparison', '',
                   f"Comparable scope: **{strategy['priceable_items']} of {strategy['total_items']} ingredient lines**. "
                   'Every comparable total covers the same lines. Other ingredients still need a price check.', '',
@@ -194,13 +205,14 @@ def render_shopping(plan):
         lines += ['', 'Estimates compare single shops and cheapest-item splits for shop combinations. '
                   'They are not guaranteed checkout totals or a complete multi-buy optimizer.', '']
         if not strategy['best']:
-            lines += ['No delivery-adjusted recommendation is available with the current prices and fees.', '']
+            lines += ['A complete comparable basket is unavailable. Any suggested order above covers only its explicitly listed lines.', '']
         for shop, policy in strategy['policies'].items():
             if shop not in {s for option in strategy['alternatives'] for s in option['shops']}:
                 continue
             fee = _money(policy.get('fee_ils'))
             source = policy.get('source_url') or SHOP_URLS.get(shop)
-            label = 'published fee' if policy.get('fee_status') == 'published' else 'assumed fee—confirm at checkout'
+            label = ('unknown fee—confirm at checkout' if policy.get('fee_ils') is None else
+                     'published fee' if policy.get('fee_status') == 'published' else 'assumed fee—confirm at checkout')
             minimum = policy.get('minimum_order_ils')
             lines.append(f"- **{shop}**: {fee} per delivery ({label}); "
                          + (f"minimum {_money(minimum)}" if minimum is not None else 'minimum order unverified')
@@ -216,7 +228,7 @@ def render_shopping(plan):
         else:
             url = SHOP_URLS.get(shop)
             lines += [f"### {shop}" + (f" — [🛒 Open shop]({url})" if url else ''), '']
-            best = strategy.get('best') if strategy else None
+            best = strategy.get('recommendation') if strategy else None
             if best and shop in best['subtotals_cents']:
                 lines += [f"Products: {_money(best['subtotals_cents'][shop] / 100)} · "
                           f"Delivery: {_money(best['delivery_cents'][shop] / 100)}", '']
@@ -226,12 +238,16 @@ def render_shopping(plan):
             deal = item.get('suggested_deal')
             if quote:
                 text += f" — {quote['product']['name']}; {quote['purchase']}; {_money(quote['cost_cents'] / 100)} ({quote['pricing_basis']})"
+                if quote.get('metadata_note'):
+                    text += '; ' + quote['metadata_note']
                 url = quote['url']
             elif deal:
                 text += f" — possible match: {deal.get('name') or deal.get('item_code')} ({deal.get('promotion_description') or 'promotion'})"
                 url = product_link(deal)
             else:
                 url = None
+            if item.get('check_reason'):
+                text += ' — ' + item['check_reason']
             if url:
                 text += f' [🛒]({url} "Open retailer product, search or shop")'
             for recipe in item.get('recipes', []):

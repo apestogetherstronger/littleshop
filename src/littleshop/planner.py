@@ -39,6 +39,10 @@ def matches_ingredient(ingredient: dict[str, Any], deal: dict[str, Any]) -> bool
         return False
     haystack = product_name
 
+    patterns = ingredient.get("match_patterns", [])
+    if patterns and not any(re.search(pattern, haystack) for pattern in patterns):
+        return False
+
     required = ingredient.get("require_any_terms", [])
     if required and not any(normalize_text(str(term)) in haystack for term in required):
         return False
@@ -94,7 +98,7 @@ def score_recipe(
                     "strength": round(strength, 2),
                 }
             )
-    return round(score, 2), matched
+    return round(score / max(1, len(recipe.get("ingredients", []))), 2), matched
 
 
 def build_plan(
@@ -111,12 +115,31 @@ def build_plan(
     if not allowed:
         raise RuntimeError("No recipes satisfy the configured dietary tags")
 
+    # Price availability outranks promotions: a discount cannot rescue an unbuyable meal.
+    from .shopping import quote_item
+    candidate_cache = {}
+    def coverage(recipe):
+        if not products:
+            return 1.0
+        known = {shop for shop, policy in (delivery or {}).get('shops', {}).items()
+                 if policy.get('fee_ils') is not None}
+        count = 0
+        for ingredient in recipe.get('ingredients', []):
+            key = ingredient['name']
+            if key not in candidate_cache:
+                candidate_cache[key] = [p for p in products if (not known or p['chain'] in known)
+                                        and matches_ingredient(ingredient, p)]
+            if any(quote_item(ingredient, p) for p in candidate_cache[key]):
+                count += 1
+        return count / max(1, len(recipe.get('ingredients', [])))
+
     ranked: list[dict[str, Any]] = []
     for recipe in allowed:
         score, matched = score_recipe(recipe, deals)
         ranked.append(
             {
                 **recipe,
+                "price_coverage": coverage(recipe),
                 "deal_score": score,
                 "matched_deals": matched,
             }
@@ -124,6 +147,7 @@ def build_plan(
 
     ranked.sort(
         key=lambda recipe: (
+            -recipe["price_coverage"],
             -recipe["deal_score"],
             recipe.get("prep_minutes", 9999),
             recipe["name"],
@@ -153,7 +177,7 @@ def build_plan(
             ingredients = {i["name"] for i in recipe.get("ingredients", [])}
             overlap = len(previous_ingredients & ingredients)
             adjusted = recipe["deal_score"] - (0.75 * overlap)
-            return (-adjusted, recipe.get("prep_minutes", 9999), recipe["name"])
+            return (-recipe["price_coverage"], -adjusted, recipe.get("prep_minutes", 9999), recipe["name"])
 
         chosen = min(available, key=choice_key)
         selected.append(chosen)
@@ -171,6 +195,8 @@ def build_plan(
                     "search_terms": ingredient.get("search_terms", []),
                     "exclude_terms": ingredient.get("exclude_terms", []),
                     "require_any_terms": ingredient.get("require_any_terms", []),
+                    "match_patterns": ingredient.get("match_patterns", []),
+                    "spoon_unit": ingredient.get("spoon_unit"),
                     "recipes": [],
                 }
             shopping[key]["quantity"] += float(ingredient.get("quantity", 0))
@@ -188,6 +214,8 @@ def build_plan(
                 "search_terms": item["search_terms"],
                 "exclude_terms": item["exclude_terms"],
                 "require_any_terms": item["require_any_terms"],
+                "match_patterns": item["match_patterns"],
+                "spoon_unit": item["spoon_unit"],
                 "recipes": item["recipes"],
                 "shop": suggestion["chain"] if suggestion else None,
             }

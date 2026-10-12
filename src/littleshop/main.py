@@ -99,6 +99,7 @@ def main() -> int:
         delivery=settings.get("delivery", {}),
     )
 
+    plan["feed_generated_at"] = status["generated_at"]
     output_cfg = settings.get("output", {})
     report_path = ROOT / output_cfg.get("report_path", "docs/latest.md")
     plan_json_path = ROOT / output_cfg.get("plan_json_path", "output/plan.json")

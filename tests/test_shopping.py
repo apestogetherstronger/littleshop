@@ -69,7 +69,10 @@ def test_unknown_delivery_fee_never_defaults_to_zero():
     items = [ingredient()]
     result = compare_baskets(items, [product('a')], [], policy(a=None))
     assert result['best'] is None
-    assert items[0]['shop'] is None
+    assert items[0]['shop'] == 'a'
+    assert items[0]['quote']['cost_cents'] == 1000
+    assert items[0]['order_status'] == 'conditional'
+    assert result['recommendation'] is None
 
 
 def test_minimum_shortfalls_are_reported_and_orderable_candidate_preferred():
@@ -133,3 +136,51 @@ def test_grouped_shopping_keeps_all_recipe_links_and_delivery_report():
     assert 'Shopping by shop' in report
     assert 'Delivery-aware comparison' in report
     assert '₪15.00' in report
+
+
+def test_unknown_fee_on_one_exclusive_item_preserves_known_fee_partial_order():
+    items=[ingredient('rice'),ingredient('beans'),ingredient('missing')]
+    result=compare_baskets(items,[product('a'),product('b','beans')],[],policy(a=5,b=None))
+    assert result['best'] is None
+    rec=result['recommendation']
+    assert rec['shops']==['a'] and rec['partial_total_cents']==1500
+    assert rec['total_cents'] is None  # Never pretend the partial subtotal is complete.
+    assert items[0]['order_status']=='recommended'
+    assert items[1]['order_status']=='conditional' and items[1]['quote']
+    assert items[2]['shop'] is None
+    assert result['remaining_items']==['beans','missing']
+
+
+def test_explicit_count_can_repair_mislabeled_egg_pack():
+    item=ingredient('eggs',14,'units')
+    p=product('a','ביצים 12 יח גדול L',14.2,pack_quantity=1,pack_unit='קילוגרם')
+    q=quote_item(item,p)
+    assert q['packages']==2 and q['cost_cents']==2840
+    assert quote_item(item,{**p,'name':'ביצים ללא מספר'}) is None
+
+
+def test_only_explicit_liquid_spoons_convert_to_volume():
+    item={**ingredient('olive oil',2,'tbsp'),'spoon_unit':'ml'}
+    q=quote_item(item,product('a',pack_unit='ml',pack_quantity=750))
+    assert q['packages']==1
+    assert quote_item(ingredient('flour',2,'tbsp'),product('a')) is None
+
+
+def test_priceable_recipe_beats_more_promoted_but_unbuyable_recipe():
+    recipes=[{'id':'buyable','name':'Rice','ingredients':[ingredient()], 'tags':[]},
+             {'id':'unbuyable','name':'Complex','ingredients':[ingredient(),ingredient('rare')], 'tags':[]}]
+    plan=build_plan(recipes,[],days=1,diet={},products=[product('a')],delivery=policy(a=5))
+    assert plan['meals'][0]['id']=='buyable'
+
+
+def test_conflicting_package_metadata_is_not_used_for_underbuying():
+    assert quote_item(ingredient(quantity=1000),product('a',name='ברוקולי יחידה 350 גר',pack_quantity=1,pack_unit='קילוגרם')) is None
+    assert quote_item(ingredient(),product('a',price=4,unit_of_measure='100 גרם',unit_price=1)) is None
+
+
+def test_explicit_product_label_repairs_wrong_dimension_only_when_quantity_agrees():
+    p=product('a',name='קמח לבן 1 קג',pack_unit='ליטר',pack_quantity=1)
+    q=quote_item(ingredient(quantity=600),p)
+    assert q and q['packages']==1 and q['metadata_note']
+    assert 'קג' in q['purchase']
+    assert quote_item(ingredient(),{**p,'pack_quantity':5}) is None

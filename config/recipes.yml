@@ -172,7 +172,7 @@ recipes:
   - ingredient: tortillas
     quantity: 10
     unit: units
-  - ingredient: beans
+  - ingredient: cooked_beans
     quantity: 500
     unit: g
   - ingredient: yellow_cheese

@@ -22,6 +22,8 @@ ingredients:
     - פשטידה
     aliases:
     - broccoli
+    match_patterns:
+    - ^ברוקולי\b
   ricotta:
     name: ricotta
     search_terms:
@@ -42,15 +44,18 @@ ingredients:
     - פרמזן
     - פרמיג
     exclude_terms:
-    - ציפס
-    - חטיף
     - ביסלי
+    - חטיף
+    - ממרח
+    - ציפס
     - קרקר
     - רוטב
     aliases:
     - Parmesan
     - parmesan
     vegan: false
+    match_patterns:
+    - ^(גבינת |גבינה )?(פרמזן|פרמיג)
   lentils:
     name: lentils
     search_terms:
@@ -60,6 +65,11 @@ ingredients:
     - Lentils
     - lentils
     vegan: true
+    match_patterns:
+    - ^עדשים\b
+    exclude_terms:
+    - מבושל
+    - מרק
   sweet_potato:
     name: sweet potato
     search_terms:
@@ -79,6 +89,8 @@ ingredients:
     - Sweet potato
     - sweet potato
     vegan: true
+    match_patterns:
+    - ^(בטטה|בטטות)\b
   coconut_milk:
     name: coconut milk
     search_terms:
@@ -93,21 +105,24 @@ ingredients:
     search_terms:
     - אורז
     exclude_terms:
-    - פריכיות
-    - פרכיות
     - אטריות
     - איטריות
+    - דפי
+    - חטיף
+    - מבושל
+    - משקה
     - נודלס
     - פצפוצי
-    - חטיף
-    - דפי
-    - משקה
+    - פריכיות
+    - פרכיות
     aliases:
     - Basmati rice
     - Long-grain rice
     - Rice
     - rice
     vegan: true
+    match_patterns:
+    - ^אורז\b
   cauliflower:
     name: cauliflower
     search_terms:
@@ -121,6 +136,8 @@ ingredients:
     - פשטידה
     aliases:
     - cauliflower
+    match_patterns:
+    - ^כרובית\b
   chickpeas:
     name: chickpeas
     search_terms:
@@ -137,17 +154,26 @@ ingredients:
     - Tahini
     - tahini
     vegan: true
+    match_patterns:
+    - ^טחינה\b
+    exclude_terms:
+    - חציל
+    - ירוקה
+    - מתובל
+    - סלט
   eggs:
     name: eggs
     search_terms:
     - ביצים
     exclude_terms:
+    - אבקת
     - אטריות
+    - איטריות
+    - ללא ביצים
+    - מיונז
     - נודלס
     - פסטה
     - פתיתי
-    - אבקת
-    - איטריות
     aliases:
     - Egg
     - Egg for glazing
@@ -157,27 +183,30 @@ ingredients:
     - Eggs to serve
     - eggs
     vegan: false
+    match_patterns:
+    - ^ביצים\b
   tomatoes:
     name: tomatoes
     search_terms:
     - עגבניות
     - עגבניה
     exclude_terms:
-    - רוטב
-    - מרוסקות
-    - רכז
-    - קטשופ
-    - ציפס
     - חטיף
     - חתוכות
-    - שימורים
-    - רסק
-    - מיץ
-    - משקה
-    - מיובשות
     - מחית
-    - מרק
+    - מיובשות
+    - מיץ
     - ממרח
+    - מרוסקות
+    - מרק
+    - משקה
+    - פיצה
+    - ציפס
+    - קטשופ
+    - רוטב
+    - רכז
+    - רסק
+    - שימורים
     aliases:
     - Large tomatoes
     - Ripe tomatoes
@@ -185,6 +214,8 @@ ingredients:
     - Tomatoes
     - tomatoes
     vegan: true
+    match_patterns:
+    - ^(עגבניה|עגבניות)\b
   tomato_sauce:
     name: tomato sauce
     search_terms:
@@ -213,28 +244,35 @@ ingredients:
     - טופו
     aliases:
     - tofu
+    match_patterns:
+    - ^טופו\b
+    exclude_terms:
+    - ממרח
   bell_pepper:
     name: bell pepper
     search_terms:
     - פלפל
     - גמבה
     exclude_terms:
-    - ממרח
-    - רוטב
-    - פסטרמה
-    - קלויים
-    - סלט
+    - אנגלי
     - ביסלי
-    - חטיף
-    - ציפס
-    - קרקר
-    - טעם
-    - שחור
-    - לבן
-    - טחון
     - גרוס
-    - תבלין
+    - חטיף
     - חריף
+    - טחון
+    - טעם
+    - לבן
+    - ממרח
+    - סלט
+    - פסטרמה
+    - ציפס
+    - קאיין
+    - קלויים
+    - קרקר
+    - רוטב
+    - שאטה
+    - שחור
+    - תבלין
     aliases:
     - Bell pepper
     - Bell peppers
@@ -244,18 +282,23 @@ ingredients:
     - Red peppers
     - bell pepper
     vegan: true
+    match_patterns:
+    - ^(פלפל|פלפלים|גמבה)\b
   zucchini:
     name: zucchini
     search_terms:
     - קישוא
     - זוקיני
     exclude_terms:
-    - סלט
+    - ממולא
     - ממרח
+    - סלט
     aliases:
     - Courgette
     - zucchini
     vegan: true
+    match_patterns:
+    - ^(קישוא|קישואים|זוקיני)\b
   yellow_cheese:
     name: yellow cheese
     search_terms:
@@ -288,6 +331,8 @@ ingredients:
     - Spinach
     - spinach
     vegan: true
+    match_patterns:
+    - ^תרד\b
   mozzarella:
     name: mozzarella
     search_terms:
@@ -297,6 +342,8 @@ ingredients:
     - Mozzarella
     - mozzarella
     vegan: false
+    match_patterns:
+    - ^(גבינת |גבינה )?מוצרלה\b
   couscous:
     name: couscous
     search_terms:
@@ -328,39 +375,54 @@ ingredients:
     search_terms:
     - תירס
     exclude_terms:
-    - חטיף
-    - סטיקס
-    - קריספי
-    - נאצ'וס
     - דגני
-    - קורנפלקס
+    - חטיף
     - מקלות
-    - קמח
+    - נאצ'וס
+    - סטיקס
     - עמילן
     - פופקורן
+    - פיצה
+    - קורנפלקס
+    - קמח
+    - קריספי
+    - טרי
+    - קלח
+    - פיצוח
+    - קלוי
     aliases:
     - Sweetcorn
     - corn
     vegan: true
+    match_patterns:
+    - ^(גרגרי |גרעיני )?תירס\b
+    require_any_terms:
+    - גרעיני
+    - גרגרי
+    - שימור
+    - מתוק
   potatoes:
     name: potatoes
     search_terms:
     - תפוח אדמה
     - תפוחי אדמה
     exclude_terms:
-    - סלט
+    - חטיף
     - ממרח
     - מתוק
-    - ציפס
-    - חטיף
+    - ניוקי
+    - סלט
     - פריכיות
     - פרכיות
+    - ציפס
     aliases:
     - Potato
     - Potatoes
     - Waxy potatoes
     - potatoes
     vegan: true
+    match_patterns:
+    - ^(תפוח אדמה|תפוחי אדמה|תפו א)\b
   cream:
     name: cream
     search_terms:
@@ -381,18 +443,23 @@ ingredients:
     - בצל
     exclude_terms:
     - אבקת
-    - חטיף
     - ביסלי
-    - רוטב
-    - מרק
+    - חטיף
     - טבעות
+    - יבש
+    - ירוק
     - מטוגן
+    - מרק
     - קרקר
+    - רוטב
+    - שבבי
     aliases:
     - Onion
     - Onions
     - onion
     vegan: true
+    match_patterns:
+    - ^בצל\b
   carrots:
     name: carrots
     search_terms:
@@ -408,6 +475,8 @@ ingredients:
     - Carrots
     - carrots
     vegan: true
+    match_patterns:
+    - ^גזר\b
   cooked_beans:
     name: cooked beans
     search_terms:
@@ -433,10 +502,15 @@ ingredients:
     - חטיף
     - חלבון
     - מחית
+    - יבש
+    - סוגת
     aliases:
     - Peas
     - green peas
     vegan: true
+    require_any_terms:
+    - עדינ
+    - קפוא
   salt:
     name: salt
     search_terms:
@@ -481,6 +555,7 @@ ingredients:
     name: flour
     search_terms:
     - קמח חיטה
+    - קמח לבן
     aliases:
     - Flour
     - Flour for the base
@@ -489,6 +564,12 @@ ingredients:
     - Plain flour
     - Wheat flour
     vegan: true
+    match_patterns:
+    - ^קמח (חיטה|לבן)\b
+    exclude_terms:
+    - תופח
+    - מלא
+    - כוסמין
   sugar:
     name: sugar
     search_terms:
@@ -517,6 +598,16 @@ ingredients:
     - Butter for the filling
     - Butter for the pastry
     vegan: false
+    match_patterns:
+    - ^(חמאה|חמאת)\b
+    exclude_terms:
+    - בוטנים
+    - ביסקוויט
+    - חטיף
+    - עוג
+    - ציפס
+    - שוקולד
+    - שקדים
   milk:
     name: milk
     search_terms:
@@ -535,6 +626,14 @@ ingredients:
     aliases:
     - Garlic
     vegan: true
+    match_patterns:
+    - ^שום\b
+    exclude_terms:
+    - אבקת
+    - גבישי
+    - יבש
+    - כתוש
+    - שמן
   olive_oil:
     name: olive oil
     search_terms:
@@ -544,6 +643,9 @@ ingredients:
     - Olive oil
     - Olive oil for the sauce
     vegan: true
+    match_patterns:
+    - ^שמן זית\b
+    spoon_unit: ml
   vegetable_oil:
     name: vegetable oil
     search_terms:
@@ -554,6 +656,9 @@ ingredients:
     - Oil for frying
     - Vegetable oil
     vegan: true
+    match_patterns:
+    - ^שמן קנולה\b
+    spoon_unit: ml
   lemon:
     name: lemon
     search_terms:
@@ -569,6 +674,7 @@ ingredients:
     aliases:
     - Lemon juice
     vegan: true
+    spoon_unit: ml
   cucumber:
     name: cucumber
     search_terms:
@@ -577,6 +683,12 @@ ingredients:
     - Cucumber
     - Cucumbers
     vegan: true
+    match_patterns:
+    - ^(מלפפון|מלפפונים)\b
+    exclude_terms:
+    - בחומץ
+    - במלח
+    - כבוש
   aubergine:
     name: aubergine
     search_terms:
@@ -585,6 +697,14 @@ ingredients:
     - Aubergine
     - Aubergines
     vegan: true
+    match_patterns:
+    - ^(חציל|חצילים)\b
+    exclude_terms:
+    - טחינה
+    - מטוגן
+    - ממולא
+    - סלט
+    - קלוי
   red_onion:
     name: red onion
     search_terms:
@@ -608,6 +728,11 @@ ingredients:
     - Flat-leaf parsley
     - Parsley
     vegan: true
+    match_patterns:
+    - ^פטרוזיליה\b
+    exclude_terms:
+    - יבש
+    - יבשה
   coriander:
     name: coriander
     search_terms:
@@ -622,6 +747,8 @@ ingredients:
     aliases:
     - Dill
     vegan: true
+    match_patterns:
+    - ^שמיר\b
   basil:
     name: basil
     search_terms:
@@ -631,6 +758,11 @@ ingredients:
     - Basil leaves
     - Purple basil
     vegan: true
+    match_patterns:
+    - ^בזיליקום\b
+    exclude_terms:
+    - יבש
+    - יבשה
   mint:
     name: mint
     search_terms:
@@ -639,6 +771,11 @@ ingredients:
     - Fresh mint
     - Mint
     vegan: true
+    match_patterns:
+    - ^נענע\b
+    exclude_terms:
+    - יבש
+    - יבשה
   ginger:
     name: ginger
     search_terms:
@@ -707,6 +844,8 @@ ingredients:
     - Pudding rice
     - Short-grain rice
     vegan: true
+    match_patterns:
+    - ^אורז\b
   small_pasta:
     name: small pasta
     search_terms:
@@ -753,6 +892,12 @@ ingredients:
     aliases:
     - Honey
     vegan: false
+    match_patterns:
+    - ^דבש\b
+    exclude_terms:
+    - דגני
+    - חטיף
+    - עוג
   walnuts:
     name: walnuts
     search_terms:
@@ -761,6 +906,11 @@ ingredients:
     - Walnut halves
     - Walnuts
     vegan: true
+    match_patterns:
+    - ^אגוזי מלך\b
+    exclude_terms:
+    - מסוכר
+    - שוקולד
   almonds:
     name: almonds
     search_terms:
@@ -768,6 +918,13 @@ ingredients:
     aliases:
     - Almonds
     vegan: true
+    match_patterns:
+    - ^(שקד|שקדים)\b
+    exclude_terms:
+    - מלוח
+    - מסוכר
+    - קלוי
+    - שוקולד
   raisins:
     name: raisins
     search_terms:
@@ -775,6 +932,8 @@ ingredients:
     aliases:
     - Raisins
     vegan: true
+    match_patterns:
+    - ^צימוקים\b
   pine_nuts:
     name: pine nuts
     search_terms:
@@ -898,6 +1057,8 @@ ingredients:
     aliases:
     - Pumpkin
     vegan: true
+    match_patterns:
+    - ^דלעת\b
   dates:
     name: dates
     search_terms:
@@ -934,6 +1095,7 @@ ingredients:
     - Vinegar
     - White vinegar
     vegan: true
+    spoon_unit: ml
   wine_vinegar:
     name: wine vinegar
     search_terms:
@@ -942,6 +1104,7 @@ ingredients:
     - Red wine vinegar
     - Wine vinegar
     vegan: true
+    spoon_unit: ml
   white_wine:
     name: white wine
     search_terms:
