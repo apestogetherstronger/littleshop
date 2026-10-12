@@ -26,6 +26,14 @@ PYTHONPATH=src python -m littleshop.main
 
 Configuration lives in `config/settings.yml`. Recipes and ingredient aliases live in `config/recipes.yml`.
 
+## Recipe catalog
+
+Recipes come from the hand-maintained `config/recipes.yml` catalog, not from retailer feeds or scraped recipe websites. They are simple meal templates (ingredient quantities, preparation-time estimates and dietary tags), not attributed published recipes or complete cooking instructions. The planner does not generate recipes with an LLM; retailer promotions determine their ranking.
+
+The catalog contains 18 meal ideas, including 12 vegan options. Vegan additions include mujaddara, lentil bolognese, chickpea shakshuka, tofu coconut curry, sweet-potato and bean bowls, chickpea spinach rice, pea tomato pasta, and a roasted tofu vegetable tray. Basic pantry ingredients such as oil, salt and spices are assumed and are not included in basket estimates. Lentils and rice use dry weights; ingredients named chickpeas or cooked beans are ready-cooked (use drained weights).
+
+Vegan tags describe the meal template. Choose egg-free pasta and check packaged foods, sauces and promotion matches for animal ingredients: keyword matching is not product-level vegan certification. To request an entirely vegan plan, set `diet.required_recipe_tags: [vegan]` in `config/settings.yml`; the default remains vegetarian with vegan options eligible.
+
 ## Shopping lists and delivery
 
 The report groups the selected shopping items by shop. Each item has a 🍽️ link for every recipe/day using it, including repeated recipes, and a 🛒 retailer link. Carrefour uses barcode product links, Rami Levy uses product/search links, and unsupported product links fall back to the shop homepage. These links do not create a cart or select a delivery branch.

@@ -245,3 +245,403 @@ recipes:
         quantity: 250
         unit: g
         search_terms: ["גבינה צהובה", "גבינת צ'דר", "גאודה", "גבינת עמק"]
+
+  # Vegan meal templates; see README for pantry and packaged-food assumptions.
+  - id: mujaddara
+    name: Mujaddara (lentils, rice & onions)
+    prep_minutes: 40
+    tags:
+    - vegetarian
+    - vegan
+    - one-pot
+    ingredients:
+    - name: lentils
+      quantity: 300
+      unit: g
+      search_terms:
+      - עדשים
+    - name: rice
+      quantity: 350
+      unit: g
+      search_terms:
+      - אורז
+      exclude_terms:
+      - פריכיות
+      - פרכיות
+      - אטריות
+      - איטריות
+      - נודלס
+      - פצפוצי
+      - חטיף
+      - דפי
+      - משקה
+    - name: onion
+      unit: g
+      search_terms:
+      - בצל
+      exclude_terms:
+      - אבקת
+      - חטיף
+      - ביסלי
+      - רוטב
+      - מרק
+      - טבעות
+      - מטוגן
+      - קרקר
+      quantity: 500
+  - id: lentil_bolognese
+    name: Lentil bolognese pasta
+    prep_minutes: 35
+    tags:
+    - vegetarian
+    - vegan
+    - kid-friendly
+    ingredients:
+    - name: pasta
+      quantity: 500
+      unit: g
+      search_terms:
+      - פסטה
+      - ספגטי
+      - פנה
+      exclude_terms:
+      - רוטב
+    - name: lentils
+      quantity: 250
+      unit: g
+      search_terms:
+      - עדשים
+    - name: tomato sauce
+      quantity: 700
+      unit: g
+      search_terms:
+      - עגבניות מרוסקות
+      - רוטב עגבניות
+    - name: carrots
+      unit: g
+      search_terms:
+      - גזר
+      exclude_terms:
+      - מיץ
+      - עוגה
+      - סלט
+      - מחית
+      - משקה
+      quantity: 250
+    - name: onion
+      unit: g
+      search_terms:
+      - בצל
+      exclude_terms:
+      - אבקת
+      - חטיף
+      - ביסלי
+      - רוטב
+      - מרק
+      - טבעות
+      - מטוגן
+      - קרקר
+      quantity: 200
+  - id: chickpea_shakshuka
+    name: Chickpea shakshuka
+    prep_minutes: 30
+    tags:
+    - vegetarian
+    - vegan
+    - one-pot
+    - quick
+    ingredients:
+    - name: chickpeas
+      quantity: 600
+      unit: g
+      search_terms:
+      - גרגירי חומוס
+      - חומוס מבושל
+      - חומוס שימורים
+    - name: tomato sauce
+      quantity: 700
+      unit: g
+      search_terms:
+      - עגבניות מרוסקות
+      - רוטב עגבניות
+    - name: bell pepper
+      quantity: 400
+      unit: g
+      search_terms:
+      - פלפל
+      - גמבה
+      exclude_terms:
+      - ממרח
+      - רוטב
+      - פסטרמה
+      - קלויים
+      - סלט
+      - ביסלי
+      - חטיף
+      - ציפס
+      - קרקר
+      - טעם
+      - שחור
+      - לבן
+      - טחון
+      - גרוס
+      - תבלין
+      - חריף
+    - name: onion
+      unit: g
+      search_terms:
+      - בצל
+      exclude_terms:
+      - אבקת
+      - חטיף
+      - ביסלי
+      - רוטב
+      - מרק
+      - טבעות
+      - מטוגן
+      - קרקר
+      quantity: 200
+  - id: tofu_coconut_curry
+    name: Tofu & broccoli coconut curry
+    prep_minutes: 30
+    tags:
+    - vegetarian
+    - vegan
+    - quick
+    ingredients:
+    - name: tofu
+      quantity: 600
+      unit: g
+      search_terms:
+      - טופו
+    - name: broccoli
+      quantity: 600
+      unit: g
+      search_terms:
+      - ברוקולי
+      exclude_terms:
+      - חטיפ
+      - קציצ
+      - שניצל
+      - לביבות
+      - מאפה
+      - פשטידה
+    - name: coconut milk
+      quantity: 400
+      unit: ml
+      search_terms:
+      - חלב קוקוס
+      - קרם קוקוס
+    - name: rice
+      quantity: 400
+      unit: g
+      search_terms:
+      - אורז
+      exclude_terms:
+      - פריכיות
+      - פרכיות
+      - אטריות
+      - איטריות
+      - נודלס
+      - פצפוצי
+      - חטיף
+      - דפי
+      - משקה
+  - id: sweet_potato_bean_bowls
+    name: Sweet-potato & bean tahini bowls
+    prep_minutes: 40
+    tags:
+    - vegetarian
+    - vegan
+    - oven
+    ingredients:
+    - name: sweet potato
+      quantity: 1000
+      unit: g
+      search_terms:
+      - בטטה
+      exclude_terms:
+      - קרקר
+      - ציפס
+      - חטיף
+      - ביסלי
+      - אטריות
+      - איטריות
+      - נודלס
+      - פסטה
+      - רביולי
+      - קסביה
+    - name: cooked beans
+      unit: g
+      search_terms:
+      - שעועית אדומה
+      - שעועית לבנה
+      - שעועית שחורה
+      require_any_terms:
+      - מבושל
+      - שימור
+      - ברוטב
+      exclude_terms:
+      - מרק
+      - חטיף
+      - סלט
+      quantity: 600
+    - name: tahini
+      quantity: 150
+      unit: g
+      search_terms:
+      - טחינה
+    - name: tomatoes
+      quantity: 500
+      unit: g
+      search_terms:
+      - עגבניות
+      - עגבניה
+      exclude_terms:
+      - רוטב
+      - מרוסקות
+      - רכז
+      - קטשופ
+      - ציפס
+      - חטיף
+      - חתוכות
+      - שימורים
+      - רסק
+      - מיץ
+      - משקה
+      - מיובשות
+      - מחית
+      - מרק
+      - ממרח
+  - id: lemon_chickpea_spinach_rice
+    name: Chickpea & spinach rice
+    prep_minutes: 30
+    tags:
+    - vegetarian
+    - vegan
+    - one-pot
+    - quick
+    ingredients:
+    - name: chickpeas
+      quantity: 500
+      unit: g
+      search_terms:
+      - גרגירי חומוס
+      - חומוס מבושל
+      - חומוס שימורים
+    - name: spinach
+      quantity: 500
+      unit: g
+      search_terms:
+      - תרד
+      exclude_terms:
+      - אטריות
+      - איטריות
+      - פסטה
+      - רביולי
+      - בורקס
+      - מאפה
+    - name: rice
+      quantity: 400
+      unit: g
+      search_terms:
+      - אורז
+      exclude_terms:
+      - פריכיות
+      - פרכיות
+      - אטריות
+      - איטריות
+      - נודלס
+      - פצפוצי
+      - חטיף
+      - דפי
+      - משקה
+    - name: onion
+      unit: g
+      search_terms:
+      - בצל
+      exclude_terms:
+      - אבקת
+      - חטיף
+      - ביסלי
+      - רוטב
+      - מרק
+      - טבעות
+      - מטוגן
+      - קרקר
+      quantity: 200
+  - id: pea_tomato_pasta
+    name: Pea & tomato pasta
+    prep_minutes: 25
+    tags:
+    - vegetarian
+    - vegan
+    - quick
+    - kid-friendly
+    ingredients:
+    - name: pasta
+      quantity: 500
+      unit: g
+      search_terms:
+      - פסטה
+      - ספגטי
+      - פנה
+      exclude_terms:
+      - רוטב
+    - name: green peas
+      unit: g
+      search_terms:
+      - אפונה
+      exclude_terms:
+      - מרק
+      - חטיף
+      - חלבון
+      - מחית
+      quantity: 500
+    - name: tomato sauce
+      quantity: 600
+      unit: g
+      search_terms:
+      - עגבניות מרוסקות
+      - רוטב עגבניות
+  - id: roasted_vegetable_tofu_tray
+    name: Roasted tofu, potato & zucchini tray
+    prep_minutes: 45
+    tags:
+    - vegetarian
+    - vegan
+    - oven
+    ingredients:
+    - name: tofu
+      quantity: 600
+      unit: g
+      search_terms:
+      - טופו
+    - name: potatoes
+      quantity: 1000
+      unit: g
+      search_terms:
+      - תפוח אדמה
+      - תפוחי אדמה
+      exclude_terms:
+      - סלט
+      - ממרח
+      - מתוק
+      - ציפס
+      - חטיף
+      - פריכיות
+      - פרכיות
+    - name: zucchini
+      quantity: 600
+      unit: g
+      search_terms:
+      - קישוא
+      - זוקיני
+      exclude_terms:
+      - סלט
+      - ממרח
+    - name: tahini
+      quantity: 150
+      unit: g
+      search_terms:
+      - טחינה
