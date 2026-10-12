@@ -116,4 +116,4 @@ Ingredient matching supports anchored `match_patterns` as well as aliases/exclus
 
 ## Report language
 
-Generated reports use Hebrew labels, dish/ingredient names and a right-to-left wrapper. Translation is a static display layer (`src/littleshop/hebrew.py`); recipe IDs, matching, prices and source records are unchanged. Imported English instructions remain linked in their attributed source records unless a recipe has `instructions_he`. Product names and promotion terms retain the retailer's original wording.
+Generated reports use Hebrew labels, dish/ingredient names and a right-to-left wrapper. Translation is a static display layer (`src/littleshop/hebrew.py`); recipe IDs, matching, prices and source records are unchanged. Each original meal template now has Hebrew cooking steps. Imported instructions render inline in their original language when no `instructions_he` exists, with attribution and source links retained. The report also includes a recipe navigation list. Product names and promotion terms retain the retailer's original wording.

@@ -114,3 +114,9 @@ def test_report_retains_source_instructions_and_servings(dictionary):
     assert 'מספר מנות במתכון: 4' in report and 'הוראות ההכנה במקור באנגלית' in report
     assert '[למקור](https://example.com/rice)' in report
     assert 'CC0' in report
+    assert 'Cook rice.' in report  # Original instructions survive Hebrew rendering.
+
+
+def test_original_catalog_has_hebrew_cooking_steps():
+    recipes=load_yaml(ROOT/'config/recipes.yml')['recipes']
+    assert all(len(r.get('instructions_he',[]))>=3 for r in recipes)

@@ -68,6 +68,8 @@ def render_report(plan,chain_runs,errors):
         lines+=['','### תקלות בטעינת הנתונים','']
         lines += [f'- <span dir="ltr">{escape(e)}</span>' for e in errors]
     lines += ['','## התפריט השבועי','']
+    lines += [f"- [יום {day}: {he.recipe(meal['name'])}](#recipe-day-{day})" for day,meal in enumerate(plan['meals'],1)]
+    lines += ['']
     for day,meal in enumerate(plan['meals'],1):
         lines += [f'<a id="recipe-day-{day}"></a>',f"### יום {day}: {he.recipe(meal['name'])} ({meal.get('prep_minutes','?')} דקות)",'']
         tags=meal.get('tags',[])
@@ -78,7 +80,15 @@ def render_report(plan,chain_runs,errors):
             lines += [f"מקור: {escape(source['attribution'])} · רישיון: {escape(source['license'])}  ",
                       f"[למקור]({source['url']}) · [המתכון המלא והוראות ההכנה במקור באנגלית](../data/recipes/{meal['id']}.json)",'']
         if meal.get('instructions_he'):
-            lines+=['אופן ההכנה:','']+[f'{n}. {escape(step)}' for n,step in enumerate(meal['instructions_he'],1)]+['']
+            lines+=['**אופן ההכנה:**','']+[f'{n}. {escape(step)}' for n,step in enumerate(meal['instructions_he'],1)]+['']
+        elif meal.get('instructions'):
+            lines+=['**אופן ההכנה — נוסח המקור באנגלית:**','','<div dir="ltr">','']
+            lines+=[f'{n}. {escape(step)}' for n,step in enumerate(meal['instructions'],1)]
+            lines+=['','</div>','']
+        else:
+            lines+=['הוראות הכנה עדיין חסרות למנה זו.','']
+        if meal.get('pantry_note_he'):
+            lines += [meal['pantry_note_he'],'']
         if meal.get('pantry'):
             lines+=['בדיקה במזווה — לא נכלל במחיר הסל: '+ '; '.join(he.ingredient(i['name']) for i in meal['pantry']), '']
         lines += [f"ציון מבצעים: **{meal['deal_score']}**" ]
