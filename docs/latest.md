@@ -1,6 +1,6 @@
 # LittleShop weekly plan
 
-Generated: 2026-10-12T19:08+03:00
+Generated: 2026-10-12T19:12+03:00
 
 Feed coverage: **4 loaded, 0 failed**.
 
@@ -63,7 +63,7 @@ These offers may be at different shops. The shopping list below shows the exact 
   תירס קיד מתוק יכין 4  
   Shop: carrefour  
   Regular listed price: **₪9.10**  
-  Advertised promo price: **₪11.90** — conditional; eligibility not verified  
+  Reported offer amount: **₪11.90** · minimum quantity: 2 — not a verified per-item price; check bundle terms  
   Promotion terms:  
   גרעיני תירס מתוק יכין 400 גרם
 
@@ -91,7 +91,7 @@ These offers may be at different shops. The shopping list below shows the exact 
   ברוקולי ארוז  
   Shop: carrefour  
   Regular listed price: **₪12.90**  
-  Advertised promo price: **₪14.00** — conditional; eligibility not verified  
+  Reported offer amount: **₪14.00** · minimum quantity: 2 — not a verified per-item price; check bundle terms  
   Promotion terms:  
   (ברוקולי ארוז (תקומה
 
@@ -179,7 +179,7 @@ These offers may be at different shops. The shopping list below shows the exact 
   אפונה עדינה מוקפאת  
   Shop: victory  
   Regular listed price: **₪10.90**  
-  Advertised promo price: **₪15.90** — conditional; eligibility not verified  
+  Multi-buy: **2 for ₪15.90 total** (₪7.95 each when buying 2; conditions apply)  
   Promotion terms:  
   2ב15.90 שדה בשקית- שעועית ירוקה שלמה/חתוכה/חומוס/אפונה עדינה
 
@@ -207,7 +207,7 @@ These offers may be at different shops. The shopping list below shows the exact 
   עדשים ירוקות 500 גרם  
   Shop: rami-levy  
   Regular listed price: **₪9.90**  
-  Advertised promo price: **₪14.00** — conditional; eligibility not verified  
+  Multi-buy: **2 for ₪14.00 total** (₪7.00 each when buying 2; conditions apply)  
   Promotion terms:  
   עדשים 500 גרם סוגת 2ב14
 
@@ -259,7 +259,7 @@ These offers may be at different shops. The shopping list below shows the exact 
   ברוקולי ארוז  
   Shop: carrefour  
   Regular listed price: **₪12.90**  
-  Advertised promo price: **₪14.00** — conditional; eligibility not verified  
+  Reported offer amount: **₪14.00** · minimum quantity: 2 — not a verified per-item price; check bundle terms  
   Promotion terms:  
   (ברוקולי ארוז (תקומה
 
@@ -267,7 +267,7 @@ These offers may be at different shops. The shopping list below shows the exact 
   תחליף שמנת לבישול על בסיס אורז אורגני 20  
   Shop: victory  
   Regular listed price: **₪7.90**  
-  Advertised promo price: **₪11.00** — conditional; eligibility not verified  
+  Multi-buy: **2 for ₪11.00 total** (₪5.50 each when buying 2; conditions apply)  
   Promotion terms:  
   2ב11 תחליף שמנת לבישול על בסיס אורז אורגני
 
@@ -303,7 +303,7 @@ These offers may be at different shops. The shopping list below shows the exact 
   עדשים ירוקות 500 גרם  
   Shop: rami-levy  
   Regular listed price: **₪9.90**  
-  Advertised promo price: **₪14.00** — conditional; eligibility not verified  
+  Multi-buy: **2 for ₪14.00 total** (₪7.00 each when buying 2; conditions apply)  
   Promotion terms:  
   עדשים 500 גרם סוגת 2ב14
 
@@ -319,7 +319,7 @@ These offers may be at different shops. The shopping list below shows the exact 
   גזר גמדי רמילוי 800  
   Shop: rami-levy  
   Regular listed price: **₪12.90**  
-  Advertised promo price: **₪20.00** — conditional; eligibility not verified  
+  Multi-buy: **2 for ₪20.00 total** (₪10.00 each when buying 2; conditions apply)  
   Promotion terms:  
   אפונה גינה/גזר גמדי 800גרם רמי לוי 2ב20
 

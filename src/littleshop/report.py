@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from datetime import datetime
 from html import escape
+import re
 from typing import Any
 from zoneinfo import ZoneInfo
 
@@ -32,6 +33,15 @@ def _promo_label(deal):
     if price is not None:
         return f"Promo price: **{_money(price)}** (simple offer)"
     advertised = deal.get('discounted_price')
+    minimum = deal.get('min_qty')
+    if isinstance(advertised, (int, float)) and advertised > 0 and isinstance(minimum, (int, float)) and minimum > 1:
+        terms = deal.get('promotion_description') or ''
+        bundle = re.search(r"(?<![\d.])(\d+)\s*ב\s*(\d+(?:\.\d+)?)(?![\d.])", terms)
+        if bundle and int(bundle[1]) == minimum and abs(float(bundle[2]) - advertised) < 0.005:
+            return (f"Multi-buy: **{minimum:g} for {_money(advertised)} total** "
+                    f"({_money(advertised / minimum)} each when buying {minimum:g}; conditions apply)")
+        return (f"Reported offer amount: **{_money(advertised)}** · minimum quantity: {minimum:g} "
+                "— not a verified per-item price; check bundle terms")
     if isinstance(advertised, (int, float)) and advertised > 0:
         return f"Advertised promo price: **{_money(advertised)}** — conditional; eligibility not verified"
     return "Promo price: **conditional / multi-buy** — no reliable single-item price"
