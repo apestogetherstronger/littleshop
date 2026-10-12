@@ -1,0 +1,117 @@
+{
+  "recipes": [
+    {
+      "name": "Coconut rice",
+      "source_id": "arroz-con-coco",
+      "servings": 6,
+      "prep_minutes": 60,
+      "category": "side",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Pour the coconut milk into a heavy pot and cook it over medium heat, stirring.",
+        "Keep cooking until the milk separates into oil and brown solids.",
+        "The moment the solids turn deep brown, add the water at once to stop the caramelisation.",
+        "Add the sugar, salt and raisins and bring it to the boil.",
+        "Rinse the rice until the water runs clear and add it to the pot in an even layer.",
+        "Cook uncovered over medium heat until the liquid falls to the level of the rice.",
+        "Cover it, drop the heat to its lowest and hold it twenty minutes without opening it once."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Long-grain rice",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Coconut milk",
+          "quantity": 800,
+          "unit": "ml",
+          "note": "full-fat"
+        },
+        {
+          "name": "Water",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Raisins",
+          "quantity": 80,
+          "unit": "g",
+          "note": "optional"
+        },
+        {
+          "name": "Salt",
+          "quantity": 1.5,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_86090fe70710cdff",
+      "ingredients": [
+        {
+          "ingredient": "rice",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "coconut_milk",
+          "quantity": 800,
+          "unit": "ml",
+          "note": "full-fat"
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "raisins",
+          "quantity": 80,
+          "unit": "g",
+          "note": "optional"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1.5,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "0a67ea8b152a1be641db1a0808ee157df3eb870422c9e8a63c3b8bcac845856f",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

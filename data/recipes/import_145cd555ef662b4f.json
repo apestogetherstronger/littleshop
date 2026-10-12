@@ -1,0 +1,120 @@
+{
+  "recipes": [
+    {
+      "name": "Matoke",
+      "source_id": "matoke",
+      "servings": 5,
+      "prep_minutes": 110,
+      "category": "side",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Peel the bananas with oiled hands; their sap stains the skin black.",
+        "Pass the banana leaves over a flame for ten seconds so they turn pliable.",
+        "Line the bottom of the pot with the leaf ribs; they keep the parcel off the water.",
+        "Wrap the bananas in the leaves into a tight parcel and set it on that platform.",
+        "Add water two fingers deep, cover and steam for an hour and twenty, topping up with boiling water.",
+        "Without unwrapping, press the parcel through the leaves into an even purée and return it to the steam for ten minutes.",
+        "Serve with peanut sauce or stewed beef, straight onto the leaf."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Green matoke bananas",
+          "quantity": 12,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Banana leaves",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Peanut paste",
+          "quantity": 100,
+          "unit": "g",
+          "note": "for the sauce"
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_145cd555ef662b4f",
+      "ingredients": [
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "peanut_butter",
+          "quantity": 100,
+          "unit": "g",
+          "note": "for the sauce"
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "60f95b205bb340a7fc8a2c290f91977f97df85d04dd1789972cda8b410d3cf04",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Banana leaves",
+        "Unmapped ingredient: Green matoke bananas"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "recipes": [
+    {
+      "name": "Gromperekichelcher",
+      "source_id": "gromperekichelcher",
+      "servings": 5,
+      "prep_minutes": 50,
+      "category": "snack",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Grate the potatoes, onions and shallots coarsely into one bowl.",
+        "Wring the mixture out in a cloth, but not bone dry; a little moisture is needed.",
+        "Mix in the eggs, flour, chopped parsley, salt and pepper.",
+        "Heat the oil to 175 °C. Hotter, and the edges burn before the middle is hot.",
+        "Drop the mixture in by the spoonful, flattened to half a centimetre, and fry three minutes a side.",
+        "Drain on a rack, salt them and serve hot with apple sauce."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Potatoes",
+          "quantity": 1,
+          "unit": "kg",
+          "note": "floury variety"
+        },
+        {
+          "name": "Onions",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Flour",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Parsley",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Shallots",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 1,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Apple sauce",
+          "quantity": 250,
+          "unit": "g",
+          "note": "to serve"
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_bf4d7e459152ef30",
+      "ingredients": [
+        {
+          "ingredient": "potatoes",
+          "quantity": 1000,
+          "unit": "g",
+          "note": "floury variety"
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "flour",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "parsley",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 1000,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "b731636e739ed503769ae6141f77f921fc15106e91297b611402ea2b2f85ec0b",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Apple sauce",
+        "Unmapped ingredient: Shallots"
+      ]
+    }
+  ]
+}

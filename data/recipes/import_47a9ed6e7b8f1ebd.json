@@ -1,0 +1,132 @@
+{
+  "recipes": [
+    {
+      "name": "Key lime pie",
+      "source_id": "key-lime-pie",
+      "servings": 8,
+      "prep_minutes": 50,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Crush the crackers to fine crumbs and mix them with the melted butter, sugar and a pinch of salt.",
+        "Press the crumbs into a tin, working them up the sides, and bake at 175 °C for ten minutes.",
+        "Beat the yolks with the zest of two limes until pale, about three minutes.",
+        "Add the condensed milk and beat three minutes more, until the mixture thickens.",
+        "Pour in the lime juice in a thin stream with the mixer running; the mixture thickens in the bowl.",
+        "Pour the filling into the base and bake at 160 °C for fifteen minutes, until the edges set and the centre still wobbles.",
+        "Cool it and chill it four hours, then top with cream whipped with the icing sugar."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Graham crackers or digestives",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Butter",
+          "quantity": 110,
+          "unit": "g",
+          "note": "melted"
+        },
+        {
+          "name": "Sugar",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Condensed milk",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Egg yolks",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Limes",
+          "quantity": 8,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Double cream",
+          "quantity": 300,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Icing sugar",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "id": "import_47a9ed6e7b8f1ebd",
+      "ingredients": [
+        {
+          "ingredient": "butter",
+          "quantity": 110,
+          "unit": "g",
+          "note": "melted"
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "cream",
+          "quantity": 300,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "icing_sugar",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "bf798733587b5bcd446cfdf0875f9651b50eaed963c7e76d5daa3c6eb2da226a",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Condensed milk",
+        "Unmapped ingredient: Egg yolks",
+        "Unmapped ingredient: Graham crackers or digestives",
+        "Unmapped ingredient: Limes"
+      ]
+    }
+  ]
+}

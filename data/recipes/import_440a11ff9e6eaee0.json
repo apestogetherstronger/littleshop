@@ -1,0 +1,156 @@
+{
+  "recipes": [
+    {
+      "name": "Makroud",
+      "source_id": "makroud",
+      "servings": 14,
+      "prep_minutes": 105,
+      "category": "dessert",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Rub the semolina with the olive oil and salt by hand until it is damp all through.",
+        "Leave the mixture half an hour so the grain takes up the oil and swells.",
+        "Add the warm water with the orange blossom water a little at a time, gathering the dough without kneading.",
+        "Steam the dates soft and pound them with the cinnamon and zest into a smooth paste.",
+        "Roll the dough into a strip, lay a rope of date paste down the centre and close the edges over it.",
+        "Press the strip flat and cut it on the diagonal into four-centimetre diamonds.",
+        "Deep-fry at 170 °C until golden and drop them hot into cold honey for five minutes."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Semolina",
+          "quantity": 600,
+          "unit": "g",
+          "note": "medium grain"
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 180,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Warm water",
+          "quantity": 180,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Dates",
+          "quantity": 500,
+          "unit": "g",
+          "note": "pitted"
+        },
+        {
+          "name": "Ground cinnamon",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Orange zest",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Orange blossom water",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Honey",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 700,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "id": "import_440a11ff9e6eaee0",
+      "ingredients": [
+        {
+          "ingredient": "semolina",
+          "quantity": 600,
+          "unit": "g",
+          "note": "medium grain"
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 180,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "dates",
+          "quantity": 500,
+          "unit": "g",
+          "note": "pitted"
+        },
+        {
+          "ingredient": "honey",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 700,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Warm water",
+          "quantity": 180,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Ground cinnamon",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "8b46ffe03bbef0c98c2d7119f8e38e860086fe18003a43be01fe0e3487dd8563",
+      "status": "needs_review",
+      "review_issues": [
+        "Check vegan claim: Honey",
+        "Unmapped ingredient: Orange blossom water",
+        "Unmapped ingredient: Orange zest"
+      ]
+    }
+  ]
+}

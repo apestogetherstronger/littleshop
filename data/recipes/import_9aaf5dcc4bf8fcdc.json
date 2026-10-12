@@ -1,0 +1,109 @@
+{
+  "recipes": [
+    {
+      "name": "Skyr with berries",
+      "source_id": "skyr-with-berries",
+      "servings": 6,
+      "prep_minutes": 50,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Heat the milk to 85 °C, stirring, and hold it ten minutes without letting it boil.",
+        "Cool the milk to 40 °C by standing the pot in cold water.",
+        "Slacken the starter with a ladle of the warm milk and stir it back into the pot.",
+        "Add the rennet, stir for a few seconds and cover the pot.",
+        "Leave it somewhere warm for twelve hours, until the mass sets into a firm curd.",
+        "Turn the curd into a cloth and hang it over a bowl for six hours to drain the whey.",
+        "Whisk the skyr smooth and serve it with bilberries, cream and oats."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Skimmed milk",
+          "quantity": 4,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Skyr or yoghurt as starter",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Rennet",
+          "quantity": 2,
+          "unit": "pinch",
+          "note": null
+        },
+        {
+          "name": "Bilberries",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Cream",
+          "quantity": 150,
+          "unit": "ml",
+          "note": "to serve"
+        },
+        {
+          "name": "Sugar",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Rolled oats",
+          "quantity": 100,
+          "unit": "g",
+          "note": "to serve"
+        }
+      ],
+      "id": "import_9aaf5dcc4bf8fcdc",
+      "ingredients": [
+        {
+          "ingredient": "cream",
+          "quantity": 150,
+          "unit": "ml",
+          "note": "to serve"
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "oats",
+          "quantity": 100,
+          "unit": "g",
+          "note": "to serve"
+        }
+      ],
+      "pantry": [],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "e137d5680c3db785a045deca0383822926980cb592a1751225bc9600962c8d24",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Rennet",
+        "Unmapped ingredient: Bilberries",
+        "Unmapped ingredient: Rennet",
+        "Unmapped ingredient: Skimmed milk",
+        "Unmapped ingredient: Skyr or yoghurt as starter"
+      ]
+    }
+  ]
+}

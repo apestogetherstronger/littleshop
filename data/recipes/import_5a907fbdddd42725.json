@@ -1,0 +1,130 @@
+{
+  "recipes": [
+    {
+      "name": "Skābputra",
+      "source_id": "skabu-putra",
+      "servings": 5,
+      "prep_minutes": 85,
+      "category": "soup",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Rinse the barley and soak it in cold water for two hours.",
+        "Boil the barley in a litre and a half of water for an hour, until it collapses entirely.",
+        "Salt the porridge and cool it completely, stirring so no skin forms.",
+        "Work the curdled milk into the cold porridge gradually, to the consistency of a thick soup.",
+        "Leave it four hours somewhere cold so the sourness develops and evens out.",
+        "Boil the potatoes in their skins and serve them hot alongside.",
+        "Ladle it into bowls, add soured cream and scatter with spring onion and dill."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Pearl barley",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Water",
+          "quantity": 1.5,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Curdled milk or buttermilk",
+          "quantity": 1,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Soured cream",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Spring onion",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Dill",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Potatoes",
+          "quantity": 600,
+          "unit": "g",
+          "note": "to serve"
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_5a907fbdddd42725",
+      "ingredients": [
+        {
+          "ingredient": "soured_cream",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "spring_onion",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "dill",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "potatoes",
+          "quantity": 600,
+          "unit": "g",
+          "note": "to serve"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 1.5,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "6ff6b404ebe32c6f58287d1e1208bded587b5d16b1cc3fb7a6177d7b933e652c",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Curdled milk or buttermilk",
+        "Unmapped ingredient: Pearl barley"
+      ]
+    }
+  ]
+}

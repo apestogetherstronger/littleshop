@@ -1,0 +1,176 @@
+{
+  "recipes": [
+    {
+      "name": "Gemista",
+      "source_id": "gemista",
+      "servings": 6,
+      "prep_minutes": 125,
+      "category": "main",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Cut lids off the tomatoes and scoop out the flesh with a spoon without piercing the walls.",
+        "Blitz the flesh and add the sugar; it takes the edge off the tomato acidity.",
+        "Soften the onion in olive oil for ten minutes, until sweet.",
+        "Mix the raw rice with the onion, herbs, half the tomato purée, salt and pepper.",
+        "Fill the vegetables two-thirds full, cap them with their lids and set them in a dish.",
+        "Tuck potato wedges between them, pour over the remaining purée and douse it all with oil.",
+        "Bake covered with foil at 180 °C for an hour, then uncover and give it twenty minutes more."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Large tomatoes",
+          "quantity": 8,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Bell peppers",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Short-grain rice",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Onions",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Potatoes",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Parsley",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Mint",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Dill",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_8140fa6a8dbfc423",
+      "ingredients": [
+        {
+          "ingredient": "tomatoes",
+          "quantity": 8,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "bell_pepper",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "short_grain_rice",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 3,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "potatoes",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "parsley",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "mint",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "dill",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "5f302ef61de56c5b0d3754a57031f1e4eaa5cfb9fd021b8b5ad736c5f2ea161a",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

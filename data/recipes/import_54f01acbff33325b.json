@@ -1,0 +1,180 @@
+{
+  "recipes": [
+    {
+      "name": "Jollof rice",
+      "source_id": "jollof-rice",
+      "servings": 6,
+      "prep_minutes": 80,
+      "category": "main",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Blend the tomatoes, peppers, one onion and the scotch bonnet until smooth.",
+        "Fry the second onion in the oil until soft, add the tomato paste and cook five minutes, until it darkens.",
+        "Pour in the purée and reduce it for twenty-five minutes over medium heat, stirring. It darkens, thickens and the oil begins separating at the edges.",
+        "Add the curry powder, thyme, bay and stock, season and bring it to the boil.",
+        "Stir in the rinsed rice once, cover with foil and a lid, and cook on the lowest heat for twenty-five minutes. Do not lift the lid or stir.",
+        "Take it off and let it stand ten minutes. Fork it through from the bottom up, lifting the lower layer."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Long-grain rice",
+          "quantity": 500,
+          "unit": "g",
+          "note": "rinsed"
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Red peppers",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Onions",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Scotch bonnet",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Tomato paste",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Curry powder",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Dried thyme",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Bay leaves",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Chicken stock",
+          "quantity": 600,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Neutral oil",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_54f01acbff33325b",
+      "ingredients": [
+        {
+          "ingredient": "rice",
+          "quantity": 500,
+          "unit": "g",
+          "note": "rinsed"
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "bell_pepper",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "tomato_paste",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Curry powder",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Dried thyme",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Bay leaves",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "fe883613c76964f106337a5a6798122791a00b9315fa73b39351c2e995da5fab",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Chicken stock",
+        "Unmapped ingredient: Chicken stock",
+        "Unmapped ingredient: Scotch bonnet"
+      ]
+    }
+  ]
+}

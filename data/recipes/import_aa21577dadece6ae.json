@@ -1,0 +1,140 @@
+{
+  "recipes": [
+    {
+      "name": "Rice and peas",
+      "source_id": "rice-and-peas",
+      "servings": 6,
+      "prep_minutes": 110,
+      "category": "side",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Boil the soaked beans in a litre and a half of water for an hour, until soft.",
+        "Add the coconut milk, garlic, spring onion, thyme and allspice and bring it to the boil.",
+        "Rinse the rice until the water runs clear, add it to the pot and level it with a spoon.",
+        "Lay the whole scotch bonnet on top, season, and check that the liquid covers the rice by a finger.",
+        "Cover and cook twenty minutes on a low heat, without lifting the lid once.",
+        "Take it off the heat and let it stand covered for ten minutes.",
+        "Remove the chilli and the thyme sprigs, fluff the rice with a fork and serve."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Red kidney beans",
+          "quantity": 250,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "name": "Long-grain rice",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Coconut milk",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Scotch bonnet",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Thyme",
+          "quantity": 6,
+          "unit": "sprig",
+          "note": null
+        },
+        {
+          "name": "Spring onions",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Allspice berries",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_aa21577dadece6ae",
+      "ingredients": [
+        {
+          "ingredient": "rice",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "coconut_milk",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "spring_onion",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Thyme",
+          "quantity": 6,
+          "unit": "sprig",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "ddf764cb662aa778d4e63e9e74653a5f432af2a181518b8ff8bcb68b4c6e00c5",
+      "status": "needs_review",
+      "review_issues": [
+        "Dry/cooked state needs review: Red kidney beans",
+        "Unmapped ingredient: Allspice berries",
+        "Unmapped ingredient: Red kidney beans",
+        "Unmapped ingredient: Scotch bonnet"
+      ]
+    }
+  ]
+}

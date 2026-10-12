@@ -1,0 +1,1302 @@
+ingredients:
+  pasta:
+    name: pasta
+    search_terms:
+    - פסטה
+    - ספגטי
+    - פנה
+    exclude_terms:
+    - רוטב
+    aliases:
+    - pasta
+  broccoli:
+    name: broccoli
+    search_terms:
+    - ברוקולי
+    exclude_terms:
+    - חטיפ
+    - קציצ
+    - שניצל
+    - לביבות
+    - מאפה
+    - פשטידה
+    aliases:
+    - broccoli
+  ricotta:
+    name: ricotta
+    search_terms:
+    - ריקוטה
+    exclude_terms:
+    - רוטב
+    - רביולי
+    - פסטה
+    - בורקס
+    - מאפה
+    aliases:
+    - Ricotta
+    - ricotta
+    vegan: false
+  parmesan:
+    name: parmesan
+    search_terms:
+    - פרמזן
+    - פרמיג
+    exclude_terms:
+    - ציפס
+    - חטיף
+    - ביסלי
+    - קרקר
+    - רוטב
+    aliases:
+    - Parmesan
+    - parmesan
+    vegan: false
+  lentils:
+    name: lentils
+    search_terms:
+    - עדשים
+    aliases:
+    - Brown lentils
+    - Lentils
+    - lentils
+    vegan: true
+  sweet_potato:
+    name: sweet potato
+    search_terms:
+    - בטטה
+    exclude_terms:
+    - קרקר
+    - ציפס
+    - חטיף
+    - ביסלי
+    - אטריות
+    - איטריות
+    - נודלס
+    - פסטה
+    - רביולי
+    - קסביה
+    aliases:
+    - Sweet potato
+    - sweet potato
+    vegan: true
+  coconut_milk:
+    name: coconut milk
+    search_terms:
+    - חלב קוקוס
+    - קרם קוקוס
+    aliases:
+    - Coconut milk
+    - coconut milk
+    vegan: true
+  rice:
+    name: rice
+    search_terms:
+    - אורז
+    exclude_terms:
+    - פריכיות
+    - פרכיות
+    - אטריות
+    - איטריות
+    - נודלס
+    - פצפוצי
+    - חטיף
+    - דפי
+    - משקה
+    aliases:
+    - Basmati rice
+    - Long-grain rice
+    - Rice
+    - rice
+    vegan: true
+  cauliflower:
+    name: cauliflower
+    search_terms:
+    - כרובית
+    exclude_terms:
+    - חטיפ
+    - קציצ
+    - שניצל
+    - לביבות
+    - מאפה
+    - פשטידה
+    aliases:
+    - cauliflower
+  chickpeas:
+    name: chickpeas
+    search_terms:
+    - גרגירי חומוס
+    - חומוס מבושל
+    - חומוס שימורים
+    aliases:
+    - chickpeas
+  tahini:
+    name: tahini
+    search_terms:
+    - טחינה
+    aliases:
+    - Tahini
+    - tahini
+    vegan: true
+  eggs:
+    name: eggs
+    search_terms:
+    - ביצים
+    exclude_terms:
+    - אטריות
+    - נודלס
+    - פסטה
+    - פתיתי
+    - אבקת
+    - איטריות
+    aliases:
+    - Egg
+    - Egg for glazing
+    - Eggs
+    - Eggs for the cream
+    - Eggs for the filling
+    - Eggs to serve
+    - eggs
+    vegan: false
+  tomatoes:
+    name: tomatoes
+    search_terms:
+    - עגבניות
+    - עגבניה
+    exclude_terms:
+    - רוטב
+    - מרוסקות
+    - רכז
+    - קטשופ
+    - ציפס
+    - חטיף
+    - חתוכות
+    - שימורים
+    - רסק
+    - מיץ
+    - משקה
+    - מיובשות
+    - מחית
+    - מרק
+    - ממרח
+    aliases:
+    - Large tomatoes
+    - Ripe tomatoes
+    - Tomato
+    - Tomatoes
+    - tomatoes
+    vegan: true
+  tomato_sauce:
+    name: tomato sauce
+    search_terms:
+    - עגבניות מרוסקות
+    - רוטב עגבניות
+    aliases:
+    - tomato sauce
+  feta:
+    name: feta
+    search_terms:
+    - פטה
+    - בולגרית
+    require_any_terms:
+    - גבינ
+    - בולגרית
+    aliases:
+    - Brined white cheese
+    - Bulgarian white cheese
+    - Feta
+    - White brined cheese
+    - feta
+    vegan: false
+  tofu:
+    name: tofu
+    search_terms:
+    - טופו
+    aliases:
+    - tofu
+  bell_pepper:
+    name: bell pepper
+    search_terms:
+    - פלפל
+    - גמבה
+    exclude_terms:
+    - ממרח
+    - רוטב
+    - פסטרמה
+    - קלויים
+    - סלט
+    - ביסלי
+    - חטיף
+    - ציפס
+    - קרקר
+    - טעם
+    - שחור
+    - לבן
+    - טחון
+    - גרוס
+    - תבלין
+    - חריף
+    aliases:
+    - Bell pepper
+    - Bell peppers
+    - Green pepper
+    - Green peppers
+    - Red bell peppers
+    - Red peppers
+    - bell pepper
+    vegan: true
+  zucchini:
+    name: zucchini
+    search_terms:
+    - קישוא
+    - זוקיני
+    exclude_terms:
+    - סלט
+    - ממרח
+    aliases:
+    - Courgette
+    - zucchini
+    vegan: true
+  yellow_cheese:
+    name: yellow cheese
+    search_terms:
+    - גבינה צהובה
+    - גבינת צ'דר
+    - גאודה
+    - גבינת עמק
+    aliases:
+    - yellow cheese
+  lasagna:
+    name: lasagna
+    search_terms:
+    - לזניה
+    exclude_terms:
+    - רוטב
+    aliases:
+    - lasagna
+  spinach:
+    name: spinach
+    search_terms:
+    - תרד
+    exclude_terms:
+    - אטריות
+    - איטריות
+    - פסטה
+    - רביולי
+    - בורקס
+    - מאפה
+    aliases:
+    - Spinach
+    - spinach
+    vegan: true
+  mozzarella:
+    name: mozzarella
+    search_terms:
+    - מוצרלה
+    aliases:
+    - Fior di latte mozzarella
+    - Mozzarella
+    - mozzarella
+    vegan: false
+  couscous:
+    name: couscous
+    search_terms:
+    - קוסקוס
+    exclude_terms:
+    - מנה חמה
+    aliases:
+    - couscous
+  tortillas:
+    name: tortillas
+    search_terms:
+    - טורטיה
+    - טורטיות
+    exclude_terms:
+    - חטיף
+    - נאצ'וס
+    aliases:
+    - tortillas
+  beans:
+    name: beans
+    search_terms:
+    - שעועית שחורה
+    - שעועית אדומה
+    - שעועית לבנה
+    aliases:
+    - beans
+  corn:
+    name: corn
+    search_terms:
+    - תירס
+    exclude_terms:
+    - חטיף
+    - סטיקס
+    - קריספי
+    - נאצ'וס
+    - דגני
+    - קורנפלקס
+    - מקלות
+    - קמח
+    - עמילן
+    - פופקורן
+    aliases:
+    - Sweetcorn
+    - corn
+    vegan: true
+  potatoes:
+    name: potatoes
+    search_terms:
+    - תפוח אדמה
+    - תפוחי אדמה
+    exclude_terms:
+    - סלט
+    - ממרח
+    - מתוק
+    - ציפס
+    - חטיף
+    - פריכיות
+    - פרכיות
+    aliases:
+    - Potato
+    - Potatoes
+    - Waxy potatoes
+    - potatoes
+    vegan: true
+  cream:
+    name: cream
+    search_terms:
+    - שמנת לבישול
+    - שמנת מתוקה
+    exclude_terms:
+    - מסקרפונה
+    - גלידה
+    - עוגה
+    aliases:
+    - Cream
+    - Double cream
+    - cream
+    vegan: false
+  onion:
+    name: onion
+    search_terms:
+    - בצל
+    exclude_terms:
+    - אבקת
+    - חטיף
+    - ביסלי
+    - רוטב
+    - מרק
+    - טבעות
+    - מטוגן
+    - קרקר
+    aliases:
+    - Onion
+    - Onions
+    - onion
+    vegan: true
+  carrots:
+    name: carrots
+    search_terms:
+    - גזר
+    exclude_terms:
+    - מיץ
+    - עוגה
+    - סלט
+    - מחית
+    - משקה
+    aliases:
+    - Carrot
+    - Carrots
+    - carrots
+    vegan: true
+  cooked_beans:
+    name: cooked beans
+    search_terms:
+    - שעועית אדומה
+    - שעועית לבנה
+    - שעועית שחורה
+    require_any_terms:
+    - מבושל
+    - שימור
+    - ברוטב
+    exclude_terms:
+    - מרק
+    - חטיף
+    - סלט
+    aliases:
+    - cooked beans
+  green_peas:
+    name: green peas
+    search_terms:
+    - אפונה
+    exclude_terms:
+    - מרק
+    - חטיף
+    - חלבון
+    - מחית
+    aliases:
+    - Peas
+    - green peas
+    vegan: true
+  salt:
+    name: salt
+    search_terms:
+    - מלח
+    aliases:
+    - Coarse salt
+    - Salt
+    - Salt for the dough
+    vegan: true
+    pantry: true
+  pepper:
+    name: pepper
+    search_terms:
+    - פלפל שחור
+    - פלפל לבן
+    aliases:
+    - Black pepper
+    - White pepper
+    vegan: true
+    pantry: true
+  salt_and_pepper:
+    name: salt and pepper
+    search_terms:
+    - מלח
+    aliases:
+    - Salt and pepper
+    vegan: true
+    pantry: true
+  water:
+    name: water
+    search_terms: []
+    aliases:
+    - Boiling water
+    - Cold water
+    - Hot water
+    - Iced water
+    - Warm water
+    - Water
+    vegan: true
+    pantry: true
+  flour:
+    name: flour
+    search_terms:
+    - קמח חיטה
+    aliases:
+    - Flour
+    - Flour for the base
+    - Flour for the dough
+    - Flour for the filling
+    - Plain flour
+    - Wheat flour
+    vegan: true
+  sugar:
+    name: sugar
+    search_terms:
+    - סוכר לבן
+    aliases:
+    - Caster sugar
+    - Sugar
+    - Sugar for coating
+    - Sugar for the caramel
+    - Sugar for the custard
+    - Sugar for the dough
+    - Sugar for the filling
+    - Sugar for the glaze
+    - Sugar for the sauce
+    - Sugar for the top
+    vegan: true
+  butter:
+    name: butter
+    search_terms:
+    - חמאה
+    aliases:
+    - Butter
+    - Butter for frying
+    - Butter for laminating
+    - Butter for the dough
+    - Butter for the filling
+    - Butter for the pastry
+    vegan: false
+  milk:
+    name: milk
+    search_terms:
+    - חלב
+    aliases:
+    - Cold milk
+    - Hot milk
+    - Milk
+    - Milk for the custard
+    - Warm milk
+    vegan: false
+  garlic:
+    name: garlic
+    search_terms:
+    - שום
+    aliases:
+    - Garlic
+    vegan: true
+  olive_oil:
+    name: olive oil
+    search_terms:
+    - שמן זית
+    aliases:
+    - Extra virgin olive oil
+    - Olive oil
+    - Olive oil for the sauce
+    vegan: true
+  vegetable_oil:
+    name: vegetable oil
+    search_terms:
+    - שמן קנולה
+    aliases:
+    - Neutral oil
+    - Oil
+    - Oil for frying
+    - Vegetable oil
+    vegan: true
+  lemon:
+    name: lemon
+    search_terms:
+    - לימון
+    aliases:
+    - Lemon
+    - Lemons
+    vegan: true
+  lemon_juice:
+    name: lemon juice
+    search_terms:
+    - מיץ לימון
+    aliases:
+    - Lemon juice
+    vegan: true
+  cucumber:
+    name: cucumber
+    search_terms:
+    - מלפפון
+    aliases:
+    - Cucumber
+    - Cucumbers
+    vegan: true
+  aubergine:
+    name: aubergine
+    search_terms:
+    - חציל
+    aliases:
+    - Aubergine
+    - Aubergines
+    vegan: true
+  red_onion:
+    name: red onion
+    search_terms:
+    - בצל סגול
+    aliases:
+    - Red onion
+    vegan: true
+  spring_onion:
+    name: spring onion
+    search_terms:
+    - בצל ירוק
+    aliases:
+    - Spring onion
+    - Spring onions
+    vegan: true
+  parsley:
+    name: parsley
+    search_terms:
+    - פטרוזיליה
+    aliases:
+    - Flat-leaf parsley
+    - Parsley
+    vegan: true
+  coriander:
+    name: coriander
+    search_terms:
+    - כוסברה
+    aliases:
+    - Coriander
+    vegan: true
+  dill:
+    name: dill
+    search_terms:
+    - שמיר
+    aliases:
+    - Dill
+    vegan: true
+  basil:
+    name: basil
+    search_terms:
+    - בזיליקום
+    aliases:
+    - Basil
+    - Basil leaves
+    - Purple basil
+    vegan: true
+  mint:
+    name: mint
+    search_terms:
+    - נענע
+    aliases:
+    - Fresh mint
+    - Mint
+    vegan: true
+  ginger:
+    name: ginger
+    search_terms:
+    - גינגר
+    - גינג'ר
+    aliases:
+    - Ginger
+    vegan: true
+  chilli:
+    name: chilli
+    search_terms:
+    - פלפל חריף
+    aliases:
+    - Chilli
+    - Green chilli
+    - Green chillies
+    - Hot chilli
+    vegan: true
+  tomato_paste:
+    name: tomato paste
+    search_terms:
+    - רסק עגבניות
+    aliases:
+    - Tomato paste
+    vegan: true
+  tinned_tomatoes:
+    name: tinned tomatoes
+    search_terms:
+    - עגבניות מרוסקות
+    - עגבניות חתוכות
+    aliases:
+    - San Marzano tomatoes
+    - Tinned tomatoes
+    vegan: true
+  red_lentils:
+    name: red lentils
+    search_terms:
+    - עדשים אדומות
+    - עדשים כתומות
+    aliases:
+    - Red lentils
+    vegan: true
+  dried_chickpeas:
+    name: dried chickpeas
+    search_terms:
+    - חומוס יבש
+    - גרגירי חומוס
+    aliases:
+    - Dried chickpeas
+    vegan: true
+  bulgur:
+    name: bulgur
+    search_terms:
+    - בורגול
+    aliases:
+    - Cracked wheat
+    - Fine bulgur
+    vegan: true
+  short_grain_rice:
+    name: short grain rice
+    search_terms:
+    - אורז עגול
+    - אורז ריזוטו
+    aliases:
+    - Carnaroli rice
+    - Pudding rice
+    - Short-grain rice
+    vegan: true
+  small_pasta:
+    name: small pasta
+    search_terms:
+    - פסטה
+    aliases:
+    - Small pasta
+    vegan: true
+  dry_yeast:
+    name: dry yeast
+    search_terms:
+    - שמרים יבשים
+    aliases:
+    - Dried yeast
+    - Dry yeast
+    vegan: true
+  soured_cream:
+    name: soured cream
+    search_terms:
+    - שמנת חמוצה
+    aliases:
+    - Soured cream
+    - Thick soured cream
+    vegan: false
+  yoghurt:
+    name: yoghurt
+    search_terms:
+    - יוגורט
+    aliases:
+    - Bulgarian yoghurt
+    - Thick yoghurt
+    - Yoghurt
+    vegan: false
+  kefir:
+    name: kefir
+    search_terms:
+    - קפיר
+    aliases:
+    - Kefir
+    vegan: false
+  honey:
+    name: honey
+    search_terms:
+    - דבש
+    aliases:
+    - Honey
+    vegan: false
+  walnuts:
+    name: walnuts
+    search_terms:
+    - אגוזי מלך
+    aliases:
+    - Walnut halves
+    - Walnuts
+    vegan: true
+  almonds:
+    name: almonds
+    search_terms:
+    - שקדים
+    aliases:
+    - Almonds
+    vegan: true
+  raisins:
+    name: raisins
+    search_terms:
+    - צימוקים
+    aliases:
+    - Raisins
+    vegan: true
+  pine_nuts:
+    name: pine nuts
+    search_terms:
+    - צנוברים
+    aliases:
+    - Pine nuts
+    vegan: true
+  peanuts:
+    name: peanuts
+    search_terms:
+    - בוטנים
+    aliases:
+    - Peanuts
+    vegan: true
+  pistachios:
+    name: pistachios
+    search_terms:
+    - פיסטוק
+    aliases:
+    - Pistachios
+    vegan: true
+  sesame:
+    name: sesame
+    search_terms:
+    - שומשום
+    aliases:
+    - Sesame seeds
+    vegan: true
+  peanut_butter:
+    name: peanut butter
+    search_terms:
+    - חמאת בוטנים
+    aliases:
+    - Peanut butter
+    - Peanut paste
+    vegan: true
+  oats:
+    name: oats
+    search_terms:
+    - שיבולת שועל
+    aliases:
+    - Rolled oats
+    vegan: true
+  cocoa:
+    name: cocoa
+    search_terms:
+    - קקאו
+    aliases:
+    - Cocoa for the icing
+    - Cocoa powder
+    vegan: true
+  cornstarch:
+    name: cornstarch
+    search_terms:
+    - קורנפלור
+    aliases:
+    - Cornflour
+    - Cornstarch
+    vegan: true
+  brown_sugar:
+    name: brown sugar
+    search_terms:
+    - סוכר חום
+    aliases:
+    - Brown sugar
+    vegan: true
+  icing_sugar:
+    name: icing sugar
+    search_terms:
+    - אבקת סוכר
+    aliases:
+    - Icing sugar
+    vegan: true
+  breadcrumbs:
+    name: breadcrumbs
+    search_terms:
+    - פירורי לחם
+    aliases:
+    - Breadcrumbs
+    vegan: true
+  filo:
+    name: filo
+    search_terms:
+    - בצק פילו
+    aliases:
+    - Filo pastry
+    vegan: true
+  pita:
+    name: pita
+    search_terms:
+    - פיתה
+    - פיתות
+    aliases:
+    - Pita bread
+    vegan: true
+  avocado:
+    name: avocado
+    search_terms:
+    - אבוקדו
+    aliases:
+    - Avocado
+    vegan: true
+  cabbage:
+    name: cabbage
+    search_terms:
+    - כרוב
+    aliases:
+    - Cabbage
+    vegan: true
+  beetroot:
+    name: beetroot
+    search_terms:
+    - סלק
+    aliases:
+    - Beetroot
+    vegan: true
+  pumpkin:
+    name: pumpkin
+    search_terms:
+    - דלעת
+    aliases:
+    - Pumpkin
+    vegan: true
+  dates:
+    name: dates
+    search_terms:
+    - תמרים
+    aliases:
+    - Dates
+    vegan: true
+  date_paste:
+    name: date paste
+    search_terms:
+    - ממרח תמרים
+    aliases:
+    - Date paste
+    vegan: true
+  date_syrup:
+    name: date syrup
+    search_terms:
+    - סילאן
+    aliases:
+    - Date syrup
+    vegan: true
+  maple_syrup:
+    name: maple syrup
+    search_terms:
+    - סירופ מייפל
+    aliases:
+    - Maple syrup
+    vegan: true
+  vinegar:
+    name: vinegar
+    search_terms:
+    - חומץ
+    aliases:
+    - Vinegar
+    - White vinegar
+    vegan: true
+  wine_vinegar:
+    name: wine vinegar
+    search_terms:
+    - חומץ יין
+    aliases:
+    - Red wine vinegar
+    - Wine vinegar
+    vegan: true
+  white_wine:
+    name: white wine
+    search_terms:
+    - יין לבן
+    aliases:
+    - Dry white wine
+    vegan: true
+  coconut:
+    name: coconut
+    search_terms:
+    - קוקוס טחון
+    aliases:
+    - Desiccated coconut
+    - Grated coconut
+    vegan: true
+  semolina:
+    name: semolina
+    search_terms:
+    - סולת
+    aliases:
+    - Semolina
+    vegan: true
+  halloumi:
+    name: halloumi
+    search_terms:
+    - חלומי
+    aliases:
+    - Halloumi
+    vegan: false
+  moong_dal:
+    name: moong dal
+    search_terms:
+    - שעועית מש
+    aliases:
+    - Moong dal
+    vegan: true
+  yellow_split_peas:
+    name: yellow split peas
+    search_terms:
+    - אפונה צהובה
+    aliases:
+    - Yellow split peas
+    vegan: true
+  cumin:
+    name: cumin
+    search_terms:
+    - כמון
+    aliases:
+    - Cumin seeds
+    - Ground cumin
+    vegan: true
+    pantry: true
+  cinnamon:
+    name: cinnamon
+    search_terms:
+    - קינמון
+    aliases:
+    - Cinnamon
+    - Cinnamon stick
+    - Cinnamon sticks
+    - Ground cinnamon
+    vegan: true
+    pantry: true
+  paprika:
+    name: paprika
+    search_terms:
+    - פפריקה
+    aliases:
+    - Hot paprika
+    - Paprika
+    - Smoked paprika
+    - Sweet paprika
+    vegan: true
+    pantry: true
+  turmeric:
+    name: turmeric
+    search_terms:
+    - כורכום
+    aliases:
+    - Turmeric
+    vegan: true
+    pantry: true
+  cardamom:
+    name: cardamom
+    search_terms:
+    - הל
+    aliases:
+    - Cardamom
+    - Cardamom pods
+    - Ground cardamom
+    vegan: true
+    pantry: true
+  saffron:
+    name: saffron
+    search_terms:
+    - זעפרן
+    aliases:
+    - Saffron
+    vegan: true
+    pantry: true
+  oregano:
+    name: oregano
+    search_terms:
+    - אורגנו
+    aliases:
+    - Dried oregano
+    - Mexican oregano
+    - Oregano
+    vegan: true
+    pantry: true
+  thyme:
+    name: thyme
+    search_terms:
+    - טימין
+    aliases:
+    - Dried thyme
+    - Thyme
+    vegan: true
+    pantry: true
+  bay_leaves:
+    name: bay leaves
+    search_terms:
+    - עלי דפנה
+    aliases:
+    - Bay leaf
+    - Bay leaves
+    vegan: true
+    pantry: true
+  nutmeg:
+    name: nutmeg
+    search_terms:
+    - אגוז מוסקט
+    aliases:
+    - Nutmeg
+    vegan: true
+    pantry: true
+  curry_powder:
+    name: curry powder
+    search_terms:
+    - קארי
+    aliases:
+    - Curry powder
+    vegan: true
+    pantry: true
+  chilli_flakes:
+    name: chilli flakes
+    search_terms:
+    - צילי
+    aliases:
+    - Chilli flakes
+    vegan: true
+    pantry: true
+  vanilla:
+    name: vanilla
+    search_terms:
+    - וניל
+    aliases:
+    - Vanilla
+    - Vanilla pod
+    vegan: true
+    pantry: true
+  baking_powder:
+    name: baking powder
+    search_terms:
+    - אבקת אפייה
+    aliases:
+    - Baking powder
+    vegan: true
+    pantry: true
+  baking_soda:
+    name: baking soda
+    search_terms:
+    - סודה לשתיה
+    aliases:
+    - Baking soda
+    - Bicarbonate of soda
+    vegan: true
+    pantry: true
+  cloves:
+    name: cloves
+    search_terms:
+    - ציפורן
+    aliases:
+    - Cloves
+    - Ground cloves
+    vegan: true
+    pantry: true
+  ground_coriander:
+    name: ground coriander
+    search_terms:
+    - כוסברה טחונה
+    aliases:
+    - Ground coriander
+    vegan: true
+    pantry: true
+  dried_mint:
+    name: dried mint
+    search_terms:
+    - נענע
+    aliases:
+    - Dried mint
+    vegan: true
+    pantry: true
+  caraway:
+    name: caraway
+    search_terms:
+    - קימל
+    aliases:
+    - Caraway seeds
+    - Ground caraway
+    vegan: true
+    pantry: true
+  anise:
+    name: anise
+    search_terms:
+    - אניס
+    aliases:
+    - Aniseed
+    vegan: true
+    pantry: true
+  sumac:
+    name: sumac
+    search_terms:
+    - סומאק
+    aliases:
+    - Sumac
+    vegan: true
+    pantry: true
+  garam_masala:
+    name: garam masala
+    search_terms:
+    - גראם מסאלה
+    aliases:
+    - Garam masala
+    vegan: true
+    pantry: true
+  ghee:
+    name: ghee
+    aliases:
+    - Ghee
+    - Clarified butter
+    search_terms:
+    - גהי
+    vegan: false
+  paneer:
+    name: paneer
+    aliases:
+    - Paneer
+    search_terms:
+    - פניר
+    vegan: false
+  sunflower_oil:
+    name: sunflower oil
+    aliases:
+    - Sunflower oil
+    search_terms:
+    - שמן חמניות
+    vegan: true
+  fresh_yeast:
+    name: fresh yeast
+    aliases:
+    - Fresh yeast
+    search_terms:
+    - שמרים טריים
+    vegan: true
+  pizza_flour:
+    name: pizza flour
+    aliases:
+    - Type 00 flour
+    search_terms:
+    - קמח פיצה
+    - קמח 00
+    vegan: true
+  amba:
+    name: amba
+    aliases:
+    - Amba
+    search_terms:
+    - עמבה
+    vegan: true
+  zhug:
+    name: zhug
+    aliases:
+    - Zhug
+    search_terms:
+    - סחוג
+    vegan: true
+  sorrel:
+    name: sorrel
+    aliases:
+    - Sorrel
+    search_terms:
+    - חמציץ
+    vegan: true
+  wild_mushrooms:
+    name: wild mushrooms
+    aliases:
+    - Wild mushrooms
+    search_terms:
+    - פטריות יער
+    vegan: true
+  dried_apricots:
+    name: dried apricots
+    aliases:
+    - Dried apricots
+    search_terms:
+    - משמש מיובש
+    vegan: true
+  prunes:
+    name: prunes
+    aliases:
+    - Prunes
+    search_terms:
+    - שזיפים מיובשים
+    vegan: true
+  sherry_vinegar:
+    name: sherry vinegar
+    aliases:
+    - Sherry vinegar
+    search_terms:
+    - חומץ שרי
+    vegan: true
+  toor_dal:
+    name: toor dal
+    aliases:
+    - Toor dal
+    search_terms:
+    - טור דאל
+    vegan: true
+  mustard_seeds:
+    name: mustard seeds
+    aliases:
+    - Mustard seeds
+    search_terms:
+    - זרעי חרדל
+    vegan: true
+  dried_chillies:
+    name: dried chillies
+    aliases:
+    - Dried chillies
+    - Dried red chillies
+    search_terms:
+    - פלפל שאטה
+    vegan: true
+  asafoetida:
+    name: asafoetida
+    aliases:
+    - Asafoetida
+    search_terms:
+    - אספטידה
+    vegan: true
+  berbere:
+    name: berbere
+    aliases:
+    - Berbere
+    search_terms:
+    - ברברה
+    vegan: true

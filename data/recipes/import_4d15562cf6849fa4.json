@@ -1,0 +1,116 @@
+{
+  "recipes": [
+    {
+      "name": "Gurasa",
+      "source_id": "gurasa",
+      "servings": 6,
+      "prep_minutes": 110,
+      "category": "bread",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Dissolve the yeast with the sugar in the warm water and leave it ten minutes, until it foams.",
+        "Whisk in the flour and salt to a smooth, loose batter without lumps.",
+        "Add the oil and beat another minute, until the batter goes glossy.",
+        "Cover it and leave it warm for an hour, until bubbles break the surface.",
+        "Heat a dry pan over medium and pour in a ladle of batter.",
+        "Cover it and cook five minutes, until the top sets and turns matt.",
+        "Lift it out without turning it and stack the breads under a cloth."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Warm water",
+          "quantity": 550,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Dry yeast",
+          "quantity": 7,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_4d15562cf6849fa4",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "dry_yeast",
+          "quantity": 7,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Warm water",
+          "quantity": 550,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "42c1817b7057bcdfbdefbbfd626c362b892e65842ca14ae5026dddb811f98205",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

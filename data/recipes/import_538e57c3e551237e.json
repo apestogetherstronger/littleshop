@@ -1,0 +1,199 @@
+{
+  "recipes": [
+    {
+      "name": "Bhuna khichuri",
+      "source_id": "bhuna-khichuri",
+      "servings": 5,
+      "prep_minutes": 65,
+      "category": "main",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Dry-roast the moong dal for five minutes, to a nutty smell, and rinse it.",
+        "Rinse the rice and dry it. Wet rice will not toast; it steams in its own water.",
+        "Heat the ghee, brown the potatoes and lift them out.",
+        "In the same ghee fry the bay, cinnamon and cardamom, then the onion and ginger until golden.",
+        "Add the rice and dal with the turmeric and cumin and toast them five minutes, stirring.",
+        "Add boiling water at twice the volume of the grain, return the potatoes, season and add the whole chillies.",
+        "Cover and cook twenty minutes on a low heat, then let it stand ten minutes without opening it."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Short-grain rice",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Moong dal",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Onions",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Ginger",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Green chillies",
+          "quantity": 5,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Turmeric",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Ground cumin",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Bay leaves",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cinnamon stick",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cardamom pods",
+          "quantity": 5,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Ghee",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Potatoes",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_538e57c3e551237e",
+      "ingredients": [
+        {
+          "ingredient": "short_grain_rice",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "moong_dal",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "ginger",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "chilli",
+          "quantity": 5,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "ghee",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "potatoes",
+          "quantity": 3,
+          "unit": "units",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Turmeric",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Ground cumin",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Bay leaves",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cinnamon stick",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cardamom pods",
+          "quantity": 5,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "a08606fc5b3a7aa1ea4136cc2a644b6cae9b9242d981b3beb89c6390e84f503b",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

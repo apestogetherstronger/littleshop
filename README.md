@@ -26,13 +26,38 @@ PYTHONPATH=src python -m littleshop.main
 
 Configuration lives in `config/settings.yml`. Recipes and ingredient aliases live in `config/recipes.yml`.
 
-## Recipe catalog
+## Recipe catalog and imports
 
-Recipes come from the hand-maintained `config/recipes.yml` catalog, not from retailer feeds or scraped recipe websites. They are simple meal templates (ingredient quantities, preparation-time estimates and dietary tags), not attributed published recipes or complete cooking instructions. The planner does not generate recipes with an LLM; retailer promotions determine their ranking.
+[Browse the recipe bank](docs/recipe-bank.md): 203 records — 18 original meal templates and 185 imported recipe records. Of the imports, 40 pass structural/ingredient checks, including 19 mains and soups. The default planner therefore has **37 eligible meal options**; 145 imported records remain in an explicit review queue. Desserts, breads, snacks, sides and drinks are browsable but do not replace dinner meals.
 
-The catalog contains 18 meal ideas, including 12 vegan options. Vegan additions include mujaddara, lentil bolognese, chickpea shakshuka, tofu coconut curry, sweet-potato and bean bowls, chickpea spinach rice, pea tomato pasta, and a roasted tofu vegetable tray. Basic pantry ingredients such as oil, salt and spices are assumed and are not included in basket estimates. Lentils and rice use dry weights; ingredients named chickpeas or cooked beans are ready-cooked (use drained weights).
+Original templates live in `config/recipes.yml`; shared ingredient names, exact import aliases and Hebrew retailer matching rules live in `config/ingredients.yml` (139 ingredients). Imported recipes live in `data/recipes/`, with source attribution, license, pinned revision, servings, full cooking instructions, raw ingredient lines, normalized references and review reasons. UniTools-derived content and adaptations remain CC BY-SA 4.0; see `data/README.md`. No photos are copied.
 
-Vegan tags describe the meal template. Choose egg-free pasta and check packaged foods, sauces and promotion matches for animal ingredients: keyword matching is not product-level vegan certification. To request an entirely vegan plan, set `diet.required_recipe_tags: [vegan]` in `config/settings.yml`; the default remains vegetarian with vegan options eligible.
+The pipeline and runtime are deterministic and use no LLM. Import one recipe page containing Schema.org Recipe JSON-LD (including nested `@graph` and HowToSection instructions):
+
+```bash
+PYTHONPATH=src python -m littleshop.recipe_import \
+  --url 'https://example.org/your-permitted-recipe' \
+  --license 'CC-BY-SA-4.0' --attribution 'Recipe author'
+```
+
+Use an actual permitted source and its verified attribution/license; a license argument records provenance, it does not grant permission. Add `--file saved-page.html` to import saved HTML/JSON offline with the same source URL. The importer fetches only the requested URL, not a whole website. Unsupported markup fails clearly. Duplicate source identities or identical normalized title/ingredient records are skipped; near-duplicate variants need review.
+
+Only exact dictionary aliases are accepted. Ambiguous servings, ranges, cans without usable sizes, unknown ingredients, missing instructions/times and contradictory dietary claims produce `needs_review`. Dry and cooked bean quantities are not silently equated. Cups are not converted to grams without ingredient-specific densities. Product prices and pack compatibility are checked later, and unpriced items remain visible.
+
+To expand coverage, add precise aliases/matching terms to the dictionary or correct a record's `raw_ingredients`, then revalidate and rebuild the index:
+
+```bash
+PYTHONPATH=src python -m littleshop.recipe_import --revalidate
+PYTHONPATH=src python scripts/recipe_bank_index.py
+```
+
+The initial licensed bulk import is reproducible with a pinned copy of `farcrak/unitools-recipes`:
+
+```bash
+PYTHONPATH=src python scripts/import_unitools.py /path/to/unitools-recipes-v1.json --revision COMMIT_SHA
+```
+
+Source dietary tags are claims, not certifications. Conflicts remain in review; check packaged pasta, sauces and cheeses for dietary suitability. To request vegan-only planning, set `diet.required_recipe_tags: [vegan]` in settings. Source recipe servings are displayed without automatic scaling. Original templates still assume basic pantry oil/salt/spices; imported pantry checks are displayed explicitly and excluded from shopping estimates.
 
 ## Shopping lists and delivery
 

@@ -1,0 +1,189 @@
+{
+  "recipes": [
+    {
+      "name": "Fattet hummus",
+      "source_id": "fattet-hummus",
+      "servings": 5,
+      "prep_minutes": 110,
+      "category": "main",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Boil the chickpeas in unsalted water for ninety minutes, until completely soft, and keep the water.",
+        "Tear the pitas into two-finger pieces and fry them in oil to a golden crisp.",
+        "Whisk the yoghurt with the tahini, crushed garlic, lemon juice and salt until smooth.",
+        "Let the yoghurt mixture down with a couple of spoons of the chickpea water to the body of thick cream.",
+        "Fry the pine nuts in the ghee until golden and take them off the heat.",
+        "Spread the fried bread in a dish and top it with the hot chickpeas and a spoon of their liquid.",
+        "Pour over the yoghurt, spoon on the butter and nuts, dust with paprika and parsley and serve at once."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Chickpeas",
+          "quantity": 400,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "name": "Pita bread",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Thick yoghurt",
+          "quantity": 700,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Tahini",
+          "quantity": 4,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 5,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Lemon",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Ghee",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Pine nuts",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Parsley",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Paprika",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_c423d11aae5fb2f9",
+      "ingredients": [
+        {
+          "ingredient": "chickpeas",
+          "quantity": 400,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "ingredient": "pita",
+          "quantity": 3,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "yoghurt",
+          "quantity": 700,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "tahini",
+          "quantity": 4,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 5,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "lemon",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "ghee",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "pine_nuts",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "parsley",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Paprika",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "8883852104b6b26290498e74e43deca207f77a2204f6d819532e5ec0d5143d5a",
+      "status": "needs_review",
+      "review_issues": [
+        "Dry/cooked state needs review: Chickpeas"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "recipes": [
+    {
+      "name": "Baku pakhlava",
+      "source_id": "pakhlava-baku",
+      "servings": 16,
+      "prep_minutes": 145,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Dissolve the yeast in the warm milk and knead a dough with the flour, yolks, a spoon of ghee and salt.",
+        "Let the dough rise an hour somewhere warm and divide it into eight equal balls.",
+        "Mix the ground walnuts with half the sugar and the cardamom; that is the filling.",
+        "Roll the first ball to the size of the tin, lay it in and brush it generously with ghee.",
+        "Alternate layers of dough and nut filling, buttering each, until the dough runs out.",
+        "Cut it into diamonds right down to the base, press a walnut half into each and brush with saffron infusion.",
+        "Bake at 180 °C for forty-five minutes and pour over a hot syrup of honey and the remaining sugar."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Milk",
+          "quantity": 200,
+          "unit": "ml",
+          "note": "warm"
+        },
+        {
+          "name": "Dry yeast",
+          "quantity": 7,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Ghee",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Egg yolks",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Walnuts",
+          "quantity": 500,
+          "unit": "g",
+          "note": "ground"
+        },
+        {
+          "name": "Sugar",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Ground cardamom",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Saffron",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        },
+        {
+          "name": "Honey",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Walnut halves",
+          "quantity": 40,
+          "unit": "piece",
+          "note": "to decorate"
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "id": "import_a715a0f583930a81",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 200,
+          "unit": "ml",
+          "note": "warm"
+        },
+        {
+          "ingredient": "dry_yeast",
+          "quantity": 7,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "ghee",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "walnuts",
+          "quantity": 500,
+          "unit": "g",
+          "note": "ground"
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "honey",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "walnuts",
+          "quantity": 40,
+          "unit": "units",
+          "note": "to decorate"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Ground cardamom",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Saffron",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "a96af17550a413c5d8554227e444230f2fe0fa04c110b9d3e84ca4121a733e49",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Egg yolks"
+      ]
+    }
+  ]
+}

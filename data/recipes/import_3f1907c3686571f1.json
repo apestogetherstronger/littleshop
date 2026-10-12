@@ -1,0 +1,159 @@
+{
+  "recipes": [
+    {
+      "name": "Patatas bravas",
+      "source_id": "patatas-bravas",
+      "servings": 4,
+      "prep_minutes": 50,
+      "category": "snack",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Cut the potato into uneven chunks: broken faces give more crisp surface. Rinse off the starch and dry them thoroughly.",
+        "Fry at 140 °C for eight minutes until soft, without letting them colour. Set them aside to cool at least ten minutes.",
+        "For the sauce, fry the garlic in olive oil, take the pan off the heat, add the flour and both paprikas and stir. On the flame paprika burns in seconds.",
+        "Return it to a low flame, pour in the stock in a thin stream, stirring, and cook five minutes to a sauce. Add the vinegar and salt.",
+        "Raise the oil to 190 °C and fry the potato three minutes more, to a deep gold. Salt it at once.",
+        "Pile them on a dish and pour the hot sauce over immediately before serving."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Potatoes",
+          "quantity": 800,
+          "unit": "g",
+          "note": "in 3 cm cubes"
+        },
+        {
+          "name": "Plain flour",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Sweet paprika",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Hot paprika",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Chicken or vegetable stock",
+          "quantity": 300,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Sherry vinegar",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Olive oil for the sauce",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 800,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_3f1907c3686571f1",
+      "ingredients": [
+        {
+          "ingredient": "potatoes",
+          "quantity": 800,
+          "unit": "g",
+          "note": "in 3 cm cubes"
+        },
+        {
+          "ingredient": "flour",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "sherry_vinegar",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 800,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Sweet paprika",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Hot paprika",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "dd31e5e65b91751883e8700bbf56833692ded6cc25bce7cb11719510ea6c0f5d",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Chicken or vegetable stock",
+        "Unmapped ingredient: Chicken or vegetable stock"
+      ]
+    }
+  ]
+}

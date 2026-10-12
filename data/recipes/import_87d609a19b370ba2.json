@@ -1,0 +1,133 @@
+{
+  "recipes": [
+    {
+      "name": "Gazpacho",
+      "source_id": "gazpacho",
+      "servings": 4,
+      "prep_minutes": 20,
+      "category": "soup",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Soak the bread crumb in cold water for ten minutes and squeeze it dry.",
+        "Blend the tomatoes, cucumber, pepper, garlic and bread until completely smooth. It takes longer than you expect — a good two minutes at full speed.",
+        "With the blender still running, pour the oil in a thin stream. The soup pales and thickens: that is the emulsion.",
+        "Add the vinegar and salt, taste and season again. Pass it through a sieve for a silkier texture and chill for at least two hours."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Ripe tomatoes",
+          "quantity": 1,
+          "unit": "kg",
+          "note": null
+        },
+        {
+          "name": "Cucumber",
+          "quantity": 1,
+          "unit": "piece",
+          "note": "peeled"
+        },
+        {
+          "name": "Green pepper",
+          "quantity": 0.5,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 1,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Stale white bread",
+          "quantity": 80,
+          "unit": "g",
+          "note": "crumb only, soaked"
+        },
+        {
+          "name": "Extra virgin olive oil",
+          "quantity": 80,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Sherry vinegar",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_87d609a19b370ba2",
+      "ingredients": [
+        {
+          "ingredient": "tomatoes",
+          "quantity": 1000,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "cucumber",
+          "quantity": 1,
+          "unit": "units",
+          "note": "peeled"
+        },
+        {
+          "ingredient": "bell_pepper",
+          "quantity": 0.5,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 1,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 80,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "sherry_vinegar",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "d691b807760515cb6eba7be0b6b8cc0a8d0e96cc8484a986d1e4c95edef68490",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Stale white bread"
+      ]
+    }
+  ]
+}

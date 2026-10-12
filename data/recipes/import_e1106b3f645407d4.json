@@ -1,0 +1,121 @@
+{
+  "recipes": [
+    {
+      "name": "Chorreadas",
+      "source_id": "chorreadas",
+      "servings": 4,
+      "prep_minutes": 40,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Cut the kernels from the cobs with a knife, running the blade down the core.",
+        "Grind the kernels in a blender in short pulses to a grainy mass.",
+        "Work in the egg, sugar, salt and corn flour to the consistency of thick cream.",
+        "Heat a pan with butter over medium until it just wisps.",
+        "Pour in a ladle of batter and spread it into a fifteen-centimetre round.",
+        "Fry three minutes a side, to golden patches and a springy centre.",
+        "Serve them hot with natilla and a slice of fresh cheese."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Fresh corn",
+          "quantity": 6,
+          "unit": "piece",
+          "note": "on the cob"
+        },
+        {
+          "name": "Sugar",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Egg",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Corn flour",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Butter",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Natilla or soured cream",
+          "quantity": 200,
+          "unit": "ml",
+          "note": "to serve"
+        },
+        {
+          "name": "Fresh white cheese",
+          "quantity": 150,
+          "unit": "g",
+          "note": "to serve"
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_e1106b3f645407d4",
+      "ingredients": [
+        {
+          "ingredient": "sugar",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "butter",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "e83f11ac5ce226f438d1526b3fcd36dad0eefa7fb28147a459159add322fe25b",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Corn flour",
+        "Unmapped ingredient: Fresh corn",
+        "Unmapped ingredient: Fresh white cheese",
+        "Unmapped ingredient: Natilla or soured cream"
+      ]
+    }
+  ]
+}

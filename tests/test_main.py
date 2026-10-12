@@ -17,6 +17,7 @@ def project(tmp_path, monkeypatch):
     }))
     recipes = Path(__file__).resolve().parents[1] / 'config/recipes.yml'
     (config / 'recipes.yml').write_text(recipes.read_text())
+    (config / 'ingredients.yml').write_text((recipes.parent / 'ingredients.yml').read_text())
     monkeypatch.setattr(app, 'ROOT', tmp_path)
     return tmp_path
 

@@ -1,0 +1,98 @@
+{
+  "recipes": [
+    {
+      "name": "Mbejú",
+      "source_id": "mbeju",
+      "servings": 6,
+      "prep_minutes": 45,
+      "category": "bread",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Mix the cassava starch with the corn flour and salt in a wide bowl.",
+        "Rub the soft fat into the dry mix with your fingers until it looks like damp sand.",
+        "Work in the grated cheese, still rubbing the mixture by hand.",
+        "Add the milk a spoon at a time, until the crumb just holds when squeezed in your fist.",
+        "Heat a dry pan over medium without adding a drop of oil.",
+        "Tip in a centimetre of crumb and press it down with a spatula across the whole surface.",
+        "Cook it five minutes, flip it with a plate and colour the second side."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Cassava starch",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Fresh salty cheese",
+          "quantity": 350,
+          "unit": "g",
+          "note": "grated"
+        },
+        {
+          "name": "Lard or butter",
+          "quantity": 120,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Milk",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Corn flour",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_ff0cc75b7ec5e807",
+      "ingredients": [
+        {
+          "ingredient": "milk",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "565d68ad08c80f98aa35ffcfe8541f7f286476764f8358939428d9d7bfa5c3ff",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Lard or butter",
+        "Unmapped ingredient: Cassava starch",
+        "Unmapped ingredient: Corn flour",
+        "Unmapped ingredient: Fresh salty cheese",
+        "Unmapped ingredient: Lard or butter"
+      ]
+    }
+  ]
+}

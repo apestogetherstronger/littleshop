@@ -1,0 +1,139 @@
+{
+  "recipes": [
+    {
+      "name": "Melanzane alla parmigiana",
+      "source_id": "melanzane-alla-parmigiana",
+      "servings": 6,
+      "prep_minutes": 110,
+      "category": "main",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Slice the aubergines lengthways half a centimetre thick, salt them and press them under a weight for half an hour.",
+        "Pat the slices completely dry; wet ones spit in the oil and never crust.",
+        "Fry the aubergine in batches in olive oil, two minutes a side, and drain them on a rack.",
+        "Fry the garlic, add the tomatoes and cook the sauce twenty minutes to thicken, salting at the end.",
+        "Slice the mozzarella and leave it on paper to drain for ten minutes.",
+        "Layer it: sauce, aubergine, mozzarella, parmesan, basil — four times over.",
+        "Bake at 190 °C for forty minutes and let it stand twenty before cutting."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Aubergines",
+          "quantity": 1.5,
+          "unit": "kg",
+          "note": null
+        },
+        {
+          "name": "Tinned tomatoes",
+          "quantity": 800,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Mozzarella",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Parmesan",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Basil",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_1d708d45484f25fd",
+      "ingredients": [
+        {
+          "ingredient": "aubergine",
+          "quantity": 1500.0,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "tinned_tomatoes",
+          "quantity": 800,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "mozzarella",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "parmesan",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "basil",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "cd8f98989d7490bc0f04caebc8dc7ffa3d29883cb2e7a10cfe4e12fc43bd4002",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

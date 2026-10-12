@@ -1,0 +1,106 @@
+{
+  "recipes": [
+    {
+      "name": "Arepas",
+      "source_id": "arepas",
+      "servings": 4,
+      "prep_minutes": 40,
+      "category": "bread",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Dissolve the salt in the warm water and stir in the flour by hand. Add the butter and cheese.",
+        "Knead for three minutes and let it stand five. The dough should stop sticking and roll into a ball easily.",
+        "Shape cakes ten centimetres across and a centimetre and a half thick. Smooth the edges with wet fingers; cracks widen in the pan.",
+        "Griddle them with a drop of oil for four minutes a side, to a firm crust.",
+        "Finish them at 180 °C for ten minutes. A done arepa sounds hollow when tapped.",
+        "Split them hot lengthways, not all the way through, and stuff them: cheese, avocado, stewed meat or egg."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Precooked corn flour",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Warm water",
+          "quantity": 320,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Fresh white cheese",
+          "quantity": 150,
+          "unit": "g",
+          "note": "grated"
+        },
+        {
+          "name": "Butter",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Neutral oil",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_f6e7d10d981043eb",
+      "ingredients": [
+        {
+          "ingredient": "butter",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Warm water",
+          "quantity": 320,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "592027b456fce81389b7702b8ec75fe0bf58e683b6a7d9c9b5858f60fcf8bc3a",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Fresh white cheese",
+        "Unmapped ingredient: Precooked corn flour"
+      ]
+    }
+  ]
+}

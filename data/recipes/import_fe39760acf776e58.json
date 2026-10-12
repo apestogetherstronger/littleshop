@@ -1,0 +1,137 @@
+{
+  "recipes": [
+    {
+      "name": "Bircher muesli",
+      "source_id": "birchermuesli",
+      "servings": 4,
+      "prep_minutes": 20,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Cover the oats with water or apple juice and leave them overnight in the fridge.",
+        "In the morning stir in the yoghurt, cream and condensed milk until even.",
+        "Grate the apples, skins and all, on a coarse grater straight into the bowl.",
+        "Squeeze lemon juice over the grated apple at once and stir it through so it does not brown.",
+        "Toast the hazelnuts in a dry pan for five minutes and chop them coarsely.",
+        "Stir in the honey, divide it between bowls and top with the nuts and berries."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Rolled oats",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Water or apple juice",
+          "quantity": 300,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Apples",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Lemon",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cream",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Yoghurt",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Condensed milk",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Hazelnuts",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Berries",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Honey",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "id": "import_fe39760acf776e58",
+      "ingredients": [
+        {
+          "ingredient": "oats",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "lemon",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "cream",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "yoghurt",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "honey",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "pantry": [],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "f283e10187fe5d3b637aa7d0115d007fbd1784d5a1044701091cce5950fcffcf",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Apples",
+        "Unmapped ingredient: Berries",
+        "Unmapped ingredient: Condensed milk",
+        "Unmapped ingredient: Hazelnuts",
+        "Unmapped ingredient: Water or apple juice"
+      ]
+    }
+  ]
+}

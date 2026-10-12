@@ -1,0 +1,163 @@
+{
+  "recipes": [
+    {
+      "name": "Baleadas",
+      "source_id": "baleadas",
+      "servings": 4,
+      "prep_minutes": 60,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Rub the flour with the fat and salt to a crumb, add the hot water and knead a soft dough.",
+        "Divide it into eight balls, oil them and rest them twenty minutes under a cloth.",
+        "Fry the onion in oil, add the cooked beans with some of their liquid and mash them smooth.",
+        "Fry the purée over medium heat for ten minutes, until it holds its shape on a spoon.",
+        "Roll the balls into thin twenty-centimetre rounds.",
+        "Cook them on a hot dry pan a minute a side, to spotted but not dried out.",
+        "Spread beans over half the tortilla, add cream and cheese, fold it over and serve hot."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Lard or shortening",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Hot water",
+          "quantity": 220,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Red beans",
+          "quantity": 400,
+          "unit": "g",
+          "note": "cooked"
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Thick soured cream",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salty white cheese",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 4,
+          "unit": "piece",
+          "note": "optional"
+        },
+        {
+          "name": "Avocado",
+          "quantity": 1,
+          "unit": "piece",
+          "note": "optional"
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_bcb5ed1c46df8fe9",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "soured_cream",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 4,
+          "unit": "units",
+          "note": "optional"
+        },
+        {
+          "ingredient": "avocado",
+          "quantity": 1,
+          "unit": "units",
+          "note": "optional"
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Hot water",
+          "quantity": 220,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "53afc02459e9304e0ae402e5c9f4041fb17c80e127c69df95056ed8a3eb9f095",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Lard or shortening",
+        "Dry/cooked state needs review: Red beans",
+        "Unmapped ingredient: Lard or shortening",
+        "Unmapped ingredient: Red beans",
+        "Unmapped ingredient: Salty white cheese"
+      ]
+    }
+  ]
+}

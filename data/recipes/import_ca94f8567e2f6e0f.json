@@ -1,0 +1,124 @@
+{
+  "recipes": [
+    {
+      "name": "Muriwo unedovi",
+      "source_id": "muriwo-unedovi",
+      "servings": 4,
+      "prep_minutes": 40,
+      "category": "side",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Strip the tough stems from the leaves, roll them up and shred them fine.",
+        "Fry the onion and garlic in oil until soft, five minutes.",
+        "Add the chopped tomatoes and cook seven minutes, until they collapse into a paste.",
+        "Let the peanut butter down with a cup of hot water until smooth and lump-free.",
+        "Stir in the greens and the slackened peanut butter, season and stew covered for twelve minutes.",
+        "Uncover and drive off the excess liquid; the sauce should cling to the leaves."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Collard greens",
+          "quantity": 700,
+          "unit": "g",
+          "note": "finely shredded"
+        },
+        {
+          "name": "Peanut butter",
+          "quantity": 150,
+          "unit": "g",
+          "note": "unsweetened"
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_ca94f8567e2f6e0f",
+      "ingredients": [
+        {
+          "ingredient": "peanut_butter",
+          "quantity": 150,
+          "unit": "g",
+          "note": "unsweetened"
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 3,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "43b7dbb528461d4b67eda7599db39223fafbc83f12735cce33fe3b7b07a3e2af",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Collard greens"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "recipes": [
+    {
+      "name": "Flia",
+      "source_id": "flia",
+      "servings": 8,
+      "prep_minutes": 120,
+      "category": "main",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Whisk the flour with the water and salt into a smooth thin batter — thicker than for pancakes, but pourable.",
+        "Let the soured cream down with cold water to the consistency of thin cream and salt it.",
+        "Butter a round tin and pour the batter in stripes from the centre outwards, like the spokes of a wheel.",
+        "Put it under the top grill for four minutes, until the layer sets and spots appear.",
+        "Sprinkle with the thinned cream and pour the next layer into the gaps between the previous stripes.",
+        "Repeat, alternating the direction of the stripes, until the batter runs out — usually twenty to twenty-five layers.",
+        "Pour over melted butter, rest it ten minutes and serve with yoghurt or honey."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Water",
+          "quantity": 900,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Soured cream",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Butter",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Yoghurt",
+          "quantity": 300,
+          "unit": "ml",
+          "note": "to serve"
+        },
+        {
+          "name": "Honey",
+          "quantity": 100,
+          "unit": "g",
+          "note": "to serve"
+        },
+        {
+          "name": "Salt",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_b77cc8d64f6c254d",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "soured_cream",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "butter",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "yoghurt",
+          "quantity": 300,
+          "unit": "ml",
+          "note": "to serve"
+        },
+        {
+          "ingredient": "honey",
+          "quantity": 100,
+          "unit": "g",
+          "note": "to serve"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 900,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "a7dabe18beabb97e084b7644c395305430643f8065a54a03b23be5a01c7d385a",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

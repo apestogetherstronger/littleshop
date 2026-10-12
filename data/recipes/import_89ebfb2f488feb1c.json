@@ -1,0 +1,147 @@
+{
+  "recipes": [
+    {
+      "name": "Ful medames",
+      "source_id": "ful-medames",
+      "servings": 4,
+      "prep_minutes": 255,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Drain the soaked beans, cover them with fresh water three fingers above and bring to the boil. Skim.",
+        "Drop to the lowest possible heat and cook covered for three or four hours, until the beans start to collapse. Top up the water as needed.",
+        "Mash about half the beans in the pot with a masher, leaving the rest whole.",
+        "Stir in the crushed garlic and season. Divide between bowls.",
+        "Into each bowl: olive oil generously, lemon juice, cumin, tomato, parsley and chilli to taste. Serve with flatbread."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Dried fava beans",
+          "quantity": 400,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "name": "Garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Lemons",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 80,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Ground cumin",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Tomato",
+          "quantity": 2,
+          "unit": "piece",
+          "note": "diced"
+        },
+        {
+          "name": "Parsley",
+          "quantity": 6,
+          "unit": "sprig",
+          "note": null
+        },
+        {
+          "name": "Chilli flakes",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_89ebfb2f488feb1c",
+      "ingredients": [
+        {
+          "ingredient": "garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "lemon",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 80,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 2,
+          "unit": "units",
+          "note": "diced"
+        },
+        {
+          "ingredient": "parsley",
+          "quantity": 6,
+          "unit": "sprig",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Ground cumin",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Chilli flakes",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "0f3d41435f46e88c6724d140f2cb2d194d5c038d8d48cc4157f7c070a3dfe1e9",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Dried fava beans"
+      ]
+    }
+  ]
+}

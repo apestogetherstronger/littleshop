@@ -1,0 +1,147 @@
+{
+  "recipes": [
+    {
+      "name": "Hummus",
+      "source_id": "hummus",
+      "servings": 6,
+      "prep_minutes": 110,
+      "category": "snack",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Drain the soaked chickpeas, cover with fresh water and the bicarbonate and boil for an hour or ninety minutes, until they collapse. Skim off the foam and the floating skins.",
+        "Drain, keeping a cup of the cooking water. Rub the chickpeas between your palms under cold water and the remaining skins float free.",
+        "Blend the tahini with the garlic, lemon juice and salt — it pales and thickens. Add the iced water and blend again: it turns light and aerated.",
+        "Add the warm chickpeas with the cumin and blend for at least three minutes, loosening with the cooking water. Three minutes is not an exaggeration; that is where the texture comes from.",
+        "Spread it on a plate, sweep a channel round it with the back of a spoon, flood it with olive oil and dust with cumin."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Dried chickpeas",
+          "quantity": 250,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "name": "Bicarbonate of soda",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Tahini",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Lemon",
+          "quantity": 1,
+          "unit": "piece",
+          "note": "juiced"
+        },
+        {
+          "name": "Garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Iced water",
+          "quantity": 80,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Ground cumin",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Olive oil",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_47ecc7097ade6274",
+      "ingredients": [
+        {
+          "ingredient": "dried_chickpeas",
+          "quantity": 250,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "ingredient": "tahini",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "lemon",
+          "quantity": 1,
+          "unit": "units",
+          "note": "juiced"
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Bicarbonate of soda",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Iced water",
+          "quantity": 80,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Ground cumin",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "4bb562a4f4c232972177c3940ab0083b4fe106c931aa804e186f653e297435bb",
+      "status": "needs_review",
+      "review_issues": [
+        "Unresolved quantity/unit: Olive oil"
+      ]
+    }
+  ]
+}

@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from .config import load_yaml
+from .catalog import load_catalog
 from .ingest import ISRAEL_TZ, fetch_chain
 from .planner import build_plan
 from .report import render_report
@@ -25,8 +26,7 @@ def _write_json(path: Path, value: Any) -> None:
 
 def main() -> int:
     settings = load_yaml(ROOT / "config/settings.yml")
-    recipes_doc = load_yaml(ROOT / "config/recipes.yml")
-    recipes = recipes_doc.get("recipes", [])
+    recipes = load_catalog(ROOT)
 
     chain_runs: list[dict[str, Any]] = []
     errors: list[str] = []

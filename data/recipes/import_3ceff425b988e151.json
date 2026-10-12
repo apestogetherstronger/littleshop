@@ -1,0 +1,142 @@
+{
+  "recipes": [
+    {
+      "name": "Chakka",
+      "source_id": "chakka",
+      "servings": 6,
+      "prep_minutes": 25,
+      "category": "snack",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Line a colander with two layers of close-woven cloth and pour in the katyk.",
+        "Knot the corners of the cloth and hang the bundle over a bowl somewhere cold.",
+        "Leave it draining a full day, until the mass is as firm as soft curd.",
+        "Pound the garlic with a pinch of salt into a smooth paste.",
+        "Chop the coriander, dill, basil and spring onion as fine as you can.",
+        "Fold the herbs and garlic into the strained mass with a spatula, without mashing it.",
+        "Salt it, smooth it in a bowl, press a hollow with a spoon and pour the oil into it."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Katyk or full-fat kefir",
+          "quantity": 1.5,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Coriander",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Dill",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Purple basil",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Spring onion",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Flatbread",
+          "quantity": 4,
+          "unit": "piece",
+          "note": "to serve"
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_3ceff425b988e151",
+      "ingredients": [
+        {
+          "ingredient": "coriander",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "dill",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "basil",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "spring_onion",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "e78f2749e1dc4687cedc00ba6797daa8e533717699f326a35d7011e4389f686b",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Flatbread",
+        "Unmapped ingredient: Katyk or full-fat kefir"
+      ]
+    }
+  ]
+}

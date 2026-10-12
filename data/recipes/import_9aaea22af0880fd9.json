@@ -1,0 +1,139 @@
+{
+  "recipes": [
+    {
+      "name": "Puff puff",
+      "source_id": "puff-puff",
+      "servings": 8,
+      "prep_minutes": 50,
+      "category": "snack",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Dissolve the yeast and sugar in the warm water and leave it ten minutes, until it foams.",
+        "Whisk in the flour, nutmeg and salt to a smooth loose batter without lumps.",
+        "Cover it and leave it somewhere warm for an hour; it should double and bubble all over.",
+        "Heat the oil to 170 °C and test with a drop of batter; it should surface within two seconds.",
+        "Take batter in your palm and squeeze a ball out between thumb and forefinger straight into the oil.",
+        "Fry three minutes, turning them with a slotted spoon, to an even golden brown.",
+        "Drain them on paper and serve warm, dusted with icing sugar."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Dry yeast",
+          "quantity": 10,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Warm water",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Nutmeg",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 1.5,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Icing sugar",
+          "quantity": 40,
+          "unit": "g",
+          "note": "to serve"
+        }
+      ],
+      "id": "import_9aaea22af0880fd9",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "dry_yeast",
+          "quantity": 10,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 1500.0,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "icing_sugar",
+          "quantity": 40,
+          "unit": "g",
+          "note": "to serve"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Warm water",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Nutmeg",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "73be15c4a65c051932c8b776d128671a50af4bde69d513d38dc4d19befe26849",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

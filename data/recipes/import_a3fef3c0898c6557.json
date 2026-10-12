@@ -1,0 +1,163 @@
+{
+  "recipes": [
+    {
+      "name": "Lahpet thoke",
+      "source_id": "lahpet-thoke",
+      "servings": 4,
+      "prep_minutes": 35,
+      "category": "salad",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Fry the garlic slices in oil until golden and lift them out at once; a few seconds more and they turn bitter.",
+        "Toast the sesame in a dry pan until fragrant, two minutes, stirring.",
+        "Rinse the tea paste in cold water if it is very salty and squeeze it dry.",
+        "Shred the cabbage fine, cut the tomatoes into wedges and the chilli into rings.",
+        "Combine everything in a bowl with the peanuts, beans, sesame, garlic oil, fish sauce and lime juice.",
+        "Toss it with your hands immediately before serving and scatter the fried garlic over the top."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Fermented tea leaves",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Fried peanuts",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Fried broad beans",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sesame seeds",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 6,
+          "unit": "clove",
+          "note": "thinly sliced"
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cabbage",
+          "quantity": 200,
+          "unit": "g",
+          "note": "finely shredded"
+        },
+        {
+          "name": "Chilli",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Lime",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Fish sauce",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 60,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_a3fef3c0898c6557",
+      "ingredients": [
+        {
+          "ingredient": "sesame",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 6,
+          "unit": "clove",
+          "note": "thinly sliced"
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "cabbage",
+          "quantity": 200,
+          "unit": "g",
+          "note": "finely shredded"
+        },
+        {
+          "ingredient": "chilli",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 60,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "2d2c66ced5bb7bf9108c1cc5adfd0f3b0fcc495bc5474418aecae70ebb842ff7",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Fish sauce",
+        "Unmapped ingredient: Fermented tea leaves",
+        "Unmapped ingredient: Fish sauce",
+        "Unmapped ingredient: Fried broad beans",
+        "Unmapped ingredient: Fried peanuts",
+        "Unmapped ingredient: Lime"
+      ]
+    }
+  ]
+}

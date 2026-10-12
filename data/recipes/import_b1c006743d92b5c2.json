@@ -1,0 +1,96 @@
+{
+  "recipes": [
+    {
+      "name": "Injera",
+      "source_id": "injera",
+      "servings": 8,
+      "prep_minutes": 70,
+      "category": "bread",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Mix the teff flour with water to the consistency of pouring cream, without lumps.",
+        "Cover it with a cloth and leave it at room temperature for three days, without stirring.",
+        "Pour off the liquid that has separated on top; it is bitter and must not be left in.",
+        "Take a cup of the batter, cook it in boiling water to a thick paste and stir it back in.",
+        "Let the batter stand another two hours and let it down with water to a very thin cream.",
+        "Heat a wide pan, oil it lightly and pour the batter in a spiral from the rim to the centre.",
+        "Cover for two minutes, until eyes appear all over the surface, and lift it off without turning."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Teff flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Water",
+          "quantity": 1.2,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Ersho starter",
+          "quantity": 100,
+          "unit": "ml",
+          "note": "from a previous batch"
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 20,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "id": "import_b1c006743d92b5c2",
+      "ingredients": [
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 20,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 1.2,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "159ddea2c28dceaeee9f1ac6a73ed1ca83ca774a27bf0c866079fc8fa61bebad",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Ersho starter",
+        "Unmapped ingredient: Teff flour"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "recipes": [
+    {
+      "name": "Rösti",
+      "source_id": "roesti",
+      "servings": 4,
+      "prep_minutes": 45,
+      "category": "side",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Boil the potatoes in their skins for twenty minutes, to the point where a knife meets resistance. Cool them completely and leave them overnight in the fridge.",
+        "Peel them and grate them coarsely straight into a bowl. Do not rinse and do not squeeze.",
+        "Season, and if you are using them, fold in the fried bacon and onion and the cheese.",
+        "Heat half the butter in a pan, spread the mixture in an even layer and press it once with the spatula.",
+        "Fry over medium heat for twelve minutes without touching it. Shake the pan now and then: the rösti should slide as one piece.",
+        "Cover with a plate, invert it, add the rest of the butter and fry the second side for ten minutes."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Waxy potatoes",
+          "quantity": 1,
+          "unit": "kg",
+          "note": "boiled the day before"
+        },
+        {
+          "name": "Clarified butter",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Smoked bacon",
+          "quantity": 100,
+          "unit": "g",
+          "note": "optional"
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": "optional"
+        },
+        {
+          "name": "Grated Gruyère",
+          "quantity": 100,
+          "unit": "g",
+          "note": "optional"
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_14ac149c5952ad60",
+      "ingredients": [
+        {
+          "ingredient": "potatoes",
+          "quantity": 1000,
+          "unit": "g",
+          "note": "boiled the day before"
+        },
+        {
+          "ingredient": "ghee",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": "optional"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "1682360f4c74790cb5c0d044d8c4f90b4d9c4a49ca9efc40d11a3872538a8d1d",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Smoked bacon",
+        "Unmapped ingredient: Grated Gruyère",
+        "Unmapped ingredient: Smoked bacon"
+      ]
+    }
+  ]
+}

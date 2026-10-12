@@ -1,0 +1,130 @@
+{
+  "recipes": [
+    {
+      "name": "Grilled halloumi with watermelon",
+      "source_id": "halloumi-grilled",
+      "servings": 4,
+      "prep_minutes": 30,
+      "category": "salad",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Soak the halloumi in cold water for fifteen minutes, drain it and pat it completely dry.",
+        "Cut the cheese into centimetre slices — thinner and it dries out, thicker and it will not heat through.",
+        "Cut the chilled watermelon into large cubes and keep it in the fridge until serving.",
+        "Heat a dry pan hard and sear the halloumi two minutes a side, to dark stripes.",
+        "Whisk the olive oil with the lemon juice, honey and pepper.",
+        "Arrange the watermelon, rocket and hot cheese, spoon over the dressing and scatter with mint. Serve at once."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Halloumi",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Watermelon",
+          "quantity": 800,
+          "unit": "g",
+          "note": "chilled, in cubes"
+        },
+        {
+          "name": "Mint",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 50,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Lemon",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Honey",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Rocket",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Black pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_a2071c6871f2c420",
+      "ingredients": [
+        {
+          "ingredient": "halloumi",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "mint",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 50,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "lemon",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "honey",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Black pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "6011ddb4260f1c678e9d4802d8ab3eb0af4f25a62587a6e1c7b9ed12f9980606",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Rocket",
+        "Unmapped ingredient: Watermelon"
+      ]
+    }
+  ]
+}

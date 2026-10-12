@@ -1,0 +1,103 @@
+{
+  "recipes": [
+    {
+      "name": "Tiramisu",
+      "source_id": "tiramisu",
+      "servings": 6,
+      "prep_minutes": 30,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Whisk the yolks with half the sugar over a pan of boiling water, without touching the water, until pale and thick — about seven minutes. Take it off and cool to room temperature.",
+        "Fold the cold mascarpone into the cooled yolks with a spoon rather than a mixer. A mixer breaks the fat and the cream turns grainy — the first place tiramisu usually fails.",
+        "Whip the whites with the rest of the sugar to firm peaks and fold them into the cream in three additions, lifting from underneath.",
+        "Mix the coffee with the marsala. Dip each savoiardo for one second a side and lay them in a tight layer in the dish.",
+        "Spread half the cream, level it, then repeat the biscuit and cream layers. Cover and refrigerate for at least six hours, better overnight.",
+        "Dust with cocoa through a sieve right before serving. Do it in advance and the cocoa takes on moisture and goes blotchy."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Mascarpone",
+          "quantity": 500,
+          "unit": "g",
+          "note": "cold"
+        },
+        {
+          "name": "Egg yolks",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Egg whites",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Savoiardi",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Strong espresso",
+          "quantity": 350,
+          "unit": "ml",
+          "note": "cooled"
+        },
+        {
+          "name": "Marsala",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": "optional"
+        },
+        {
+          "name": "Cocoa powder",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_041c1170602f16e1",
+      "ingredients": [
+        {
+          "ingredient": "sugar",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "b0ca3a6d750af88ca36e19400fd81ba813235f6253cca865033c7f8a36510123",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Egg whites",
+        "Unmapped ingredient: Egg yolks",
+        "Unmapped ingredient: Marsala",
+        "Unmapped ingredient: Mascarpone",
+        "Unmapped ingredient: Savoiardi",
+        "Unmapped ingredient: Strong espresso",
+        "Unresolved quantity/unit: Cocoa powder"
+      ]
+    }
+  ]
+}

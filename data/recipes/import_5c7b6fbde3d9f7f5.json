@@ -1,0 +1,142 @@
+{
+  "recipes": [
+    {
+      "name": "Gibanica",
+      "source_id": "gibanica",
+      "servings": 10,
+      "prep_minutes": 80,
+      "category": "main",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Mash both cheeses with a fork and mix them with the eggs, kefir, soured cream and half the oil.",
+        "Stir in the sparkling water; it lightens the custard and keeps it from setting dense.",
+        "Taste the custard for salt: brined cheese varies, and it has to be adjusted rather than measured.",
+        "Oil the tin and lay two whole filo sheets flat on the bottom, uncrumpled.",
+        "Dip each remaining sheet in the custard, crumple it like a concertina and lay it in the tin.",
+        "Pour the remaining custard over, cover with two whole sheets and brush them with oil.",
+        "Bake at 190 °C for fifty minutes, sprinkle it with water and cover it with a cloth for ten minutes."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Filo pastry",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Brined white cheese",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Curd cheese",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Kefir",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Soured cream",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Sparkling water",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_5c7b6fbde3d9f7f5",
+      "ingredients": [
+        {
+          "ingredient": "filo",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "feta",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 6,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "kefir",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "soured_cream",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "c49bf7aab03333f98930454445bce4c4dddd0850f5fd53eb05ac7468c3d971d7",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Curd cheese",
+        "Unmapped ingredient: Sparkling water"
+      ]
+    }
+  ]
+}

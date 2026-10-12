@@ -1,0 +1,153 @@
+{
+  "recipes": [
+    {
+      "name": "Chiles rellenos",
+      "source_id": "chiles-en-nogada",
+      "servings": 4,
+      "prep_minutes": 70,
+      "category": "main",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Char the peppers over a flame or under a grill until blistered black all over, close them in a bag for ten minutes and peel the skin away.",
+        "Make a lengthways slit, ease the seeds out leaving the stalk in place, stuff with cheese and pin the slit with a cocktail stick.",
+        "For the sauce, blend the tomatoes with the onion and garlic, fry the purée in a spoon of oil for ten minutes with the oregano, and season.",
+        "Whip the whites to firm peaks, add a pinch of salt and fold in the yolks one at a time, trying not to knock the air out.",
+        "Dust a pepper in flour, dip it in the batter and lower it into oil at 180 °C. Fry two minutes a side, spooning oil over the top.",
+        "Drain on a rack, remove the sticks and serve with the hot tomato sauce beneath the pepper rather than over it."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Poblano peppers",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Oaxaca cheese or mozzarella",
+          "quantity": 350,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Plain flour",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Mexican oregano",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_b0958715b35f8386",
+      "ingredients": [
+        {
+          "ingredient": "eggs",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "flour",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Mexican oregano",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "e7f0e2e6ed7e14d4002c2591d62743d97b1ed993b99285f2451cbd91879361ef",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Oaxaca cheese or mozzarella",
+        "Unmapped ingredient: Poblano peppers"
+      ]
+    }
+  ]
+}

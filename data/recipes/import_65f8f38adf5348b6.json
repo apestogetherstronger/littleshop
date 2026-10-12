@@ -1,0 +1,159 @@
+{
+  "recipes": [
+    {
+      "name": "Afghan biscuits",
+      "source_id": "afghan-biscuits",
+      "servings": 16,
+      "prep_minutes": 45,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Beat the softened butter with the sugar until pale, about four minutes.",
+        "Sift the flour with the cocoa and salt and fold it in with a spatula to an even dough.",
+        "Add the cornflakes and fold them through in one movement, trying not to break them.",
+        "Drop the dough onto a tray by the spoonful and press each one down lightly.",
+        "Bake at 180 °C for eighteen minutes; the biscuits stay soft to the touch and firm up as they cool.",
+        "Cool them completely on the tray, without trying to lift them hot.",
+        "Whisk the icing sugar with the cocoa and hot water into a thick icing, coat the biscuits and press a walnut half into each."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Butter",
+          "quantity": 200,
+          "unit": "g",
+          "note": "softened"
+        },
+        {
+          "name": "Sugar",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Flour",
+          "quantity": 180,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Cocoa powder",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Cornflakes",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Icing sugar",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Cocoa for the icing",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Hot water",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Walnut halves",
+          "quantity": 16,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "id": "import_65f8f38adf5348b6",
+      "ingredients": [
+        {
+          "ingredient": "butter",
+          "quantity": 200,
+          "unit": "g",
+          "note": "softened"
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "flour",
+          "quantity": 180,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "cocoa",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "icing_sugar",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "cocoa",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "walnuts",
+          "quantity": 16,
+          "unit": "units",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Hot water",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "237397db82ff2f7dd13de76be52d323241a9d206f693fcd05afceeea365bd558",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Cornflakes"
+      ]
+    }
+  ]
+}

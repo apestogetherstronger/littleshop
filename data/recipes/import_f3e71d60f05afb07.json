@@ -1,0 +1,164 @@
+{
+  "recipes": [
+    {
+      "name": "Ratatouille",
+      "source_id": "ratatouille",
+      "servings": 4,
+      "prep_minutes": 65,
+      "category": "main",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later.",
+        "In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm.",
+        "Fry the pepper until soft with a few charred spots and set it aside as well.",
+        "In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant.",
+        "Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it.",
+        "Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Aubergine",
+          "quantity": 1,
+          "unit": "piece",
+          "note": "in 2 cm cubes"
+        },
+        {
+          "name": "Courgette",
+          "quantity": 2,
+          "unit": "piece",
+          "note": "in cubes"
+        },
+        {
+          "name": "Bell pepper",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 600,
+          "unit": "g",
+          "note": "ripe, peeled"
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 6,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Thyme",
+          "quantity": 3,
+          "unit": "sprig",
+          "note": null
+        },
+        {
+          "name": "Basil",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": "at the end"
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_f3e71d60f05afb07",
+      "ingredients": [
+        {
+          "ingredient": "aubergine",
+          "quantity": 1,
+          "unit": "units",
+          "note": "in 2 cm cubes"
+        },
+        {
+          "ingredient": "zucchini",
+          "quantity": 2,
+          "unit": "units",
+          "note": "in cubes"
+        },
+        {
+          "ingredient": "bell_pepper",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 600,
+          "unit": "g",
+          "note": "ripe, peeled"
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 6,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "basil",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": "at the end"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Thyme",
+          "quantity": 3,
+          "unit": "sprig",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "fffed1ed978370fd8e282718c4142ebd342250491a1d9d29c5333058b8a3e08e",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "recipes": [
+    {
+      "name": "Malabi",
+      "source_id": "malabi",
+      "servings": 6,
+      "prep_minutes": 30,
+      "category": "dessert",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Slake the cornflour in a cup of cold milk until completely dissolved and lump-free.",
+        "Heat the rest of the milk with the cream and sugar until hot, without letting it boil.",
+        "Pour in the starch mixture in a thin stream, whisking without stopping.",
+        "Cook over medium heat for five minutes, until the mixture thickens to the body of double cream.",
+        "Take it off the heat, stir in the rose water and pour it straight into glasses.",
+        "Press film onto the surface so no skin forms and chill for four hours.",
+        "Before serving pour over the syrup and scatter with chopped pistachios, peanuts and coconut."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Milk",
+          "quantity": 1,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Cornflour",
+          "quantity": 70,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Rose water",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Cream",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Raspberry or pomegranate syrup",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Pistachios",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Desiccated coconut",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Peanuts",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "id": "import_a16d691e54ce2072",
+      "ingredients": [
+        {
+          "ingredient": "milk",
+          "quantity": 1000,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "cornstarch",
+          "quantity": 70,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "cream",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "pistachios",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "coconut",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "peanuts",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "e47889fe68a4b9faa3ae9f9d87c57848e5c11a8e2d061d3470bdd7f0ed549a30",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Raspberry or pomegranate syrup",
+        "Unmapped ingredient: Rose water"
+      ]
+    }
+  ]
+}

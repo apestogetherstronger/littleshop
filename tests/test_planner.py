@@ -134,7 +134,8 @@ def test_promotion_text_without_sku_name_is_not_enough():
     ('couscous', 'קוסקוס בינוני 500 גרם', True),
 ])
 def test_catalog_matches_ingredients_not_flavoured_products(ingredient_name, product, expected):
-    catalog = load_yaml(Path(__file__).resolve().parents[1] / 'config/recipes.yml')
+    from littleshop.catalog import load_catalog
+    catalog = {'recipes': load_catalog(Path(__file__).resolve().parents[1])}
     ingredients = [ingredient for recipe in catalog['recipes'] for ingredient in recipe['ingredients']
                    if ingredient['name'] == ingredient_name]
     assert ingredients

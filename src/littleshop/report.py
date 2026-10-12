@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+from html import escape
 from typing import Any
 from zoneinfo import ZoneInfo
 
@@ -89,6 +90,23 @@ def render_report(
             f"({meal.get('prep_minutes', '?')} min)"
         )
         lines.append("")
+        if meal.get('servings'):
+            lines.append(f"Serves: {meal['servings']} · {', '.join(meal.get('tags', []))}")
+            lines.append("")
+        if meal.get('source'):
+            source = meal['source']
+            lines.append(f"Recipe: {escape(source['attribution'])} · {escape(source['license'])} · "
+                         f"[Source]({source['url']}) · [Full recipe record](../data/recipes/{meal['id']}.json)")
+            lines.append("")
+        if meal.get('pantry'):
+            lines.append("Pantry check (excluded from basket estimates): " + "; ".join(
+                escape(str(i.get('quantity') or 'to taste') + ' ' + str(i.get('unit') or '') + ' ' + i['name'])
+                for i in meal['pantry']))
+            lines.append("")
+        if meal.get('instructions'):
+            lines += ["Method:", ""]
+            lines += [f"{n}. {escape(step)}" for n, step in enumerate(meal['instructions'], 1)]
+            lines.append("")
         lines.append(f"Promotion-match score: **{meal['deal_score']}**")
         lines.append("")
         lines.append("Ingredients: " + "; ".join(

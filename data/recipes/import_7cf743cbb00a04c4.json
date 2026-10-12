@@ -1,0 +1,162 @@
+{
+  "recipes": [
+    {
+      "name": "Trdelník",
+      "source_id": "trdelnik",
+      "servings": 6,
+      "prep_minutes": 110,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Dissolve the yeast with a spoon of sugar in the warm milk and let it foam for ten minutes.",
+        "Knead a dough from the flour, the yeast liquid, eggs, sugar and salt for ten minutes, then work in the soft butter piece by piece. Prove for an hour.",
+        "Roll the dough out and cut two-centimetre ribbons. Butter the spits and roll them in sugar.",
+        "Wind a ribbon round each spit, overlapping by a third and pulling it slightly taut. Roll it on the table so the layers bond.",
+        "Brush with butter, roll in the sugar, nut and cinnamon mixture and bake at 190 °C for eighteen minutes, turning every five.",
+        "Let it cool three minutes and twist it off the spit. Hot, it tears; fully cooled, it sticks."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Plain flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Warm milk",
+          "quantity": 220,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Dried yeast",
+          "quantity": 7,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar for the dough",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Butter",
+          "quantity": 80,
+          "unit": "g",
+          "note": "softened"
+        },
+        {
+          "name": "Eggs",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Sugar for coating",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Walnuts",
+          "quantity": 100,
+          "unit": "g",
+          "note": "finely chopped"
+        },
+        {
+          "name": "Cinnamon",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_7cf743cbb00a04c4",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 220,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "dry_yeast",
+          "quantity": 7,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "butter",
+          "quantity": 80,
+          "unit": "g",
+          "note": "softened"
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "walnuts",
+          "quantity": 100,
+          "unit": "g",
+          "note": "finely chopped"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Cinnamon",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "1dd9036023afbc0f70b8f861893dfa1844c0f6a0d762e9ba754bbbf44889b1c3",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}
