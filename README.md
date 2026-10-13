@@ -9,7 +9,7 @@ A backend-free weekly meal planner that uses Israel's public supermarket price-t
 - Build a deterministic 7- or 14-day vegetarian meal plan.
 - Generate an ingredient-level shopping list plus exact promoted-product suggestions.
 - Run manually or on a schedule in GitHub Actions.
-- Publish the latest Markdown plan into `docs/latest.md`.
+- Publish an interactive Hebrew HTML plan into `docs/latest.html`, with `docs/latest.md` as a static companion.
 
 No LLM or external application backend is required.
 
@@ -77,7 +77,7 @@ These are **local-branch shopping estimates, not online checkout quotes**. Onlin
 
 Use **Actions → Weekly meal plan → Run workflow** for an immediate run.
 
-The workflow is also scheduled weekly. It runs tests, fetches the current supermarket data, generates `docs/latest.md` and `output/*.json`, and uploads the plan and deals as an artifact. Scheduled and manual runs on `main` commit the latest Markdown report; JSON outputs remain in the artifacts. Pull requests run offline regression tests only.
+The workflow is also scheduled weekly. It runs tests, fetches the current supermarket data, generates `docs/latest.html`, `docs/latest.md` and `output/*.json`, and uploads the plan and deals as an artifact. Scheduled and manual runs on `main` commit both latest reports; JSON outputs remain in the artifacts. Pull requests run offline regression tests only.
 
 ## Feed health and failure handling
 
@@ -117,3 +117,12 @@ Ingredient matching supports anchored `match_patterns` as well as aliases/exclus
 ## Report language
 
 Generated reports use Hebrew labels, dish/ingredient names and a right-to-left wrapper. Translation is a static display layer (`src/littleshop/hebrew.py`); recipe IDs, matching, prices and source records are unchanged. Each original meal template now has Hebrew cooking steps. Imported instructions render inline in their original language when no `instructions_he` exists, with attribution and source links retained. The report also includes a recipe navigation list. Product names and promotion terms retain the retailer's original wording.
+
+
+### Interactive shopping report
+
+Open `docs/latest.html` in a browser (download it first when viewing on GitHub). It is self-contained, works offline, and sends no selections anywhere. Each ingredient has its own choice: minimize checkout cost for the required packs, or allow extra packs and minimize the cost allocated to the recipe quantity. The recommendation uses that objective per item, plus delivery once per selected shop. Checkout totals always charge for every purchased pack. The page shows leftovers, normalized comparison prices, recipe links and inline cooking instructions. Selections reset on reload; delivery fees and minimums can be edited on the page.
+
+Supported bundles are explicit same-product `1+1` and `NבPRICE` offers with preserved, unrestricted eligibility metadata. The latter must agree with the feed's quantity and bundle amount. Coupon/member offers, thresholds, gift restrictions, ambiguous descriptions and old snapshots missing eligibility metadata are excluded. Offers whose only unresolved conditions are group/minimum-item metadata appear as conditional alternatives with retailer links. A separate per-item checkbox requires the user to verify that all listed alternatives apply to identical packs at the displayed quantity; they are never applied by default. Promotions never stack. Mixed-product bundles across shopping rows are not optimized. Both exact pack counts and the next complete bundle are evaluated.
+
+The page compares single-shop baskets and cheapest-per-item assignments within shop subsets. It is not an exhaustive minimum-order solver: an alternative assignment or extra spending could meet a minimum even when the evaluated assignment fails. Unknown delivery fees exclude a shop until entered; unknown minimums are flagged. Feed prices remain estimates of branch prices, not a confirmed online checkout. The Markdown companion and meal ranking retain their existing conservative pricing; interactive bundle choices apply to the HTML shopping basket.

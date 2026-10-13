@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths-ignore:
       - "docs/latest.md"
+      - "docs/latest.html"
       - "output/**"
   schedule:
     # GitHub cron is UTC. This is Thursday 19:00 during Israel summer time
@@ -100,6 +101,7 @@ jobs:
           name: littleshop-weekly-plan
           path: |
             docs/latest.md
+            docs/latest.html
             output/plan.json
             output/deals.json
             output/products.json
@@ -110,7 +112,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/latest.md
+          git add docs/latest.md docs/latest.html
           if git diff --cached --quiet; then
             echo "No generated changes to commit"
           else

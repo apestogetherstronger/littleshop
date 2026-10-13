@@ -127,6 +127,9 @@ def quote_item(ingredient, product, promotions=()):
         purchase = f"{packages} pack(s) × {quantity:g} {('units' if package_unit[0] == 'count' else pack_label)}"
     return {'product': product, 'cost_cents': cents(cost), 'purchase': purchase,
             'packages': packages, 'promotion': selected_promo,
+            'needed_base': float(needed), 'purchased_base': float(needed if packages is None else packages * size),
+            'pack_size_base': None if packages is None else float(size),
+            'base_dimension': needed_unit[0],
             'pricing_basis': 'simple promotion' if selected_promo else 'shelf price',
             'url': product_link(product), 'metadata_note': metadata_note}
 

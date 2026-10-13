@@ -37,7 +37,7 @@ def read_status(project):
 
 
 def test_total_failure_preserves_all_previous_outputs(project, monkeypatch):
-    paths = ['docs/latest.md', 'output/plan.json', 'output/deals.json']
+    paths = ['docs/latest.html', 'docs/latest.md', 'output/plan.json', 'output/deals.json']
     for name in paths:
         path = project / name
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -68,6 +68,7 @@ def test_partial_failure_still_generates_plan_and_diagnostics(project, monkeypat
     assert status['status'] == 'partial'
     assert status['plan_published']
     assert status['loaded_chains'] == ['good']
+    assert (project / 'docs/latest.html').exists()
     report = (project / 'docs/latest.md').read_text()
     assert '1 רשתות נטענו, 1 נכשלו' in report
     assert 'לא נמצאו מבצעים ציבוריים פעילים' in report

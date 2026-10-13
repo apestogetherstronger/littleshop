@@ -11,6 +11,7 @@ from .catalog import load_catalog
 from .ingest import ISRAEL_TZ, fetch_chain
 from .planner import build_plan
 from .report import render_report
+from .interactive import render_html
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -110,6 +111,8 @@ def main() -> int:
         render_report(plan, chain_runs, errors),
         encoding="utf-8",
     )
+
+    report_path.with_suffix(".html").write_text(render_html(plan, all_products, all_deals, errors), encoding="utf-8")
 
     _write_json(
         plan_json_path,

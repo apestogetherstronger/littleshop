@@ -5,6 +5,7 @@ from littleshop.catalog import load_catalog
 from littleshop.config import load_yaml
 from littleshop.planner import build_plan
 from littleshop.report import render_report
+from littleshop.interactive import render_html
 
 root=Path(__file__).resolve().parents[1]
 settings=load_yaml(root/'config/settings.yml')
@@ -19,6 +20,7 @@ plan=build_plan(load_catalog(root),deals,days=settings['plan']['days'],diet=sett
 plan['feed_generated_at']=status['generated_at']
 runs=[{'chain':s['chain'],'store':s,'source_files':s.get('source_files',{}),
        'deals':[d for d in deals if d['chain']==s['chain']]} for s in old['stores']]
+(root/'docs/latest.html').write_text(render_html(plan,products,deals,old["errors"]))
 (root/'docs/latest.md').write_text(render_report(plan,runs,old['errors']))
 (root/'output/plan.json').write_text(json.dumps({**old,'plan':plan},ensure_ascii=False,indent=2))
 s=plan['shopping_strategy']; rec=s['recommendation']

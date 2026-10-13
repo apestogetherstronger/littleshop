@@ -209,6 +209,30 @@ def fetch_chain(chain: str, spec: dict[str, Any]) -> dict[str, Any]:
                             and not any(term in normalize_text(promo.description)
                                         for term in ("מעל", "בקניה", "בקנייה", "מותנה"))
                         ),
+                        "bundle_candidate": (
+                            not promo.min_purchase_amount
+                            and not promo_item.min_purchase_amount
+                            and not promo_item.max_qty
+                            and not promo_item.is_gift_item
+                            and not promo.additional_restrictions
+                            and not promo.remarks
+                            and not any(term in normalize_text(promo.description)
+                                        for term in ("מעל", "בקניה", "בקנייה", "מותנה", "מועדון", "השני", "הזול"))
+                        ),
+                        "bundle_conditions": {"group_id": promo_item.group_id,
+                                              "min_items_offered": _num(promo.min_items_offered)},
+                        "bundle_eligible": (
+                            not promo.min_purchase_amount
+                            and not promo_item.min_purchase_amount
+                            and not promo_item.max_qty
+                            and not promo_item.is_gift_item
+                            and promo_item.group_id is None
+                            and promo.min_items_offered in (None, 0, 1)
+                            and not promo.additional_restrictions
+                            and not promo.remarks
+                            and not any(term in normalize_text(promo.description)
+                                        for term in ("מעל", "בקניה", "בקנייה", "מותנה", "מועדון", "השני", "הזול"))
+                        ),
                         "club_id": promo.club_id,
                         "start_time": promo.start_time.isoformat() if promo.start_time else None,
                         "end_time": promo.end_time.isoformat() if promo.end_time else None,
