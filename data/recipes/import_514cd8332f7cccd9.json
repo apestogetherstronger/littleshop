@@ -1,0 +1,115 @@
+{
+  "recipes": [
+    {
+      "name": "Draniki",
+      "source_id": "draniki",
+      "servings": 4,
+      "prep_minutes": 45,
+      "category": "main",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Grate the potato and onion finely into the same bowl.",
+        "Let the mass stand three minutes and pour off the water that gathers on top, leaving the sediment.",
+        "Season with salt and pepper. Add nothing else.",
+        "Heat the oil over medium and drop the mixture in by the spoonful, flattening it to half a centimetre.",
+        "Fry three to four minutes a side, to a deep golden crisp crust.",
+        "Drain on paper and serve immediately with soured cream and dill."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Potatoes",
+          "quantity": 1,
+          "unit": "kg",
+          "note": "floury variety"
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Soured cream",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Dill",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_514cd8332f7cccd9",
+      "ingredients": [
+        {
+          "ingredient": "potatoes",
+          "quantity": 1000,
+          "unit": "g",
+          "note": "floury variety"
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "soured_cream",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "dill",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "8eaa0ef395c07346a620ab5452b41512373057331fb8020115db4bfaf97c2d7b",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

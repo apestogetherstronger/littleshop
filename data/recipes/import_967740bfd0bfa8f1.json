@@ -1,0 +1,189 @@
+{
+  "recipes": [
+    {
+      "name": "Koshari",
+      "source_id": "koshari",
+      "servings": 6,
+      "prep_minutes": 90,
+      "category": "main",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Fry the onion in the oil over medium heat for twenty-five minutes to a deep brown, stirring. Drain it on paper; it crisps as it cools.",
+        "Boil the lentils for twenty minutes to soft but not collapsing, and drain.",
+        "Cook the rice in the onion oil: fry it two minutes, add water at one and a half to one and cook covered for fifteen minutes.",
+        "Boil the pasta and drain it. For the sauce, fry the garlic in a spoon of oil to gold, pour in the vinegar and let it reduce by half.",
+        "Add the tomatoes, cumin and chilli and cook twenty minutes to a thick sauce. Season.",
+        "Build it in the bowl in layers: rice, lentils, pasta, chickpeas, sauce, fried onion. The mixing happens at the table."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Short-grain rice",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Brown lentils",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Small pasta",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Chickpeas",
+          "quantity": 200,
+          "unit": "g",
+          "note": "cooked"
+        },
+        {
+          "name": "Onions",
+          "quantity": 4,
+          "unit": "piece",
+          "note": "in thin rings"
+        },
+        {
+          "name": "Tinned tomatoes",
+          "quantity": 800,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 6,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "White vinegar",
+          "quantity": 4,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Ground cumin",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Chilli flakes",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Neutral oil",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_967740bfd0bfa8f1",
+      "ingredients": [
+        {
+          "ingredient": "short_grain_rice",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "lentils",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "small_pasta",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "chickpeas",
+          "quantity": 200,
+          "unit": "g",
+          "note": "cooked"
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 4,
+          "unit": "units",
+          "note": "in thin rings"
+        },
+        {
+          "ingredient": "tinned_tomatoes",
+          "quantity": 800,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 6,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "vinegar",
+          "quantity": 4,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Ground cumin",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Chilli flakes",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "e69830fd8fd20582fded0d2080867797070a962b1d8fd621bbb95273f6e49429",
+      "status": "needs_review",
+      "review_issues": [
+        "Dry/cooked state needs review: Chickpeas"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "recipes": [
+    {
+      "name": "Ruisleipä",
+      "source_id": "ruisleipa",
+      "servings": 12,
+      "prep_minutes": 100,
+      "category": "bread",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Mix the starter with half the water and half the flour and leave it overnight at room temperature.",
+        "In the morning take two hundred grams of the sponge back into a jar; that is the starter for next time.",
+        "Stir in the remaining flour, water, salt, malt and caraway with a wooden spoon until even.",
+        "Cover it and let it rise three hours; the dough roughly doubles and cracks appear on the surface.",
+        "Turn the dough into greased tins with wet hands, smoothing the top with a wet spoon.",
+        "Let it prove an hour and prick the top in several places with a fork.",
+        "Bake at 250 °C for fifteen minutes, then at 180 °C for forty-five more, and rest it a day before cutting."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Rye flour",
+          "quantity": 900,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Rye sourdough starter",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Warm water",
+          "quantity": 700,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Rye malt",
+          "quantity": 30,
+          "unit": "g",
+          "note": "optional"
+        },
+        {
+          "name": "Caraway seeds",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": "optional"
+        }
+      ],
+      "id": "import_1ae928d7dcbd08b2",
+      "ingredients": [],
+      "pantry": [
+        {
+          "name": "Warm water",
+          "quantity": 700,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Caraway seeds",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": "optional"
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "4b284c6aad35e19a88aeeb942759f945d3cb51c8ed0336f4626e85bfeb92dcd2",
+      "status": "needs_review",
+      "review_issues": [
+        "No priced ingredients",
+        "Unmapped ingredient: Rye flour",
+        "Unmapped ingredient: Rye malt",
+        "Unmapped ingredient: Rye sourdough starter"
+      ]
+    }
+  ]
+}

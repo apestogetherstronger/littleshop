@@ -1,0 +1,158 @@
+{
+  "recipes": [
+    {
+      "name": "Lángos",
+      "source_id": "langos",
+      "servings": 4,
+      "prep_minutes": 110,
+      "category": "snack",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Dissolve the yeast and sugar in the warm milk and leave it ten minutes, until it foams.",
+        "Mix the flour, mashed potato, salt and the yeast liquid and knead for eight minutes to a smooth soft dough. It stays a little tacky; that is right.",
+        "Cover and prove for an hour in the warm: the dough should double.",
+        "Divide into four, stretch each by hand into a twenty-centimetre round, leaving the edges thicker.",
+        "Deep-fry at 175 °C for ninety seconds a side. It balloons; that is correct, do not press it down.",
+        "Rub the hot bread with a cut clove of garlic, spread it with soured cream and pile on the cheese."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Plain flour",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Potato",
+          "quantity": 150,
+          "unit": "g",
+          "note": "boiled and mashed"
+        },
+        {
+          "name": "Warm milk",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Dried yeast",
+          "quantity": 7,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Soured cream",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Hard cheese",
+          "quantity": 150,
+          "unit": "g",
+          "note": "grated"
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 700,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_43617aa37e06a2e7",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "potatoes",
+          "quantity": 150,
+          "unit": "g",
+          "note": "boiled and mashed"
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "dry_yeast",
+          "quantity": 7,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "soured_cream",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 700,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "f272385b2ccafa88a4d4d0c4bbe31dd9f922f5c6cc8dcdb6b0e3a775d101b35f",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Hard cheese"
+      ]
+    }
+  ]
+}

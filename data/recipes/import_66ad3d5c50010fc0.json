@@ -1,0 +1,181 @@
+{
+  "recipes": [
+    {
+      "name": "Pasuts tolma",
+      "source_id": "armenian-tolma",
+      "servings": 8,
+      "prep_minutes": 150,
+      "category": "main",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Boil the beans, chickpeas and lentils separately until soft; each takes its own time.",
+        "Parboil the cracked wheat and the rice and drain them.",
+        "Fry the chopped onion in oil until golden and add the tomato paste and paprika.",
+        "Combine all the grains and pulses with the onion, season, and stir in the coriander.",
+        "Rinse the cabbage leaves of excess brine and pare down the thick ribs.",
+        "Roll the filling in the leaves into tight parcels, packing them in layers in a pot.",
+        "Add water to the level of the top layer, cover with a weighted plate and cook an hour on a low heat. Cool it completely."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Soured cabbage leaves",
+          "quantity": 800,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Red beans",
+          "quantity": 150,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "name": "Lentils",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Chickpeas",
+          "quantity": 100,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "name": "Cracked wheat",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Rice",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Onions",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Tomato paste",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 120,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Paprika",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Coriander",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_66ad3d5c50010fc0",
+      "ingredients": [
+        {
+          "ingredient": "lentils",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "chickpeas",
+          "quantity": 100,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "ingredient": "bulgur",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "rice",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "tomato_paste",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 120,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "coriander",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Paprika",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "43c3ccdbdc22ed52aef0d9fc6d8864f2e7f436664a2f1d06b0a54eb6159b3765",
+      "status": "needs_review",
+      "review_issues": [
+        "Dry/cooked state needs review: Chickpeas",
+        "Dry/cooked state needs review: Red beans",
+        "Unmapped ingredient: Red beans",
+        "Unmapped ingredient: Soured cabbage leaves"
+      ]
+    }
+  ]
+}

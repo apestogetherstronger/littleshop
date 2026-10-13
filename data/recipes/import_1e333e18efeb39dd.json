@@ -1,0 +1,187 @@
+{
+  "recipes": [
+    {
+      "name": "Lamingtons",
+      "source_id": "lamingtons",
+      "servings": 12,
+      "prep_minutes": 75,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Beat the butter and sugar pale, add the eggs one at a time, then the vanilla.",
+        "Fold in the sifted flour with the baking powder and salt, alternating with the milk.",
+        "Pour into a square tin and bake at 180 °C for twenty-eight minutes, until a skewer comes out clean.",
+        "Cool it completely and leave the sponge uncovered overnight.",
+        "Cut it into five-centimetre cubes.",
+        "Whisk the icing sugar with the cocoa and hot milk to a thin icing that runs off a spoon in a stream.",
+        "Dip each cube on two forks, let it drain and roll it in coconut. Leave them to set for an hour."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Butter",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Milk",
+          "quantity": 120,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Baking powder",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Icing sugar",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Cocoa powder",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Hot milk",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Desiccated coconut",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "id": "import_1e333e18efeb39dd",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "butter",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 120,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "icing_sugar",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "cocoa",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "coconut",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Baking powder",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "900635aea27be94cfff590ae45c7645f314e8c5a0e8b30b91431c6a4d2359ac6",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

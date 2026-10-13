@@ -1,0 +1,105 @@
+{
+  "recipes": [
+    {
+      "name": "Soda bread",
+      "source_id": "soda-bread",
+      "servings": 8,
+      "prep_minutes": 55,
+      "category": "bread",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Heat the oven to 220 °C in advance. The bread has to go in immediately after mixing; it cannot wait.",
+        "Mix both flours, the bicarbonate and the salt in a bowl and stir well so the soda spreads evenly.",
+        "Pour in the buttermilk and mix with a knife or your hand only until it comes together. The dough is sticky and uneven, which is correct.",
+        "Turn it onto a floured tray, shape it into a round loaf and cut a deep cross almost to the base.",
+        "Scatter the oats over and bake fifteen minutes at 220 °C, then thirty at 190 °C.",
+        "A finished loaf sounds hollow when its base is tapped. Cool it on a rack for at least an hour: hot soda bread will not slice."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Plain flour",
+          "quantity": 350,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Wholemeal flour",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Buttermilk",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Bicarbonate of soda",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Rolled oats",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": "for the top"
+        }
+      ],
+      "id": "import_f4b0bc169cf96cc0",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 350,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "oats",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": "for the top"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Bicarbonate of soda",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "6fbaa5ac174de5834e0ce39d532320ae0c8d4e13b2c26e2cb38ffd378be1780a",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Buttermilk",
+        "Unmapped ingredient: Wholemeal flour"
+      ]
+    }
+  ]
+}

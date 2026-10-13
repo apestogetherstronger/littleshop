@@ -1,0 +1,135 @@
+{
+  "recipes": [
+    {
+      "name": "Pastel de nata",
+      "source_id": "pastel-de-nata",
+      "servings": 12,
+      "prep_minutes": 55,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Boil the sugar and water to 100 °C and take it off. Separately bring the milk, cream, cinnamon and lemon peel to just below boiling.",
+        "Whisk the flour into a little cold milk until smooth and stir it into the hot mixture. Cook, stirring, to the thickness of soured cream.",
+        "Pour the hot syrup into the milk base in a thin stream, take it off the heat and stir in the yolks. Strain it and cool completely.",
+        "Roll the pastry into a tight log, cut two-centimetre discs and press each into a tin with your thumbs, taking the walls above the rim.",
+        "Heat the oven as high as it goes, at least 250 °C. Fill the cases three-quarters full and bake twelve to fifteen minutes, until the tops blister black."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Puff pastry",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Milk",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Double cream",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Water",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Plain flour",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Egg yolks",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cinnamon stick",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Lemon peel",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        }
+      ],
+      "id": "import_75f4cfd590d31485",
+      "ingredients": [
+        {
+          "ingredient": "milk",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "cream",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "flour",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Cinnamon stick",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "9fff5e985a439c875b801830fb9c55d892849ea9d2d4201e0a2978c10f02c3ab",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Egg yolks",
+        "Unmapped ingredient: Lemon peel",
+        "Unmapped ingredient: Puff pastry"
+      ]
+    }
+  ]
+}

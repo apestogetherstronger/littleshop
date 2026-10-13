@@ -39,6 +39,14 @@ def matches_ingredient(ingredient: dict[str, Any], deal: dict[str, Any]) -> bool
         return False
     haystack = product_name
 
+    patterns = ingredient.get("match_patterns", [])
+    if patterns and not any(re.search(pattern, haystack) for pattern in patterns):
+        return False
+
+    required = ingredient.get("require_any_terms", [])
+    if required and not any(normalize_text(str(term)) in haystack for term in required):
+        return False
+
     for term in ingredient.get("exclude_terms", []):
         needle = normalize_text(str(term))
         if needle and needle in haystack:
@@ -90,7 +98,7 @@ def score_recipe(
                     "strength": round(strength, 2),
                 }
             )
-    return round(score, 2), matched
+    return round(score / max(1, len(recipe.get("ingredients", []))), 2), matched
 
 
 def build_plan(
@@ -100,25 +108,50 @@ def build_plan(
     days: int,
     diet: dict[str, Any],
     max_recipe_repeats: int = 1,
+    products: list[dict[str, Any]] | None = None,
+    delivery: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     allowed = [recipe for recipe in recipes if recipe_is_allowed(recipe, diet)]
     if not allowed:
         raise RuntimeError("No recipes satisfy the configured dietary tags")
 
+    # Price availability outranks promotions: a discount cannot rescue an unbuyable meal.
+    from .shopping import quote_item
+    candidate_cache = {}
+    def coverage(recipe):
+        if not products:
+            return 1.0
+        known = {shop for shop, policy in (delivery or {}).get('shops', {}).items()
+                 if policy.get('fee_ils') is not None}
+        count = 0
+        for ingredient in recipe.get('ingredients', []):
+            key = ingredient['name']
+            if key not in candidate_cache:
+                candidate_cache[key] = [p for p in products if (not known or p['chain'] in known)
+                                        and matches_ingredient(ingredient, p)]
+            if any(quote_item(ingredient, p) for p in candidate_cache[key]):
+                count += 1
+        return count / max(1, len(recipe.get('ingredients', [])))
+
     ranked: list[dict[str, Any]] = []
     for recipe in allowed:
         score, matched = score_recipe(recipe, deals)
+        time_penalty = round(max(0, (recipe.get("prep_minutes") or 60) - 60) / 15, 2)
         ranked.append(
             {
                 **recipe,
+                "price_coverage": coverage(recipe),
                 "deal_score": score,
+                "time_penalty": time_penalty,
+                "ranking_score": round(score - time_penalty, 2),
                 "matched_deals": matched,
             }
         )
 
     ranked.sort(
         key=lambda recipe: (
-            -recipe["deal_score"],
+            -recipe["price_coverage"],
+            -recipe["ranking_score"],
             recipe.get("prep_minutes", 9999),
             recipe["name"],
         )
@@ -146,15 +179,15 @@ def build_plan(
         def choice_key(recipe: dict[str, Any]) -> tuple[float, int, str]:
             ingredients = {i["name"] for i in recipe.get("ingredients", [])}
             overlap = len(previous_ingredients & ingredients)
-            adjusted = recipe["deal_score"] - (0.75 * overlap)
-            return (-adjusted, recipe.get("prep_minutes", 9999), recipe["name"])
+            adjusted = recipe["ranking_score"] - (0.75 * overlap)
+            return (-recipe["price_coverage"], -adjusted, recipe.get("prep_minutes", 9999), recipe["name"])
 
         chosen = min(available, key=choice_key)
         selected.append(chosen)
         repeats[chosen["id"]] += 1
 
     shopping: dict[tuple[str, str], dict[str, Any]] = {}
-    for meal in selected:
+    for day, meal in enumerate(selected, start=1):
         for ingredient in meal.get("ingredients", []):
             key = (ingredient["name"], ingredient.get("unit", ""))
             if key not in shopping:
@@ -164,8 +197,13 @@ def build_plan(
                     "quantity": 0.0,
                     "search_terms": ingredient.get("search_terms", []),
                     "exclude_terms": ingredient.get("exclude_terms", []),
+                    "require_any_terms": ingredient.get("require_any_terms", []),
+                    "match_patterns": ingredient.get("match_patterns", []),
+                    "spoon_unit": ingredient.get("spoon_unit"),
+                    "recipes": [],
                 }
             shopping[key]["quantity"] += float(ingredient.get("quantity", 0))
+            shopping[key]["recipes"].append({"day": day, "name": meal["name"], "anchor": f"recipe-day-{day}"})
 
     shopping_list: list[dict[str, Any]] = []
     for item in shopping.values():
@@ -176,14 +214,28 @@ def build_plan(
                 "quantity": item["quantity"],
                 "unit": item["unit"],
                 "suggested_deal": suggestion,
+                "search_terms": item["search_terms"],
+                "exclude_terms": item["exclude_terms"],
+                "require_any_terms": item["require_any_terms"],
+                "match_patterns": item["match_patterns"],
+                "spoon_unit": item["spoon_unit"],
+                "recipes": item["recipes"],
+                "shop": suggestion["chain"] if suggestion else None,
             }
         )
 
     shopping_list.sort(key=lambda item: item["name"])
+    from .shopping import compare_baskets
+    strategy = compare_baskets(shopping_list, products or [], deals, delivery or {})
+    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for item in shopping_list:
+        grouped[item.get("shop") or "unassigned"].append(item)
 
     return {
         "days": days,
         "meals": selected,
         "shopping_list": shopping_list,
         "ranked_recipes": ranked,
+        "shopping_by_shop": dict(sorted(grouped.items())),
+        "shopping_strategy": strategy,
     }

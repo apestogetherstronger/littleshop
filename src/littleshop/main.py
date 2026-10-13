@@ -2,13 +2,16 @@ from __future__ import annotations
 
 import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
 from .config import load_yaml
-from .ingest import fetch_chain
+from .catalog import load_catalog
+from .ingest import ISRAEL_TZ, fetch_chain
 from .planner import build_plan
 from .report import render_report
+from .interactive import render_html
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -24,8 +27,7 @@ def _write_json(path: Path, value: Any) -> None:
 
 def main() -> int:
     settings = load_yaml(ROOT / "config/settings.yml")
-    recipes_doc = load_yaml(ROOT / "config/recipes.yml")
-    recipes = recipes_doc.get("recipes", [])
+    recipes = load_catalog(ROOT)
 
     chain_runs: list[dict[str, Any]] = []
     errors: list[str] = []
@@ -60,16 +62,45 @@ def main() -> int:
 
     chain_runs.sort(key=lambda run: run["chain"])
     errors.sort()
+    # Fetch completion order must not decide between equally scored products.
+    all_deals.sort(key=lambda deal: (
+        str(deal.get("chain", "")), str(deal.get("store_id", "")),
+        str(deal.get("item_code", "")), str(deal.get("promotion_id", "")),
+    ))
+
+    status = {
+        "generated_at": datetime.now(ISRAEL_TZ).isoformat(timespec="seconds"),
+        "status": "failed" if not chain_runs else "partial" if errors else "ok",
+        "configured_chains": [spec["slug"] for spec in chain_specs],
+        "loaded_chains": [run["chain"] for run in chain_runs],
+        "active_promotion_rows": len(all_deals),
+        "source_files": {run["chain"]: run.get("source_files", {}) for run in chain_runs},
+        "errors": errors,
+        "plan_published": False,
+    }
+    status_path = ROOT / "output/run-status.json"
+    _write_json(status_path, status)
+    for error in errors:
+        print(f"Feed warning: {error}")
+
+    if not chain_runs:
+        print("No supermarket feed loaded; existing plan and deals were left unchanged.")
+        return 1
 
     plan_cfg = settings.get("plan", {})
+    all_products = [product for run in chain_runs for product in run.get("products", [])]
+    _write_json(ROOT / "output/products.json", all_products)
     plan = build_plan(
         recipes,
         all_deals,
         days=int(plan_cfg.get("days", 7)),
         diet=settings.get("diet", {}),
         max_recipe_repeats=int(plan_cfg.get("max_recipe_repeats", 1)),
+        products=all_products,
+        delivery=settings.get("delivery", {}),
     )
 
+    plan["feed_generated_at"] = status["generated_at"]
     output_cfg = settings.get("output", {})
     report_path = ROOT / output_cfg.get("report_path", "docs/latest.md")
     plan_json_path = ROOT / output_cfg.get("plan_json_path", "output/plan.json")
@@ -81,11 +112,13 @@ def main() -> int:
         encoding="utf-8",
     )
 
+    report_path.with_suffix(".html").write_text(render_html(plan, all_products, all_deals, errors), encoding="utf-8")
+
     _write_json(
         plan_json_path,
         {
             "stores": [
-                run["store"] | {"chain": run["chain"]}
+                run["store"] | {"chain": run["chain"], "source_files": run.get("source_files", {})}
                 for run in chain_runs
             ],
             "errors": errors,
@@ -93,6 +126,8 @@ def main() -> int:
         },
     )
     _write_json(deals_json_path, all_deals)
+    status["plan_published"] = True
+    _write_json(status_path, status)
 
     print(f"Generated {report_path.relative_to(ROOT)}")
     print(f"Loaded {len(all_deals)} active promotion-product rows")

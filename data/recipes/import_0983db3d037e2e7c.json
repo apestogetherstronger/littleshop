@@ -1,0 +1,184 @@
+{
+  "recipes": [
+    {
+      "name": "Chakalaka",
+      "source_id": "chakalaka",
+      "servings": 6,
+      "prep_minutes": 40,
+      "category": "side",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Grate the carrots coarsely and cut the peppers and onions into thin strips.",
+        "Fry the onion with the garlic, ginger and chilli in oil until soft, five minutes.",
+        "Add the curry powder and paprika and warm them a minute; the spices need to open up in the oil.",
+        "Add the peppers and carrot and cook five minutes over a high heat, stirring.",
+        "Add the tomatoes, season and cook seven minutes, until the sauce thickens.",
+        "Stir in the beans, warm them three minutes and take the pan off. The vegetables should still have bite."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Carrots",
+          "quantity": 4,
+          "unit": "piece",
+          "note": "grated"
+        },
+        {
+          "name": "Bell peppers",
+          "quantity": 3,
+          "unit": "piece",
+          "note": "mixed colours"
+        },
+        {
+          "name": "Onions",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Baked beans",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 400,
+          "unit": "g",
+          "note": "chopped"
+        },
+        {
+          "name": "Curry powder",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Paprika",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Chilli",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Ginger",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 50,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_0983db3d037e2e7c",
+      "ingredients": [
+        {
+          "ingredient": "carrots",
+          "quantity": 4,
+          "unit": "units",
+          "note": "grated"
+        },
+        {
+          "ingredient": "bell_pepper",
+          "quantity": 3,
+          "unit": "units",
+          "note": "mixed colours"
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 400,
+          "unit": "g",
+          "note": "chopped"
+        },
+        {
+          "ingredient": "chilli",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "ginger",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 50,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Curry powder",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Paprika",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "17bc0d0de9f13388b9cbee7b6de960838dde7e6dbcf4ad169672b96be54ee666",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Baked beans"
+      ]
+    }
+  ]
+}

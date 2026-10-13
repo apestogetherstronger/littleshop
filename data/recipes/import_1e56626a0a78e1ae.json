@@ -1,0 +1,127 @@
+{
+  "recipes": [
+    {
+      "name": "Sopa paraguaya",
+      "source_id": "sopa-paraguaya",
+      "servings": 8,
+      "prep_minutes": 80,
+      "category": "side",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Slice the onion thin and sweat it in the fat over a low heat for twenty minutes, until soft and sweet.",
+        "Pour the milk over the onion, take it off the heat and cool it to lukewarm.",
+        "Crumble the cheese and mix it with the corn flour and the sweetcorn kernels.",
+        "Stir in the onion and milk mixture and the yolks, salting cautiously; the cheese is salty already.",
+        "Whip the whites to firm peaks and fold them in with a spatula in three additions.",
+        "Spread the mixture into a greased tin in a four-centimetre layer.",
+        "Bake at 190 °C for fifty minutes, to a deep golden crust. Rest it twenty minutes before cutting."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Corn flour",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Paraguayan cheese or brined white cheese",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Onions",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Milk",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 5,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Lard or butter",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sweetcorn",
+          "quantity": 200,
+          "unit": "g",
+          "note": "kernels"
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_1e56626a0a78e1ae",
+      "ingredients": [
+        {
+          "ingredient": "onion",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 5,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "corn",
+          "quantity": 200,
+          "unit": "g",
+          "note": "kernels"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "1c389cfcdabab3aff35887f2ad522c35e6ff0edaff6df3f7a189b2d95ae44ead",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Lard or butter",
+        "Unmapped ingredient: Corn flour",
+        "Unmapped ingredient: Lard or butter",
+        "Unmapped ingredient: Paraguayan cheese or brined white cheese"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "recipes": [
+    {
+      "name": "Torta frita",
+      "source_id": "torta-frita",
+      "servings": 8,
+      "prep_minutes": 65,
+      "category": "snack",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Mix the flour with the salt and baking powder in a large bowl.",
+        "Melt the lard and stir it into the hot water until even.",
+        "Pour the liquid into the flour and work it with a spoon until it cools enough to handle.",
+        "Knead by hand for ten minutes to a smooth elastic dough.",
+        "Cover it and rest it twenty minutes at room temperature.",
+        "Divide it into eight, roll each into a half-centimetre round and cut a slit in the centre.",
+        "Fry at 180 °C for a minute and a half a side and serve with sugar or dulce de leche."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Hot water",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Lard",
+          "quantity": 80,
+          "unit": "g",
+          "note": "melted"
+        },
+        {
+          "name": "Baking powder",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 1,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 50,
+          "unit": "g",
+          "note": "to serve"
+        },
+        {
+          "name": "Dulce de leche",
+          "quantity": 200,
+          "unit": "g",
+          "note": "to serve"
+        },
+        {
+          "name": "Salt",
+          "quantity": 1.5,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_2ab988271eafd558",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 1000,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 50,
+          "unit": "g",
+          "note": "to serve"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Hot water",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Baking powder",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1.5,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "bb0143193822d994f10bcde65a4e0f078ad1ffe92d616632a57ddb78268bda05",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Lard",
+        "Unmapped ingredient: Dulce de leche",
+        "Unmapped ingredient: Lard"
+      ]
+    }
+  ]
+}

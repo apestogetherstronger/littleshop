@@ -1,0 +1,127 @@
+{
+  "recipes": [
+    {
+      "name": "Byrek me spinaq",
+      "source_id": "byrek-me-spinaq",
+      "servings": 8,
+      "prep_minutes": 80,
+      "category": "main",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Scald the spinach with boiling water, drain it and wring it out dry by hand.",
+        "Chop the spinach and mix it with the crumbled cheese, spring onion, dill and pepper. Salt cautiously; the cheese is salty.",
+        "Oil a tin and lay in three sheets of filo, brushing each one.",
+        "Spread a third of the filling, cover with two oiled sheets and repeat twice more.",
+        "Finish with three sheets on top, tuck the edges in and brush generously with oil.",
+        "Score it into squares down to the base with a sharp knife; cutting it after baking will not work.",
+        "Bake at 190 °C for forty-five minutes, to a deep golden crisp crust."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Filo pastry",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Spinach",
+          "quantity": 1,
+          "unit": "kg",
+          "note": null
+        },
+        {
+          "name": "Brined white cheese",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Spring onions",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 180,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Dill",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_b53149235424e4de",
+      "ingredients": [
+        {
+          "ingredient": "filo",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "spinach",
+          "quantity": 1000,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "feta",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "spring_onion",
+          "quantity": 6,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 180,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "dill",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "17a8863344012b6622a1d109fe3c883c1b5f572b2b70122552e64667e9359fc2",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

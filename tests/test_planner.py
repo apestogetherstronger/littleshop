@@ -1,3 +1,8 @@
+from pathlib import Path
+
+import pytest
+
+from littleshop.config import load_yaml
 from littleshop.planner import build_plan, deal_strength, matches_ingredient
 
 
@@ -88,3 +93,83 @@ def test_promotion_text_without_sku_name_is_not_enough():
     deal["name"] = None
     deal["promotion_description"] = "מעטפת בצק פילו במילוי פטה"
     assert not matches_ingredient(ingredient, deal)
+
+
+# Real product names observed in the Sokolov feed. Exercise every occurrence of
+# the ingredient in the catalog so recipe scoring and shopping lists agree.
+@pytest.mark.parametrize('ingredient_name, product, expected', [
+    ('eggs', 'איטריות ביצים מזרח ו', False),
+    ('eggs', 'ביצים גדולות 12 יחידות', True),
+    ('tomatoes', 'רסק עגבניות טבעי 100', False),
+    ('tomatoes', 'עגבניות שרי', True),
+    ('rice', 'פריכיות אורז חום מלא', False),
+    ('rice', 'פרכיות אורז מצופות', False),
+    ('rice', 'אורז בסמטי 1 קג', True),
+    ('ricotta', 'רביולי ריקוטה ותרד 2', False),
+    ('ricotta', 'גבינת ריקוטה', True),
+    ('sweet potato', 'בטטה קסביה', False),
+    ('feta', 'פרמיו כבש במרקם פטה', False),
+    ('feta', 'גבינת פטה כבשים', True),
+    ('cauliflower', 'ויליגר חטיפי כרובית', False),
+    ('sweet potato', 'פיטנס קרקר דק בטטה 1', False),
+    ('sweet potato', 'בטטה טריה', True),
+    ('parmesan', 'ציפס גלי שום פרמזן 4', False),
+    ('parmesan', 'גבינת פרמזן מגורדת', True),
+    ('bell pepper', 'ביסלי טעם פלפל אסם 5', False),
+    ('bell pepper', 'פלפל שחור טחון', False),
+    ('bell pepper', 'פלפל אדום', True),
+    ('spinach', 'אטריות תרד מזרח ומער', False),
+    ('spinach', 'תרד קפוא', True),
+    ('corn', 'מקלות תירס ממותקים 6', False),
+    ('corn', 'גרגרי תירס מתוק', True),
+    ('sweet potato', 'אטריות עם בטטה סגולה', False),
+    ('tomatoes', 'מיץ עגבניות עם מלח 1', False),
+    ('tomatoes', 'מחית עגבניות בלה איט', False),
+    ('tomatoes', 'מרק עשיר עגבניות פסט', False),
+    ('potatoes', 'טרה תפוח אדמה מתוק ו', False),
+    ('potatoes', 'תפוחי אדמה אדומים', True),
+    ('cream', 'מסקרפונה שמנת מתוקה', False),
+    ('cream', 'שמנת מתוקה 38 אחוז', True),
+    ('couscous', 'מנה חמה קוסקוס עם יר', False),
+    ('couscous', 'קוסקוס בינוני 500 גרם', True),
+])
+def test_catalog_matches_ingredients_not_flavoured_products(ingredient_name, product, expected):
+    from littleshop.catalog import load_catalog
+    catalog = {'recipes': load_catalog(Path(__file__).resolve().parents[1])}
+    ingredients = [ingredient for recipe in catalog['recipes'] for ingredient in recipe['ingredients']
+                   if ingredient['name'] == ingredient_name]
+    assert ingredients
+    for ingredient in ingredients:
+        assert matches_ingredient(ingredient, fake_deal(product)) is expected
+
+
+@pytest.mark.parametrize('name,bad,good',[
+    ('cucumber','סבון מוצק מלפפון','מלפפון'),
+    ('eggs','ממרח מיונז ללא ביצים','ביצים 12 יחידות'),
+    ('butter','פופקו חמאה ודבש','חמאה 200 גרם'),
+    ('almonds','עוגיות קמח שקדים','שקדים טבעיים'),
+    ('aubergine','טחינה באלדי עם חציל','חציל'),
+    ('mint','סודה תפוח נענע','נענע'),
+    ('basil','ברילה רוטב בזיליקום','בזיליקום'),
+    ('potatoes','ניוקי תפוח אדמה','תפוחי אדמה'),
+    ('short grain rice','דפי אורז עגולים','אורז עגול'),
+    ('garlic','אבקת שום','שום'),
+    ('corn','תירס (מנציס פיצוחים)','גרגרי תירס מתוק'),
+])
+def test_reviewed_feed_false_positives(name,bad,good):
+    from littleshop.config import load_yaml
+    bank=load_yaml(Path(__file__).resolve().parents[1]/'config/ingredients.yml')['ingredients']
+    ingredient=next(i for i in bank.values() if i['name']==name)
+    assert not matches_ingredient(ingredient,fake_deal(bad))
+    assert matches_ingredient(ingredient,fake_deal(good))
+
+
+def test_time_penalty_starts_strictly_after_one_hour_and_keeps_long_recipes_eligible():
+    recipes=[{'id':str(m),'name':str(m),'prep_minutes':m,'ingredients':[], 'tags':[]} for m in [120,61,60,30]]
+    plan=build_plan(recipes,[],days=4,diet={})
+    ranked=plan['ranked_recipes']
+    assert [r['prep_minutes'] for r in ranked]==[30,60,61,120]
+    penalties={r['prep_minutes']:r['time_penalty'] for r in ranked}
+    assert penalties[30]==penalties[60]==0
+    assert penalties[61]>0 and penalties[120]==4
+    assert len(plan['meals'])==4

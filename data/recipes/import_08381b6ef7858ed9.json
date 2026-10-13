@@ -1,0 +1,175 @@
+{
+  "recipes": [
+    {
+      "name": "Hoppers",
+      "source_id": "hoppers",
+      "servings": 6,
+      "prep_minutes": 80,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Dissolve the yeast and sugar in the warm water and leave it ten minutes, until it foams.",
+        "Mix the rice flour with the yeast mixture and half the coconut milk to a smooth batter.",
+        "Cover it and leave it to ferment overnight at room temperature, about eight hours.",
+        "In the morning stir in the remaining coconut milk and salt; the batter should be as thin as pouring cream.",
+        "Mix the finely chopped onion, chilli flakes, Maldive fish, lime juice and salt; that is lunu miris.",
+        "Heat a small wok, oil it and pour in a ladle of batter, swirling the pan immediately.",
+        "Break an egg into the centre, cover and cook three minutes to crisp edges. Serve with the lunu miris."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Rice flour",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Coconut milk",
+          "quantity": 500,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Dry yeast",
+          "quantity": 5,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Warm water",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 6,
+          "unit": "piece",
+          "note": "optional"
+        },
+        {
+          "name": "Red onion",
+          "quantity": 2,
+          "unit": "piece",
+          "note": "for the sambol"
+        },
+        {
+          "name": "Chilli flakes",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Limes",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Maldive fish",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": "for the sambol"
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_08381b6ef7858ed9",
+      "ingredients": [
+        {
+          "ingredient": "coconut_milk",
+          "quantity": 500,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "dry_yeast",
+          "quantity": 5,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 6,
+          "unit": "units",
+          "note": "optional"
+        },
+        {
+          "ingredient": "red_onion",
+          "quantity": 2,
+          "unit": "units",
+          "note": "for the sambol"
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Warm water",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Chilli flakes",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "4438b77c5ca64c5441414a8ffaed5f1ecd6255b6da9f4a36c0acbca5f1297c98",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Maldive fish",
+        "Unmapped ingredient: Limes",
+        "Unmapped ingredient: Maldive fish",
+        "Unmapped ingredient: Rice flour"
+      ]
+    }
+  ]
+}

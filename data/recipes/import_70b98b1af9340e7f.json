@@ -1,0 +1,197 @@
+{
+  "recipes": [
+    {
+      "name": "Fattoush",
+      "source_id": "fattoush",
+      "servings": 4,
+      "prep_minutes": 30,
+      "category": "salad",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Tear the bread by hand into two-finger pieces and fry them in olive oil until browned.",
+        "Drain the bread on paper and dust it with half the sumac while it is still hot.",
+        "Cut the tomatoes, cucumbers and radishes into large uneven pieces; the salad should be rough rather than neat.",
+        "Tear the lettuce by hand and chop the herbs and spring onion.",
+        "Whisk a dressing from the lemon juice, pomegranate molasses, crushed garlic, the remaining sumac, oil and salt.",
+        "Toss the vegetables in the dressing, add the bread and serve at once."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Pita bread",
+          "quantity": 2,
+          "unit": "piece",
+          "note": "stale"
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cucumbers",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Radishes",
+          "quantity": 8,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Romaine lettuce",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Spring onions",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Parsley",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Fresh mint",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sumac",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Pomegranate molasses",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Lemon",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 80,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_70b98b1af9340e7f",
+      "ingredients": [
+        {
+          "ingredient": "pita",
+          "quantity": 2,
+          "unit": "units",
+          "note": "stale"
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "cucumber",
+          "quantity": 3,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "spring_onion",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "parsley",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "mint",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "lemon",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 80,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Sumac",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "364d01ebdcf96b820088cb390cb83f49489d2f406981a9f54d09851b66226de9",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Pomegranate molasses",
+        "Unmapped ingredient: Radishes",
+        "Unmapped ingredient: Romaine lettuce"
+      ]
+    }
+  ]
+}

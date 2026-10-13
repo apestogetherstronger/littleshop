@@ -1,0 +1,128 @@
+{
+  "recipes": [
+    {
+      "name": "Api morado",
+      "source_id": "api-morado",
+      "servings": 6,
+      "prep_minutes": 65,
+      "category": "drink",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Soak the purple corn in cold water overnight, keeping that water in the morning.",
+        "Grind the corn with its water in a blender to an even purple liquid.",
+        "Strain it through a fine sieve, pressing the pulp, and strain it a second time.",
+        "Add the remaining water, the cinnamon, cloves and orange peel.",
+        "Cook over medium heat for forty minutes, stirring with a wooden spoon, until it thickens.",
+        "Add the sugar and lemon juice and cook five minutes more.",
+        "Remove the spices and serve it hot in mugs, with a fried cheese pastry."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Purple corn",
+          "quantity": 400,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "name": "Water",
+          "quantity": 2.5,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Cinnamon sticks",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cloves",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Orange peel",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Lemon",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cheese for the pastel",
+          "quantity": 200,
+          "unit": "g",
+          "note": "to serve"
+        }
+      ],
+      "id": "import_017ca284ffc02466",
+      "ingredients": [
+        {
+          "ingredient": "sugar",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "lemon",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 2.5,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Cinnamon sticks",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cloves",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "1435110868b896c6eb1b8a5d633939130ff5c503b3d589cf38d1c3c5f0ba54b2",
+      "status": "needs_review",
+      "review_issues": [
+        "Check vegan claim: Cheese for the pastel",
+        "Unmapped ingredient: Cheese for the pastel",
+        "Unmapped ingredient: Orange peel",
+        "Unmapped ingredient: Purple corn"
+      ]
+    }
+  ]
+}

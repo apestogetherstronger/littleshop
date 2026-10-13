@@ -1,0 +1,173 @@
+{
+  "recipes": [
+    {
+      "name": "Sachertorte",
+      "source_id": "sachertorte",
+      "servings": 12,
+      "prep_minutes": 120,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Melt the sponge chocolate over a water bath and cool it to lukewarm.",
+        "Beat the butter with the icing sugar and vanilla until pale, add the yolks one by one, then the chocolate.",
+        "Whip the whites with the sugar to firm peaks and fold them in with a spatula, alternating with the sifted flour.",
+        "Bake at 170 °C for forty-five minutes, the first fifteen with the oven door propped open.",
+        "Cool it completely, split the sponge in two and spread the warmed sieved jam between the layers and over the sides.",
+        "Cook a syrup of sugar and water to 108 °C, take it off the heat and stir in the chocolate until smooth.",
+        "Cool the glaze to the body of cream, pour it onto the centre and spread it by tilting the cake. Let it set two hours."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Dark chocolate",
+          "quantity": 130,
+          "unit": "g",
+          "note": "for the sponge"
+        },
+        {
+          "name": "Butter",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Icing sugar",
+          "quantity": 110,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 110,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Flour",
+          "quantity": 140,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Apricot jam",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Chocolate for the glaze",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar for the glaze",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Water",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Cream",
+          "quantity": 250,
+          "unit": "ml",
+          "note": "to serve"
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_df3cec846fe027d7",
+      "ingredients": [
+        {
+          "ingredient": "butter",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "icing_sugar",
+          "quantity": 110,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 6,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 110,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "flour",
+          "quantity": 140,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "cream",
+          "quantity": 250,
+          "unit": "ml",
+          "note": "to serve"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "e9355f2b65f9abc0df50d33d6f2d53c4bdf007565292628d32c786c30dedc30b",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Apricot jam",
+        "Unmapped ingredient: Chocolate for the glaze",
+        "Unmapped ingredient: Dark chocolate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "recipes": [
+    {
+      "name": "Baklava",
+      "source_id": "baklava",
+      "servings": 12,
+      "prep_minutes": 120,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Make the syrup: bring the sugar and water to the boil, cook fifteen minutes, add the lemon juice and cool it completely.",
+        "Melt the butter and let it settle — use only the clear upper layer and discard the sediment.",
+        "Lay twenty sheets into a greased tin, brushing each with butter. Scatter the pistachios in an even layer.",
+        "Cover with twenty more sheets, brushing each in the same way. Butter the top sheet especially generously.",
+        "Cut it into diamonds with a sharp knife, right down to the base of the tin.",
+        "Bake at 170 °C for an hour, to a deep gold. Take it out and pour the cold syrup into the cuts at once.",
+        "Leave it six hours, better overnight. Cutting and serving earlier is pointless: the syrup has not reached the lower layers."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Yufka or filo pastry",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Pistachios",
+          "quantity": 400,
+          "unit": "g",
+          "note": "coarsely chopped"
+        },
+        {
+          "name": "Clarified butter",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Water",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Lemon juice",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "id": "import_a865566a32dd0aac",
+      "ingredients": [
+        {
+          "ingredient": "pistachios",
+          "quantity": 400,
+          "unit": "g",
+          "note": "coarsely chopped"
+        },
+        {
+          "ingredient": "ghee",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "lemon_juice",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "d14b631d231251e10192bddbae361d08d84f08a4208990034babba879a8c1417",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Yufka or filo pastry"
+      ]
+    }
+  ]
+}

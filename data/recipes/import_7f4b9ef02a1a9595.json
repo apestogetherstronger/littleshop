@@ -1,0 +1,148 @@
+{
+  "recipes": [
+    {
+      "name": "Tufahije",
+      "source_id": "tufahije",
+      "servings": 6,
+      "prep_minutes": 60,
+      "category": "dessert",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Peel the apples and core them without going through, so each forms a cup.",
+        "Make a syrup of water, sugar, lemon juice and cinnamon, bringing it to the boil.",
+        "Lower the apples into the syrup and poach them twenty minutes on a low heat, turning them.",
+        "Lift the apples out with a slotted spoon and cool them completely, keeping the syrup.",
+        "Mix the ground walnuts with three spoons of the syrup into a pliable mass.",
+        "Fill the apples with the walnut mass, mounded, and set them in dishes.",
+        "Spoon over the remaining syrup and top with whipped cream and a walnut half."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Firm apples",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Walnuts",
+          "quantity": 250,
+          "unit": "g",
+          "note": "ground"
+        },
+        {
+          "name": "Sugar",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Water",
+          "quantity": 700,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Lemon",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Double cream",
+          "quantity": 300,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Cinnamon stick",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Walnut halves",
+          "quantity": 6,
+          "unit": "piece",
+          "note": "to decorate"
+        }
+      ],
+      "id": "import_7f4b9ef02a1a9595",
+      "ingredients": [
+        {
+          "ingredient": "walnuts",
+          "quantity": 250,
+          "unit": "g",
+          "note": "ground"
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "lemon",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "cream",
+          "quantity": 300,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "walnuts",
+          "quantity": 6,
+          "unit": "units",
+          "note": "to decorate"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 700,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Cinnamon stick",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "cb891bdfa2a8cafc78ea66837baccd823e4ae1900eb1674f093fa65863efeea3",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Firm apples"
+      ]
+    }
+  ]
+}

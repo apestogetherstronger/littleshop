@@ -1,0 +1,144 @@
+{
+  "recipes": [
+    {
+      "name": "Tavče gravče",
+      "source_id": "tavce-gravce",
+      "servings": 6,
+      "prep_minutes": 140,
+      "category": "main",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Drain the soaked beans, cover them with fresh water, bring it to the boil and drain again after ten minutes.",
+        "Cover them a third time, add one whole onion and boil an hour until soft, without salt.",
+        "Fry the sliced onion in oil until golden, take it off the heat and stir in the paprika and flour.",
+        "Pour off some of the bean water, leaving it level with the beans, salt them and stir in the onion mixture.",
+        "Transfer to a clay pan, arrange the dried peppers on top and scatter with mint.",
+        "Bake at 200 °C for forty minutes, until a browned crust forms on top.",
+        "Rest ten minutes and serve straight from the pan, scattered with parsley."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "White beans",
+          "quantity": 500,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "name": "Onions",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Sweet paprika",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Dried red peppers",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Flour",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Dried mint",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Parsley",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_4a14e5ac1127d158",
+      "ingredients": [
+        {
+          "ingredient": "onion",
+          "quantity": 3,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "flour",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "parsley",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Sweet paprika",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Dried mint",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "2b43c8ae980094398deb8304739ae676d87ec1ffe42b235a615dc18b9d39a976",
+      "status": "needs_review",
+      "review_issues": [
+        "Dry/cooked state needs review: White beans",
+        "Unmapped ingredient: Dried red peppers",
+        "Unmapped ingredient: White beans"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "recipes": [
+    {
+      "name": "Shopska salad",
+      "source_id": "shopska-salata",
+      "servings": 4,
+      "prep_minutes": 30,
+      "category": "salad",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Char the peppers over a flame until the skin blackens, close them in a covered dish for ten minutes and peel them.",
+        "Cut the tomatoes and cucumbers into two-centimetre dice and the peppers into strips.",
+        "Mix the vegetables with the onion and parsley and dress with the oil, vinegar and salt.",
+        "Mound it on a dish and blanket it with the grated cheese without stirring. Finish with olives."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Tomatoes",
+          "quantity": 4,
+          "unit": "piece",
+          "note": "in large dice"
+        },
+        {
+          "name": "Cucumbers",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Red peppers",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Onion",
+          "quantity": 0.5,
+          "unit": "piece",
+          "note": "in thin rings"
+        },
+        {
+          "name": "Bulgarian white cheese",
+          "quantity": 200,
+          "unit": "g",
+          "note": "finely grated"
+        },
+        {
+          "name": "Parsley",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sunflower oil",
+          "quantity": 4,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Red wine vinegar",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Olives",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_76d5bfd94d734ef4",
+      "ingredients": [
+        {
+          "ingredient": "tomatoes",
+          "quantity": 4,
+          "unit": "units",
+          "note": "in large dice"
+        },
+        {
+          "ingredient": "cucumber",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "bell_pepper",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 0.5,
+          "unit": "units",
+          "note": "in thin rings"
+        },
+        {
+          "ingredient": "feta",
+          "quantity": 200,
+          "unit": "g",
+          "note": "finely grated"
+        },
+        {
+          "ingredient": "parsley",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sunflower_oil",
+          "quantity": 4,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "wine_vinegar",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "05fd7e1d76246312df3d5ddc0425ad38efb1b75fc42252b0c88b93605c07a263",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Olives"
+      ]
+    }
+  ]
+}

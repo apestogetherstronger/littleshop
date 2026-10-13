@@ -1,0 +1,154 @@
+{
+  "recipes": [
+    {
+      "name": "Montreal bagels",
+      "source_id": "montreal-bagels",
+      "servings": 12,
+      "prep_minutes": 145,
+      "category": "bread",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Dissolve the yeast and sugar in the warm water and leave it ten minutes, until it foams.",
+        "Knead a dough from the flour, yeast mixture, eggs, oil and salt and work it fifteen minutes until elastic.",
+        "Let it rise somewhere warm for an hour and twenty, until doubled.",
+        "Divide it into twelve, roll each into a rope and join the ends into a ring with a large hole.",
+        "Bring a large pot of water to the boil with the honey and lower the rings in three or four at a time.",
+        "Boil them a minute a side and roll them in sesame or poppy seed at once.",
+        "Bake at 230 °C for twenty minutes, to a deep golden crust, turning them once halfway."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Strong flour",
+          "quantity": 700,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Warm water",
+          "quantity": 300,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Dry yeast",
+          "quantity": 10,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 60,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Honey",
+          "quantity": 150,
+          "unit": "g",
+          "note": "for the boiling water"
+        },
+        {
+          "name": "Sesame seeds",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Poppy seeds",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_e439722abb2ff05a",
+      "ingredients": [
+        {
+          "ingredient": "dry_yeast",
+          "quantity": 10,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 60,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "honey",
+          "quantity": 150,
+          "unit": "g",
+          "note": "for the boiling water"
+        },
+        {
+          "ingredient": "sesame",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Warm water",
+          "quantity": 300,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "70ff4005815b1c9b7c2c854e5e544e9b95d60ebd46cd3e9542507dc3902fcd47",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Poppy seeds",
+        "Unmapped ingredient: Strong flour"
+      ]
+    }
+  ]
+}

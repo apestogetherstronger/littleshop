@@ -1,0 +1,175 @@
+{
+  "recipes": [
+    {
+      "name": "Dal tadka",
+      "source_id": "dal-tadka",
+      "servings": 4,
+      "prep_minutes": 45,
+      "category": "main",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Cover the lentils with three cups of water, add the turmeric and simmer covered for thirty minutes, until the grains collapse into a soft mass.",
+        "Mash some of the lentils against the side of the pot and season. The consistency should be that of a thick soup.",
+        "Separately fry the onion until golden, add the tomatoes and cook until they break down into a sauce. Stir that into the lentils.",
+        "Heat the ghee in a small pan until it is just short of smoking. Add the mustard seeds; they should crackle within seconds.",
+        "Add the cumin at once, the garlic and chillies ten seconds later, the asafoetida twenty seconds after that. The whole thing takes under a minute and cannot be left alone.",
+        "Pour the sizzling tadka straight into the lentils — it should hiss. Stir once and serve with rice or flatbread."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Toor dal",
+          "quantity": 200,
+          "unit": "g",
+          "note": "rinsed"
+        },
+        {
+          "name": "Turmeric",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Ghee",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Cumin seeds",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Mustard seeds",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": "thinly sliced"
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Tomato",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Dried red chillies",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Asafoetida",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_bef557eb1fafaece",
+      "ingredients": [
+        {
+          "ingredient": "toor_dal",
+          "quantity": 200,
+          "unit": "g",
+          "note": "rinsed"
+        },
+        {
+          "ingredient": "ghee",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "mustard_seeds",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": "thinly sliced"
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "dried_chillies",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "asafoetida",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Turmeric",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Cumin seeds",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "061fabccb14bb6b8e9c9bdfa74f2fd3b6d9cf1162f2b33549c7b89645c6ddaf0",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

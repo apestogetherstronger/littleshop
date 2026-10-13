@@ -1,0 +1,141 @@
+{
+  "recipes": [
+    {
+      "name": "Qurutob",
+      "source_id": "kurutob",
+      "servings": 4,
+      "prep_minutes": 45,
+      "category": "main",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Cover the qurut with hot water for twenty minutes and rub it by hand into an even liquid.",
+        "Pass it through a sieve to remove any grains. The liquid should be like thin soured cream.",
+        "Slice the onion into rings and fry it in oil until golden, ten minutes.",
+        "Tear the fatir into large pieces into a wide dish.",
+        "Pour the qurut over the bread and leave it five minutes to soak.",
+        "Top with the fried onion and its oil, then the tomato, cucumber and herbs."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Qurut",
+          "quantity": 200,
+          "unit": "g",
+          "note": "or 500 g thick yoghurt"
+        },
+        {
+          "name": "Fatir flatbread",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Onions",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cucumbers",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Coriander",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Purple basil",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_7d51efbf43240d19",
+      "ingredients": [
+        {
+          "ingredient": "onion",
+          "quantity": 3,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "cucumber",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "coriander",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "basil",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "5f601a443e7eebc2799deca0f85d04d1a2695c970d4782e6f1cd109c182f863f",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Fatir flatbread",
+        "Unmapped ingredient: Qurut"
+      ]
+    }
+  ]
+}

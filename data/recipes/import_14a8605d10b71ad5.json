@@ -1,0 +1,146 @@
+{
+  "recipes": [
+    {
+      "name": "Imqaret",
+      "source_id": "imqaret",
+      "servings": 12,
+      "prep_minutes": 110,
+      "category": "dessert",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Chop the dates and put them in a pan with the zests, aniseed and liqueur.",
+        "Cook the filling over a low heat for twenty minutes, to a thick even paste.",
+        "Cool the filling completely; warm, it tears the pastry as you wrap it.",
+        "Cut the margarine into the flour with salt to a crumb and bring the dough together with cold water.",
+        "Roll the dough into a long strip twelve centimetres wide.",
+        "Lay a rope of the date paste down the centre, fold the edges over and press the seam.",
+        "Cut it on the diagonal into diamonds and fry them at 180 °C, two minutes a side."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Margarine or lard",
+          "quantity": 180,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Cold water",
+          "quantity": 120,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Dates",
+          "quantity": 600,
+          "unit": "g",
+          "note": "pitted"
+        },
+        {
+          "name": "Aniseed",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Orange zest",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Lemon zest",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Anise liqueur",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 800,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "id": "import_14a8605d10b71ad5",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "dates",
+          "quantity": 600,
+          "unit": "g",
+          "note": "pitted"
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 800,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Cold water",
+          "quantity": 120,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Aniseed",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "3be8e67a783688b41129b811fbeda5dfa05f2f222974dc927313a70d3ed6519e",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Margarine or lard",
+        "Unmapped ingredient: Anise liqueur",
+        "Unmapped ingredient: Lemon zest",
+        "Unmapped ingredient: Margarine or lard",
+        "Unmapped ingredient: Orange zest"
+      ]
+    }
+  ]
+}

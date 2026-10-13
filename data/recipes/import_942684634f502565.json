@@ -1,0 +1,139 @@
+{
+  "recipes": [
+    {
+      "name": "Kunafa",
+      "source_id": "kunafa",
+      "servings": 10,
+      "prep_minutes": 80,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Boil a syrup of sugar, water and lemon juice for ten minutes, take it off, add the flower waters and cool it completely.",
+        "Soak salted cheese in cold water for two hours, changing it three times, and cut it into cubes.",
+        "Pull the kataifi apart into separate strands by hand and shorten them with scissors.",
+        "Pour the melted ghee over the pastry and rub it through with your hands until every strand glistens.",
+        "Press half the pastry into a greased tin, spread the cheese short of the edges and cover with the other half.",
+        "Bake at 190 °C for forty minutes to a deep gold underneath — check by lifting an edge with a spatula.",
+        "Turn it out onto a platter, pour the cold syrup over at once and scatter with ground pistachios."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Kataifi pastry",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Akkawi or mozzarella",
+          "quantity": 700,
+          "unit": "g",
+          "note": "unsalted"
+        },
+        {
+          "name": "Ghee",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Water",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Lemon",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Rose water",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Orange blossom water",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Pistachios",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Orange food colouring",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": "optional"
+        }
+      ],
+      "id": "import_942684634f502565",
+      "ingredients": [
+        {
+          "ingredient": "ghee",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "lemon",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "pistachios",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "be38e924af10d00a13b89b0f1749d20159d29e5e1103e732015a6fb14798c25c",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Akkawi or mozzarella",
+        "Unmapped ingredient: Kataifi pastry",
+        "Unmapped ingredient: Orange blossom water",
+        "Unmapped ingredient: Orange food colouring",
+        "Unmapped ingredient: Rose water"
+      ]
+    }
+  ]
+}

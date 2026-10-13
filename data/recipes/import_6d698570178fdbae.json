@@ -1,0 +1,167 @@
+{
+  "recipes": [
+    {
+      "name": "Risalamande",
+      "source_id": "risalamande",
+      "servings": 8,
+      "prep_minutes": 85,
+      "category": "dessert",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Rinse the rice, cover it with the milk, vanilla and salt and cook an hour on the lowest heat, stirring.",
+        "Cool the rice completely; stand the bowl in cold water and stir so no skin forms.",
+        "Scald the almonds, slip off the skins and chop them coarsely, keeping one whole.",
+        "Stir the chopped almonds, sugar and sherry into the cold rice.",
+        "Whip the cream to soft peaks and fold it in with a spatula in three additions, without knocking it down.",
+        "Hide the whole almond in the mixture and chill the pudding at least three hours.",
+        "Cook the cherries with sugar for ten minutes, thicken with slaked cornflour and serve the sauce hot."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Pudding rice",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Milk",
+          "quantity": 1,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Double cream",
+          "quantity": 500,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Almonds",
+          "quantity": 150,
+          "unit": "g",
+          "note": "blanched"
+        },
+        {
+          "name": "Sugar",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cherries",
+          "quantity": 500,
+          "unit": "g",
+          "note": "stoned"
+        },
+        {
+          "name": "Sugar for the sauce",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Cornflour",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Sherry",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "id": "import_6d698570178fdbae",
+      "ingredients": [
+        {
+          "ingredient": "short_grain_rice",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 1000,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "cream",
+          "quantity": 500,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "almonds",
+          "quantity": 150,
+          "unit": "g",
+          "note": "blanched"
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "cornstarch",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "f8f97d05284f67e7e71493a0b228926e294929413b5bdab1fe8eeb04def9a8e5",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Cherries",
+        "Unmapped ingredient: Sherry"
+      ]
+    }
+  ]
+}

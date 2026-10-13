@@ -1,233 +1,488 @@
 recipes:
-  - id: broccoli_ricotta_pasta
-    name: "Broccoli & ricotta pasta"
-    prep_minutes: 30
-    tags: [vegetarian, dairy, kid-friendly]
-    ingredients:
-      - name: pasta
-        quantity: 500
-        unit: g
-        search_terms: ["פסטה", "ספגטי", "פנה"]
-        exclude_terms: ["רוטב"]
-      - name: broccoli
-        quantity: 600
-        unit: g
-        search_terms: ["ברוקולי"]
-      - name: ricotta
-        quantity: 250
-        unit: g
-        search_terms: ["ריקוטה"]
-        exclude_terms: ["רוטב"]
-      - name: parmesan
-        quantity: 80
-        unit: g
-        search_terms: ["פרמזן", "פרמיג"]
-
-  - id: lentil_sweet_potato_curry
-    name: "Lentil & sweet-potato curry"
-    prep_minutes: 40
-    tags: [vegetarian, vegan, one-pot]
-    ingredients:
-      - name: lentils
-        quantity: 400
-        unit: g
-        search_terms: ["עדשים"]
-      - name: sweet potato
-        quantity: 800
-        unit: g
-        search_terms: ["בטטה"]
-      - name: coconut milk
-        quantity: 400
-        unit: ml
-        search_terms: ["חלב קוקוס", "קרם קוקוס"]
-      - name: rice
-        quantity: 400
-        unit: g
-        search_terms: ["אורז"]
-
-  - id: cauliflower_chickpea_tray
-    name: "Roasted cauliflower & chickpea tray"
-    prep_minutes: 40
-    tags: [vegetarian, vegan, oven]
-    ingredients:
-      - name: cauliflower
-        quantity: 1
-        unit: head
-        search_terms: ["כרובית"]
-      - name: chickpeas
-        quantity: 500
-        unit: g
-        search_terms: ["גרגירי חומוס", "חומוס מבושל", "חומוס שימורים"]
-      - name: tahini
-        quantity: 200
-        unit: g
-        search_terms: ["טחינה"]
-
-  - id: shakshuka_feta
-    name: "Shakshuka with feta"
-    prep_minutes: 30
-    tags: [vegetarian, dairy, kid-friendly]
-    ingredients:
-      - name: eggs
-        quantity: 8
-        unit: units
-        search_terms: ["ביצים"]
-        exclude_terms: ["אטריות", "נודלס", "פסטה", "פתיתי", "אבקת"]
-      - name: tomatoes
-        quantity: 1200
-        unit: g
-        search_terms: ["עגבניות", "עגבניה"]
-        exclude_terms: ["רוטב", "מרוסקות", "רכז", "קטשופ", "ציפס", "חטיף", "חתוכות", "שימורים"]
-      - name: tomato sauce
-        quantity: 500
-        unit: g
-        search_terms: ["עגבניות מרוסקות", "רוטב עגבניות"]
-      - name: feta
-        quantity: 200
-        unit: g
-        search_terms: ["פטה", "בולגרית"]
-
-  - id: tofu_stir_fry
-    name: "Tofu vegetable stir-fry"
-    prep_minutes: 30
-    tags: [vegetarian, vegan, quick]
-    ingredients:
-      - name: tofu
-        quantity: 600
-        unit: g
-        search_terms: ["טופו"]
-      - name: bell pepper
-        quantity: 600
-        unit: g
-        search_terms: ["פלפל", "גמבה"]
-        exclude_terms: ["ממרח", "רוטב", "פסטרמה", "קלויים", "סלט"]
-      - name: broccoli
-        quantity: 400
-        unit: g
-        search_terms: ["ברוקולי"]
-      - name: rice
-        quantity: 400
-        unit: g
-        search_terms: ["אורז"]
-
-  - id: zucchini_feta_frittata
-    name: "Zucchini & feta frittata"
-    prep_minutes: 35
-    tags: [vegetarian, dairy, oven, kid-friendly]
-    ingredients:
-      - name: zucchini
-        quantity: 800
-        unit: g
-        search_terms: ["קישוא", "זוקיני"]
-        exclude_terms: ["סלט", "ממרח"]
-      - name: eggs
-        quantity: 10
-        unit: units
-        search_terms: ["ביצים"]
-        exclude_terms: ["אטריות", "נודלס", "פסטה", "פתיתי", "אבקת"]
-      - name: feta
-        quantity: 250
-        unit: g
-        search_terms: ["פטה", "בולגרית"]
-      - name: yellow cheese
-        quantity: 150
-        unit: g
-        search_terms: ["גבינה צהובה", "גבינת צ'דר", "גאודה", "גבינת עמק"]
-
-  - id: spinach_ricotta_lasagna
-    name: "Spinach & ricotta lasagna"
-    prep_minutes: 60
-    tags: [vegetarian, dairy, oven]
-    ingredients:
-      - name: lasagna
-        quantity: 500
-        unit: g
-        search_terms: ["לזניה"]
-        exclude_terms: ["רוטב"]
-      - name: spinach
-        quantity: 700
-        unit: g
-        search_terms: ["תרד"]
-      - name: ricotta
-        quantity: 500
-        unit: g
-        search_terms: ["ריקוטה"]
-        exclude_terms: ["רוטב"]
-      - name: mozzarella
-        quantity: 300
-        unit: g
-        search_terms: ["מוצרלה"]
-      - name: tomato sauce
-        quantity: 700
-        unit: g
-        search_terms: ["עגבניות מרוסקות", "רוטב עגבניות"]
-
-  - id: vegetable_couscous
-    name: "Roasted vegetable couscous"
-    prep_minutes: 45
-    tags: [vegetarian, vegan, oven]
-    ingredients:
-      - name: couscous
-        quantity: 500
-        unit: g
-        search_terms: ["קוסקוס"]
-      - name: zucchini
-        quantity: 500
-        unit: g
-        search_terms: ["קישוא", "זוקיני"]
-        exclude_terms: ["סלט", "ממרח"]
-      - name: sweet potato
-        quantity: 600
-        unit: g
-        search_terms: ["בטטה"]
-      - name: chickpeas
-        quantity: 400
-        unit: g
-        search_terms: ["גרגירי חומוס", "חומוס מבושל", "חומוס שימורים"]
-
-  - id: bean_quesadillas
-    name: "Bean & cheese quesadillas"
-    prep_minutes: 25
-    tags: [vegetarian, dairy, kid-friendly, quick]
-    ingredients:
-      - name: tortillas
-        quantity: 10
-        unit: units
-        search_terms: ["טורטיה", "טורטיות"]
-        exclude_terms: ["חטיף", "נאצ'וס"]
-      - name: beans
-        quantity: 500
-        unit: g
-        search_terms: ["שעועית שחורה", "שעועית אדומה", "שעועית לבנה"]
-      - name: yellow cheese
-        quantity: 300
-        unit: g
-        search_terms: ["גבינה צהובה", "גבינת צ'דר", "גאודה", "גבינת עמק"]
-      - name: corn
-        quantity: 300
-        unit: g
-        search_terms: ["תירס"]
-        exclude_terms: ["חטיף", "סטיקס", "קריספי", "נאצ'וס", "דגני", "קורנפלקס"]
-
-  - id: potato_broccoli_bake
-    name: "Potato & broccoli cheese bake"
-    prep_minutes: 55
-    tags: [vegetarian, dairy, oven, kid-friendly]
-    ingredients:
-      - name: potatoes
-        quantity: 1200
-        unit: g
-        search_terms: ["תפוח אדמה", "תפוחי אדמה"]
-        exclude_terms: ["סלט", "ממרח"]
-      - name: broccoli
-        quantity: 600
-        unit: g
-        search_terms: ["ברוקולי"]
-      - name: cream
-        quantity: 250
-        unit: ml
-        search_terms: ["שמנת לבישול", "שמנת מתוקה"]
-      - name: yellow cheese
-        quantity: 250
-        unit: g
-        search_terms: ["גבינה צהובה", "גבינת צ'דר", "גאודה", "גבינת עמק"]
+- id: broccoli_ricotta_pasta
+  name: Broccoli & ricotta pasta
+  prep_minutes: 30
+  tags:
+  - vegetarian
+  - dairy
+  - kid-friendly
+  ingredients:
+  - ingredient: pasta
+    quantity: 500
+    unit: g
+  - ingredient: broccoli
+    quantity: 600
+    unit: g
+  - ingredient: ricotta
+    quantity: 250
+    unit: g
+  - ingredient: parmesan
+    quantity: 80
+    unit: g
+  instructions_he:
+  - מבשלים את הפסטה במים מומלחים לפי הוראות האריזה. מוסיפים את הברוקולי לסיר בדקות
+    האחרונות, עד שהוא רך. שומרים כוס ממי הבישול ומסננים.
+  - מערבבים את הריקוטה עם מעט ממי הבישול, מלח ופלפל לקבלת רוטב.
+  - מחזירים לסיר את הפסטה והברוקולי, מוסיפים את הרוטב והפרמזן ומערבבים על אש נמוכה.
+    מוסיפים מי בישול לפי הצורך.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: lentil_sweet_potato_curry
+  name: Lentil & sweet-potato curry
+  prep_minutes: 40
+  tags:
+  - vegetarian
+  - vegan
+  - one-pot
+  ingredients:
+  - ingredient: lentils
+    quantity: 400
+    unit: g
+  - ingredient: sweet_potato
+    quantity: 800
+    unit: g
+  - ingredient: coconut_milk
+    quantity: 400
+    unit: ml
+  - ingredient: rice
+    quantity: 400
+    unit: g
+  instructions_he:
+  - שוטפים את העדשים וקולפים וחותכים את הבטטה לקוביות קטנות. מבשלים את האורז בנפרד
+    לפי הוראות האריזה.
+  - מחממים מעט שמן בסיר, מוסיפים תבלין קארי ומערבבים כחצי דקה. מוסיפים בטטה, עדשים
+    וחלב קוקוס, ומים עד לכיסוי.
+  - מביאים לרתיחה ומבשלים בעדינות כ־25–30 דקות, עד שהעדשים והבטטה רכות. מערבבים ומוסיפים
+    מים לפי הצורך. עדשים ירוקות עשויות לדרוש זמן נוסף.
+  - מתבלים במלח ומגישים על האורז.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: cauliflower_chickpea_tray
+  name: Roasted cauliflower & chickpea tray
+  prep_minutes: 40
+  tags:
+  - vegetarian
+  - vegan
+  - oven
+  ingredients:
+  - ingredient: cauliflower
+    quantity: 1
+    unit: head
+  - ingredient: chickpeas
+    quantity: 500
+    unit: g
+  - ingredient: tahini
+    quantity: 200
+    unit: g
+  instructions_he:
+  - מחממים תנור ל־220 מעלות. מפרקים את הכרובית לפרחים; אם משתמשים בכרובית קפואה, מסירים
+    קרח עודף. מסננים גרגרי חומוס מבושלים.
+  - מערבבים כרובית וחומוס עם שמן, מלח ופפריקה. מפזרים בשכבה אחת בתבנית ואופים כ־25–35
+    דקות, עד שהכרובית רכה וזהובה.
+  - מדללים את הטחינה במים, מוסיפים מלח ומזלפים על הירקות לפני ההגשה.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: shakshuka_feta
+  name: Shakshuka with feta
+  prep_minutes: 30
+  tags:
+  - vegetarian
+  - dairy
+  - kid-friendly
+  ingredients:
+  - ingredient: eggs
+    quantity: 8
+    unit: units
+  - ingredient: tomatoes
+    quantity: 1200
+    unit: g
+  - ingredient: tomato_sauce
+    quantity: 500
+    unit: g
+  - ingredient: feta
+    quantity: 200
+    unit: g
+  instructions_he:
+  - קוצצים את העגבניות ומבשלים במחבת רחבה עם מעט שמן כ־5 דקות. מוסיפים רוטב עגבניות,
+    מלח ופפריקה ומבשלים עוד כ־10 דקות.
+  - יוצרים גומות ברוטב ושוברים לתוכן את הביצים. מכסים ומבשלים בעדינות עד שהביצים עשויות
+    במידה הרצויה.
+  - מפזרים פטה ומגישים.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: tofu_stir_fry
+  name: Tofu vegetable stir-fry
+  prep_minutes: 30
+  tags:
+  - vegetarian
+  - vegan
+  - quick
+  ingredients:
+  - ingredient: tofu
+    quantity: 600
+    unit: g
+  - ingredient: bell_pepper
+    quantity: 600
+    unit: g
+  - ingredient: broccoli
+    quantity: 400
+    unit: g
+  - ingredient: rice
+    quantity: 400
+    unit: g
+  instructions_he:
+  - מבשלים את האורז לפי הוראות האריזה. מייבשים וחותכים את הטופו לקוביות, את הפלפל
+    לרצועות ואת הברוקולי לפרחים קטנים.
+  - מחממים שמן במחבת רחבה ומשחימים את הטופו כ־6–8 דקות. מוציאים לצלחת.
+  - מקפיצים את הפלפל והברוקולי, מוסיפים מעט מים ומכסים לכמה דקות עד לריכוך. מחזירים
+    את הטופו, מתבלים במלח, פלפל ותבלינים שאוהבים ומגישים עם האורז.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: zucchini_feta_frittata
+  name: Zucchini & feta frittata
+  prep_minutes: 35
+  tags:
+  - vegetarian
+  - dairy
+  - oven
+  - kid-friendly
+  ingredients:
+  - ingredient: zucchini
+    quantity: 800
+    unit: g
+  - ingredient: eggs
+    quantity: 10
+    unit: units
+  - ingredient: feta
+    quantity: 250
+    unit: g
+  - ingredient: yellow_cheese
+    quantity: 150
+    unit: g
+  instructions_he:
+  - מחממים תנור ל־190 מעלות. פורסים את הקישואים ומטגנים קלות במחבת עם מעט שמן עד לריכוך
+    ולאידוי נוזלים.
+  - טורפים ביצים ומערבבים עם פטה מפוררת, גבינה צהובה וקישואים. מתבלים במעט מלח ופלפל.
+  - מעבירים לתבנית משומנת ואופים כ־20–25 דקות, עד שהמרכז יציב.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: spinach_ricotta_lasagna
+  name: Spinach & ricotta lasagna
+  prep_minutes: 60
+  tags:
+  - vegetarian
+  - dairy
+  - oven
+  ingredients:
+  - ingredient: lasagna
+    quantity: 500
+    unit: g
+  - ingredient: spinach
+    quantity: 700
+    unit: g
+  - ingredient: ricotta
+    quantity: 500
+    unit: g
+  - ingredient: mozzarella
+    quantity: 300
+    unit: g
+  - ingredient: tomato_sauce
+    quantity: 700
+    unit: g
+  instructions_he:
+  - מחממים תנור ל־190 מעלות. מפשירים וסוחטים תרד קפוא, או מאדים תרד טרי וסוחטים. מערבבים
+    עם הריקוטה ומתבלים.
+  - בתבנית מסדרים שכבות של רוטב עגבניות, דפי לזניה, תרד וריקוטה ומוצרלה. מסיימים ברוטב
+    ובמוצרלה. בדפים יבשים מוודאים שהרוטב נוזלי ומכסה היטב את הדפים; מוסיפים מים לפי
+    הוראות האריזה.
+  - מכסים ואופים כ־35–40 דקות. מסירים כיסוי ואופים עוד כ־10 דקות, עד שהדפים רכים והגבינה
+    מזהיבה. ממתינים 10 דקות לפני החיתוך.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: vegetable_couscous
+  name: Roasted vegetable couscous
+  prep_minutes: 45
+  tags:
+  - vegetarian
+  - vegan
+  - oven
+  ingredients:
+  - ingredient: couscous
+    quantity: 500
+    unit: g
+  - ingredient: zucchini
+    quantity: 500
+    unit: g
+  - ingredient: sweet_potato
+    quantity: 600
+    unit: g
+  - ingredient: chickpeas
+    quantity: 400
+    unit: g
+  instructions_he:
+  - מחממים תנור ל־220 מעלות. חותכים בטטה לקוביות קטנות וקישואים לחתיכות. מערבבים עם
+    שמן, מלח ותבלינים.
+  - אופים את הבטטה כ־15 דקות, מוסיפים קישואים וחומוס מבושל ומסונן, ואופים עוד כ־15–20
+    דקות עד לריכוך.
+  - מכינים קוסקוס לפי הוראות האריזה, מפרידים את הגרגרים במזלג ומגישים עם הירקות והחומוס.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: bean_quesadillas
+  name: Bean & cheese quesadillas
+  prep_minutes: 25
+  tags:
+  - vegetarian
+  - dairy
+  - kid-friendly
+  - quick
+  ingredients:
+  - ingredient: tortillas
+    quantity: 10
+    unit: units
+  - ingredient: cooked_beans
+    quantity: 500
+    unit: g
+  - ingredient: yellow_cheese
+    quantity: 300
+    unit: g
+  - ingredient: corn
+    quantity: 300
+    unit: g
+  instructions_he:
+  - מסננים שעועית מבושלת ותירס. מועכים קלות את השעועית ומתבלים; אם השעועית ברוטב,
+    משאירים רק מעט ממנו כדי שהמילוי לא יהיה רטוב.
+  - מפזרים שעועית, תירס וגבינה על מחצית כל טורטייה ומקפלים.
+  - מחממים במחבת עם מעט שמן כ־2–3 דקות מכל צד, עד שהטורטייה פריכה והגבינה נמסה. חותכים
+    למשולשים ומגישים.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: potato_broccoli_bake
+  name: Potato & broccoli cheese bake
+  prep_minutes: 55
+  tags:
+  - vegetarian
+  - dairy
+  - oven
+  - kid-friendly
+  ingredients:
+  - ingredient: potatoes
+    quantity: 1200
+    unit: g
+  - ingredient: broccoli
+    quantity: 600
+    unit: g
+  - ingredient: cream
+    quantity: 250
+    unit: ml
+  - ingredient: yellow_cheese
+    quantity: 250
+    unit: g
+  instructions_he:
+  - מחממים תנור ל־200 מעלות. פורסים את תפוחי האדמה לפרוסות דקות ומבשלים במים כ־8–10
+    דקות. מוסיפים ברוקולי בדקות האחרונות ומסננים היטב.
+  - מסדרים בתבנית משומנת, יוצקים שמנת לבישול ומתבלים במלח ופלפל. מפזרים גבינה צהובה.
+  - אופים כ־25–35 דקות, עד שתפוחי האדמה רכים לחלוטין והגבינה זהובה.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: mujaddara
+  name: Mujaddara (lentils, rice & onions)
+  prep_minutes: 40
+  tags:
+  - vegetarian
+  - vegan
+  - one-pot
+  ingredients:
+  - ingredient: lentils
+    quantity: 300
+    unit: g
+  - ingredient: rice
+    quantity: 350
+    unit: g
+  - ingredient: onion
+    quantity: 500
+    unit: g
+  instructions_he:
+  - שוטפים את העדשים ומבשלים במים כ־15–20 דקות, עד שהן כמעט רכות. מסננים.
+  - פורסים בצל ומשחימים בסיר עם שמן, תוך ערבוב. שומרים מעט בצל להגשה.
+  - מוסיפים אורז ועדשים לסיר ומתבלים במלח וכמון. מוסיפים את כמות המים המתאימה לסוג
+    האורז לפי האריזה. מכסים ומבשלים עד שהאורז והעדשים רכים.
+  - ממתינים 5 דקות ללא אש ומגישים עם הבצל ששמרנו.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: lentil_bolognese
+  name: Lentil bolognese pasta
+  prep_minutes: 35
+  tags:
+  - vegetarian
+  - vegan
+  - kid-friendly
+  ingredients:
+  - ingredient: pasta
+    quantity: 500
+    unit: g
+  - ingredient: lentils
+    quantity: 250
+    unit: g
+  - ingredient: tomato_sauce
+    quantity: 700
+    unit: g
+  - ingredient: carrots
+    quantity: 250
+    unit: g
+  - ingredient: onion
+    quantity: 200
+    unit: g
+  instructions_he:
+  - קוצצים בצל וגזר דק ומטגנים בסיר עם מעט שמן עד לריכוך. שוטפים את העדשים.
+  - מוסיפים עדשים, רוטב עגבניות ומים לכיסוי. מבשלים כ־20–30 דקות עד שהעדשים רכות,
+    ומוסיפים מים לפי הצורך. עדשים ירוקות עשויות לדרוש זמן נוסף.
+  - מבשלים פסטה בנפרד לפי הוראות האריזה. מתבלים את רוטב העדשים במלח ופלפל, מערבבים
+    עם הפסטה ומגישים.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: chickpea_shakshuka
+  name: Chickpea shakshuka
+  prep_minutes: 30
+  tags:
+  - vegetarian
+  - vegan
+  - one-pot
+  - quick
+  ingredients:
+  - ingredient: chickpeas
+    quantity: 600
+    unit: g
+  - ingredient: tomato_sauce
+    quantity: 700
+    unit: g
+  - ingredient: bell_pepper
+    quantity: 400
+    unit: g
+  - ingredient: onion
+    quantity: 200
+    unit: g
+  instructions_he:
+  - קוצצים בצל ופלפל ומטגנים במחבת רחבה עם מעט שמן עד לריכוך.
+  - מוסיפים רוטב עגבניות וחומוס מבושל ומסונן. מתבלים בפפריקה, כמון ומלח.
+  - מבשלים כ־15–20 דקות, עד שהרוטב מסמיך והחומוס חם ורך. מוסיפים מעט מים אם צריך.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: tofu_coconut_curry
+  name: Tofu & broccoli coconut curry
+  prep_minutes: 30
+  tags:
+  - vegetarian
+  - vegan
+  - quick
+  ingredients:
+  - ingredient: tofu
+    quantity: 600
+    unit: g
+  - ingredient: broccoli
+    quantity: 600
+    unit: g
+  - ingredient: coconut_milk
+    quantity: 400
+    unit: ml
+  - ingredient: rice
+    quantity: 400
+    unit: g
+  instructions_he:
+  - מבשלים את האורז לפי הוראות האריזה. מייבשים וחותכים את הטופו לקוביות ואת הברוקולי
+    לפרחים קטנים.
+  - משחימים את הטופו בסיר עם מעט שמן. מוסיפים תבלין קארי ומערבבים כחצי דקה.
+  - מוסיפים חלב קוקוס וברוקולי, ומעט מים לפי הצורך. מבשלים בעדינות כ־10–15 דקות עד
+    שהברוקולי רך. מתבלים במלח ומגישים עם האורז.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: sweet_potato_bean_bowls
+  name: Sweet-potato & bean tahini bowls
+  prep_minutes: 40
+  tags:
+  - vegetarian
+  - vegan
+  - oven
+  ingredients:
+  - ingredient: sweet_potato
+    quantity: 1000
+    unit: g
+  - ingredient: cooked_beans
+    quantity: 600
+    unit: g
+  - ingredient: tahini
+    quantity: 150
+    unit: g
+  - ingredient: tomatoes
+    quantity: 500
+    unit: g
+  instructions_he:
+  - מחממים תנור ל־220 מעלות. חותכים בטטה לקוביות ומערבבים עם שמן ומלח. אופים כ־25–30
+    דקות עד לריכוך ולהזהבה.
+  - מחממים שעועית מבושלת ומסוננת בסיר עם מעט מים ותבלינים. חותכים עגבניות.
+  - מדללים טחינה במים ומתבלים במלח. מסדרים בקערות בטטה, שעועית ועגבניות ומזלפים טחינה.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: lemon_chickpea_spinach_rice
+  name: Chickpea & spinach rice
+  prep_minutes: 30
+  tags:
+  - vegetarian
+  - vegan
+  - one-pot
+  - quick
+  ingredients:
+  - ingredient: chickpeas
+    quantity: 500
+    unit: g
+  - ingredient: spinach
+    quantity: 500
+    unit: g
+  - ingredient: rice
+    quantity: 400
+    unit: g
+  - ingredient: onion
+    quantity: 200
+    unit: g
+  instructions_he:
+  - קוצצים בצל ומטגנים בסיר עם מעט שמן. מוסיפים אורז שטוף ומערבבים.
+  - מוסיפים מים ומלח לפי הוראות האורז ומבשלים מכוסה. לקראת סוף הבישול מוסיפים חומוס
+    מבושל ומסונן ותרד מופשר וסחוט או תרד טרי.
+  - ממשיכים לבשל עד שהאורז רך והתרד והחומוס חמים. נותנים לסיר לנוח 5 דקות ומערבבים
+    בעדינות.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: pea_tomato_pasta
+  name: Pea & tomato pasta
+  prep_minutes: 25
+  tags:
+  - vegetarian
+  - vegan
+  - quick
+  - kid-friendly
+  ingredients:
+  - ingredient: pasta
+    quantity: 500
+    unit: g
+  - ingredient: green_peas
+    quantity: 500
+    unit: g
+  - ingredient: tomato_sauce
+    quantity: 600
+    unit: g
+  instructions_he:
+  - מבשלים פסטה לפי הוראות האריזה. מוסיפים אפונה קפואה למי הבישול בדקות האחרונות,
+    עד שהיא רכה וחמה. מסננים ושומרים מעט ממי הבישול.
+  - מחממים את רוטב העגבניות בסיר עם מעט שמן ומתבלים במלח ופלפל.
+  - מוסיפים פסטה ואפונה ומערבבים. מדללים במעט ממי הבישול לפי הצורך.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.
+- id: roasted_vegetable_tofu_tray
+  name: Roasted tofu, potato & zucchini tray
+  prep_minutes: 45
+  tags:
+  - vegetarian
+  - vegan
+  - oven
+  ingredients:
+  - ingredient: tofu
+    quantity: 600
+    unit: g
+  - ingredient: potatoes
+    quantity: 1000
+    unit: g
+  - ingredient: zucchini
+    quantity: 600
+    unit: g
+  - ingredient: tahini
+    quantity: 150
+    unit: g
+  instructions_he:
+  - מחממים תנור ל־220 מעלות. חותכים תפוחי אדמה לקוביות קטנות, קישואים לחתיכות וטופו
+    לקוביות.
+  - מערבבים את תפוחי האדמה עם שמן, מלח ופפריקה ואופים כ־15 דקות. מוסיפים קישואים וטופו
+    עם מעט שמן ואופים עוד כ־20–25 דקות, עד שתפוחי האדמה רכים.
+  - מדללים טחינה במים, מתבלים במלח ומזלפים לפני ההגשה.
+  pantry_note_he: שמן, מלח ותבלינים לפי הטעם; אינם כלולים באומדן הקניות. מים לפי הצורך.

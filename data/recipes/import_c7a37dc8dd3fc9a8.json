@@ -1,0 +1,117 @@
+{
+  "recipes": [
+    {
+      "name": "Roti canai",
+      "source_id": "roti-canai",
+      "servings": 6,
+      "prep_minutes": 50,
+      "category": "bread",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Knead a dough from the flour, water, egg, condensed milk and salt for fifteen minutes, until it is very elastic and smooth.",
+        "Divide into balls, coat each in oil and set them in a bowl covered with more oil. Leave them at least four hours.",
+        "On an oiled surface flatten a ball and stretch it from the centre, slapping it with your palms until the sheet turns translucent.",
+        "Brush the sheet with ghee, fold the edges to the middle and coil it into a tight spiral. Let it sit ten minutes.",
+        "Flatten the spiral into a round and fry it on medium heat, two minutes a side in ghee, until it takes golden spots.",
+        "Straight from the pan, crumple the bread between your palms from both sides and the layers open. Serve with dhal or curry."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Plain flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Warm water",
+          "quantity": 280,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Condensed milk",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Egg",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Ghee or margarine",
+          "quantity": 120,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Neutral oil",
+          "quantity": 150,
+          "unit": "ml",
+          "note": "for resting the dough"
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_c7a37dc8dd3fc9a8",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 150,
+          "unit": "ml",
+          "note": "for resting the dough"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Warm water",
+          "quantity": 280,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "4e0e02513ed6cbb72396e141eaf85476e6ffaa88232989271ad27ef068fa0247",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Condensed milk",
+        "Unmapped ingredient: Ghee or margarine"
+      ]
+    }
+  ]
+}

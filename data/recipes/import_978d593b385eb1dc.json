@@ -1,0 +1,168 @@
+{
+  "recipes": [
+    {
+      "name": "Kleicha",
+      "source_id": "kleicha",
+      "servings": 12,
+      "prep_minutes": 85,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Dissolve the yeast in the warm milk and leave it ten minutes, until it foams.",
+        "Rub the flour with the melted ghee, mahlab, fennel, nigella and salt.",
+        "Add the yeast mixture and knead a soft dough, working it ten minutes.",
+        "Cover it and rest it an hour at room temperature.",
+        "Work the date paste with a spoon of ghee and the cardamom until pliable.",
+        "Roll the dough into a rectangle, spread the paste in a thin layer and roll it into a tight log.",
+        "Cut the log into centimetre slices, brush them with yolk, scatter with sesame and bake at 180 °C for twenty minutes."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Ghee",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Milk",
+          "quantity": 150,
+          "unit": "ml",
+          "note": "warm"
+        },
+        {
+          "name": "Dry yeast",
+          "quantity": 5,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Date paste",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Ground cardamom",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Mahlab",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Ground fennel",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Nigella seeds",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Egg yolk",
+          "quantity": 1,
+          "unit": "piece",
+          "note": "for glazing"
+        },
+        {
+          "name": "Sesame seeds",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_978d593b385eb1dc",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "ghee",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 150,
+          "unit": "ml",
+          "note": "warm"
+        },
+        {
+          "ingredient": "dry_yeast",
+          "quantity": 5,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "date_paste",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sesame",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Ground cardamom",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "04542c8f953a31ac37c73acd87a0c0e101ef8c0801c809fb5e28859433ffa498",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Egg yolk",
+        "Unmapped ingredient: Ground fennel",
+        "Unmapped ingredient: Mahlab",
+        "Unmapped ingredient: Nigella seeds"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "recipes": [
+    {
+      "name": "Fritule",
+      "source_id": "fritule",
+      "servings": 8,
+      "prep_minutes": 55,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Soak the raisins in the rakija for twenty minutes, so they swell and give up their aroma.",
+        "Dissolve the yeast in the warm milk with a spoon of sugar and leave it until it foams.",
+        "Beat the eggs with the remaining sugar, the zests, vanilla and salt.",
+        "Combine with the yeast mixture and the flour and whisk to a smooth loose batter.",
+        "Stir in the raisins with their rakija and let the batter rise an hour somewhere warm.",
+        "Heat the oil to 170 °C and drop the batter in with two teaspoons, shaping irregular balls.",
+        "Fry three minutes, turning them, to a deep gold, and dust them with icing sugar while hot."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Milk",
+          "quantity": 250,
+          "unit": "ml",
+          "note": "warm"
+        },
+        {
+          "name": "Dry yeast",
+          "quantity": 7,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Raisins",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Rakija or rum",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Lemon zest",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Orange zest",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 1,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Icing sugar",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "id": "import_172b9d329160b56b",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 250,
+          "unit": "ml",
+          "note": "warm"
+        },
+        {
+          "ingredient": "dry_yeast",
+          "quantity": 7,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "raisins",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 1000,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "icing_sugar",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "c9dcff44b348bd3e9cd2dc0f4c7eb1dc0d2c8226abae4e800188297e9885968f",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Lemon zest",
+        "Unmapped ingredient: Orange zest",
+        "Unmapped ingredient: Rakija or rum"
+      ]
+    }
+  ]
+}

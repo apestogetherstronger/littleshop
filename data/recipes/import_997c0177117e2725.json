@@ -1,0 +1,187 @@
+{
+  "recipes": [
+    {
+      "name": "Masala dosa",
+      "source_id": "masala-dosa",
+      "servings": 6,
+      "prep_minutes": 105,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Soak the rice separately and the dal with the fenugreek separately, six hours each.",
+        "Grind the dal to a light fluffy paste, then the rice to a slightly grainy one, and combine them.",
+        "Salt it, cover it and leave it somewhere warm for eight to twelve hours, until it rises and smells sour.",
+        "Pop the mustard seeds in oil, then add the curry leaves, onion, chillies and ginger.",
+        "Add the turmeric and the crushed potato, season and warm it five minutes; that is the filling.",
+        "Heat a flat pan, wipe it with the oiled onion and pour a ladle of batter, spreading it in a spiral from the centre.",
+        "Drizzle oil around the edge and cook until the underside browns, two minutes. Add the filling and fold it over."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Rice",
+          "quantity": 300,
+          "unit": "g",
+          "note": "soaked six hours"
+        },
+        {
+          "name": "Urad dal",
+          "quantity": 100,
+          "unit": "g",
+          "note": "soaked six hours"
+        },
+        {
+          "name": "Fenugreek seeds",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Potatoes",
+          "quantity": 800,
+          "unit": "g",
+          "note": "boiled"
+        },
+        {
+          "name": "Onions",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Mustard seeds",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Curry leaves",
+          "quantity": 12,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Turmeric",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Green chillies",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Ginger",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Coriander",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_997c0177117e2725",
+      "ingredients": [
+        {
+          "ingredient": "rice",
+          "quantity": 300,
+          "unit": "g",
+          "note": "soaked six hours"
+        },
+        {
+          "ingredient": "potatoes",
+          "quantity": 800,
+          "unit": "g",
+          "note": "boiled"
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "mustard_seeds",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "ingredient": "chilli",
+          "quantity": 3,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "ginger",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "coriander",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Turmeric",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "b61ce29dd2dd3c22a91a52bf0c1d991cf2167ad26380219b6b48369c2ef07bf6",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Curry leaves",
+        "Unmapped ingredient: Fenugreek seeds",
+        "Unmapped ingredient: Urad dal"
+      ]
+    }
+  ]
+}

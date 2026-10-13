@@ -1,0 +1,173 @@
+{
+  "recipes": [
+    {
+      "name": "Papanași",
+      "source_id": "papanasi",
+      "servings": 6,
+      "prep_minutes": 60,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Wring the curd in muslin and push it through a sieve to remove any grain.",
+        "Mix the curd with the eggs, sugar, zest, vanilla, bicarbonate and salt.",
+        "Work in the semolina and flour a little at a time, until the dough is soft but stops sticking.",
+        "Rest the dough twenty minutes; the semolina swells and shaping becomes easier.",
+        "Shape six ten-centimetre rings and six balls the size of a walnut.",
+        "Fry at 165 °C for three minutes a side, to a golden colour.",
+        "Set a ring on a plate, spoon over the soured cream and jam, and crown it with a ball."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Curd cheese",
+          "quantity": 500,
+          "unit": "g",
+          "note": "well drained"
+        },
+        {
+          "name": "Eggs",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Flour",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Semolina",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Bicarbonate of soda",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Lemon zest",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Thick soured cream",
+          "quantity": 300,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Blackcurrant jam",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 1,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "id": "import_91b8f7ca21cc248b",
+      "ingredients": [
+        {
+          "ingredient": "eggs",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "flour",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "semolina",
+          "quantity": 50,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "soured_cream",
+          "quantity": 300,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 1000,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Bicarbonate of soda",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "ae097d2b2133a9712d3b89cbcfc621c8f589cf0bf8bffedf9562e77a6700309d",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Blackcurrant jam",
+        "Unmapped ingredient: Curd cheese",
+        "Unmapped ingredient: Lemon zest"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "recipes": [
+    {
+      "name": "Koki",
+      "source_id": "koki-corn",
+      "servings": 6,
+      "prep_minutes": 190,
+      "category": "main",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Soak the beans four hours, then rub them between your hands so the skins come away.",
+        "Rinse the beans several times, pouring off the floating skins, until the grains are clean and white.",
+        "Grind the beans with the onion and chilli into a thick paste, adding water a spoon at a time.",
+        "Beat the mass by hand or with a spatula for ten minutes, until it lightens and turns airy.",
+        "Warm the palm oil and work it into the mass to an even orange.",
+        "Pass the banana leaves over a flame until pliable and spoon the mass onto them with the greens.",
+        "Fold the parcels, tie them and steam them an hour and a half, until firm."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Black-eyed beans",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Red palm oil",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Hot chilli",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Spinach",
+          "quantity": 200,
+          "unit": "g",
+          "note": "optional"
+        },
+        {
+          "name": "Ground dried crayfish",
+          "quantity": 40,
+          "unit": "g",
+          "note": "optional"
+        },
+        {
+          "name": "Banana leaves",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Warm water",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_1b06a823c24f79e0",
+      "ingredients": [
+        {
+          "ingredient": "chilli",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "spinach",
+          "quantity": 200,
+          "unit": "g",
+          "note": "optional"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Warm water",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "253a09440b758eb72affc72ba19bb430e3e05ccea4f29cf8deac72326a4044f7",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Ground dried crayfish",
+        "Unmapped ingredient: Banana leaves",
+        "Unmapped ingredient: Black-eyed beans",
+        "Unmapped ingredient: Ground dried crayfish",
+        "Unmapped ingredient: Red palm oil"
+      ]
+    }
+  ]
+}

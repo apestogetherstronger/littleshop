@@ -1,0 +1,141 @@
+{
+  "recipes": [
+    {
+      "name": "Waakye",
+      "source_id": "waakye",
+      "servings": 6,
+      "prep_minutes": 100,
+      "category": "main",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Rinse the sorghum leaves and boil them in a litre and a half of water for ten minutes; the water turns deep red.",
+        "Take the leaves out, add a pinch of soda and the beans and cook forty-five minutes, until nearly done.",
+        "Rinse the rice until the water runs clear and add it to the pot. The liquid should stand a finger above the rice.",
+        "Salt it, cover and cook twenty minutes on a low heat without stirring.",
+        "Take it off the heat, leave it covered ten minutes, then fluff it with a fork.",
+        "Fry slices of ripe plantain until caramel-coloured.",
+        "Serve with egg, gari, shito and plantain, all on one plate."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Black-eyed beans",
+          "quantity": 300,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "name": "Long-grain rice",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Dried sorghum leaves",
+          "quantity": 10,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Baking soda",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        },
+        {
+          "name": "Plantain",
+          "quantity": 2,
+          "unit": "piece",
+          "note": "ripe, to serve"
+        },
+        {
+          "name": "Eggs",
+          "quantity": 6,
+          "unit": "piece",
+          "note": "boiled, to serve"
+        },
+        {
+          "name": "Gari",
+          "quantity": 150,
+          "unit": "g",
+          "note": "to serve"
+        },
+        {
+          "name": "Shito sauce",
+          "quantity": 100,
+          "unit": "g",
+          "note": "to serve"
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 60,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_8181a419460d0d60",
+      "ingredients": [
+        {
+          "ingredient": "rice",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 6,
+          "unit": "units",
+          "note": "boiled, to serve"
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 60,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Baking soda",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "496dbf3e180f918e36aca263d9d07afd933db1e8d0137747cc3ae053ae76ab88",
+      "status": "needs_review",
+      "review_issues": [
+        "Check vegan claim: Eggs",
+        "Unmapped ingredient: Black-eyed beans",
+        "Unmapped ingredient: Dried sorghum leaves",
+        "Unmapped ingredient: Gari",
+        "Unmapped ingredient: Plantain",
+        "Unmapped ingredient: Shito sauce"
+      ]
+    }
+  ]
+}

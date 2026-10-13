@@ -1,0 +1,133 @@
+{
+  "recipes": [
+    {
+      "name": "Pavlova",
+      "source_id": "pavlova",
+      "servings": 8,
+      "prep_minutes": 115,
+      "category": "dessert",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Whisk room-temperature egg whites to soft peaks in a scrupulously dry, grease-free bowl.",
+        "Add the sugar a spoonful at a time, still whisking, until the meringue is stiff and glossy.",
+        "Rub some between your fingers: if you feel sugar grains, keep going, or the shell will weep syrup.",
+        "Fold in the cornflour, vinegar and vanilla with a spatula, in three movements at most.",
+        "Shape a twenty-two centimetre circle on parchment, raising the edges and leaving a hollow in the middle.",
+        "Bake at 120 °C for ninety minutes, then turn the oven off and leave the pavlova inside until completely cold.",
+        "Whip the cream, spoon it into the hollow and top with kiwifruit, berries and passionfruit pulp just before serving."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Egg whites",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Caster sugar",
+          "quantity": 350,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Cornflour",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "White vinegar",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Double cream",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Kiwifruit",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Berries",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Passionfruit",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        }
+      ],
+      "id": "import_d2a5cfe296a35beb",
+      "ingredients": [
+        {
+          "ingredient": "sugar",
+          "quantity": 350,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "cornstarch",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "ingredient": "vinegar",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "ingredient": "cream",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "10f4bb2728cbb7b41a4e20c4960c3a801ef27500f55ce86a1028b20e07efeb9a",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Berries",
+        "Unmapped ingredient: Egg whites",
+        "Unmapped ingredient: Kiwifruit",
+        "Unmapped ingredient: Passionfruit"
+      ]
+    }
+  ]
+}

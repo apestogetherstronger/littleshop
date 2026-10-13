@@ -1,0 +1,163 @@
+{
+  "recipes": [
+    {
+      "name": "Rolex",
+      "source_id": "rolex-uganda",
+      "servings": 4,
+      "prep_minutes": 65,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Knead a soft dough from the flour, warm water, a spoon of oil and salt and rest it twenty minutes.",
+        "Roll a ball thin, brush it with oil, roll it into a rope, coil it like a snail and roll it out again.",
+        "Cook the chapatis over medium heat, a minute and a half a side, and keep them under a cloth.",
+        "Shred the cabbage, carrot, onion, tomatoes and chilli as fine as you can.",
+        "Beat the eggs with the vegetables, salt and pepper; the vegetables belong inside the omelette, not on top.",
+        "Pour a portion of egg into the pan, let it set and lay a chapati on top, pressing it down.",
+        "Flip the two together, slide them onto a board omelette up and roll it tight."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Warm water",
+          "quantity": 240,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 8,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cabbage",
+          "quantity": 200,
+          "unit": "g",
+          "note": "finely shredded"
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Onions",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Carrot",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Chilli",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 120,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_7c3a491aea858e9e",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 8,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "cabbage",
+          "quantity": 200,
+          "unit": "g",
+          "note": "finely shredded"
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 3,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "carrots",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "chilli",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 120,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Warm water",
+          "quantity": 240,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "3a1db8b0536ceb8c0a21722c3e407022851c133320128ec22758ea7bc6e250b8",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

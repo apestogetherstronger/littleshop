@@ -1,0 +1,118 @@
+{
+  "recipes": [
+    {
+      "name": "Guacamole",
+      "source_id": "guacamole",
+      "servings": 4,
+      "prep_minutes": 15,
+      "category": "snack",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Halve the avocados, remove the stones and scoop the flesh into a bowl. A ripe avocado gives under a finger without collapsing.",
+        "Add the lime juice and the salt straight away. The acid needs to reach the flesh before it starts to brown.",
+        "Crush with a fork to a coarse, uneven mass. Lumps of avocado should remain — that is the texture you want.",
+        "Fold in the onion, the jalapeño and the coriander, taste, and adjust the salt or lime. The tomato goes in last and gently, so it does not water everything down.",
+        "Serve at once. If it has to wait, press cling film directly onto the surface — air is what darkens it."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Avocado",
+          "quantity": 3,
+          "unit": "piece",
+          "note": "ripe"
+        },
+        {
+          "name": "Lime",
+          "quantity": 1,
+          "unit": "piece",
+          "note": "juiced"
+        },
+        {
+          "name": "Red onion",
+          "quantity": 0.5,
+          "unit": "piece",
+          "note": "finely chopped"
+        },
+        {
+          "name": "Jalapeño",
+          "quantity": 1,
+          "unit": "piece",
+          "note": "seeds removed"
+        },
+        {
+          "name": "Coriander",
+          "quantity": 3,
+          "unit": "sprig",
+          "note": null
+        },
+        {
+          "name": "Tomato",
+          "quantity": 1,
+          "unit": "piece",
+          "note": "seeded and diced"
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_9ce3cf4aa24997b9",
+      "ingredients": [
+        {
+          "ingredient": "avocado",
+          "quantity": 3,
+          "unit": "units",
+          "note": "ripe"
+        },
+        {
+          "ingredient": "red_onion",
+          "quantity": 0.5,
+          "unit": "units",
+          "note": "finely chopped"
+        },
+        {
+          "ingredient": "coriander",
+          "quantity": 3,
+          "unit": "sprig",
+          "note": null
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 1,
+          "unit": "units",
+          "note": "seeded and diced"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "3375115d482c087ff3ceb2d7804f0cc1cd1e951298db6ee8723516dda7424296",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Jalapeño",
+        "Unmapped ingredient: Lime"
+      ]
+    }
+  ]
+}

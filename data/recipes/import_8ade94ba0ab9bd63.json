@@ -1,0 +1,147 @@
+{
+  "recipes": [
+    {
+      "name": "Bint al-sahn",
+      "source_id": "bint-al-sahn",
+      "servings": 8,
+      "prep_minutes": 115,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Dissolve the yeast and sugar in the warm milk and leave it ten minutes.",
+        "Knead a soft dough from the flour, eggs, yeast mixture, salt and two spoons of ghee, and work it fifteen minutes.",
+        "Let it rise somewhere warm for an hour, until doubled.",
+        "Divide it into ten balls, oil them and rest them twenty minutes under film.",
+        "Stretch the first ball by hand to the size of the tin, lay it in and brush it generously with ghee.",
+        "Repeat with the rest, buttering every layer. Brush the top one too and scatter it with nigella.",
+        "Bake at 190 °C for thirty-five minutes and pour the honey over immediately, while the bread is hot."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Dry yeast",
+          "quantity": 7,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Warm milk",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Ghee",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Honey",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Nigella seeds",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_8ade94ba0ab9bd63",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 3,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "dry_yeast",
+          "quantity": 7,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "ghee",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "honey",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "a26138deb62c8c7aca8c2e2627b149562441ae3c235c4bcc0bfefa9a7a6b70b3",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Nigella seeds"
+      ]
+    }
+  ]
+}

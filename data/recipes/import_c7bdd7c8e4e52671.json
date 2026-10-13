@@ -1,0 +1,125 @@
+{
+  "recipes": [
+    {
+      "name": "Cheese fondue",
+      "source_id": "fondue-moitie-moitie",
+      "servings": 4,
+      "prep_minutes": 35,
+      "category": "main",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Rub the inside of the pot with a cut clove of garlic and leave it in.",
+        "Toss both grated cheeses with the cornflour by hand until every shred is coated.",
+        "Warm the wine with the lemon juice until bubbles appear at the edge, but not to a boil.",
+        "Add the cheese a handful at a time, stirring in a figure of eight until each is fully melted before the next goes in.",
+        "When the mass turns even and strings from the spoon, add the kirsch and season with nutmeg and pepper.",
+        "Move it to the burner and keep the flame at its lowest. The bread is speared through the crust rather than the crumb."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Gruyère",
+          "quantity": 400,
+          "unit": "g",
+          "note": "coarsely grated"
+        },
+        {
+          "name": "Vacherin fribourgeois",
+          "quantity": 400,
+          "unit": "g",
+          "note": "coarsely grated"
+        },
+        {
+          "name": "Dry white wine",
+          "quantity": 300,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Cornflour",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 1,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Kirsch",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Lemon juice",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Nutmeg and pepper",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        },
+        {
+          "name": "Firm-crumbed bread",
+          "quantity": 600,
+          "unit": "g",
+          "note": "cubed, with crust"
+        }
+      ],
+      "id": "import_c7bdd7c8e4e52671",
+      "ingredients": [
+        {
+          "ingredient": "white_wine",
+          "quantity": 300,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "cornstarch",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 1,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "lemon_juice",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "pantry": [],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "7b4c75b42e18b6ade5fa4dce5d4f3b970eb92c320b5562160cb9f761ae43edc4",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Firm-crumbed bread",
+        "Unmapped ingredient: Gruyère",
+        "Unmapped ingredient: Kirsch",
+        "Unmapped ingredient: Nutmeg and pepper",
+        "Unmapped ingredient: Vacherin fribourgeois"
+      ]
+    }
+  ]
+}

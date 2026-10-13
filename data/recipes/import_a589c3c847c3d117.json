@@ -1,0 +1,207 @@
+{
+  "recipes": [
+    {
+      "name": "Skolebrød",
+      "source_id": "skolebrod",
+      "servings": 12,
+      "prep_minutes": 80,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Dissolve the yeast in the warm milk with a spoon of sugar and leave it ten minutes.",
+        "Knead a dough from the flour, yeast mixture, sugar, cardamom, egg, salt and softened butter, working it fifteen minutes.",
+        "Let it rise somewhere warm for an hour, until doubled.",
+        "Cook a custard of milk, yolks, cornflour, sugar and vanilla and cool it completely under film.",
+        "Divide the dough into twelve balls, set them on a tray and prove them forty minutes.",
+        "Press a well into each bun with the base of a glass and spoon custard into it.",
+        "Bake at 200 °C for twelve minutes, cool them, pipe the icing in a ring and scatter the coconut."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Milk",
+          "quantity": 300,
+          "unit": "ml",
+          "note": "warm"
+        },
+        {
+          "name": "Dry yeast",
+          "quantity": 10,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Butter",
+          "quantity": 120,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Ground cardamom",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Egg",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Milk for the custard",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Egg yolks",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cornflour",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Icing sugar",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Desiccated coconut",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_a589c3c847c3d117",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 600,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 300,
+          "unit": "ml",
+          "note": "warm"
+        },
+        {
+          "ingredient": "dry_yeast",
+          "quantity": 10,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "butter",
+          "quantity": 120,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "cornstarch",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "icing_sugar",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "coconut",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Ground cardamom",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Vanilla",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "d1ace0e0bdf1791e4e3d39bd569dbdea62654ae929ea7cf857313de92caae288",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Egg yolks"
+      ]
+    }
+  ]
+}

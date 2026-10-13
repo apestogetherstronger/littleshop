@@ -1,0 +1,165 @@
+{
+  "recipes": [
+    {
+      "name": "Shakshuka",
+      "source_id": "shakshuka",
+      "servings": 4,
+      "prep_minutes": 40,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Fry the onion and peppers in the oil for ten minutes, until the pepper is soft and sweet.",
+        "Add the garlic, cumin, paprika and harissa and warm them for a minute — to the smell, not to burning.",
+        "Pour in the tomatoes, crush them and simmer for fifteen minutes. The sauce is ready when a spoon leaves a track on the bottom.",
+        "Make hollows with a spoon and break an egg into each. Cover and give it five to seven minutes: the whites set, the yolks stay loose.",
+        "Scatter over the feta and coriander and serve it in the pan with bread."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Tinned tomatoes",
+          "quantity": 800,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Red peppers",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 6,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Ground cumin",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Smoked paprika",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Harissa",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Feta and coriander",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_2d4ba9a6012070b1",
+      "ingredients": [
+        {
+          "ingredient": "tinned_tomatoes",
+          "quantity": 800,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "bell_pepper",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 6,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Ground cumin",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Smoked paprika",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "222688d4a59a3a8280782294e15d74435c0dd0e64832ef6548b72f4bb4c8e00e",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Feta and coriander",
+        "Unmapped ingredient: Harissa"
+      ]
+    }
+  ]
+}

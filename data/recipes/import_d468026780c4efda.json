@@ -1,0 +1,145 @@
+{
+  "recipes": [
+    {
+      "name": "Tabbouleh",
+      "source_id": "tabbouleh",
+      "servings": 4,
+      "prep_minutes": 25,
+      "category": "salad",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Rinse the bulgur and pour the juice of one lemon over it. Leave it to swell for fifteen minutes.",
+        "Wash the parsley well in advance and dry it thoroughly — an hour on a cloth is not too much. Strip the thick stems and chop it fine but without pulverising it.",
+        "Dice the tomatoes small and salt them separately: the juice they give up goes into the bulgur.",
+        "Mix everything with the juice of the second lemon, the oil and the allspice. Let it stand ten minutes before serving."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flat-leaf parsley",
+          "quantity": 200,
+          "unit": "g",
+          "note": "three large bunches"
+        },
+        {
+          "name": "Mint",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Fine bulgur",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 4,
+          "unit": "piece",
+          "note": "finely diced"
+        },
+        {
+          "name": "Spring onion",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Lemons",
+          "quantity": 2,
+          "unit": "piece",
+          "note": "juiced"
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 60,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Ground allspice",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_d468026780c4efda",
+      "ingredients": [
+        {
+          "ingredient": "parsley",
+          "quantity": 200,
+          "unit": "g",
+          "note": "three large bunches"
+        },
+        {
+          "ingredient": "mint",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "bulgur",
+          "quantity": 40,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 4,
+          "unit": "units",
+          "note": "finely diced"
+        },
+        {
+          "ingredient": "spring_onion",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "lemon",
+          "quantity": 2,
+          "unit": "units",
+          "note": "juiced"
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 60,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "c4b863fa239f9a5d86a8f3a2a5ba4420c175ec46e4a3fc7c3bee0b4d415d1a08",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Ground allspice"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "recipes": [
+    {
+      "name": "Pizza margherita",
+      "source_id": "pizza-margherita",
+      "servings": 4,
+      "prep_minutes": 70,
+      "category": "main",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Dissolve the yeast in the water, add the flour and mix to a rough dough. Rest it twenty minutes, then work in the salt and knead ten minutes to a smooth ball.",
+        "Leave it two hours at room temperature, divide it into four balls and refrigerate for a day.",
+        "Take the dough out three hours before baking. Crush the tomatoes by hand with a pinch of salt: the sauce is done.",
+        "Heat the oven with a stone or steel at full power for at least an hour. It takes longer than seems necessary and it is not optional.",
+        "Stretch a ball with your fingers from the centre outwards, leaving the rim untouched. No rolling pin: it drives the air out of the rim and the crust will not rise.",
+        "Spread a thin layer of sauce, lay on the mozzarella and trickle over the oil. Bake seven to nine minutes, until the rim is spotted, and add the basil to the finished pizza."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Type 00 flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Water",
+          "quantity": 325,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Fresh yeast",
+          "quantity": 1,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Salt for the dough",
+          "quantity": 12,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "San Marzano tomatoes",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Fior di latte mozzarella",
+          "quantity": 300,
+          "unit": "g",
+          "note": "sliced and drained"
+        },
+        {
+          "name": "Basil",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 4,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "id": "import_965f7f7121cda58d",
+      "ingredients": [
+        {
+          "ingredient": "pizza_flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "fresh_yeast",
+          "quantity": 1,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "tinned_tomatoes",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "mozzarella",
+          "quantity": 300,
+          "unit": "g",
+          "note": "sliced and drained"
+        },
+        {
+          "ingredient": "basil",
+          "quantity": 20,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 4,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 325,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt for the dough",
+          "quantity": 12,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "ec03928ec340f33afde6395a726b1bd04ec5a8919ab2434a6649397fcea7c9f4",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

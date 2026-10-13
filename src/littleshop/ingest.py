@@ -4,10 +4,16 @@ from datetime import datetime
 from decimal import Decimal
 import re
 from typing import Any
+from zoneinfo import ZoneInfo
 
 import israeli_prices as ilp
 from israeli_prices.core.http import HttpClient
 from israeli_prices.models import FileType
+from israeli_prices.chains.base import same_store
+from .adapters import get_adapter
+
+
+ISRAEL_TZ = ZoneInfo("Asia/Jerusalem")
 
 
 def _num(value: Any) -> float | None:
@@ -37,7 +43,7 @@ def resolve_store(stores_file: Any, chain: str, spec: dict[str, Any]) -> tuple[A
     requested_id = str(spec.get("store_id") or "").strip()
     if requested_id:
         for store in stores:
-            if str(store.store_id) == requested_id:
+            if same_store(str(store.store_id), requested_id):
                 return store, "explicit store_id"
         raise RuntimeError(f"{chain}: store_id {requested_id!r} not found")
 
@@ -46,14 +52,12 @@ def resolve_store(stores_file: Any, chain: str, spec: dict[str, Any]) -> tuple[A
 
     candidates = list(stores)
     if name_contains:
-        named = [
+        candidates = [
             store
             for store in stores
             if name_contains in normalize_text(store.name)
             or name_contains in normalize_text(store.address)
         ]
-        if named:
-            candidates = named
 
     if city and not name_contains:
         candidates = [
@@ -76,6 +80,14 @@ def resolve_store(stores_file: Any, chain: str, spec: dict[str, Any]) -> tuple[A
 
 
 def _is_active(start: datetime | None, end: datetime | None, now: datetime) -> bool:
+    # Retailer XML timestamps without offsets are Israeli wall time, even when
+    # the planner runs on a UTC GitHub runner. Preserve explicit offsets.
+    def localize(value: datetime) -> datetime:
+        return value if value.tzinfo is not None else value.replace(tzinfo=ISRAEL_TZ)
+
+    now = localize(now)
+    start = localize(start) if start else None
+    end = localize(end) if end else None
     if start and now < start:
         return False
     if end and now > end:
@@ -85,6 +97,8 @@ def _is_active(start: datetime | None, end: datetime | None, now: datetime) -> b
 
 def _is_general_public_promo(promo: Any) -> bool:
     """Keep public shelf promotions; skip targeted coupons/compensation offers."""
+    if getattr(promo, "is_coupon", False):
+        return False
     description = normalize_text(getattr(promo, "description", None))
     if any(word in description for word in ("קופון", "פיצוי", "מצטרפים", "אשראי")):
         return False
@@ -102,22 +116,41 @@ def _is_general_public_promo(promo: Any) -> bool:
 
 def _load_file(adapter: Any, file_type: FileType, store_id: str | None = None) -> Any:
     ref = adapter.latest(file_type, store_id=store_id)
-    return ilp.parse(adapter.download(ref))
+    parsed = ilp.parse(adapter.download(ref))
+    if store_id is not None and not same_store(getattr(parsed, "store_id", None), store_id):
+        accepts_alias = getattr(adapter, "accepts_store_alias", None)
+        if not accepts_alias or not accepts_alias(file_type, store_id, getattr(parsed, "store_id", None)):
+            raise RuntimeError(
+                f"{file_type.value}: expected store {store_id}, "
+                f"received {getattr(parsed, 'store_id', None)!r}"
+            )
+    source = getattr(adapter, "selected_files", {}).get(file_type.value)
+    if source is not None and store_id is not None:
+        source["store_id"] = store_id
+        source["xml_store_id"] = parsed.store_id
+    return parsed
 
 
 def fetch_chain(chain: str, spec: dict[str, Any]) -> dict[str, Any]:
     # GitHub-hosted runners are outside Israel. A retailer portal that blocks or
     # stalls foreign traffic must not hold the whole weekly job hostage.
-    client = HttpClient(timeout=12.0, retries=1)
+    # Shufersal's listing was observed taking ~29 seconds even when healthy.
+    # Give it bounded retries and a longer read budget; keep other chains fast.
+    client = HttpClient(timeout=45.0 if chain == "shufersal" else 12.0,
+                        retries=2 if chain == "shufersal" else 1)
     try:
-        adapter = ilp.get_adapter(chain, client=client)
+        adapter = get_adapter(chain, client)
         stores_file = _load_file(adapter, FileType.STORES)
         store, selection_reason = resolve_store(stores_file, chain, spec)
+        if hasattr(adapter, "configure_store"):
+            adapter.configure_store(store)
         prices = _load_file(adapter, FileType.PRICE_FULL, str(store.store_id))
+        if not prices.items:
+            raise RuntimeError(f"{chain}: empty price snapshot for store {store.store_id}")
         promos = _load_file(adapter, FileType.PROMO_FULL, str(store.store_id))
 
         by_code = {item.item_code: item for item in prices.items}
-        now = datetime.now()
+        now = datetime.now(ISRAEL_TZ)
         deals: list[dict[str, Any]] = []
 
         for promo in promos.promotions:
@@ -163,6 +196,43 @@ def fetch_chain(chain: str, spec: dict[str, Any]) -> dict[str, Any]:
                         "discount_rate": discount_rate,
                         "discounted_price": discounted_price,
                         "min_qty": min_qty,
+                        "simple_unit_promotion": (
+                            min_qty == 1
+                            and not promo.min_purchase_amount
+                            and not promo_item.min_purchase_amount
+                            and not promo_item.max_qty
+                            and not promo_item.is_gift_item
+                            and promo_item.group_id is None
+                            and promo.min_items_offered in (None, 0, 1)
+                            and not promo.additional_restrictions
+                            and not promo.remarks
+                            and not any(term in normalize_text(promo.description)
+                                        for term in ("מעל", "בקניה", "בקנייה", "מותנה"))
+                        ),
+                        "bundle_candidate": (
+                            not promo.min_purchase_amount
+                            and not promo_item.min_purchase_amount
+                            and not promo_item.max_qty
+                            and not promo_item.is_gift_item
+                            and not promo.additional_restrictions
+                            and not promo.remarks
+                            and not any(term in normalize_text(promo.description)
+                                        for term in ("מעל", "בקניה", "בקנייה", "מותנה", "מועדון", "השני", "הזול"))
+                        ),
+                        "bundle_conditions": {"group_id": promo_item.group_id,
+                                              "min_items_offered": _num(promo.min_items_offered)},
+                        "bundle_eligible": (
+                            not promo.min_purchase_amount
+                            and not promo_item.min_purchase_amount
+                            and not promo_item.max_qty
+                            and not promo_item.is_gift_item
+                            and promo_item.group_id is None
+                            and promo.min_items_offered in (None, 0, 1)
+                            and not promo.additional_restrictions
+                            and not promo.remarks
+                            and not any(term in normalize_text(promo.description)
+                                        for term in ("מעל", "בקניה", "בקנייה", "מותנה", "מועדון", "השני", "הזול"))
+                        ),
                         "club_id": promo.club_id,
                         "start_time": promo.start_time.isoformat() if promo.start_time else None,
                         "end_time": promo.end_time.isoformat() if promo.end_time else None,
@@ -180,6 +250,19 @@ def fetch_chain(chain: str, spec: dict[str, Any]) -> dict[str, Any]:
             },
             "price_item_count": len(prices.items),
             "promotion_count": len(promos.promotions),
+            "source_files": getattr(adapter, "selected_files", {}),
+            "products": [
+                {
+                    "chain": chain, "store_id": str(store.store_id),
+                    "item_code": item.item_code, "gtin": item.gtin,
+                    "name": item.name, "regular_price": _num(item.price),
+                    "pack_quantity": _num(item.quantity), "pack_unit": item.unit_qty,
+                    "is_weighted": item.is_weighted,
+                    "unit_of_measure": item.unit_of_measure,
+                    "unit_price": _num(item.unit_price),
+                }
+                for item in prices.items if item.name and item.price and item.price > 0
+            ],
             "deals": deals,
         }
     finally:

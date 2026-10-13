@@ -1,0 +1,128 @@
+{
+  "recipes": [
+    {
+      "name": "Käsespätzle",
+      "source_id": "kaesespaetzle",
+      "servings": 4,
+      "prep_minutes": 55,
+      "category": "main",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Mix the flour, eggs, water, salt and nutmeg and beat the dough with a spoon for a good five minutes, until bubbles rise and it starts to string off the spoon.",
+        "While the dough rests, fry the onion in butter over medium heat until deep gold. That is twenty minutes, not five — the sugars need the time to caramelise.",
+        "Press the dough into boiling salted water through a spätzle grater or a wide-holed colander. They float within a minute; lift them out with a slotted spoon.",
+        "Layer them into a warm dish: spätzle, cheese, spätzle, cheese. The heat of the noodles melts it; no oven is needed.",
+        "Bury it under the fried onion and serve at once. The classic side is a green salad with a vinegar dressing, and it is a counterweight rather than a garnish."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Plain flour",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Water or milk",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Emmental or Bergkäse",
+          "quantity": 250,
+          "unit": "g",
+          "note": "grated"
+        },
+        {
+          "name": "Onions",
+          "quantity": 3,
+          "unit": "piece",
+          "note": "in thin rings"
+        },
+        {
+          "name": "Butter",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Nutmeg",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_651393918633671a",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 3,
+          "unit": "units",
+          "note": "in thin rings"
+        },
+        {
+          "ingredient": "butter",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Nutmeg",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "329591b9d25940ba4b5e1bf6a2c8f46290971fd7da97b83338952deaf4518df0",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Emmental or Bergkäse",
+        "Unmapped ingredient: Water or milk"
+      ]
+    }
+  ]
+}

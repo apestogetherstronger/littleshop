@@ -1,0 +1,181 @@
+{
+  "recipes": [
+    {
+      "name": "Trinidad roti",
+      "source_id": "trinidad-roti",
+      "servings": 6,
+      "prep_minutes": 130,
+      "category": "bread",
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ],
+      "instructions": [
+        "Knead a soft dough from the flour, baking powder, salt and warm water, working it ten minutes.",
+        "Cover it and rest it an hour; the dough should become pliable and stop springing back.",
+        "Marinate the chicken with the curry powder, garlic, thyme and salt and stew it with the potato for forty minutes.",
+        "Divide the dough into six balls, roll each one thin and brush it with oil.",
+        "Roll the round into a rope, coil it into a spiral and let it rest twenty minutes.",
+        "Roll the spirals out into rounds again and cook them on a dry pan a minute and a half a side, brushing with ghee.",
+        "Move the bread onto a board and beat it into soft rags with two spatulas. Serve with the curry."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 700,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Warm water",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Baking powder",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Ghee",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Chicken for the curry",
+          "quantity": 1,
+          "unit": "kg",
+          "note": "in pieces"
+        },
+        {
+          "name": "Curry powder",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 6,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Scotch bonnet",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Potatoes",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Thyme",
+          "quantity": 4,
+          "unit": "sprig",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_f87ede112293059b",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 700,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "ghee",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 6,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "potatoes",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Warm water",
+          "quantity": 400,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Baking powder",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Curry powder",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Thyme",
+          "quantity": 4,
+          "unit": "sprig",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "7cb3653539a47982ec9363fea97f7d09008a06704473bd92820e7956da890ac8",
+      "status": "needs_review",
+      "review_issues": [
+        "Check vegan claim: Ghee",
+        "Diet conflict: Chicken for the curry",
+        "Unmapped ingredient: Chicken for the curry",
+        "Unmapped ingredient: Scotch bonnet"
+      ]
+    }
+  ]
+}

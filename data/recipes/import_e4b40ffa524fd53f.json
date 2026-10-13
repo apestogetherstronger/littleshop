@@ -1,0 +1,116 @@
+{
+  "recipes": [
+    {
+      "name": "Kama",
+      "source_id": "kama",
+      "servings": 4,
+      "prep_minutes": 10,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Whisk the kefir with the sugar and a pinch of salt until the sugar has dissolved.",
+        "Add the kama a little at a time, whisking; all at once it lumps, and the lumps never break up.",
+        "Leave it fifteen minutes for the flour to swell, then check the consistency and let it down with more kefir if needed.",
+        "Stir in the honey and divide between glasses.",
+        "Chill for an hour and serve with berries and, if you like, a spoon of whipped cream."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Kama flour",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Kefir",
+          "quantity": 600,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Honey",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Forest berries",
+          "quantity": 200,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Cream",
+          "quantity": 100,
+          "unit": "ml",
+          "note": "optional"
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_e4b40ffa524fd53f",
+      "ingredients": [
+        {
+          "ingredient": "kefir",
+          "quantity": 600,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "honey",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "cream",
+          "quantity": 100,
+          "unit": "ml",
+          "note": "optional"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "1c5aeb67151cab07409ee5a3169acc0a348e8c2eefe6aab1e004e315b3122bb2",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Forest berries",
+        "Unmapped ingredient: Kama flour"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "recipes": [
+    {
+      "name": "Pastizzi",
+      "source_id": "pastizzi",
+      "servings": 8,
+      "prep_minutes": 125,
+      "category": "snack",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Knead a dough from the flour, water and salt, work it ten minutes and rest it half an hour.",
+        "Boil the split peas with the onion for forty minutes until completely soft, mash them and season.",
+        "Mix the ricotta with the eggs, parsley, salt and pepper.",
+        "Roll the dough very thin, spread it with fat, roll it up and chill it twenty minutes.",
+        "Cut the roll into pieces and flatten each into a round; the layers give the flakiness.",
+        "Add the filling and seal them: ricotta as an open-topped boat, peas as a closed diamond.",
+        "Bake at 220 °C for thirty minutes, to a deep gold, and serve hot."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Water",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Lard or margarine",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Ricotta",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Yellow split peas",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Parsley",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_411cbd3b1c169644",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "ricotta",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "yellow_split_peas",
+          "quantity": 250,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "parsley",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 40,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "be092eaabc31af657c7c167a69393704b8a232938deb55791a0f2fef591f0818",
+      "status": "needs_review",
+      "review_issues": [
+        "Diet conflict: Lard or margarine",
+        "Unmapped ingredient: Lard or margarine"
+      ]
+    }
+  ]
+}

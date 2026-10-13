@@ -1,0 +1,144 @@
+{
+  "recipes": [
+    {
+      "name": "Horiatiki salad",
+      "source_id": "horiatiki-salata",
+      "servings": 4,
+      "prep_minutes": 15,
+      "category": "salad",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Cut the tomatoes into large wedges and salt them straight in the bowl. Leave them five minutes: the juice they give up becomes the base of the dressing.",
+        "Add the cucumber, pepper and onion. Mix with your hands rather than a spoon — nothing breaks that way.",
+        "Scatter the olives over, lay the slab of feta on top and pour the oil over everything at once. Sprinkle the oregano straight onto the feta, where the oil will open it up."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Ripe tomatoes",
+          "quantity": 4,
+          "unit": "piece",
+          "note": "in large wedges"
+        },
+        {
+          "name": "Cucumber",
+          "quantity": 1,
+          "unit": "piece",
+          "note": "in thick half-moons"
+        },
+        {
+          "name": "Red onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": "in thin rings"
+        },
+        {
+          "name": "Green pepper",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Feta",
+          "quantity": 200,
+          "unit": "g",
+          "note": "in one piece"
+        },
+        {
+          "name": "Kalamata olives",
+          "quantity": 80,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 60,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Dried oregano",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_7e2068a38c86c3b8",
+      "ingredients": [
+        {
+          "ingredient": "tomatoes",
+          "quantity": 4,
+          "unit": "units",
+          "note": "in large wedges"
+        },
+        {
+          "ingredient": "cucumber",
+          "quantity": 1,
+          "unit": "units",
+          "note": "in thick half-moons"
+        },
+        {
+          "ingredient": "red_onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": "in thin rings"
+        },
+        {
+          "ingredient": "bell_pepper",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "feta",
+          "quantity": 200,
+          "unit": "g",
+          "note": "in one piece"
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 60,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Dried oregano",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "b42b07f0ead8e832b3824d37b7eb9109d09f6f13f157c73e28e3face0b72ec75",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Kalamata olives"
+      ]
+    }
+  ]
+}

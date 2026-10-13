@@ -1,0 +1,187 @@
+{
+  "recipes": [
+    {
+      "name": "Sabich",
+      "source_id": "sabich",
+      "servings": 4,
+      "prep_minutes": 105,
+      "category": "main",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Cook the eggs at the barest simmer for an hour, then cool them in cold water and peel them.",
+        "Slice the aubergines a centimetre thick, salt them and press them under a weight for half an hour.",
+        "Pat the slices dry and fry them in oil to a deep gold on both sides.",
+        "Whisk the tahini with lemon juice, water and salt to the thickness of pouring cream.",
+        "Dice the tomatoes and cucumbers small and mix them with the parsley, lemon and salt.",
+        "Warm the pitas, cut them into pockets and spread tahini inside.",
+        "Layer in the aubergine, sliced egg and salad, and spoon over the amba, tahini and zhug."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Aubergines",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Pita bread",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Amba",
+          "quantity": 4,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Tahini",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 3,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Cucumbers",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Parsley",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Lemon",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Zhug",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_24bf322b3c056315",
+      "ingredients": [
+        {
+          "ingredient": "aubergine",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "pita",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "amba",
+          "quantity": 4,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "tahini",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 3,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "cucumber",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "parsley",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "lemon",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "zhug",
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 200,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "fa37356e1ca360a192c46a137dcead687d1838bbb654d64724384192f63e9d83",
+      "status": "ready",
+      "review_issues": []
+    }
+  ]
+}

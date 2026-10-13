@@ -1,0 +1,172 @@
+{
+  "recipes": [
+    {
+      "name": "Moros y cristianos",
+      "source_id": "moros-y-cristianos",
+      "servings": 6,
+      "prep_minutes": 110,
+      "category": "side",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Boil the beans in three litres of water with the bay for an hour, to nearly done. Do not drain: the liquor is the base of the dish.",
+        "Fry the onion and pepper in the olive oil for fifteen minutes until soft, adding the garlic, cumin and oregano for a minute.",
+        "Measure the bean liquor: two parts liquid to one part rice by volume. Top up with water if there is not enough.",
+        "Combine the rice, beans, liquor, half the sofrito and the vinegar, season and bring it to the boil.",
+        "Lower the heat, cover and cook twenty minutes without lifting the lid. Let it stand ten minutes and fork the rest of the sofrito through."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Black beans",
+          "quantity": 300,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "name": "Long-grain rice",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Green pepper",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 5,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Bay leaves",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Ground cumin",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Oregano",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Wine vinegar",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 60,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_f83c07c65957106b",
+      "ingredients": [
+        {
+          "ingredient": "rice",
+          "quantity": 400,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "bell_pepper",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 5,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "wine_vinegar",
+          "quantity": 1,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 60,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Bay leaves",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Ground cumin",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Oregano",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "b3bd41469cab55beeda163c64be2d82f43bbdf211d5e933d989600182695f615",
+      "status": "needs_review",
+      "review_issues": [
+        "Dry/cooked state needs review: Black beans",
+        "Unmapped ingredient: Black beans"
+      ]
+    }
+  ]
+}

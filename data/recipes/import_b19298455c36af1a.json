@@ -1,0 +1,136 @@
+{
+  "recipes": [
+    {
+      "name": "Sukuma wiki",
+      "source_id": "sukuma-wiki",
+      "servings": 4,
+      "prep_minutes": 35,
+      "category": "side",
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Strip the tough stems from the leaves, roll the leaves up and shred them fine.",
+        "Fry the onion in oil until soft, add the garlic and cumin and warm them a minute.",
+        "Add the chopped tomatoes and cook seven minutes, until they collapse into a paste.",
+        "Add the greens, salt them and stir. They collapse by half within a minute.",
+        "Add half a cup of water, cover and stew ten minutes; the greens should soften but stay green.",
+        "Finish with lemon juice and serve with ugali or rice."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Collard greens",
+          "quantity": 700,
+          "unit": "g",
+          "note": "finely shredded"
+        },
+        {
+          "name": "Onion",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 4,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": 50,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Ground cumin",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Lemon",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_b19298455c36af1a",
+      "ingredients": [
+        {
+          "ingredient": "onion",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "tomatoes",
+          "quantity": 4,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 50,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "lemon",
+          "quantity": 1,
+          "unit": "units",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Ground cumin",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "8f592aff181e8c26622c0bf2e1ffba77c372786881d60c4660eb15aca51ab7f7",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Collard greens"
+      ]
+    }
+  ]
+}

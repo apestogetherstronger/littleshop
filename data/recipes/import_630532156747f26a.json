@@ -1,0 +1,121 @@
+{
+  "recipes": [
+    {
+      "name": "Pesto alla genovese",
+      "source_id": "pesto-alla-genovese",
+      "servings": 4,
+      "prep_minutes": 20,
+      "category": "sauce",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Wash the basil and dry it completely: any water stops the oil binding to the leaves. Chill the mortar and pestle in the fridge.",
+        "Pound the garlic with the coarse salt to a paste. The salt works as an abrasive; without it the garlic just slides around.",
+        "Add the pine nuts and work them to a cream, then add the basil a handful at a time. The movement is a pressing circle rather than a pounding: the leaves are crushed against the wall, not smashed.",
+        "Work in both cheeses, then trickle the oil in while still grinding. The sauce should come together thick and even."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Basil leaves",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Pine nuts",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Garlic",
+          "quantity": 1,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "name": "Parmesan",
+          "quantity": 50,
+          "unit": "g",
+          "note": "finely grated"
+        },
+        {
+          "name": "Pecorino",
+          "quantity": 25,
+          "unit": "g",
+          "note": "finely grated"
+        },
+        {
+          "name": "Extra virgin olive oil",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Coarse salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "id": "import_630532156747f26a",
+      "ingredients": [
+        {
+          "ingredient": "basil",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "pine_nuts",
+          "quantity": 30,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": 1,
+          "unit": "clove",
+          "note": null
+        },
+        {
+          "ingredient": "parmesan",
+          "quantity": 50,
+          "unit": "g",
+          "note": "finely grated"
+        },
+        {
+          "ingredient": "olive_oil",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Coarse salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "910a173bd2c4de702ccc48e5a88b2e98653bccfd2428e94cc6f94df186bf85d6",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Pecorino"
+      ]
+    }
+  ]
+}

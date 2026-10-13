@@ -1,0 +1,123 @@
+{
+  "recipes": [
+    {
+      "name": "Swabian potato salad",
+      "source_id": "schwaebischer-kartoffelsalat",
+      "servings": 4,
+      "prep_minutes": 40,
+      "category": "salad",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Boil the potatoes in their skins until done, about twenty minutes from the boil. Test with a knife: it should go in without dropping through.",
+        "While they cook, warm the stock with the onion, vinegar, mustard, salt and pepper, without letting it boil.",
+        "Peel the potatoes while hot, holding them on a fork, and slice them three or four millimetres thick straight into the bowl.",
+        "Pour the hot dressing over and leave it twenty minutes, turning it once. The potato drinks almost all of the liquid.",
+        "Add the oil, turn it again and taste. It should be slightly sharper than feels right; the flavour settles as it stands."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Waxy potatoes",
+          "quantity": 800,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Onion",
+          "quantity": 1,
+          "unit": "piece",
+          "note": "very finely chopped"
+        },
+        {
+          "name": "Hot vegetable stock",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Wine vinegar",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Mustard",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Neutral oil",
+          "quantity": 4,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "name": "Chives",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "id": "import_14c2497f5c8d8c22",
+      "ingredients": [
+        {
+          "ingredient": "potatoes",
+          "quantity": 800,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "onion",
+          "quantity": 1,
+          "unit": "units",
+          "note": "very finely chopped"
+        },
+        {
+          "ingredient": "wine_vinegar",
+          "quantity": 3,
+          "unit": "tbsp",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 4,
+          "unit": "tbsp",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "b8ae59f7f06d21b7d178081f003ef32b145431dd8964ef6c48407e971d3e5b4b",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Chives",
+        "Unmapped ingredient: Hot vegetable stock",
+        "Unmapped ingredient: Mustard"
+      ]
+    }
+  ]
+}

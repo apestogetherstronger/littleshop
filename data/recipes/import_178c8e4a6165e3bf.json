@@ -1,0 +1,134 @@
+{
+  "recipes": [
+    {
+      "name": "Pão de queijo",
+      "source_id": "pao-de-queijo",
+      "servings": 6,
+      "prep_minutes": 50,
+      "category": "bread",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Bring the milk, water, oil and salt to just below boiling.",
+        "Pour all the hot liquid into the starch at once and stir with a spatula. The mixture looks lumpy and odd; that is correct. Let it cool to warm.",
+        "Work in the eggs one at a time, then both cheeses. Knead to an even sticky mass — hands are easier than a spoon.",
+        "With wet hands roll walnut-sized balls and space them three centimetres apart on a tray.",
+        "Bake at 200 °C for twenty minutes until golden. Do not open the door for the first fifteen: the steam escapes and they collapse."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Tapioca starch",
+          "quantity": 500,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Milk",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Water",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Neutral oil",
+          "quantity": 120,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Eggs",
+          "quantity": 2,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Parmesan",
+          "quantity": 200,
+          "unit": "g",
+          "note": "grated"
+        },
+        {
+          "name": "Mozzarella",
+          "quantity": 100,
+          "unit": "g",
+          "note": "grated"
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "id": "import_178c8e4a6165e3bf",
+      "ingredients": [
+        {
+          "ingredient": "milk",
+          "quantity": 250,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 120,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "eggs",
+          "quantity": 2,
+          "unit": "units",
+          "note": null
+        },
+        {
+          "ingredient": "parmesan",
+          "quantity": 200,
+          "unit": "g",
+          "note": "grated"
+        },
+        {
+          "ingredient": "mozzarella",
+          "quantity": 100,
+          "unit": "g",
+          "note": "grated"
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Water",
+          "quantity": 100,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "76476b43977178f60773c9472f13e7a002d8651d6c10db064e2ed5d34ba32a2d",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Tapioca starch"
+      ]
+    }
+  ]
+}

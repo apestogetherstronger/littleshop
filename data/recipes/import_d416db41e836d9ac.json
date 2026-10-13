@@ -1,0 +1,148 @@
+{
+  "recipes": [
+    {
+      "name": "Sel roti",
+      "source_id": "sel-roti",
+      "servings": 8,
+      "prep_minutes": 100,
+      "category": "bread",
+      "tags": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "instructions": [
+        "Soak the rice in cold water overnight, drain it and pat it dry with a cloth.",
+        "Grind the wet rice in a blender with the milk to a smooth thick paste without grit.",
+        "Work in the sugar, melted ghee, mashed banana, cardamom, cloves and salt.",
+        "Beat the batter by hand for twenty minutes in circular movements, working air into it.",
+        "Let the batter stand an hour; it ferments slightly and turns bubbly.",
+        "Heat the oil to 165 °C and pour the batter into it in a ring, in one continuous movement.",
+        "Fry two minutes a side, turning with two chopsticks, to a golden colour."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Rice",
+          "quantity": 600,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "name": "Sugar",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Ghee",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Milk",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Banana",
+          "quantity": 1,
+          "unit": "piece",
+          "note": null
+        },
+        {
+          "name": "Ground cardamom",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Ground cloves",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": 1.5,
+          "unit": "l",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "id": "import_d416db41e836d9ac",
+      "ingredients": [
+        {
+          "ingredient": "rice",
+          "quantity": 600,
+          "unit": "g",
+          "note": "soaked overnight"
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 150,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "ghee",
+          "quantity": 60,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "ingredient": "milk",
+          "quantity": 150,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "quantity": 1500.0,
+          "unit": "ml",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Ground cardamom",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Ground cloves",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "e3d92f2d1f324e34ed036f1f44b6af9250ee20680c6c67c70bd324339076acde",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Banana"
+      ]
+    }
+  ]
+}

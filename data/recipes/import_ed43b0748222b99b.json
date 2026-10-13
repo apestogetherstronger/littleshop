@@ -1,0 +1,107 @@
+{
+  "recipes": [
+    {
+      "name": "Rye bread layer dessert",
+      "source_id": "rupjmaizes-kartojums",
+      "servings": 6,
+      "prep_minutes": 40,
+      "category": "dessert",
+      "tags": [
+        "vegetarian"
+      ],
+      "instructions": [
+        "Crumb the stale bread in a blender or by hand to a coarse crumb.",
+        "Mix the crumbs with the sugar and cinnamon and dry them in the oven at 160 °C for twelve minutes, stirring twice.",
+        "Cool the crumbs completely. On warm crumbs the cream collapses and the layers merge.",
+        "Whip the cold cream with the vanilla sugar to firm peaks.",
+        "Layer into glasses: crumbs, jam, cream, and repeat. Finish with cream.",
+        "Chill for at least four hours, ideally overnight. Serve with cranberries on top."
+      ],
+      "raw_ingredients": [
+        {
+          "name": "Dark rye bread",
+          "quantity": 400,
+          "unit": "g",
+          "note": "stale, crumbed"
+        },
+        {
+          "name": "Double cream",
+          "quantity": 500,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "name": "Cranberry jam",
+          "quantity": 300,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Sugar",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        },
+        {
+          "name": "Cinnamon",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Vanilla sugar",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        },
+        {
+          "name": "Cranberries",
+          "quantity": 60,
+          "unit": "g",
+          "note": "to serve"
+        }
+      ],
+      "id": "import_ed43b0748222b99b",
+      "ingredients": [
+        {
+          "ingredient": "cream",
+          "quantity": 500,
+          "unit": "ml",
+          "note": null
+        },
+        {
+          "ingredient": "sugar",
+          "quantity": 100,
+          "unit": "g",
+          "note": null
+        }
+      ],
+      "pantry": [
+        {
+          "name": "Cinnamon",
+          "quantity": 1,
+          "unit": "tsp",
+          "note": null
+        }
+      ],
+      "source": {
+        "url": "https://theunitools.com/en/data",
+        "attribution": "UniTools — theunitools.com",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "revision": "2f554073f7e730b18d707fe1164d18308f6ec16c",
+        "dataset_url": "https://github.com/farcrak/unitools-recipes/blob/2f554073f7e730b18d707fe1164d18308f6ec16c/unitools-recipes-v1.json",
+        "sha256": "41fdc0572b7272ca557d2df22a0fac1cc1f18146e97ebd2c8258c395daf87d8a",
+        "changes": "English subset; shared ingredient IDs; units normalized; dietary and completeness checks. No photos."
+      },
+      "fingerprint": "24104a1b63f59cd1bbc395bfb143ed62fea3154f8a450682f926cb280c3e30b6",
+      "status": "needs_review",
+      "review_issues": [
+        "Unmapped ingredient: Cranberries",
+        "Unmapped ingredient: Cranberry jam",
+        "Unmapped ingredient: Dark rye bread",
+        "Unmapped ingredient: Vanilla sugar"
+      ]
+    }
+  ]
+}
