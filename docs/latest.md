@@ -1,6 +1,6 @@
 # LittleShop weekly plan
 
-Generated: 2026-10-22T19:43
+Generated: 2026-10-29T20:50
 
 This v1 ranks meals by matching their ingredients to active supermarket promotions. It does **not** yet use historical prices or calculate a fully optimized basket total.
 
@@ -28,25 +28,34 @@ Matched promotions:
 
 ### Day 2: Shakshuka with feta (30 min)
 
-Promotion-match score: **15.62**
+Promotion-match score: **16.53**
 
 Matched promotions:
-- **eggs** → איטריות ביצים מזרח ו at rami-levy (₪10.90 regular); אטריות אורז/ביצים מזרח ומערב  2ב18
+- **eggs** → איטריות ביצים מזרח ו at rami-levy (₪10.90 regular); אטריות אורז/ביצים מזרח ומערב  2ב16
 - **tomatoes** → רסק עגבניות טבעי 100 at rami-levy (₪3.50 regular); רסק עגבניות טבעי יכין 100גרם 6ב13
 - **tomato sauce** → רוטב עגבניות 22BX 10 at rami-levy (₪2.90 regular); רוטב עגבניות יכין 100 גרם 8ב16
 - **feta** → גבינה בולגרית 18% מע at rami-levy (₪16.90 regular); בולגרית מעודנת 250 ג 11.90
 
 ### Day 3: Bean & cheese quesadillas (25 min)
 
-Promotion-match score: **13.86**
+Promotion-match score: **13.31**
 
 Matched promotions:
-- **tortillas** → טורטיות קטנה 10 יח 4 at rami-levy (₪13.80 regular); טורטיה 450 ג 10.90
+- **tortillas** → טורטיות קטנה 10 יח 4 at rami-levy (₪12.90 regular); טורטיה 450 ג 10.90
 - **beans** → שעועית לבנה ברוטב עג at rami-levy (₪10.90 regular); שימורי ירקות יכין/פרי מבורך 2ב18
 - **yellow cheese** → גבינה צהובה אצבעות ע at rami-levy (₪21.90 regular); אצבעות מוצרלה 172 ג 15.90
 - **corn** → מקלות תירס ממותקים 6 at rami-levy (₪5.90 regular); חטיף מקלות תירס 3ב11.90
 
-### Day 4: Spinach & ricotta lasagna (60 min)
+### Day 4: Zucchini & feta frittata (35 min)
+
+Promotion-match score: **11.36**
+
+Matched promotions:
+- **eggs** → איטריות ביצים מזרח ו at rami-levy (₪10.90 regular); אטריות אורז/ביצים מזרח ומערב  2ב16
+- **feta** → גבינה בולגרית 18% מע at rami-levy (₪16.90 regular); בולגרית מעודנת 250 ג 11.90
+- **yellow cheese** → גבינה צהובה אצבעות ע at rami-levy (₪21.90 regular); אצבעות מוצרלה 172 ג 15.90
+
+### Day 5: Spinach & ricotta lasagna (60 min)
 
 Promotion-match score: **10.32**
 
@@ -55,30 +64,21 @@ Matched promotions:
 - **mozzarella** → גבינה מוצרלה אצבעות at rami-levy (₪21.80 regular); אצבעות מוצרלה 172 ג 15.90
 - **tomato sauce** → רוטב עגבניות 22BX 10 at rami-levy (₪2.90 regular); רוטב עגבניות יכין 100 גרם 8ב16
 
-### Day 5: Zucchini & feta frittata (35 min)
-
-Promotion-match score: **10.44**
-
-Matched promotions:
-- **eggs** → איטריות ביצים מזרח ו at rami-levy (₪10.90 regular); אטריות אורז/ביצים מזרח ומערב  2ב18
-- **feta** → גבינה בולגרית 18% מע at rami-levy (₪16.90 regular); בולגרית מעודנת 250 ג 11.90
-- **yellow cheese** → גבינה צהובה אצבעות ע at rami-levy (₪21.90 regular); אצבעות מוצרלה 172 ג 15.90
-
-### Day 6: Broccoli & ricotta pasta (30 min)
-
-Promotion-match score: **9.95**
-
-Matched promotions:
-- **pasta** → ליגורי- ספגטי מספר 3 at rami-levy (₪9.90 regular); פסטה ליגורי 500 גרם ב-50% מעל 100 מו2
-- **parmesan** → ציפס גלי שום פרמזן 4 at rami-levy (₪5.20 regular); חטיפי אסם 40-80 גרם 6ב22
-
-### Day 7: Tofu vegetable stir-fry (30 min)
+### Day 6: Tofu vegetable stir-fry (30 min)
 
 Promotion-match score: **9.9**
 
 Matched promotions:
 - **bell pepper** → ביסלי טעם פלפל אסם 5 at rami-levy (₪5.20 regular); חטיפי אסם 40-80 גרם 6ב22
 - **rice** → פריכיות אורז חום מלא at rami-levy (₪9.90 regular); פרכיות אורז מצופות עלית 2ב10 מו4
+
+### Day 7: Broccoli & ricotta pasta (30 min)
+
+Promotion-match score: **9.95**
+
+Matched promotions:
+- **pasta** → ליגורי- ספגטי מספר 3 at rami-levy (₪9.90 regular); פסטה ליגורי 500 גרם ב-50% מעל 100 מו2
+- **parmesan** → ציפס גלי שום פרמזן 4 at rami-levy (₪5.20 regular); חטיפי אסם 40-80 גרם 6ב22
 
 ## Consolidated shopping list
 
@@ -87,7 +87,7 @@ Matched promotions:
 - [ ] **broccoli** — 1000 g
 - [ ] **coconut milk** — 400 ml — suggested: שימורי קרם קוקוס 20- @ rami-levy (קרם קוקוס 400 מ ל 2ב16)
 - [ ] **corn** — 300 g — suggested: מקלות תירס ממותקים 6 @ rami-levy (חטיף מקלות תירס 3ב11.90)
-- [ ] **eggs** — 18 units — suggested: איטריות ביצים מזרח ו @ rami-levy (אטריות אורז/ביצים מזרח ומערב  2ב18)
+- [ ] **eggs** — 18 units — suggested: איטריות ביצים מזרח ו @ rami-levy (אטריות אורז/ביצים מזרח ומערב  2ב16)
 - [ ] **feta** — 450 g — suggested: גבינה בולגרית 18% מע @ rami-levy (בולגרית מעודנת 250 ג 11.90)
 - [ ] **lasagna** — 500 g — suggested: פסטה לזניה מספר 102 @ rami-levy (לזניה ליגורי 500 ג 16.90)
 - [ ] **lentils** — 400 g — suggested: עדשים ירוקות 500 גרם @ rami-levy (עדשים 500 גרם סוגת 2ב14)
@@ -110,9 +110,9 @@ Matched promotions:
 | Recipe | Deal score | Promo-matched ingredients | Prep |
 |---|---:|---:|---:|
 | Lentil & sweet-potato curry | 16.54 | 4 | 40 min |
-| Shakshuka with feta | 15.62 | 4 | 30 min |
-| Bean & cheese quesadillas | 13.86 | 4 | 25 min |
-| Zucchini & feta frittata | 10.44 | 3 | 35 min |
+| Shakshuka with feta | 16.53 | 4 | 30 min |
+| Bean & cheese quesadillas | 13.31 | 4 | 25 min |
+| Zucchini & feta frittata | 11.36 | 3 | 35 min |
 | Spinach & ricotta lasagna | 10.32 | 3 | 60 min |
 | Broccoli & ricotta pasta | 9.95 | 2 | 30 min |
 | Tofu vegetable stir-fry | 9.9 | 2 | 30 min |
