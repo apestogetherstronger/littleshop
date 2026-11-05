@@ -1,124 +1,130 @@
 # LittleShop weekly plan
 
-Generated: 2026-10-29T20:50
+Generated: 2026-11-05T21:47
 
 This v1 ranks meals by matching their ingredients to active supermarket promotions. It does **not** yet use historical prices or calculate a fully optimized basket total.
 
 ## Stores used
 
 - **rami-levy** — סוקולוב הרצליה (store 715) — 6400, סוקולוב 56 — auto-selected from 2 matching branch(es)
+- **shufersal** — אקספרס.בני בנימין הרצליה (store 277) — 6400, בני בנימין 23 — auto-selected from 5 matching branch(es)
 
 ### Feed warnings
 
 - carrefour: PortalError: GET https://prices.carrefour.co.il/ failed after 1 attempts: timed out
-- shufersal: PortalError: GET https://prices.shufersal.co.il/FileObject/UpdateCategory failed after 1 attempts: The read operation timed out
 - victory: PortalError: GET https://laibcatalog.co.il/webapi/api/getfiles failed after 1 attempts: timed out
 
 ## Meal plan
 
-### Day 1: Lentil & sweet-potato curry (40 min)
+### Day 1: Spinach & ricotta lasagna (60 min)
 
-Promotion-match score: **16.54**
+Promotion-match score: **19.11**
 
 Matched promotions:
-- **lentils** → עדשים ירוקות 500 גרם at rami-levy (₪9.90 regular); עדשים 500 גרם סוגת 2ב14
-- **sweet potato** → פיטנס קרקר דק בטטה 1 at rami-levy (₪12.50 regular); פיטנס קרקר 140 גרם 2ב20
-- **coconut milk** → שימורי קרם קוקוס 20- at rami-levy (₪10.90 regular); קרם קוקוס 400 מ ל 2ב16
-- **rice** → פריכיות אורז חום מלא at rami-levy (₪9.90 regular); פרכיות אורז מצופות עלית 2ב10 מו4
+- **lasagna** → פסטה לזניה מספר 102 at rami-levy (₪19.90 regular); לזניה ליגורי 500 דרם ב16.90
+- **spinach** → עלי תרד בייבי 200 גר (ק) at shufersal (₪13.90 regular); קטיף שני ב50% מגוון עלים ולקטים שטופים ב
+- **mozzarella** → גבינת מוצרלה מגורדת at rami-levy (₪29.90 regular); מוצרלה מגורדת גד 12.90
+- **tomato sauce** → רוטב עגבניות22% יכין100ג at shufersal (₪3.90 regular); 8ב20 רוטב עגבניות22% יכין100ג
 
 ### Day 2: Shakshuka with feta (30 min)
 
-Promotion-match score: **16.53**
+Promotion-match score: **18.54**
 
 Matched promotions:
-- **eggs** → איטריות ביצים מזרח ו at rami-levy (₪10.90 regular); אטריות אורז/ביצים מזרח ומערב  2ב16
-- **tomatoes** → רסק עגבניות טבעי 100 at rami-levy (₪3.50 regular); רסק עגבניות טבעי יכין 100גרם 6ב13
-- **tomato sauce** → רוטב עגבניות 22BX 10 at rami-levy (₪2.90 regular); רוטב עגבניות יכין 100 גרם 8ב16
-- **feta** → גבינה בולגרית 18% מע at rami-levy (₪16.90 regular); בולגרית מעודנת 250 ג 11.90
+- **eggs** → קינדר בואנו ביצים 80 גרם at shufersal (₪21.90 regular); 2ב30 קינדר בואנו ביצים 80 גרם
+- **tomatoes** → ר.עגבניות22% 100 ב.יהודה at shufersal (₪3.90 regular); 8ב20 ר.עגבניות22% 100 ב.יהודה
+- **tomato sauce** → רוטב עגבניות22% יכין100ג at shufersal (₪3.90 regular); 8ב20 רוטב עגבניות22% יכין100ג
+- **feta** → גבינה בולגרית 18% מע at rami-levy (₪16.90 regular); גבינה בולגרית 250 ג וילי פוד 9.90
 
-### Day 3: Bean & cheese quesadillas (25 min)
+### Day 3: Tofu vegetable stir-fry (30 min)
 
-Promotion-match score: **13.31**
+Promotion-match score: **16.86**
 
 Matched promotions:
-- **tortillas** → טורטיות קטנה 10 יח 4 at rami-levy (₪12.90 regular); טורטיה 450 ג 10.90
-- **beans** → שעועית לבנה ברוטב עג at rami-levy (₪10.90 regular); שימורי ירקות יכין/פרי מבורך 2ב18
-- **yellow cheese** → גבינה צהובה אצבעות ע at rami-levy (₪21.90 regular); אצבעות מוצרלה 172 ג 15.90
+- **tofu** → טופו עם בזיליקום אלט at rami-levy (₪14.60 regular); טופו אלטרנטיב 300 גרם ב11.90
+- **bell pepper** → ביסלי טעם פלפל אסם 5 at rami-levy (₪5.20 regular); חטיפי אסם 40-80 גרם 6ב24
+- **broccoli** → ברוקולי ארוז at shufersal (₪13.90 regular); קטיף 5.90 ברוקולי ארוז במגשית
+- **rice** → דפי אורז עגולים 300 גרם at shufersal (₪15.90 regular); 2ב20 דפי אורז עגולים 300 גרם
+
+### Day 4: Roasted cauliflower & chickpea tray (40 min)
+
+Promotion-match score: **15.88**
+
+Matched promotions:
+- **cauliflower** → כרובית at shufersal (₪15.90 regular); קטיף 5.90 כרובית
+- **chickpeas** → גרגרי חומוס מבושל 800גרם at shufersal (₪23.90 regular); ב. 16.90 גזר/אפונה עדינה/חומוס/שעועית ל
+- **tahini** → טחינה גולמית שומשום at rami-levy (₪19.90 regular); טחינה 500 גרם בארכה ב-10 ש ח מו2
+
+### Day 5: Lentil & sweet-potato curry (40 min)
+
+Promotion-match score: **15.75**
+
+Matched promotions:
+- **lentils** → עדשים ירוקות 500 גרם at rami-levy (₪9.90 regular); עדשים 500 גרם סוגת 2ב14
+- **sweet potato** → פריכיות חלבון בטטה ס at rami-levy (₪11.50 regular); פרכיות חלבון 55-60גרם ב8.90
+- **coconut milk** → קרם קוקוס AROY-D 250 at rami-levy (₪11.90 regular); קרם /חלב קוקוס 250מל 2ב17
+- **rice** → דפי אורז עגולים 300 גרם at shufersal (₪15.90 regular); 2ב20 דפי אורז עגולים 300 גרם
+
+### Day 6: Broccoli & ricotta pasta (30 min)
+
+Promotion-match score: **14.25**
+
+Matched promotions:
+- **pasta** → ליגורי- ספגטי מספר 3 at rami-levy (₪9.90 regular); פסטה ליגורי 500 גרם 3ב18
+- **broccoli** → ברוקולי ארוז at shufersal (₪13.90 regular); קטיף 5.90 ברוקולי ארוז במגשית
+- **parmesan** → ציפס גלי שום פרמזן 4 at rami-levy (₪5.20 regular); חטיפי אסם 40-80 גרם 6ב24
+
+### Day 7: Bean & cheese quesadillas (25 min)
+
+Promotion-match score: **14.08**
+
+Matched promotions:
+- **tortillas** → טורטיות ק.חיטה780ג papa at shufersal (₪18.90 regular); 13.90 טורטיות ק.חיטה780ג papa
+- **beans** → שעועית לבנה מבושלת 800גר at shufersal (₪24.50 regular); ב. 16.90 גזר/אפונה עדינה/חומוס/שעועית ל
+- **yellow cheese** → גבינת גאודה פרוסה 200 גר at shufersal (₪17.90 regular); 2ב32 גבינת גאודה פרוסה 200 גר
 - **corn** → מקלות תירס ממותקים 6 at rami-levy (₪5.90 regular); חטיף מקלות תירס 3ב11.90
-
-### Day 4: Zucchini & feta frittata (35 min)
-
-Promotion-match score: **11.36**
-
-Matched promotions:
-- **eggs** → איטריות ביצים מזרח ו at rami-levy (₪10.90 regular); אטריות אורז/ביצים מזרח ומערב  2ב16
-- **feta** → גבינה בולגרית 18% מע at rami-levy (₪16.90 regular); בולגרית מעודנת 250 ג 11.90
-- **yellow cheese** → גבינה צהובה אצבעות ע at rami-levy (₪21.90 regular); אצבעות מוצרלה 172 ג 15.90
-
-### Day 5: Spinach & ricotta lasagna (60 min)
-
-Promotion-match score: **10.32**
-
-Matched promotions:
-- **lasagna** → פסטה לזניה מספר 102 at rami-levy (₪19.90 regular); לזניה ליגורי 500 ג 16.90
-- **mozzarella** → גבינה מוצרלה אצבעות at rami-levy (₪21.80 regular); אצבעות מוצרלה 172 ג 15.90
-- **tomato sauce** → רוטב עגבניות 22BX 10 at rami-levy (₪2.90 regular); רוטב עגבניות יכין 100 גרם 8ב16
-
-### Day 6: Tofu vegetable stir-fry (30 min)
-
-Promotion-match score: **9.9**
-
-Matched promotions:
-- **bell pepper** → ביסלי טעם פלפל אסם 5 at rami-levy (₪5.20 regular); חטיפי אסם 40-80 גרם 6ב22
-- **rice** → פריכיות אורז חום מלא at rami-levy (₪9.90 regular); פרכיות אורז מצופות עלית 2ב10 מו4
-
-### Day 7: Broccoli & ricotta pasta (30 min)
-
-Promotion-match score: **9.95**
-
-Matched promotions:
-- **pasta** → ליגורי- ספגטי מספר 3 at rami-levy (₪9.90 regular); פסטה ליגורי 500 גרם ב-50% מעל 100 מו2
-- **parmesan** → ציפס גלי שום פרמזן 4 at rami-levy (₪5.20 regular); חטיפי אסם 40-80 גרם 6ב22
 
 ## Consolidated shopping list
 
-- [ ] **beans** — 500 g — suggested: שעועית לבנה ברוטב עג @ rami-levy (שימורי ירקות יכין/פרי מבורך 2ב18)
-- [ ] **bell pepper** — 600 g — suggested: ביסלי טעם פלפל אסם 5 @ rami-levy (חטיפי אסם 40-80 גרם 6ב22)
-- [ ] **broccoli** — 1000 g
-- [ ] **coconut milk** — 400 ml — suggested: שימורי קרם קוקוס 20- @ rami-levy (קרם קוקוס 400 מ ל 2ב16)
+- [ ] **beans** — 500 g — suggested: שעועית לבנה מבושלת 800גר @ shufersal (ב. 16.90 גזר/אפונה עדינה/חומוס/שעועית ל)
+- [ ] **bell pepper** — 600 g — suggested: ביסלי טעם פלפל אסם 5 @ rami-levy (חטיפי אסם 40-80 גרם 6ב24)
+- [ ] **broccoli** — 1000 g — suggested: ברוקולי ארוז @ shufersal (קטיף 5.90 ברוקולי ארוז במגשית)
+- [ ] **cauliflower** — 1 head — suggested: כרובית @ shufersal (קטיף 5.90 כרובית)
+- [ ] **chickpeas** — 500 g — suggested: גרגרי חומוס מבושל 800גרם @ shufersal (ב. 16.90 גזר/אפונה עדינה/חומוס/שעועית ל)
+- [ ] **coconut milk** — 400 ml — suggested: קרם קוקוס AROY-D 250 @ rami-levy (קרם /חלב קוקוס 250מל 2ב17)
 - [ ] **corn** — 300 g — suggested: מקלות תירס ממותקים 6 @ rami-levy (חטיף מקלות תירס 3ב11.90)
-- [ ] **eggs** — 18 units — suggested: איטריות ביצים מזרח ו @ rami-levy (אטריות אורז/ביצים מזרח ומערב  2ב16)
-- [ ] **feta** — 450 g — suggested: גבינה בולגרית 18% מע @ rami-levy (בולגרית מעודנת 250 ג 11.90)
-- [ ] **lasagna** — 500 g — suggested: פסטה לזניה מספר 102 @ rami-levy (לזניה ליגורי 500 ג 16.90)
+- [ ] **eggs** — 8 units — suggested: קינדר בואנו ביצים 80 גרם @ shufersal (2ב30 קינדר בואנו ביצים 80 גרם)
+- [ ] **feta** — 200 g — suggested: גבינה בולגרית 18% מע @ rami-levy (גבינה בולגרית 250 ג וילי פוד 9.90)
+- [ ] **lasagna** — 500 g — suggested: פסטה לזניה מספר 102 @ rami-levy (לזניה ליגורי 500 דרם ב16.90)
 - [ ] **lentils** — 400 g — suggested: עדשים ירוקות 500 גרם @ rami-levy (עדשים 500 גרם סוגת 2ב14)
-- [ ] **mozzarella** — 300 g — suggested: גבינה מוצרלה אצבעות @ rami-levy (אצבעות מוצרלה 172 ג 15.90)
-- [ ] **parmesan** — 80 g — suggested: ציפס גלי שום פרמזן 4 @ rami-levy (חטיפי אסם 40-80 גרם 6ב22)
-- [ ] **pasta** — 500 g — suggested: ליגורי- ספגטי מספר 3 @ rami-levy (פסטה ליגורי 500 גרם ב-50% מעל 100 מו2)
-- [ ] **rice** — 800 g — suggested: פריכיות אורז חום מלא @ rami-levy (פרכיות אורז מצופות עלית 2ב10 מו4)
+- [ ] **mozzarella** — 300 g — suggested: גבינת מוצרלה מגורדת @ rami-levy (מוצרלה מגורדת גד 12.90)
+- [ ] **parmesan** — 80 g — suggested: ציפס גלי שום פרמזן 4 @ rami-levy (חטיפי אסם 40-80 גרם 6ב24)
+- [ ] **pasta** — 500 g — suggested: ליגורי- ספגטי מספר 3 @ rami-levy (פסטה ליגורי 500 גרם 3ב18)
+- [ ] **rice** — 800 g — suggested: דפי אורז עגולים 300 גרם @ shufersal (2ב20 דפי אורז עגולים 300 גרם)
 - [ ] **ricotta** — 750 g
-- [ ] **spinach** — 700 g
-- [ ] **sweet potato** — 800 g — suggested: פיטנס קרקר דק בטטה 1 @ rami-levy (פיטנס קרקר 140 גרם 2ב20)
-- [ ] **tofu** — 600 g
-- [ ] **tomato sauce** — 1200 g — suggested: רוטב עגבניות 22BX 10 @ rami-levy (רוטב עגבניות יכין 100 גרם 8ב16)
-- [ ] **tomatoes** — 1200 g — suggested: רסק עגבניות טבעי 100 @ rami-levy (רסק עגבניות טבעי יכין 100גרם 6ב13)
-- [ ] **tortillas** — 10 units — suggested: טורטיות קטנה 10 יח 4 @ rami-levy (טורטיה 450 ג 10.90)
-- [ ] **yellow cheese** — 450 g — suggested: גבינה צהובה אצבעות ע @ rami-levy (אצבעות מוצרלה 172 ג 15.90)
-- [ ] **zucchini** — 800 g
+- [ ] **spinach** — 700 g — suggested: עלי תרד בייבי 200 גר (ק) @ shufersal (קטיף שני ב50% מגוון עלים ולקטים שטופים ב)
+- [ ] **sweet potato** — 800 g — suggested: פריכיות חלבון בטטה ס @ rami-levy (פרכיות חלבון 55-60גרם ב8.90)
+- [ ] **tahini** — 200 g — suggested: טחינה גולמית שומשום @ rami-levy (טחינה 500 גרם בארכה ב-10 ש ח מו2)
+- [ ] **tofu** — 600 g — suggested: טופו עם בזיליקום אלט @ rami-levy (טופו אלטרנטיב 300 גרם ב11.90)
+- [ ] **tomato sauce** — 1200 g — suggested: רוטב עגבניות22% יכין100ג @ shufersal (8ב20 רוטב עגבניות22% יכין100ג)
+- [ ] **tomatoes** — 1200 g — suggested: ר.עגבניות22% 100 ב.יהודה @ shufersal (8ב20 ר.עגבניות22% 100 ב.יהודה)
+- [ ] **tortillas** — 10 units — suggested: טורטיות ק.חיטה780ג papa @ shufersal (13.90 טורטיות ק.חיטה780ג papa)
+- [ ] **yellow cheese** — 300 g — suggested: גבינת גאודה פרוסה 200 גר @ shufersal (2ב32 גבינת גאודה פרוסה 200 גר)
 
 ## Highest-ranked recipe candidates
 
 | Recipe | Deal score | Promo-matched ingredients | Prep |
 |---|---:|---:|---:|
-| Lentil & sweet-potato curry | 16.54 | 4 | 40 min |
-| Shakshuka with feta | 16.53 | 4 | 30 min |
-| Bean & cheese quesadillas | 13.31 | 4 | 25 min |
-| Zucchini & feta frittata | 11.36 | 3 | 35 min |
-| Spinach & ricotta lasagna | 10.32 | 3 | 60 min |
-| Broccoli & ricotta pasta | 9.95 | 2 | 30 min |
-| Tofu vegetable stir-fry | 9.9 | 2 | 30 min |
-| Potato & broccoli cheese bake | 9.21 | 3 | 55 min |
-| Roasted vegetable couscous | 7.04 | 2 | 45 min |
-| Roasted cauliflower & chickpea tray | 4.01 | 1 | 40 min |
+| Spinach & ricotta lasagna | 19.11 | 4 | 60 min |
+| Shakshuka with feta | 18.54 | 4 | 30 min |
+| Tofu vegetable stir-fry | 16.86 | 4 | 30 min |
+| Roasted cauliflower & chickpea tray | 15.88 | 3 | 40 min |
+| Lentil & sweet-potato curry | 15.75 | 4 | 40 min |
+| Broccoli & ricotta pasta | 14.25 | 3 | 30 min |
+| Bean & cheese quesadillas | 14.08 | 4 | 25 min |
+| Potato & broccoli cheese bake | 12.17 | 4 | 55 min |
+| Roasted vegetable couscous | 11.83 | 3 | 45 min |
+| Zucchini & feta frittata | 11.44 | 3 | 35 min |
 
 ## v1 interpretation notes
 
